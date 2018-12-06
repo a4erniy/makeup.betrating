@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Atoms / Icons / toggle/star_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,17.5195934 L16.15,20.0295934 C16.91,20.4895934 17.84,19.8095934 17.64,18.9495934 L16.54,14.2295934 L20.21,11.0495934 C20.88,10.4695934 20.52,9.3695934 19.64,9.2995934 L14.81,8.8895934 L12.92,4.4295934 C12.58,3.6195934 11.42,3.6195934 11.08,4.4295934 L9.19,8.8795934 L4.36,9.2895934 C3.48,9.3595934 3.12,10.4595934 3.79,11.0395934 L7.46,14.2195934 L6.36,18.9395934 C6.16,19.7995934 7.09,20.4795934 7.85,20.0195934 L12,17.5195934 Z" id="path-1"></path>
+    </defs>
+    <g id="⚙️-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-971.000000, -187.000000)">
+            <g id="Stacked-Group-3" transform="translate(132.000000, 184.000000)">
+                <g id="Atoms-/-Icons-/-toggle/star_24px" transform="translate(836.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g fill-rule="nonzero"></g>
+                    <g id="Colors-/-Black-/-Lightest" mask="url(#mask-2)" fill="#727B88" fill-rule="evenodd">
+                        <rect id="Rectangle-2" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

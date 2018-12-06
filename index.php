@@ -19,12 +19,12 @@
             </div>
             <div class="general-menu">
                 <ul>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Рейтинг БК</a></li>
-                    <li><a href="#">Прогнозы</a></li>
-                    <li><a href="#">Школа ставок</a></li>
-                    <li><a href="#">Бонусы</a></li>
-                    <li><a href="#">Премиум</a></li>
+                    <li class="active"><a href="#">Новости</a></li>
+                    <li class=""><a href="#">Рейтинг БК</a></li>
+                    <li class=""><a href="#">Прогнозы</a></li>
+                    <li class=""><a href="#">Школа ставок</a></li>
+                    <li class=""><a href="#">Бонусы</a></li>
+                    <li class=""><a href="#">Премиум</a></li>
                 </ul>
             </div>
             <div class="search-bar"></div>

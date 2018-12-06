@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Atoms / Icons / navigation/chevron_small_right_16px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.7570557,6.31407891 C15.556431,6.11300195 15.2840539,6 15.0000077,6 C14.7159616,6 14.4435845,6.11300195 14.2429598,6.31407891 L9.31409436,11.2429443 C8.89530188,11.6617368 8.89530188,12.3382477 9.31409436,12.7570402 L14.2429598,17.6859056 C14.6617523,18.1046981 15.3382632,18.1046981 15.7570557,17.6859056 C16.1758482,17.2671131 16.1758482,16.5906022 15.7570557,16.1718097 L11.5906074,11.9946231 L15.7570557,7.82817482 C16.1758482,7.40938233 16.1651099,6.72213312 15.7570557,6.31407891 Z" id="path-1"></path>
+    </defs>
+    <g id="⚙️-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-405.000000, -190.000000)">
+            <g id="Stacked-Group-3" transform="translate(132.000000, 184.000000)">
+                <g id="Atoms-/-Icons-/-navigation/chevron_small_right_16px" transform="translate(264.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Atoms-/-Icons-/-navigation/chevron_left_24px" fill-rule="nonzero" transform="translate(12.535575, 12.000000) scale(-1, 1) translate(-12.535575, -12.000000) "></g>
+                    <g id="Colors-/-Black-/-Lightest" mask="url(#mask-2)" fill="#727B88" fill-rule="evenodd">
+                        <rect id="Rectangle-2" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

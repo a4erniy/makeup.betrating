@@ -1,55 +1,88 @@
 // Fonts
 
+@mixin fontExo2($type: Regular) {
+  @if $type == Light {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  @if $type == SemiBold {
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  @if $type == ExtraBoldItalic {
+    font-family: 'Exo 2 Extra', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  @if $type == Medium {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  @if $type == Regular {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  @if $type == ExtraBold {
+    font-family: 'Exo 2 Extra', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+}
+
 @font-face {
   font-family: 'Exo 2';
-  src: url('../../fonts/Exo2-Light.woff2') format('woff2'),
-  url('../../fonts/Exo2-Light.woff') format('woff');
-  //url('../../fonts/Exo2-Light.ttf') format('truetype');
+  src: url('../fonts/Exo2-Light.woff2') format('woff2'),
+  url('../fonts/Exo2-Light.woff') format('woff'),
+  url('../fonts/Exo2-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Exo 2 Semi';
-  src: url('../../fonts/Exo2-SemiBold.woff2') format('woff2'),
-  url('../../fonts/Exo2-SemiBold.woff') format('woff');
-  //url('../../fonts/Exo2-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Exo2-SemiBold.woff2') format('woff2'),
+  url('../fonts/Exo2-SemiBold.woff') format('woff'),
+  url('../fonts/Exo2-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Exo 2 Extra';
-  src: url('../../fonts/Exo2-ExtraBoldItalic.woff2') format('woff2'),
-  url('../../fonts/Exo2-ExtraBoldItalic.woff') format('woff');
-  //url('../../fonts/Exo2-ExtraBoldItalic.ttf') format('truetype');
+  src: url('../fonts/Exo2-ExtraBoldItalic.woff2') format('woff2'),
+  url('../fonts/Exo2-ExtraBoldItalic.woff') format('woff'),
+  url('../fonts/Exo2-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Exo 2';
-  src: url('../../fonts/Exo2-Medium.woff2') format('woff2'),
-  url('../../fonts/Exo2-Medium.woff') format('woff');
-  //url('../../fonts/Exo2-Medium.ttf') format('truetype');
+  src: url('../fonts/Exo2-Medium.woff2') format('woff2'),
+  url('../fonts/Exo2-Medium.woff') format('woff'),
+  url('../fonts/Exo2-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Exo 2';
-  src: url('../../fonts/Exo2-Regular.woff2') format('woff2'),
-  url('../../fonts/Exo2-Regular.woff') format('woff');
-  //url('../../fonts/Exo2-Regular.ttf') format('truetype');
+  src: url('../fonts/Exo2-Regular.woff2') format('woff2'),
+  url('../fonts/Exo2-Regular.woff') format('woff'),
+  url('../fonts/Exo2-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Exo 2 Extra';
-  src: url('../../fonts/Exo2-ExtraBold.woff2') format('woff2'),
-  url('../../fonts/Exo2-ExtraBold.woff') format('woff');
-  //url('../../fonts/Exo2-ExtraBold.ttf') format('truetype');
+  src: url('../fonts/Exo2-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Exo2-ExtraBold.woff') format('woff'),
+  url('../fonts/Exo2-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }

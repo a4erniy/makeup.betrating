@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Atoms / Icons /navigation/menu_24px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="⚙️-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-1280.000000, -191.000000)" fill="#727B88">
+            <g id="Stacked-Group-3" transform="translate(132.000000, 184.000000)">
+                <g id="Atoms-/-Icons-/navigation/menu_24px" transform="translate(1144.000000, 0.000000)">
+                    <path d="M5,17 L19,17 C19.55,17 20,16.55 20,16 C20,15.45 19.55,15 19,15 L5,15 C4.45,15 4,15.45 4,16 C4,16.55 4.45,17 5,17 Z M5,13 L19,13 C19.55,13 20,12.55 20,12 C20,11.45 19.55,11 19,11 L5,11 C4.45,11 4,11.45 4,12 C4,12.55 4.45,13 5,13 Z M4,8 C4,8.55 4.45,9 5,9 L19,9 C19.55,9 20,8.55 20,8 C20,7.45 19.55,7 19,7 L5,7 C4.45,7 4,7.45 4,8 Z" id="icon/action/view_headline_24px"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

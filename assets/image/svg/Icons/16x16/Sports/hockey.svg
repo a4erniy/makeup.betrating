@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Atoms / Icons  / 16x16 / Sports / hockey</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.5350312,7.15240625 C19.1245938,7.9471875 20,9.0416875 20,10.234375 C20,11.4270625 19.1245938,12.5215937 17.5350312,13.3163437 C16.04875,14.0594688 14.0830312,14.46875 12,14.46875 C9.91696875,14.46875 7.95125,14.0594687 6.46496875,13.3163437 C4.87540625,12.5215937 4,11.4270625 4,10.234375 C4,9.0416875 4.87540625,7.9471875 6.46496875,7.15240625 C7.95125,6.40928125 9.91696875,6 12,6 C14.0830312,6 16.04875,6.40928125 17.5350312,7.15240625 Z M17.9543125,14.154875 C18.8116562,13.7262188 19.4990625,13.2122813 20,12.625875 L20,14.7531875 C20,15.9458125 19.1245938,17.0403438 17.5350312,17.8351563 C16.04875,18.57825 14.0830313,18.9875625 12,18.9875625 C9.91696875,18.9875625 7.95125,18.57825 6.46496875,17.8351563 C4.87540625,17.0403438 4,15.9458125 4,14.7531875 L4,12.625875 C4.5009375,13.2122813 5.18834375,13.7262188 6.0456875,14.154875 C7.659625,14.9618125 9.77425,15.40625 12,15.40625 C14.22575,15.40625 16.340375,14.9618438 17.9543125,14.154875 Z" id="path-1"></path>
+    </defs>
+    <g id="⚙️-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-268.000000, -254.000000)">
+            <g id="Stacked-Group" transform="translate(132.000000, 248.000000)">
+                <g id="Atoms-/-Icons--/-16x16-/-Sports-/-hockey" transform="translate(132.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#8A94A6" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Colors-/-Black-/-Lightest" mask="url(#mask-2)" fill="#727B88" fill-rule="evenodd">
+                        <rect id="Rectangle-2" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

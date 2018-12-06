@@ -5,6 +5,18 @@
 @import "scss/fonts";
 
 // elements
+body {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: $color-text;
+}
+a {
+  @include transition();
+  &:hover {
+    text-decoration: none;
+  }
+}
 .button {
   height: 48px;
   border-radius: 28px;
@@ -35,13 +47,45 @@
     height: 88px;
   }
   .logo {
+    margin-right: 134px;
     a {
       img {
         max-width: 122px;
       }
     }
   }
-  .general-menu {}
+  .general-menu {
+    ul {
+      padding: 0;
+      margin: 0;
+      @include flex();
+      li {
+        list-style: none;
+        margin-right: 32px;
+        @include flex();
+        a {
+          position: relative;
+          color: $color-menu;
+          line-height: 88px;
+          text-transform: uppercase;
+          @include fontExo2(SemiBold);
+          &:hover {
+            color: $green-dark;
+          }
+        }
+        &.active {
+          a {
+            color: $green-dark;
+            &:before {
+              @include pseudo();
+              height: 4px;
+              background-color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
   .search-bar {}
   .search-button {}
   .login {}

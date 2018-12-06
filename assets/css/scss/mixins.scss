@@ -30,6 +30,15 @@
   display: flex;
 }
 
-@mixin fontExo2() {
+@mixin pseudo() {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+}
 
+@mixin transition() {
+  transition: all .6s cubic-bezier(0.165,0.84,0.44,1);
 }
