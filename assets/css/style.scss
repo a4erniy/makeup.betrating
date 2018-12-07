@@ -11,11 +11,27 @@ body {
   color: $color-text;
 }
 
+svg {
+  vertical-align: baseline;
+  @include transition();
+}
+
 a {
   @include transition();
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+i {
+  &.ico {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -47,10 +63,7 @@ a {
   @include flex();
 
   & > div {
-    @include flex();
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    @include flex(none, center);
     height: 88px;
   }
 
@@ -83,20 +96,24 @@ a {
           text-transform: uppercase;
           @include fontExo2(SemiBold);
 
-          span {
-            display: inline-block;
-            height: 24px;
-            width: 24px;
+          svg {
+            fill: $grey;
+          }
+        }
 
-            img {
-              display: inline-block;
-            }
+        a:hover {
+          color: $green-dark;
+          svg {
+            fill: $green-dark;
           }
         }
 
         &.premium {
           a {
             color: $gold;
+            svg {
+              fill: $gold;
+            }
           }
         }
 
@@ -111,10 +128,6 @@ a {
             }
           }
         }
-
-        a:hover {
-          color: $green-dark;
-        }
       }
     }
   }
@@ -122,8 +135,9 @@ a {
   .search-bar {
   }
 
-  .search-button {
-    a {
+  .search {
+    margin-left: auto;
+    &-button {
       position: relative;
       border-radius: 50%;
       height: 48px;
@@ -138,10 +152,7 @@ a {
         left: 0;
         width: 100%;
         height: 100%;
-        @include flex();
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+        @include flex(center);
         @include transition();
         &.loop {
           @include gradient-grey();
@@ -163,5 +174,16 @@ a {
   }
 
   .login {
+    margin-left: auto;
+    &-button {
+      width: 100px;
+      cursor: pointer;
+      color: $white-text;
+      text-transform: uppercase;
+      box-shadow: 0 1px 0 0 rgba(10, 66, 44, 0);
+      @include fontExo2();
+      @include gradient-green();
+      @include flex(none, center)
+    }
   }
 }

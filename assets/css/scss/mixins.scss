@@ -32,10 +32,20 @@
   background: linear-gradient(0deg, #F9FAFB 0%, #F5F6F7 100%);
 }
 
-@mixin flex() {
+@mixin flex($center-v: none, $center-g: none) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  @if $center-v == center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  @if $center-g == center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 @mixin pseudo() {
@@ -48,5 +58,5 @@
 }
 
 @mixin transition() {
-  transition: all .6s cubic-bezier(0.165,0.84,0.44,1);
+  transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
 }
