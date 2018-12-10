@@ -57,6 +57,17 @@
   width: 100%;
 }
 
-@mixin transition() {
-  transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
+@mixin transition($type: none) {
+  @if $type == none {
+    -webkit-transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
+    -moz-transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
+    -o-transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
+    transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
+  }
+  @if $type != none {
+    -webkit-transition: $type;
+    -moz-transition: $type;
+    -o-transition: $type;
+    transition: $type;
+  }
 }

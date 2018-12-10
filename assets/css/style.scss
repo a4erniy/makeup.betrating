@@ -58,6 +58,10 @@ i {
   }
 }
 
+.preload .slick-dots li span.progress {
+  width: 0!important;
+}
+
 // general
 .header {
   @include flex();
@@ -187,3 +191,125 @@ i {
     }
   }
 }
+
+.forecast-slider {
+  overflow: hidden;
+  margin-right: -16px;
+  border-radius: 6px 0 0 6px;
+  .item {
+    width: 800px;
+    height: 320px;
+    position: relative;
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+    .mask {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0,0,0,.6);
+    }
+    .desc {
+      left: 0;
+      bottom: 0;
+      font-size: 24px;
+      z-index: 20;
+      position: absolute;
+      color: $white-text;
+      padding-left: 24px;
+      padding-bottom: 41px;
+      text-transform: uppercase;
+      span {
+        color: #807F86;
+        font-size: 14px;
+        line-height: 20px;
+        @include fontExo2('SemiBold');
+      }
+      .title {
+        margin-top: 9px;
+        line-height: 30px;
+        @include fontExo2('ExtraBold');
+      }
+      .date {
+        line-height: 32px;
+        letter-spacing: initial;
+        @include fontExo2('Light');
+      }
+    }
+    .more {
+      bottom: 0;
+      right: 0;
+      padding-bottom: 26px;
+      padding-right: 26px;
+      position: absolute;
+      color: $white-text;
+      font-size: 14px;
+      text-transform: uppercase;
+      @include fontExo2('SemiBold');
+      @include flex(center, center);
+      .circle {
+        width: 64px;
+        height: 64px;
+        margin-left: 13px;
+        border-radius: 50%;
+        @include gradient-green();
+      }
+    }
+  }
+  .slick-dots {
+    margin: 0;
+    padding: 0 0 24px 24px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    @include flex();
+    align-items: flex-end;
+    li {
+      height: 8px;
+      width: 32px;
+      line-height: 0;
+      list-style: none;
+      margin-right: 6px;
+      position: relative;
+      align-items: flex-end;
+      @include flex();
+      @include transition();
+      span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        cursor: pointer;
+        &.item {
+          z-index: 10;
+          background-color: rgba(128, 127, 134, 1);
+        }
+        &.progress {
+          width: 0;
+          z-index: 5;
+          border-radius: 0;
+          background-color: $green-light;
+          @include transition(width 2s steps(32, end));
+        }
+      }
+      &:hover {
+        span {
+          height: 8px;
+        }
+      }
+      &.slick-active {
+        span {
+          &.progress {
+            z-index: 15;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.company-slider {}
+.betting-center {}
