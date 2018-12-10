@@ -40,7 +40,7 @@ i {
   display: block;
   border-radius: 28px;
   text-align: center;
-
+  cursor: pointer;
   &-green {
     color: $white-text;
     @include gradient-green();
@@ -49,23 +49,21 @@ i {
 
     }
   }
-
   &-grey {
     color: #807F86;
     font-size: 14px;
+    cursor: pointer;
     line-height: 46px;
     text-align: center;
     text-transform: uppercase;
-    border: 1px solid $color-border;
+    border: $border;
     @include fontExo2(SemiBold);
     @include gradient-grey();
-
     &:hover {
       color: #807F86;
       box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0);
       @include gradient-grey-dark();
     }
-
     &:focus {
       color: #807F86;
       @include gradient-grey-dark-2();
@@ -80,6 +78,11 @@ i {
   letter-spacing: 0.17px;
   text-transform: uppercase;
   @include fontExo2(ExtraBold);
+}
+
+.slick-disabled {
+  cursor: default!important;
+  background: #F5F6F7 !important;
 }
 
 .rating {
@@ -114,7 +117,6 @@ i {
   padding-top: 20px;
   position: relative;
   box-shadow: 0 0 0 1px #F1F2F4;
-
   .branch {
     width: 56px;
     height: 56px;
@@ -124,14 +126,12 @@ i {
     color: $gold;
     padding-top: 14px;
     @include fontExo2(ExtraBold);
-
     &.gold {
       background-image: url("../image/svg/56x56/wreath.svg");
       background-repeat: no-repeat;
       background-position: center center;
     }
   }
-
   .logo {
     width: 80px;
     height: 40px;
@@ -141,10 +141,8 @@ i {
       max-width: 100%;
     }
   }
-
   .rating {
   }
-
   .links {
     left: 0;
     bottom: 0;
@@ -161,11 +159,14 @@ i {
       @include fontExo2(SemiBold);
       &.review {
         color: #728198;
+        padding-right: 5px;
       }
       &.site {
         color: #807F86;
         position: relative;
+        padding-right: 3px;
         @include gradient-grey-dark-3();
+
         &:before {
           @include pseudo();
           width: 0;
@@ -182,12 +183,10 @@ i {
 // general
 .header {
   @include flex();
-
   & > div {
     @include flex(none, center);
     height: 88px;
   }
-
   .logo {
     margin-right: 134px;
 
@@ -197,18 +196,15 @@ i {
       }
     }
   }
-
   .general-menu {
     ul {
       padding: 0;
       margin: 0;
       @include flex();
-
       li {
         list-style: none;
         margin-right: 32px;
         @include flex();
-
         a {
           display: block;
           position: relative;
@@ -216,34 +212,27 @@ i {
           line-height: 88px;
           text-transform: uppercase;
           @include fontExo2(SemiBold);
-
           svg {
             fill: $grey;
           }
-        }
-
-        a:hover {
-          color: $green-dark;
-
-          svg {
-            fill: $green-dark;
+          &:hover {
+            color: $green-dark;
+            svg {
+              fill: $green-dark;
+            }
           }
         }
-
         &.premium {
           a {
             color: $gold;
-
             svg {
               fill: $gold;
             }
           }
         }
-
         &.active {
           a {
             color: $green-dark;
-
             &:before {
               @include pseudo();
               height: 4px;
@@ -254,22 +243,18 @@ i {
       }
     }
   }
-
   .search-bar {
   }
-
   .search {
     margin-left: auto;
-
     &-button {
       position: relative;
       border-radius: 50%;
       height: 48px;
       width: 48px;
       overflow: hidden;
-      border: 1px solid $color-border;
+      border: $border;
       box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0);
-
       span {
         position: absolute;
         display: block;
@@ -289,7 +274,6 @@ i {
           @include gradient-grey-dark();
         }
       }
-
       &.open {
         .loop {
           opacity: 0;
@@ -301,10 +285,8 @@ i {
       }
     }
   }
-
   .login {
     margin-left: auto;
-
     &-button {
       width: 100px;
       cursor: pointer;
@@ -322,17 +304,14 @@ i {
   overflow: hidden;
   margin-right: -16px;
   border-radius: 6px 0 0 6px;
-
   .item {
     width: 800px;
     height: 320px;
     position: relative;
-
     .image {
       width: 100%;
       height: 100%;
     }
-
     .mask {
       top: 0;
       left: 0;
@@ -341,7 +320,6 @@ i {
       position: absolute;
       background-color: rgba(0, 0, 0, .6);
     }
-
     .desc {
       left: 0;
       bottom: 0;
@@ -352,27 +330,23 @@ i {
       padding-left: 24px;
       padding-bottom: 41px;
       text-transform: uppercase;
-
       span {
         color: #807F86;
         font-size: 14px;
         line-height: 20px;
         @include fontExo2('SemiBold');
       }
-
       .title {
         margin-top: 9px;
         line-height: 30px;
         @include fontExo2('ExtraBold');
       }
-
       .date {
         line-height: 32px;
         letter-spacing: initial;
         @include fontExo2('Light');
       }
     }
-
     .more {
       bottom: 0;
       right: 0;
@@ -384,7 +358,6 @@ i {
       text-transform: uppercase;
       @include fontExo2('SemiBold');
       @include flex(center, center);
-
       .circle {
         width: 64px;
         height: 64px;
@@ -394,7 +367,6 @@ i {
       }
     }
   }
-
   .slick-dots {
     margin: 0;
     padding: 0 0 24px 24px;
@@ -403,7 +375,6 @@ i {
     position: absolute;
     @include flex();
     align-items: flex-end;
-
     li {
       height: 8px;
       width: 32px;
@@ -414,19 +385,16 @@ i {
       align-items: flex-end;
       @include flex();
       @include transition();
-
       span {
         display: block;
         position: absolute;
         height: 2px;
         width: 100%;
         cursor: pointer;
-
         &.item {
           z-index: 10;
           background-color: rgba(128, 127, 134, 1);
         }
-
         &.progress {
           width: 0;
           z-index: 5;
@@ -435,13 +403,11 @@ i {
           @include transition(width 2s steps(32, end));
         }
       }
-
       &:hover {
         span {
           height: 8px;
         }
       }
-
       &.slick-active {
         span {
           &.progress {
@@ -456,16 +422,33 @@ i {
 
 .company-slider {
   padding-top: 24px;
-
   .section-title {
     margin-bottom: 2px;
   }
-
   .slider {
     margin-right: -16px;
-
     .item {
       margin: 18px 15px 20px 1px;
+    }
+    .slick-arrow {
+      top: 0;
+      right: 0;
+      height: 32px;
+      width: 34px;
+      position: absolute;
+      border: $border;
+      margin-top: -30px;
+      &.slick-prev {
+        border-right: none;
+        margin-right: 50px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+      &.slick-next {
+        margin-right: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+      }
     }
   }
 }

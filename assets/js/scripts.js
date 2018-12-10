@@ -30,8 +30,8 @@ $(function () {
         infinite: false,
         slidesToShow: 4,
         slidesToScroll: 1,
-        nextArrow: '<div class="slick-next"></div>',
-        prevArrow: '<div class="slick-prev"></div>'
+        nextArrow: '<div class="slick-next button-grey"></div>',
+        prevArrow: '<div class="slick-prev button-grey"></div>'
     });
 
 //    Preload remove

@@ -61,7 +61,8 @@ i.ico {
   height: 48px;
   display: block;
   border-radius: 28px;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .button-green {
     color: #ffffff;
     background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
@@ -72,6 +73,7 @@ i.ico {
   .button-grey {
     color: #807F86;
     font-size: 14px;
+    cursor: pointer;
     line-height: 46px;
     text-align: center;
     text-transform: uppercase;
@@ -109,6 +111,10 @@ i.ico {
   font-family: 'Exo 2 Extra', sans-serif;
   font-weight: 800;
   font-style: normal; }
+
+.slick-disabled {
+  cursor: default !important;
+  background: #F5F6F7 !important; }
 
 .rating {
   display: -webkit-box;
@@ -182,10 +188,12 @@ i.ico {
       font-weight: 600;
       font-style: normal; }
       .company-card .links a.review {
-        color: #728198; }
+        color: #728198;
+        padding-right: 5px; }
       .company-card .links a.site {
         color: #807F86;
         position: relative;
+        padding-right: 3px;
         background: -webkit-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
         background: -moz-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
         background: -ms-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
@@ -243,10 +251,10 @@ i.ico {
         font-style: normal; }
         .header .general-menu ul li a svg {
           fill: #BABFC9; }
-      .header .general-menu ul li a:hover {
-        color: #25A96A; }
-        .header .general-menu ul li a:hover svg {
-          fill: #25A96A; }
+        .header .general-menu ul li a:hover {
+          color: #25A96A; }
+          .header .general-menu ul li a:hover svg {
+            fill: #25A96A; }
       .header .general-menu ul li.premium a {
         color: #FFB90C; }
         .header .general-menu ul li.premium a svg {
@@ -464,5 +472,22 @@ i.ico {
     margin-right: -16px; }
     .company-slider .slider .item {
       margin: 18px 15px 20px 1px; }
+    .company-slider .slider .slick-arrow {
+      top: 0;
+      right: 0;
+      height: 32px;
+      width: 34px;
+      position: absolute;
+      border: 1px solid #E6E5EC;
+      margin-top: -30px; }
+      .company-slider .slider .slick-arrow.slick-prev {
+        border-right: none;
+        margin-right: 50px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px; }
+      .company-slider .slider .slick-arrow.slick-next {
+        margin-right: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -73,6 +73,10 @@
   width: 100%;
 }
 
+@mixin border() {
+  border: 1px solid ;
+}
+
 @mixin transition($type: none) {
   @if $type == none {
     -webkit-transition: all .3s ease-in-out;
