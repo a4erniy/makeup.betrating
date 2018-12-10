@@ -47,68 +47,11 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <div class="forecast-slider preload" id="forecast_slider">
-                    <div class="item">
-                        <a href="#">
-                            <div class="image">
-                                <img src="content/forecast/1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                            <div class="desc">
-                                <span>Прогноз на матч:</span>
-                                <div class="title">Барселона — Интер</div>
-                                <div class="date">24 октября, 22:00</div>
-                            </div>
-                            <div class="more">Читать прогноз <div class="circle"></div></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <div class="image">
-                                <img src="content/forecast/2.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                            <div class="desc">
-                                <span>Прогноз на матч:</span>
-                                <div class="title">Рома — Валенсия</div>
-                                <div class="date">28 октября, 21:00</div>
-                            </div>
-                            <div class="more">Читать прогноз <div class="circle"></div></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <div class="image">
-                                <img src="content/forecast/3.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                            <div class="desc">
-                                <span>Прогноз на матч:</span>
-                                <div class="title">Барселона — Интер</div>
-                                <div class="date">24 октября, 22:00</div>
-                            </div>
-                            <div class="more">Читать прогноз <div class="circle"></div></div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <div class="image">
-                                <img src="content/forecast/4.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                            <div class="desc">
-                                <span>Прогноз на матч:</span>
-                                <div class="title">Рома — Валенсия</div>
-                                <div class="date">28 октября, 21:00</div>
-                            </div>
-                            <div class="more">Читать прогноз <div class="circle"></div></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="company-slider"></div>
+                <?php include_once 'parts/forecast-slider.php'; ?>
+                <?php include_once 'parts/company-slider.php'; ?>
             </div>
             <div class="col-4">
-                <div class="betting-center"></div>
+                <?php include_once 'parts/betting-center.php'; ?>
             </div>
         </div>
     </div>
