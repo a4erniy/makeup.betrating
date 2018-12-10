@@ -35,6 +35,11 @@ i {
   }
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .button {
   height: 48px;
   display: block;
@@ -50,7 +55,7 @@ i {
     }
   }
   &-grey {
-    color: #807F86;
+    color: $color-text-grey;
     font-size: 14px;
     cursor: pointer;
     line-height: 46px;
@@ -60,13 +65,13 @@ i {
     @include fontExo2(SemiBold);
     @include gradient-grey();
     &:hover {
-      color: #807F86;
+      color: $color-text-grey;
       box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0);
-      @include gradient-grey-dark();
+      @include gradient-grey(1);
     }
     &:focus {
-      color: #807F86;
-      @include gradient-grey-dark-2();
+      color: $color-text-grey;
+      @include gradient-grey(2);
     }
   }
 }
@@ -81,7 +86,7 @@ i {
 }
 
 .slick-disabled {
-  cursor: default!important;
+  cursor: default !important;
   background: #F5F6F7 !important;
 }
 
@@ -136,10 +141,6 @@ i {
     width: 80px;
     height: 40px;
     margin: 0 auto 10px;
-    img {
-      max-height: 100%;
-      max-width: 100%;
-    }
   }
   .rating {
   }
@@ -162,13 +163,13 @@ i {
         padding-right: 5px;
       }
       &.site {
-        color: #807F86;
+        color: $color-text-grey;
         position: relative;
         padding-right: 3px;
-        @include gradient-grey-dark-3();
+        @include gradient-grey(3);
 
         &:before {
-          @include pseudo();
+          @include before-after();
           width: 0;
           height: 0;
           margin-left: -10px;
@@ -177,6 +178,103 @@ i {
         }
       }
     }
+  }
+}
+
+.betting-center-card {
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  @include transition();
+  .head {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 10px;
+    border-radius: 6px 6px 0 0;
+    @include gradient-grey(3);
+    @include flex(none, center);
+    .league {
+      .logo {
+        width: 16px;
+        height: 16px;
+        line-height: 0;
+        margin-right: 8px;
+        display: inline-block;
+      }
+      .name {
+        display: inline-block;
+        color: $color-text-grey;
+        letter-spacing: 0.4px;
+        @include fontExo2(Medium);
+      }
+    }
+    .time {
+      margin-left: auto;
+      color: $color-text;
+      @include fontExo2(ExtraBold);
+    }
+  }
+  .body {
+    height: 64px;
+    overflow: hidden;
+    border-radius: 0 0 6px 6px;
+    @include flex();
+    .matches {
+      width: 208px;
+      padding: 12px 0;
+      .team {
+        height: 20px;
+        padding-left: 11px;
+        padding-right: 17px;
+        @include flex(none, center);
+        .logo {
+          width: 16px;
+          height: 16px;
+          line-height: 0;
+          margin-right: 11px;
+        }
+        .name {
+          color: $color-text;
+          letter-spacing: 0.25px;
+          @include fontExo2(SemiBold);
+        }
+        .score {
+          margin-left: auto;
+          color: $color-text;
+          letter-spacing: 0.25px;
+          @include fontExo2();
+        }
+      }
+    }
+    .bet {
+      width: 48px;
+      font-size: 12px;
+      line-height: 16px;
+      border-left: $border;
+      letter-spacing: 0.4px;
+      padding-top: 14px;
+      text-align: center;
+      @include gradient-grey();
+      .type {
+        margin-bottom: 4px;
+        color: $color-text-grey;
+        @include fontExo2(Medium);
+      }
+      .value {
+        color: $color-text;
+        @include fontExo2(ExtraBold);
+      }
+      &:hover {
+        @include gradient-green();
+        .type, .value {
+          color: $white-text;
+        }
+      }
+    }
+  }
+  &:hover {
+    position: relative;
+    box-shadow: 0 0 1px 0 rgba(10, 31, 68, 0.1), 0 30px 40px 0 rgba(10, 31, 68, 0.1);
   }
 }
 
@@ -189,7 +287,6 @@ i {
   }
   .logo {
     margin-right: 134px;
-
     a {
       img {
         max-width: 122px;
@@ -234,7 +331,7 @@ i {
           a {
             color: $green-dark;
             &:before {
-              @include pseudo();
+              @include before-after();
               height: 4px;
               background-color: $green;
             }
@@ -264,14 +361,12 @@ i {
         height: 100%;
         @include flex(center);
         @include transition();
-
         &.loop {
           @include gradient-grey();
         }
-
         &.cross {
           opacity: 0;
-          @include gradient-grey-dark();
+          @include gradient-grey(1);
         }
       }
       &.open {
@@ -331,7 +426,7 @@ i {
       padding-bottom: 41px;
       text-transform: uppercase;
       span {
-        color: #807F86;
+        color: $color-text-grey;
         font-size: 14px;
         line-height: 20px;
         @include fontExo2('SemiBold');
@@ -454,4 +549,51 @@ i {
 }
 
 .betting-center {
+  height: 710px;
+  position: relative;
+  padding: 0 16px;
+  border-top-right-radius: 6px;
+  @include gradient-grey(4);
+  .section-title {
+    top: 19px;
+    left: 16px;
+    position: absolute;
+  }
+  .nav {
+    justify-content: flex-end;
+    border-bottom: 1px solid $grey-lighter;
+    li {
+      margin-right: 11px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: $color-text-grey;
+        display: block;
+        line-height: 63px;
+        letter-spacing: 0.25px;
+        @include fontExo2(SemiBold);
+        &:hover {
+          color: $green-dark;
+        }
+        &.active {
+          color: $green-dark;
+          position: relative;
+          &:after {
+            @include before-after();
+            top: auto;
+            bottom: 0;
+            height: 4px;
+            background-color: $green;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      padding-top: 15px;
+    }
+  }
+
 }

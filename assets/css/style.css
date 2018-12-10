@@ -57,6 +57,10 @@ i.ico {
   line-height: 24px;
   text-align: center; }
 
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
 .button {
   height: 48px;
   display: block;
@@ -166,9 +170,6 @@ i.ico {
     width: 80px;
     height: 40px;
     margin: 0 auto 10px; }
-    .company-card .logo img {
-      max-height: 100%;
-      max-width: 100%; }
   .company-card .links {
     left: 0;
     bottom: 0;
@@ -211,6 +212,123 @@ i.ico {
           margin-left: -10px;
           border-bottom: 48px solid #F9FAFB;
           border-left: 10px solid transparent; }
+
+.betting-center-card {
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .betting-center-card .head {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 10px;
+    border-radius: 6px 6px 0 0;
+    background: -webkit-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+    background: -moz-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+    background: -ms-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+    background: -o-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+    background: linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .betting-center-card .head .league .logo {
+      width: 16px;
+      height: 16px;
+      line-height: 0;
+      margin-right: 8px;
+      display: inline-block; }
+    .betting-center-card .head .league .name {
+      display: inline-block;
+      color: #807F86;
+      letter-spacing: 0.4px;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+    .betting-center-card .head .time {
+      margin-left: auto;
+      color: #28292B;
+      font-family: 'Exo 2 Extra', sans-serif;
+      font-weight: 800;
+      font-style: normal; }
+  .betting-center-card .body {
+    height: 64px;
+    overflow: hidden;
+    border-radius: 0 0 6px 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .betting-center-card .body .matches {
+      width: 208px;
+      padding: 12px 0; }
+      .betting-center-card .body .matches .team {
+        height: 20px;
+        padding-left: 11px;
+        padding-right: 17px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .betting-center-card .body .matches .team .logo {
+          width: 16px;
+          height: 16px;
+          line-height: 0;
+          margin-right: 11px; }
+        .betting-center-card .body .matches .team .name {
+          color: #28292B;
+          letter-spacing: 0.25px;
+          font-family: 'Exo 2 Semi', sans-serif;
+          font-weight: 600;
+          font-style: normal; }
+        .betting-center-card .body .matches .team .score {
+          margin-left: auto;
+          color: #28292B;
+          letter-spacing: 0.25px;
+          font-family: 'Exo 2', sans-serif;
+          font-weight: normal;
+          font-style: normal; }
+    .betting-center-card .body .bet {
+      width: 48px;
+      font-size: 12px;
+      line-height: 16px;
+      border-left: 1px solid #E6E5EC;
+      letter-spacing: 0.4px;
+      padding-top: 14px;
+      text-align: center;
+      background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+      background: -moz-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+      background: -ms-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+      background: -o-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+      background: linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%); }
+      .betting-center-card .body .bet .type {
+        margin-bottom: 4px;
+        color: #807F86;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+        font-style: normal; }
+      .betting-center-card .body .bet .value {
+        color: #28292B;
+        font-family: 'Exo 2 Extra', sans-serif;
+        font-weight: 800;
+        font-style: normal; }
+      .betting-center-card .body .bet:hover {
+        background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
+        .betting-center-card .body .bet:hover .type, .betting-center-card .body .bet:hover .value {
+          color: #ffffff; }
+  .betting-center-card:hover {
+    position: relative;
+    box-shadow: 0 0 1px 0 rgba(10, 31, 68, 0.1), 0 30px 40px 0 rgba(10, 31, 68, 0.1); }
 
 .header {
   display: -webkit-box;
@@ -489,5 +607,53 @@ i.ico {
         margin-right: 16px;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px; }
+
+.betting-center {
+  height: 710px;
+  position: relative;
+  padding: 0 16px;
+  border-top-right-radius: 6px;
+  background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
+  .betting-center .section-title {
+    top: 19px;
+    left: 16px;
+    position: absolute; }
+  .betting-center .nav {
+    justify-content: flex-end;
+    border-bottom: 1px solid #E8EAED; }
+    .betting-center .nav li {
+      margin-right: 11px; }
+      .betting-center .nav li:last-child {
+        margin-right: 0; }
+      .betting-center .nav li a {
+        color: #807F86;
+        display: block;
+        line-height: 63px;
+        letter-spacing: 0.25px;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+        .betting-center .nav li a:hover {
+          color: #25A96A; }
+        .betting-center .nav li a.active {
+          color: #25A96A;
+          position: relative; }
+          .betting-center .nav li a.active:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            top: auto;
+            bottom: 0;
+            height: 4px;
+            background-color: #25C277; }
+  .betting-center .tab-content .tab-pane {
+    padding-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */
