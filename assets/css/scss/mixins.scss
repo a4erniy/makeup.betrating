@@ -25,11 +25,27 @@
 }
 
 @mixin gradient-grey-dark() {
+  background: -webkit-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+  background: -moz-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+  background: -ms-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+  background: -o-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+  background: linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+}
+
+@mixin gradient-grey-dark-2() {
   background: -webkit-linear-gradient(0deg, #F9FAFB 0%, #F5F6F7 100%);
   background: -moz-linear-gradient(0deg, #F9FAFB 0%, #F5F6F7 100%);
   background: -ms-linear-gradient(0deg, #F9FAFB 0%, #F5F6F7 100%);
   background: -o-linear-gradient(0deg, #F9FAFB 0%, #F5F6F7 100%);
   background: linear-gradient(0deg, #F9FAFB 0%, #F5F6F7 100%);
+}
+
+@mixin gradient-grey-dark-3() {
+  background: -webkit-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: -moz-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: -ms-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: -o-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
 }
 
 @mixin flex($center-v: none, $center-g: none) {
@@ -59,10 +75,10 @@
 
 @mixin transition($type: none) {
   @if $type == none {
-    -webkit-transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
-    -moz-transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
-    -o-transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
-    transition: all .3s cubic-bezier(0.165,0.84,0.44,1);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   @if $type != none {
     -webkit-transition: $type;

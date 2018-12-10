@@ -23,6 +23,17 @@ $(function () {
         }
     });
 
+//    Company slider
+    $('#company_slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        nextArrow: '<div class="slick-next"></div>',
+        prevArrow: '<div class="slick-prev"></div>'
+    });
+
 //    Preload remove
     $('.preload').removeClass('preload');
 
