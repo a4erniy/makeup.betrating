@@ -7,7 +7,6 @@
 body {
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.75px;
   color: $color-text;
 }
 a {
@@ -27,6 +26,8 @@ i {
   }
 }
 svg {
+  max-width: 100%;
+  max-height: 100%;
   vertical-align: baseline;
   @include transition();
 }
@@ -44,6 +45,42 @@ h1, h2, h3, h4 {
 .ico, .logo {
   line-height: 0;
   display: inline-block;
+}
+.menu {
+  position: relative;
+  ul {
+    padding: 0;
+    margin: 0;
+    @include flex();
+    li {
+      list-style: none;
+      margin-right: 32px;
+      @include flex(none, center);
+      a {
+        display: block;
+        position: relative;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        &:hover {
+          color: $green-dark!important;
+          svg {
+            fill: $green-dark!important;
+          }
+        }
+      }
+      &.premium {
+        a {
+          color: $gold!important;
+          svg {
+            fill: $gold!important;
+          }
+        }
+      }
+      &:last-child {
+        margin-right: 0!important;
+      }
+    }
+  }
 }
 .tabs {
   &-list {
@@ -855,54 +892,24 @@ header {
     .logo {
       width: 122px;
       margin-right: 134px;
-      a {
-        img {
-          max-width: 122px;
-        }
-      }
     }
-    .general-menu {
-      ul {
-        padding: 0;
-        margin: 0;
-        @include flex();
-        li {
-          list-style: none;
-          margin-right: 32px;
-          @include flex();
+    .menu {
+      li {
+        a {
+          color: $color-menu;
+          line-height: 88px;
+          @include fontExo2(SemiBold);
+          svg {
+            fill: $grey;
+          }
+        }
+        &.active {
           a {
-            display: block;
-            position: relative;
-            color: $color-menu;
-            line-height: 88px;
-            text-transform: uppercase;
-            @include fontExo2(SemiBold);
-            svg {
-              fill: $grey;
-            }
-            &:hover {
-              color: $green-dark;
-              svg {
-                fill: $green-dark;
-              }
-            }
-          }
-          &.premium {
-            a {
-              color: $gold;
-              svg {
-                fill: $gold;
-              }
-            }
-          }
-          &.active {
-            a {
-              color: $green-dark;
-              &:before {
-                @include before-after();
-                height: 4px;
-                background-color: $green;
-              }
+            color: $green-dark;
+            &:before {
+              @include before-after();
+              height: 4px;
+              background-color: $green;
             }
           }
         }
@@ -962,7 +969,112 @@ footer {
   padding: 30px 0 44px;
   background-color: $black-deep;
   .footer {
-
+    &-row {
+      @include flex(none, center);
+      &-one {
+        margin-bottom: 68px;
+      }
+      &-two {
+        margin-bottom: 36px;
+      }
+      &-three {}
+    }
+    .logo {
+      width: 126px;
+      margin-right: 154px;
+    }
+    .menu {
+      li {
+        margin-right: 24px;
+        a {
+          color: $grey;
+          @include fontExo2(Medium);
+        }
+        &.premium {}
+      }
+    }
+    .pages {
+      left: 0;
+      width: 100%;
+      bottom: -37px;
+      position: absolute;
+      text-align: center;
+      a {
+        margin: 0 8px;
+        color: #515867;
+        letter-spacing: 0.75px;
+        @include fontExo2(Medium);
+        &:hover {
+          color: $white-text;
+        }
+      }
+    }
+    .social {
+      margin-left: auto;
+      @include flex(none, center);
+      &-item {
+        width: 38px;
+        height: 38px;
+        display: block;
+        margin-left: 10px;
+        border-radius: 50%;
+        background-color: $black-light;
+        letter-spacing: 0.15px;
+        color: $grey;
+        font-size: 16px;
+        line-height: 38px;
+        text-align: center;
+        @include fontExo2();
+        font-weight: 700;
+        .ico {
+          width: 24px;
+          height: 24px;
+          margin-top: 7px;
+          svg {
+            fill: $white-text;
+          }
+        }
+        &.age {
+          margin-left: 30px;
+          position: relative;
+          &:before {
+            @include before-after();
+            top: 50%;
+            margin-top: -10px;
+            margin-left: -15px;
+            width: 2px;
+            height: 20px;
+            background-color: $black-light;
+          }
+        }
+        &:hover {
+          &.vk svg {
+            fill: #45668e!important;
+          }
+          &.tw svg {
+            fill: #1da1f2!important;
+          }
+        }
+      }
+    }
+    .services {
+      color: #515867;
+      max-width: 50%;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      @include fontExo2(Regular);
+      a {
+        color: $grey;
+        &:hover {
+          color: $white-text;
+        }
+      }
+      &:last-child {
+        margin-left: auto;
+        text-align: right;
+      }
+    }
   }
 }
 .top-section {

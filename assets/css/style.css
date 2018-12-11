@@ -31,7 +31,6 @@
 body {
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.75px;
   color: #28292B; }
 
 a {
@@ -51,6 +50,8 @@ i.ico {
   text-align: center; }
 
 svg {
+  max-width: 100%;
+  max-height: 100%;
   vertical-align: baseline;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -71,6 +72,39 @@ h1, h2, h3, h4 {
 .ico, .logo {
   line-height: 0;
   display: inline-block; }
+
+.menu {
+  position: relative; }
+  .menu ul {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .menu ul li {
+      list-style: none;
+      margin-right: 32px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .menu ul li a {
+        display: block;
+        position: relative;
+        letter-spacing: 0.75px;
+        text-transform: uppercase; }
+        .menu ul li a:hover {
+          color: #25A96A !important; }
+          .menu ul li a:hover svg {
+            fill: #25A96A !important; }
+      .menu ul li.premium a {
+        color: #FFB90C !important; }
+        .menu ul li.premium a svg {
+          fill: #FFB90C !important; }
+      .menu ul li:last-child {
+        margin-right: 0 !important; }
 
 .tabs-list {
   margin: 0;
@@ -929,50 +963,25 @@ header .header {
   header .header .logo {
     width: 122px;
     margin-right: 134px; }
-    header .header .logo a img {
-      max-width: 122px; }
-  header .header .general-menu ul {
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    header .header .general-menu ul li {
-      list-style: none;
-      margin-right: 32px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      header .header .general-menu ul li a {
-        display: block;
-        position: relative;
-        color: #54535A;
-        line-height: 88px;
-        text-transform: uppercase;
-        font-family: 'Exo 2 Semi', sans-serif;
-        font-weight: 600;
-        font-style: normal; }
-        header .header .general-menu ul li a svg {
-          fill: #BABFC9; }
-        header .header .general-menu ul li a:hover {
-          color: #25A96A; }
-          header .header .general-menu ul li a:hover svg {
-            fill: #25A96A; }
-      header .header .general-menu ul li.premium a {
-        color: #FFB90C; }
-        header .header .general-menu ul li.premium a svg {
-          fill: #FFB90C; }
-      header .header .general-menu ul li.active a {
-        color: #25A96A; }
-        header .header .general-menu ul li.active a:before {
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          content: "";
-          width: 100%;
-          height: 4px;
-          background-color: #25C277; }
+  header .header .menu li a {
+    color: #54535A;
+    line-height: 88px;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+    header .header .menu li a svg {
+      fill: #BABFC9; }
+  header .header .menu li.active a {
+    color: #25A96A; }
+    header .header .menu li.active a:before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-color: #25C277; }
   header .header .search {
     margin-left: auto; }
     header .header .search-button {
@@ -1043,6 +1052,108 @@ header .header {
 footer {
   padding: 30px 0 44px;
   background-color: #121417; }
+  footer .footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    footer .footer-row-one {
+      margin-bottom: 68px; }
+    footer .footer-row-two {
+      margin-bottom: 36px; }
+  footer .footer .logo {
+    width: 126px;
+    margin-right: 154px; }
+  footer .footer .menu li {
+    margin-right: 24px; }
+    footer .footer .menu li a {
+      color: #BABFC9;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+  footer .footer .pages {
+    left: 0;
+    width: 100%;
+    bottom: -37px;
+    position: absolute;
+    text-align: center; }
+    footer .footer .pages a {
+      margin: 0 8px;
+      color: #515867;
+      letter-spacing: 0.75px;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+      footer .footer .pages a:hover {
+        color: #ffffff; }
+  footer .footer .social {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    footer .footer .social-item {
+      width: 38px;
+      height: 38px;
+      display: block;
+      margin-left: 10px;
+      border-radius: 50%;
+      background-color: #2D3239;
+      letter-spacing: 0.15px;
+      color: #BABFC9;
+      font-size: 16px;
+      line-height: 38px;
+      text-align: center;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-weight: 700; }
+      footer .footer .social-item .ico {
+        width: 24px;
+        height: 24px;
+        margin-top: 7px; }
+        footer .footer .social-item .ico svg {
+          fill: #ffffff; }
+      footer .footer .social-item.age {
+        margin-left: 30px;
+        position: relative; }
+        footer .footer .social-item.age:before {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "";
+          width: 100%;
+          top: 50%;
+          margin-top: -10px;
+          margin-left: -15px;
+          width: 2px;
+          height: 20px;
+          background-color: #2D3239; }
+      footer .footer .social-item:hover.vk svg {
+        fill: #45668e !important; }
+      footer .footer .social-item:hover.tw svg {
+        fill: #1da1f2 !important; }
+  footer .footer .services {
+    color: #515867;
+    max-width: 50%;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    font-style: normal; }
+    footer .footer .services a {
+      color: #BABFC9; }
+      footer .footer .services a:hover {
+        color: #ffffff; }
+    footer .footer .services:last-child {
+      margin-left: auto;
+      text-align: right; }
 
 .top-section {
   padding: 0; }
