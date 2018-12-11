@@ -35,74 +35,8 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
-.button {
-  height: 48px;
-  display: block;
-  border-radius: 28px;
-  text-align: center;
-  cursor: pointer;
-  &-green {
-    color: $white-text;
-    @include gradient-green();
-
-    &:hover {
-
-    }
-  }
-  &-grey {
-    color: $color-text-grey;
-    font-size: 14px;
-    cursor: pointer;
-    line-height: 46px;
-    text-align: center;
-    text-transform: uppercase;
-    border: $border;
-    @include fontExo2(SemiBold);
-    @include gradient-grey();
-    &:hover {
-      color: $color-text-grey;
-      box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0);
-      @include gradient-grey(1);
-    }
-    &:focus {
-      color: $color-text-grey;
-      @include gradient-grey(2);
-    }
-  }
-}
-.section-title {
-  font-size: 18px;
-  line-height: 24px;
-  color: $color-text;
-  letter-spacing: 0.17px;
-  text-transform: uppercase;
-  @include fontExo2(ExtraBold);
-}
-.slick-disabled {
-  cursor: default !important;
-  background: #F5F6F7 !important;
-}
-.rating {
-  @include flex(center);
-  .star {
-    width: 12px;
-    height: 12px;
-    display: block;
-    margin: 0 2px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("../image/svg/toggle/star_border_24px.svg");
-    &-check {
-      background-image: url("../image/svg/toggle/star_24px.svg");
-    }
-    &-half {
-      background-image: url("../image/svg/toggle/star_half_24px.svg");
-    }
-  }
-}
-.preload .slick-dots li span.progress {
-  width: 0 !important;
+section {
+  padding: 40px 0;
 }
 .tabs {
   &-list {
@@ -142,6 +76,88 @@ img {
         }
       }
     }
+  }
+}
+.button {
+  height: 48px;
+  display: block;
+  border-radius: 28px;
+  text-align: center;
+  cursor: pointer;
+  &-green {
+    color: $white-text;
+    @include gradient-green();
+
+    &:hover {
+
+    }
+  }
+  &-grey {
+    color: $color-text-grey;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    border: $border;
+    @include fontExo2(SemiBold);
+    @include gradient-grey();
+    &:hover {
+      color: $color-text-grey;
+      box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0);
+      @include gradient-grey(1);
+    }
+    &:focus {
+      color: $color-text-grey;
+      @include gradient-grey(2);
+    }
+  }
+}
+.section {
+  &-title {
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color-text;
+      letter-spacing: 0.17px;
+      text-transform: uppercase;
+      @include fontExo2(ExtraBold);
+    }
+    margin-bottom: 24px;
+  }
+  &-more {
+    padding-top: 24px;
+  }
+}
+.slick {
+  &-disabled {
+    cursor: default !important;
+    background: #F5F6F7 !important;
+  }
+}
+.rating {
+  @include flex(center);
+  .star {
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin: 0 2px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../image/svg/toggle/star_border_24px.svg");
+    &-check {
+      background-image: url("../image/svg/toggle/star_24px.svg");
+    }
+    &-half {
+      background-image: url("../image/svg/toggle/star_half_24px.svg");
+    }
+  }
+}
+.preload {
+  .slick-dots li span.progress {
+    width: 0 !important;
   }
 }
 
@@ -231,14 +247,10 @@ img {
   }
   .bg {
     opacity: 0;
-    top: 0;
-    left: 0;
     z-index: 5;
-    width: 100%;
-    height: 100%;
-    position: absolute;
     background-color: #fff;
     @include transition();
+    @include mask();
   }
   .league {
     width: 14%;
@@ -339,6 +351,67 @@ img {
     }
   }
 }
+.school-card {
+  width: 197px;
+  height: 197px;
+  padding: 25px;
+  display: block;
+  position: relative;
+  box-shadow: 0 0 0 1px #F1F2F4;
+  @include transition();
+  .mask {
+    opacity: .7;
+    background: url("../image/mask-school.png") no-repeat center center;
+    @include mask();
+  }
+  .image {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    position: relative;
+    .sport {
+      top: -4px;
+      left: 0;
+      z-index: 10;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+      img {
+
+      }
+    }
+    .preview {
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+
+      }
+    }
+  }
+  .title {
+    padding-top: 19px;
+    position: relative;
+    h3 {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: $color-text;
+      letter-spacing: 0.25px;
+      @include fontExo2(SemiBold);
+      @include transition();
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 1px 0 rgba(10, 31, 68, 0.1), 0 30px 40px 0 rgba(10, 31, 68, 0.1);
+    .title h3 {
+      color: $black-lightest;
+    }
+  }
+}
 .betting-center-card {
   background-color: #fff;
   border-radius: 6px;
@@ -436,7 +509,7 @@ img {
   }
 }
 
-// general
+// section
 .header {
   @include flex();
   & > div {
@@ -511,12 +584,7 @@ img {
       border: $border;
       box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0);
       span {
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        @include mask();
         @include flex(center);
         @include transition();
         &.loop {
@@ -552,6 +620,62 @@ img {
     }
   }
 }
+.top-section {
+  padding: 0;
+}
+.company-slider {
+  padding-top: 24px;
+  .section-title {
+    margin-bottom: 2px;
+  }
+  .slider {
+    margin-right: -16px;
+    .item {
+      margin: 18px 15px 20px 1px;
+    }
+    .slick-arrow {
+      top: -30px;
+      right: 0;
+      height: 32px;
+      width: 34px;
+      position: absolute;
+      border: $border;
+      &.slick-prev {
+        border-right: none;
+        margin-right: 50px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+      &.slick-next {
+        margin-right: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+      }
+    }
+  }
+}
+.betting-center {
+  height: 710px;
+  position: relative;
+  padding: 0 16px;
+  border-top-right-radius: 6px;
+  @include gradient-grey(4);
+  .section-title {
+    top: 19px;
+    left: 16px;
+    position: absolute;
+  }
+  .tabs-list {
+    justify-content: flex-end;
+    border-bottom: 1px solid $grey-lighter;
+  }
+  .tab-content {
+    .tab-pane {
+      padding-top: 15px;
+    }
+  }
+
+}
 .forecast-slider {
   overflow: hidden;
   margin-right: -16px;
@@ -565,11 +689,7 @@ img {
       height: 100%;
     }
     .mask {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
+      @include mask();
       background-color: rgba(0, 0, 0, .6);
     }
     .desc {
@@ -671,62 +791,8 @@ img {
     }
   }
 }
-.company-slider {
-  padding-top: 24px;
-  .section-title {
-    margin-bottom: 2px;
-  }
-  .slider {
-    margin-right: -16px;
-    .item {
-      margin: 18px 15px 20px 1px;
-    }
-    .slick-arrow {
-      top: 0;
-      right: 0;
-      height: 32px;
-      width: 34px;
-      position: absolute;
-      border: $border;
-      margin-top: -30px;
-      &.slick-prev {
-        border-right: none;
-        margin-right: 50px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-      }
-      &.slick-next {
-        margin-right: 16px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-      }
-    }
-  }
-}
-.betting-center {
-  height: 710px;
-  position: relative;
-  padding: 0 16px;
-  border-top-right-radius: 6px;
-  @include gradient-grey(4);
-  .section-title {
-    top: 19px;
-    left: 16px;
-    position: absolute;
-  }
-  .tabs-list {
-    justify-content: flex-end;
-    border-bottom: 1px solid $grey-lighter;
-  }
-  .tab-content {
-    .tab-pane {
-      padding-top: 15px;
-    }
-  }
-
-}
-.forecast-area {
-  padding: 22px 0;
+.forecast-section {
+  padding-top: 22px;
   background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -moz-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
@@ -736,6 +802,7 @@ img {
     position: relative;
     @include flex(none, center);
     .section-title {
+      margin-bottom: 0;
     }
     .tabs {
       &-list {
@@ -754,7 +821,9 @@ img {
       @include forecast-border();
     }
   }
-  .forecast-table {
-    margin-bottom: 23px;
+}
+.school-section {
+  .school-list {
+    @include flex();
   }
 }

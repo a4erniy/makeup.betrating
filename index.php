@@ -43,242 +43,99 @@
     </div>
 </header>
 
-<section class="top-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <?php include_once 'parts/forecast-slider.php'; ?>
-                <?php include_once 'parts/company-slider.php'; ?>
-            </div>
-            <div class="col-4">
-                <?php include_once 'parts/betting-center.php'; ?>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="forecast-area">
+
+<?php include_once 'parts/top-section.php'; ?>
+<?php include_once 'parts/forecast-section.php'; ?>
+<?php include_once 'parts/school-section.php'; ?>
+
+<section class="school-section">
     <div class="container">
         <div class="section-header">
-            <div class="section-title">Прогнозы на спорт</div>
-            <ul class="forecast-sport tabs-list">
-                <li class="tabs-item">
-                    <a href="#" class="active"><span class="ico"><img src="assets/image/svg/action/view_headline_24px.svg"></span>Все</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>Футбол</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/basketball.svg"></span>Баскетбол</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/tennis.svg"></span>Теннис</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/hockey.svg"></span>Хоккей</a>
-                </li>
-            </ul>
+            <div class="section-title"><h2>Школа ставок</h2></div>
         </div>
-        <div class="forecast-table">
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
+        <div class="school-list">
+            <a href="#" class="school-card">
+                <div class="mask"></div>
+                <div class="image">
+                    <div class="sport">
+                        <img src="assets/image/svg/16x16/Sports/football.svg" alt="">
+                    </div>
+                    <div class="preview">
+                        <img src="content/school/img-card.jpg" alt="">
+                    </div>
                 </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="title"><h3>Стратегии ставок на футбол в лайве</h3></div>
             </a>
-            <a href="#" class="forecast-card premium">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
+            <a href="#" class="school-card">
+                <div class="mask"></div>
+                <div class="image">
+                    <div class="sport">
+                        <img src="assets/image/svg/16x16/Sports/football.svg" alt="">
+                    </div>
+                    <div class="preview">
+                        <img src="content/school/img-card.jpg" alt="">
+                    </div>
                 </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="title"><h3>Стратегии ставок на футбол в лайве</h3></div>
             </a>
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
+            <a href="#" class="school-card">
+                <div class="mask"></div>
+                <div class="image">
+                    <div class="sport">
+                        <img src="assets/image/svg/16x16/Sports/football.svg" alt="">
+                    </div>
+                    <div class="preview">
+                        <img src="content/school/img-card.jpg" alt="">
+                    </div>
                 </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="title"><h3>Стратегии ставок на футбол в лайве</h3></div>
             </a>
-            <a href="#" class="forecast-card premium">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
+            <a href="#" class="school-card">
+                <div class="mask"></div>
+                <div class="image">
+                    <div class="sport">
+                        <img src="assets/image/svg/16x16/Sports/football.svg" alt="">
+                    </div>
+                    <div class="preview">
+                        <img src="content/school/img-card.jpg" alt="">
+                    </div>
                 </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="title"><h3>Стратегии ставок на футбол в лайве</h3></div>
             </a>
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
+            <a href="#" class="school-card">
+                <div class="mask"></div>
+                <div class="image">
+                    <div class="sport">
+                        <img src="assets/image/svg/16x16/Sports/football.svg" alt="">
+                    </div>
+                    <div class="preview">
+                        <img src="content/school/img-card.jpg" alt="">
+                    </div>
                 </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="title"><h3>Стратегии ставок на футбол в лайве</h3></div>
             </a>
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
+            <a href="#" class="school-card">
+                <div class="mask"></div>
+                <div class="image">
+                    <div class="sport">
+                        <img src="assets/image/svg/16x16/Sports/football.svg" alt="">
+                    </div>
+                    <div class="preview">
+                        <img src="content/school/img-card.jpg" alt="">
+                    </div>
                 </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
-            </a>
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
-                </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
-            </a>
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
-                </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
-            </a>
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
-                </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="title"><h3>Стратегии ставок на футбол в лайве</h3></div>
             </a>
         </div>
         <div class="section-more">
-            <a href="#" class="button button-grey">Все прогнозы</a>
+            <a href="#" class="button button-grey">Все статьи</a>
         </div>
     </div>
 </section>
-<section class="school-area"></section>
-<section class="school-area"></section>
-<section class="news-area"></section>
-<section class="bonuses-area"></section>
-<section class="stavkatv-area"></section>
+
+<section class="news-section"></section>
+<section class="bonuses-section"></section>
+<section class="stavkatv-section"></section>
 
 <footer></footer>
 

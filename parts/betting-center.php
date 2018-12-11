@@ -1,5 +1,5 @@
 <div class="betting-center">
-    <div class="section-title">Беттинг-центр</div>
+    <div class="section-title"><h2>Беттинг-центр</h2></div>
     <ul class="nav tabs-list" role="tablist">
         <li class="nav-item tabs-item">
             <a class="" data-toggle="tab" href="#bc_yesterday" role="tab" aria-selected="false" rel="nofollow">Вчера</a>

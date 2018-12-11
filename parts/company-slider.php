@@ -1,5 +1,5 @@
 <div class="company-slider">
-    <div class="section-title">Топ букмекеров</div>
+    <div class="section-title"><h2>Топ букмекеров</h2></div>
     <div class="slider" id="company_slider">
         <div class="item company-card">
             <div class="branch gold">1</div>
