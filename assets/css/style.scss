@@ -160,6 +160,22 @@ section {
     width: 0 !important;
   }
 }
+.banner {
+  height: 280px;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  @include transition();
+  @include gradient-green();
+  &-section {
+    padding: 20px 0;
+  }
+  &:hover {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+  }
+}
 
 // cards
 .company-card {
