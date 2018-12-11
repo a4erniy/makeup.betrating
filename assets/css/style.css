@@ -221,6 +221,7 @@ h1, h2, h3, h4 {
 
 .news-card {
   height: 328px;
+  display: block;
   overflow: hidden;
   border-radius: 6px;
   margin-bottom: 16px;
@@ -281,14 +282,17 @@ h1, h2, h3, h4 {
         background: -o-linear-gradient(0deg, #05162c 0%, rgba(5, 22, 44, 0.37) 46%, rgba(5, 22, 44, 0) 100%);
         background: linear-gradient(0deg, #05162c 0%, rgba(5, 22, 44, 0.37) 46%, rgba(5, 22, 44, 0) 100%); }
   .news-card .title {
-    display: block;
     max-width: 400px;
     margin: 24px 24px 0;
     position: absolute;
     color: #ffffff;
     bottom: 57px;
     z-index: 20;
-    left: 0; }
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
     .news-card .title h3 {
       font-size: 24px;
       line-height: 30px;
@@ -321,7 +325,11 @@ h1, h2, h3, h4 {
     .news-card .info .date {
       margin-right: 3px; }
     .news-card .info .more {
-      margin-left: auto; }
+      margin-left: auto;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
       .news-card .info .more svg {
         fill: #727B88; }
       .news-card .info .more:hover svg {
