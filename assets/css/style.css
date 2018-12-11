@@ -548,7 +548,11 @@ h1, h2, h3, h4 {
   border-radius: 6px;
   padding-top: 20px;
   position: relative;
-  box-shadow: 0 0 0 1px #F1F2F4; }
+  box-shadow: 0 0 0 1px #F1F2F4;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
   .company-card .branch {
     width: 56px;
     height: 56px;
@@ -610,6 +614,8 @@ h1, h2, h3, h4 {
           margin-left: -10px;
           border-bottom: 48px solid #F9FAFB;
           border-left: 10px solid transparent; }
+  .company-card:hover {
+    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
 
 .forecast-card {
   height: 64px;
@@ -766,6 +772,33 @@ h1, h2, h3, h4 {
     width: 2px;
     height: 100%;
     background-color: #FFB90C; }
+
+.stavkatv-item .video {
+  height: 216px;
+  margin-bottom: 24px; }
+  .stavkatv-item .video iframe {
+    max-width: 100%;
+    max-height: 100%; }
+.stavkatv-item .title {
+  padding: 0 20px;
+  margin-bottom: 16px; }
+  .stavkatv-item .title h3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    font-style: normal; }
+.stavkatv-item .date {
+  color: #728198;
+  font-size: 12px;
+  padding: 0 20px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  font-family: 'Exo 2 Semi', sans-serif;
+  font-weight: 600;
+  font-style: normal; }
 
 .betting-center-card {
   background-color: #fff;
@@ -1008,6 +1041,7 @@ header .header {
       align-items: center; }
 
 footer {
+  padding: 30px 0 44px;
   background-color: #121417; }
 
 .top-section {
@@ -1250,9 +1284,66 @@ footer {
     float: left; }
 
 .stavkatv-section {
-  height: 745px;
+  min-height: 745px;
   margin-top: 17px;
+  overflow: hidden;
+  position: relative;
   background-color: #1b1d22;
   background-image: url("../image/mask/plus.png"); }
+  .stavkatv-section .section-header {
+    padding-top: 41px;
+    position: relative; }
+    .stavkatv-section .section-header .logo {
+      width: 157px;
+      margin-bottom: 24px; }
+    .stavkatv-section .section-header .title {
+      margin-bottom: 17px; }
+      .stavkatv-section .section-header .title h2 {
+        font-size: 34px;
+        max-width: 330px;
+        line-height: 44px;
+        color: #ffffff;
+        letter-spacing: 0.25px;
+        font-family: 'Exo 2 Extra', sans-serif;
+        font-weight: 800;
+        font-style: normal; }
+    .stavkatv-section .section-header .link {
+      padding: 23px 0;
+      margin-bottom: 30px; }
+      .stavkatv-section .section-header .link a {
+        position: relative;
+        display: inline-block; }
+        .stavkatv-section .section-header .link a .play {
+          width: 64px;
+          height: 64px;
+          display: block;
+          position: absolute;
+          margin-top: -32px;
+          top: 50%;
+          left: 0; }
+        .stavkatv-section .section-header .link a .name {
+          padding-left: 78px;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-family: 'Exo 2 Semi', sans-serif;
+          font-weight: 600;
+          font-style: normal; }
+  .stavkatv-section .container {
+    position: relative; }
+  .stavkatv-section .element-one {
+    top: 40px;
+    right: 45px;
+    position: absolute; }
+  .stavkatv-section .element-two {
+    top: 82px;
+    left: 50%;
+    margin-left: -97px;
+    position: absolute; }
+  .stavkatv-section .element-three {
+    top: 0;
+    left: 0;
+    position: absolute; }
+.stavkatv-list {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
