@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none!important; visibility: hidden!important">
 
-    <symbol id="crown_24px" viewBox="0 0 16 11">
+    <symbol id="crown" viewBox="0 0 16 11">
         <g stroke="none" stroke-width="1" fill="inherit" fill-rule="evenodd">
             <g id="Icons" transform="translate(-1192.000000, -191.000000)" fill="inherit">
                 <g id="Stacked-Group-3" transform="translate(132.000000, 184.000000)">
@@ -12,7 +12,7 @@
         </g>
     </symbol>
 
-    <symbol id="expand_more_24px" viewBox="0 0 12 8">
+    <symbol id="expand_more" viewBox="0 0 12 8">
         <g stroke="none" stroke-width="1" fill="inherit" fill-rule="evenodd">
             <g id="Icons" transform="translate(-490.000000, -192.000000)">
                 <g id="Stacked-Group-3" transform="translate(132.000000, 184.000000)">

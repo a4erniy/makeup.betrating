@@ -9,23 +9,22 @@
     <title>Betrating.ru</title>
 </head>
 <body>
-
 <header>
     <div class="container">
         <div class="header">
             <div class="logo">
                 <a href="/">
-                    <img src="assets/image/logo/betrating.png" alt="">
+                    <img src="assets/image/logo/betrating.png" alt="betrating">
                 </a>
             </div>
             <div class="general-menu">
                 <ul>
                     <li class="active"><a href="#">Новости</a></li>
-                    <li class=""><a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more_24px"></use></svg></object></i></a></li>
-                    <li class=""><a href="#">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more_24px"></use></svg></i></a></a></li>
+                    <li class=""><a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></object></i></a></li>
+                    <li class=""><a href="#">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></a></li>
                     <li class=""><a href="#">Школа ставок</a></li>
                     <li class=""><a href="#">Бонусы</a></li>
-                    <li class="premium"><a href="#"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown_24px"></use></svg></i>Премиум</a></li>
+                    <li class="premium"><a href="#"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
                 </ul>
             </div>
             <div class="search-bar"></div>
@@ -43,71 +42,13 @@
     </div>
 </header>
 
-
 <?php include_once 'parts/top-section.php'; ?>
 <?php include_once 'parts/forecast-section.php'; ?>
 <?php include_once 'parts/school-section.php'; ?>
 <?php include_once 'parts/banner-section.php'; ?>
 <?php include_once 'parts/news-section.php'; ?>
 <?php include_once 'parts/bonuses-section.php'; ?>
-
-<section class="stavkatv-section">
-    <div class="container">
-        <div class="element-two"><img src="assets/image/mask/pluses-red.png" alt="plus"></div>
-        <div class="element-one"><img src="assets/image/stavka-gusev.png" alt="gusev"></div>
-        <div class="section-header">
-            <div class="logo">
-                <img src="assets/image/logo/stavkatv.png" alt="stavkatv">
-            </div>
-            <div class="title">
-                <h2>ВИДЕОПРОГНОЗЫ НА СПОРТ</h2>
-            </div>
-            <div class="link">
-                <a href="#">
-                    <span class="play"><img src="assets/image/ico/play.png" alt="play"></span>
-                    <span class="name">Смотреть все прогнозы</span>
-                </a>
-            </div>
-        </div>
-        <div class="stavkatv-list">
-            <div class="row">
-                <div class="col-4">
-                    <div class="stavkatv-item">
-                        <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fLmRGiEonTA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="title">
-                            <h3>ВИЛЬЯРРЕАЛ - СПАРТАК. Прогноз Виктора Гусева</h3>
-                        </div>
-                        <div class="date">25 октября, 2018</div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="stavkatv-item">
-                        <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fLmRGiEonTA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="title">
-                            <h3>ВИЛЬЯРРЕАЛ - СПАРТАК. Прогноз Виктора Гусева</h3>
-                        </div>
-                        <div class="date">25 октября, 2018</div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="stavkatv-item">
-                        <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fLmRGiEonTA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="title">
-                            <h3>ВИЛЬЯРРЕАЛ - СПАРТАК. Прогноз Виктора Гусева</h3>
-                        </div>
-                        <div class="date">25 октября, 2018</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include_once 'parts/stavkatv-section.php'; ?>
 
 <footer>
     <div class="container">
