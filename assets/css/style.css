@@ -261,7 +261,7 @@ h1, h2, h3, h4 {
       position: absolute; }
     .news-card .preview .mask {
       z-index: 10;
-      background-image: url("../image/mask/news-big.png"); }
+      background-image: url("../image/mask/news-card-big.png"); }
     .news-card .preview .alpha {
       z-index: 5;
       -webkit-transition: all .2s ease-in-out;
@@ -358,7 +358,7 @@ h1, h2, h3, h4 {
         .news-card.size-medium .category .tag .name {
           color: #807F86; }
     .news-card.size-medium .preview .mask {
-      background-image: url("../image/mask/news-med.png"); }
+      background-image: url("../image/mask/news-card-medium.png"); }
     .news-card.size-medium .title h3 {
       font-size: 18px;
       line-height: 24px;
@@ -495,7 +495,7 @@ h1, h2, h3, h4 {
   transition: all .2s ease-in-out; }
   .school-card .mask {
     opacity: .7;
-    background: url("../image/mask-school.png") no-repeat center center;
+    background: url("../image/mask/school-card.png") no-repeat center center;
     top: 0;
     left: 0;
     width: 100%;
@@ -881,11 +881,11 @@ h1, h2, h3, h4 {
     position: relative;
     box-shadow: 0 0 1px 0 rgba(10, 31, 68, 0.1), 0 30px 40px 0 rgba(10, 31, 68, 0.1); }
 
-.header {
+header .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .header > div {
+  header .header > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -893,23 +893,24 @@ h1, h2, h3, h4 {
     -ms-flex-align: center;
     align-items: center;
     height: 88px; }
-  .header .logo {
+  header .header .logo {
+    width: 122px;
     margin-right: 134px; }
-    .header .logo a img {
+    header .header .logo a img {
       max-width: 122px; }
-  .header .general-menu ul {
+  header .header .general-menu ul {
     padding: 0;
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .header .general-menu ul li {
+    header .header .general-menu ul li {
       list-style: none;
       margin-right: 32px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .header .general-menu ul li a {
+      header .header .general-menu ul li a {
         display: block;
         position: relative;
         color: #54535A;
@@ -918,19 +919,19 @@ h1, h2, h3, h4 {
         font-family: 'Exo 2 Semi', sans-serif;
         font-weight: 600;
         font-style: normal; }
-        .header .general-menu ul li a svg {
+        header .header .general-menu ul li a svg {
           fill: #BABFC9; }
-        .header .general-menu ul li a:hover {
+        header .header .general-menu ul li a:hover {
           color: #25A96A; }
-          .header .general-menu ul li a:hover svg {
+          header .header .general-menu ul li a:hover svg {
             fill: #25A96A; }
-      .header .general-menu ul li.premium a {
+      header .header .general-menu ul li.premium a {
         color: #FFB90C; }
-        .header .general-menu ul li.premium a svg {
+        header .header .general-menu ul li.premium a svg {
           fill: #FFB90C; }
-      .header .general-menu ul li.active a {
+      header .header .general-menu ul li.active a {
         color: #25A96A; }
-        .header .general-menu ul li.active a:before {
+        header .header .general-menu ul li.active a:before {
           display: block;
           position: absolute;
           top: 0;
@@ -939,9 +940,9 @@ h1, h2, h3, h4 {
           width: 100%;
           height: 4px;
           background-color: #25C277; }
-  .header .search {
+  header .header .search {
     margin-left: auto; }
-    .header .search-button {
+    header .header .search-button {
       position: relative;
       border-radius: 50%;
       height: 48px;
@@ -949,7 +950,7 @@ h1, h2, h3, h4 {
       overflow: hidden;
       border: 1px solid #E6E5EC;
       box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0); }
-      .header .search-button span {
+      header .header .search-button span {
         top: 0;
         left: 0;
         width: 100%;
@@ -966,26 +967,26 @@ h1, h2, h3, h4 {
         -moz-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out; }
-        .header .search-button span.loop {
+        header .header .search-button span.loop {
           background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
           background: -moz-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
           background: -ms-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
           background: -o-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
           background: linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%); }
-        .header .search-button span.cross {
+        header .header .search-button span.cross {
           opacity: 0;
           background: -webkit-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
           background: -moz-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
           background: -ms-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
           background: -o-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
           background: linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%); }
-      .header .search-button.open .loop {
+      header .header .search-button.open .loop {
         opacity: 0; }
-      .header .search-button.open .cross {
+      header .header .search-button.open .cross {
         opacity: 1; }
-  .header .login {
+  header .header .login {
     margin-left: auto; }
-    .header .login-button {
+    header .header .login-button {
       width: 100px;
       cursor: pointer;
       color: #ffffff;
@@ -1005,6 +1006,9 @@ h1, h2, h3, h4 {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+
+footer {
+  background-color: #121417; }
 
 .top-section {
   padding: 0; }
@@ -1244,5 +1248,11 @@ h1, h2, h3, h4 {
   background: linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%); }
   .bonuses-section .bonuses-list .bonus-card {
     float: left; }
+
+.stavkatv-section {
+  height: 745px;
+  margin-top: 17px;
+  background-color: #1b1d22;
+  background-image: url("../image/mask/plus.png"); }
 
 /*# sourceMappingURL=style.css.map */

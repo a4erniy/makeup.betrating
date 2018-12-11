@@ -15,7 +15,7 @@
         <div class="header">
             <div class="logo">
                 <a href="/">
-                    <img src="assets/image/logo.png" alt="">
+                    <img src="assets/image/logo/betrating.png" alt="">
                 </a>
             </div>
             <div class="general-menu">
@@ -51,9 +51,17 @@
 <?php include_once 'parts/news-section.php'; ?>
 <?php include_once 'parts/bonuses-section.php'; ?>
 
-<section class="stavkatv-section"></section>
+<section class="stavkatv-section">
+    <div class="container">
 
-<footer></footer>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer"></div>
+    </div>
+</footer>
 
 <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/js/popper.min.js"></script>
