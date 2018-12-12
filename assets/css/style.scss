@@ -206,13 +206,10 @@ h1, h2, h3, h4 {
   border-radius: 6px;
   @include transition();
   @include gradient-green();
-  &-section {
-    padding: 20px 0 0;
-  }
   &:hover {
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
   }
 }
 .button {
@@ -290,7 +287,7 @@ h1, h2, h3, h4 {
     width: 0 !important;
   }
 }
-.nonpadding {
+.no-padding {
     padding: 0!important;
 }
 
@@ -1103,10 +1100,6 @@ header {
         }
       }
     }
-  }
-  & + section {
-    padding-top: 0;
-    padding-bottom: 0;
   }
 }
 footer {

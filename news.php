@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 
-<section class="news-section-slider">
+<section class="news-section-slider no-padding">
     <div class="container">
         <div class="news-slider preload invisible" id="news_slider">
             <a href="#" class="news-card">
@@ -321,7 +321,7 @@
     </div>
 </section>
 
-<section class="company-section-slider nonpadding">
+<section class="company-section-slider no-padding">
     <div class="container">
         <div class="company-slider">
             <div class="section-title"><h2>Топ букмекеров</h2></div>

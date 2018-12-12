@@ -21,7 +21,7 @@
                 <ul>
                     <li class="active"><a href="/news.php">Новости</a></li>
                     <li class=""><a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></li>
-                    <li class=""><a href="#">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></li>
+                    <li class=""><a href="/forecasts.php">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></li>
                     <li class=""><a href="#">Школа ставок</a></li>
                     <li class=""><a href="/bonuses.php">Бонусы</a></li>
                     <li class="premium"><a href="#"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
