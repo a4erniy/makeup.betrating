@@ -59,16 +59,16 @@
 
 }
 
-@mixin flex($center-v: none, $center-g: none) {
+@mixin flex($center-horizontal: none, $center-vertical: none) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  @if $center-v == center {
+  @if $center-horizontal == center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  @if $center-g == center {
+  @if $center-vertical == center {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

@@ -18,9 +18,29 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: speedSlider,
+        dotsClass: 'slick-dots progress-dots',
         customPaging: function (slider, pageIndex) {
-            return '<span class="progress"></span><span class="item"></span>';
+            return '<span class="current"></span><span class="item"></span>';
         }
+    });
+
+//    Bonuses slider
+    $('#bonuses_slider').on('init', function(event, slick){
+        setTimeout(function () {
+            $('#bonuses_slider').removeClass('invisible');
+        }, 200)
+    }).slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: speedSlider,
+        dotsClass: 'slick-dots progress-dots',
+        customPaging: function (slider, pageIndex) {
+            return '<span class="current"></span><span class="item"></span>';
+        },
     });
 
 //    Company slider

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/slick/slick.css">
-    <link rel="stylesheet" href="/assets/css/style.css?1">
+    <link rel="stylesheet" href="/assets/css/style.css?3">
     <title>Betrating.ru</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
                     <li class=""><a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></li>
                     <li class=""><a href="#">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></li>
                     <li class=""><a href="#">Школа ставок</a></li>
-                    <li class=""><a href="#">Бонусы</a></li>
+                    <li class=""><a href="/bonuses.php">Бонусы</a></li>
                     <li class="premium"><a href="#"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
                 </ul>
             </div>
