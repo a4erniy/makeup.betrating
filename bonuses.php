@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 
-<section class="bonuses-slider-section">
+<section class="bonuses-section-slider">
     <div class="container">
         <div class="bonuses-slider preload invisible" id="bonuses_slider">
             <div class="bonus-card">
@@ -150,7 +150,7 @@
 <section class="bonuses-section">
     <div class="container">
         <div class="section-header">
-            <div class="section-title"><h2>Бонусы и акции от букмекеров</h2></div>
+            <div class="section-title"><h1>Бонусы и акции от букмекеров</h1></div>
         </div>
         <div class="bonuses-list clearfix">
             <div class="bonus-card">

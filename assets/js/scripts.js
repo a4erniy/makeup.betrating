@@ -3,6 +3,23 @@ $(function () {
 //    Variables
     let speedSlider = 2000;
 
+//    Config slider
+    let configSlick = function (show) {
+        return {
+            dots: true,
+            arrows: false,
+            infinite: true,
+            slidesToShow: show,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: speedSlider,
+            dotsClass: 'slick-dots progress-dots',
+            customPaging: function (slider, pageIndex) {
+                return '<span class="current"></span><span class="item"></span>';
+            }
+        };
+    };
+
 //    Search in header
     $('#search_button').on('click', function (e) {
         e.preventDefault();
@@ -10,45 +27,30 @@ $(function () {
     });
 
 //    Forecast slider
-    $('#forecast_slider').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: speedSlider,
-        dotsClass: 'slick-dots progress-dots',
-        customPaging: function (slider, pageIndex) {
-            return '<span class="current"></span><span class="item"></span>';
-        }
-    });
+    $('#forecast_slider').slick(configSlick(1));
 
 //    Bonuses slider
-    $('#bonuses_slider').on('init', function(event, slick){
+    $('#bonuses_slider').on('init', function (event, slick) {
         setTimeout(function () {
             $('#bonuses_slider').removeClass('invisible');
         }, 200)
-    }).slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: speedSlider,
-        dotsClass: 'slick-dots progress-dots',
-        customPaging: function (slider, pageIndex) {
-            return '<span class="current"></span><span class="item"></span>';
-        },
-    });
+    }).slick(configSlick(2));
+
+//    News slider
+    $('#news_slider').on('init', function (event, slick) {
+        setTimeout(function () {
+            $('#news_slider').removeClass('invisible');
+        }, 200)
+    }).slick(configSlick(2));
 
 //    Company slider
-    $('#company_slider').slick({
+    let $company_slider = $('#company_slider'),
+        company_slider_show = parseInt($company_slider.attr('data-show'));
+    $company_slider.slick({
         dots: false,
         arrows: true,
         infinite: false,
-        slidesToShow: 4,
+        slidesToShow: company_slider_show,
         slidesToScroll: 1,
         nextArrow: '<div class="slick-next button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg></div>',
         prevArrow: '<div class="slick-prev button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_left"></use></svg></div>'
@@ -56,7 +58,6 @@ $(function () {
 
 //    Preload remove
     $('.preload').removeClass('preload');
-
 
 
 });

@@ -7,11 +7,11 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li class=""><a href="#">Новости</a></li>
+                        <li class=""><a href="/news.php">Новости</a></li>
                         <li class=""><a href="#">Рейтинг БК</a></li>
                         <li class=""><a href="#">Прогнозы</a></li>
                         <li class=""><a href="#">Школа ставок</a></li>
-                        <li class=""><a href="#">Бонусы</a></li>
+                        <li class=""><a href="/bonuses.php">Бонусы</a></li>
                         <li class="premium"><a href="#"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
                     </ul>
                     <div class="pages">
@@ -52,7 +52,7 @@
 <script type="text/javascript" src="/assets/js/popper.min.js"></script>
 <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/vendor/slick/slick.min.js"></script>
-<script type="text/javascript" src="/assets/js/scripts.js?1"></script>
+<script type="text/javascript" src="/assets/js/scripts.js?4"></script>
 
 </body>
 </html>

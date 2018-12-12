@@ -141,6 +141,9 @@ h1, h2, h3, h4 {
     width: 100%;
     position: absolute;
     @include flex();
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     li {
       height: 8px;
       width: 32px;
@@ -267,7 +270,7 @@ h1, h2, h3, h4 {
 }
 .section {
   &-title {
-    h2 {
+    h1, h2 {
       margin: 0;
       font-size: 18px;
       line-height: 24px;
@@ -286,6 +289,9 @@ h1, h2, h3, h4 {
   .slick-dots li span.current {
     width: 0 !important;
   }
+}
+.nonpadding {
+    padding: 0!important;
 }
 
 // cards
@@ -328,29 +334,22 @@ h1, h2, h3, h4 {
       img {
       }
     }
-    .mask, .alpha, .light {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      position: absolute;
-    }
     .mask {
-      z-index: 10;
-      background-image: url("../image/mask/news-card-big.png");
-    }
-    .alpha {
-      z-index: 5;
-      @include transition();
-      .light {
-        opacity: 1;
-        z-index: 5;
+      @include mask();
+      background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+      background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+      background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+      &:after, &:before {
+        content: "";
+        @include mask();
+      }
+      &:after {
+        background-image: url("../image/mask/news-card-big.png");
+      }
+      &:before {
+        opacity: 0;
         @include transition();
-        background: -webkit-linear-gradient(0deg, #05162c 0%, rgba(5, 22, 44, 0.37) 46%, rgba(5, 22, 44, 0) 100%);
-        background: -moz-linear-gradient(0deg, #05162c 0%, rgba(5, 22, 44, 0.37) 46%, rgba(5, 22, 44, 0) 100%);
-        background: -ms-linear-gradient(0deg, #05162c 0%, rgba(5, 22, 44, 0.37) 46%, rgba(5, 22, 44, 0) 100%);
-        background: -o-linear-gradient(0deg, #05162c 0%, rgba(5, 22, 44, 0.37) 46%, rgba(5, 22, 44, 0) 100%);
-        background: linear-gradient(0deg, #05162c 0%, rgba(5, 22, 44, 0.37) 46%, rgba(5, 22, 44, 0) 100%);
+        background-color: rgba(35, 34, 40, 0.3);
       }
     }
   }
@@ -441,7 +440,10 @@ h1, h2, h3, h4 {
       }
       .preview {
         .mask {
-          background-image: url("../image/mask/news-card-medium.png");
+          background: none;
+          &:before {
+            content: none;
+          }
         }
       }
       .title {
@@ -453,7 +455,7 @@ h1, h2, h3, h4 {
       }
     }
     &-small {
-      height: 112px;
+      height: 108px;
       .category, .preview {
         display: none;
       }
@@ -466,6 +468,11 @@ h1, h2, h3, h4 {
           @include fontExo2(SemiBold)
         }
       }
+    }
+  }
+  &:hover {
+    .preview .mask:before {
+      opacity: 1;
     }
   }
 }
@@ -1220,16 +1227,19 @@ footer {
     }
   }
 }
-.top-section {}
+.top-section {
+  .company-slider {
+    padding-top: 24px;
+  }
+}
 .company-slider {
-  padding-top: 24px;
   .section-title {
     margin-bottom: 2px;
   }
   .slider {
-    margin-right: -16px;
+    margin: 0 -8px;
     .item {
-      margin: 18px 15px 20px 1px;
+      margin: 18px 8px 20px;
     }
     .slick-arrow {
       top: -30px;
@@ -1247,12 +1257,12 @@ footer {
       }
       &.slick-prev {
         border-right: none;
-        margin-right: 50px;
+        margin-right: 42px;
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
       }
       &.slick-next {
-        margin-right: 16px;
+        margin-right: 8px;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
       }
@@ -1464,9 +1474,23 @@ footer {
     @include flex();
   }
 }
-.news-section {
-  .section-more {
-    padding-top: 7px;
+.news {
+  &-section {
+    .section-more {
+      padding-top: 7px;
+    }
+    &-slider {
+      //fix preload slider
+      height: 348px;
+    }
+  }
+  &-slider {
+    margin: 0 -8px;
+    padding-bottom: 20px;
+    .news-card {
+      width: 584px;
+      margin: 0 8px;
+    }
   }
 }
 .bonuses {
@@ -1479,13 +1503,13 @@ footer {
     &.without-bg {
       background: none;
     }
-  }
-  &-slider {
-    &-section {
+    &-slider {
       margin-top: -1px;
       //fix preload slider
       height: 491px;
     }
+  }
+  &-slider {
     .bonus-card {
       width: 50%;
       height: 432px;
@@ -1512,9 +1536,6 @@ footer {
     }
     .slick-dots {
       bottom: 40px;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
     }
   }
   &-list {
