@@ -21,7 +21,7 @@
                 <div class="col-4">
                     <div class="stavkatv-item">
                         <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fLmRGiEonTA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ywcj5u1DQl4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="title">
                             <h3>ВИЛЬЯРРЕАЛ - СПАРТАК. Прогноз Виктора Гусева</h3>
@@ -32,7 +32,7 @@
                 <div class="col-4">
                     <div class="stavkatv-item">
                         <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fLmRGiEonTA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ywcj5u1DQl4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="title">
                             <h3>ВИЛЬЯРРЕАЛ - СПАРТАК. Прогноз Виктора Гусева</h3>
@@ -43,7 +43,7 @@
                 <div class="col-4">
                     <div class="stavkatv-item">
                         <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fLmRGiEonTA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ywcj5u1DQl4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="title">
                             <h3>ВИЛЬЯРРЕАЛ - СПАРТАК. Прогноз Виктора Гусева</h3>

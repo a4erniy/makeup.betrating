@@ -752,7 +752,7 @@ h1, h2, h3, h4 {
   .value {
     width: 7%;
     text-align: right;
-    .mask {
+    .ceff {
       width: 71px;
       height: 28px;
       padding-left: 14px;
@@ -761,8 +761,37 @@ h1, h2, h3, h4 {
       text-align: center;
       color: $color-text;
       letter-spacing: 0.25px;
-      background-image: url("../image/value.png");
+      background-image: url("../image/ico/ceff.png");
+      background-size: 100% 100%;
       @include fontExo2(ExtraBoldItalic);
+      @include transition();
+    }
+  }
+  &.premium {
+    .value .ceff {
+      position: relative;
+      &:after {
+        @include transition();
+        @include before-after();
+        top: -13px;
+        right: -13px;
+        left: auto;
+        width: 30px;
+        height: 30px;
+        background-image: url("../image/ico/crown-ceff-white.png");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+    .bg:after {
+      @include forecast-border(gold);
+    }
+    &:before {
+      @include before-after();
+      width: 2px;
+      height: 100%;
+      background-color: $gold;
     }
   }
   &:after {
@@ -775,16 +804,17 @@ h1, h2, h3, h4 {
     .bg {
       opacity: 1;
     }
-  }
-  &.premium {
-    .bg:after {
-      @include forecast-border(gold);
+    .value .ceff {
+      color: $white-text;
+      background-image: url("../image/ico/ceff-green.png");
     }
-    &:before {
-      @include before-after();
-      width: 2px;
-      height: 100%;
-      background-color: $gold;
+    &.premium {
+      .value .ceff {
+        background-image: url("../image/ico/ceff-gold.png");
+        &:after {
+          background-image: url("../image/ico/crown-ceff-gold.png");
+        }
+      }
     }
   }
 }

@@ -40,7 +40,7 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
             <a href="#" class="forecast-card premium">
                 <div class="bg"></div>
@@ -61,7 +61,7 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
             <a href="#" class="forecast-card">
                 <div class="bg"></div>
@@ -82,7 +82,28 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
+            </a>
+            <a href="#" class="forecast-card">
+                <div class="bg"></div>
+                <div class="league">
+                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <span class="name">Лига чемпионов</span>
+                </div>
+                <div class="team team-first">
+                    <span class="name">Краснодар</span>
+                    <span class="logo"><img src="content/team/logo-1.png"></span>
+                </div>
+                <div class="match">
+                    <div class="date">23 Окт</div>
+                    <div class="time">17:00</div>
+                </div>
+                <div class="team">
+                    <span class="logo"><img src="content/team/logo-2.png"></span>
+                    <span class="name">Интер</span>
+                </div>
+                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
             <a href="#" class="forecast-card premium">
                 <div class="bg"></div>
@@ -103,7 +124,7 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
             <a href="#" class="forecast-card">
                 <div class="bg"></div>
@@ -124,7 +145,7 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
             <a href="#" class="forecast-card">
                 <div class="bg"></div>
@@ -145,7 +166,7 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
             <a href="#" class="forecast-card">
                 <div class="bg"></div>
@@ -166,7 +187,7 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
             <a href="#" class="forecast-card">
                 <div class="bg"></div>
@@ -187,28 +208,7 @@
                     <span class="name">Интер</span>
                 </div>
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
-            </a>
-            <a href="#" class="forecast-card">
-                <div class="bg"></div>
-                <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
-                    <span class="name">Лига чемпионов</span>
-                </div>
-                <div class="team team-first">
-                    <span class="name">Краснодар</span>
-                    <span class="logo"><img src="content/team/logo-1.png"></span>
-                </div>
-                <div class="match">
-                    <div class="date">23 Окт</div>
-                    <div class="time">17:00</div>
-                </div>
-                <div class="team">
-                    <span class="logo"><img src="content/team/logo-2.png"></span>
-                    <span class="name">Интер</span>
-                </div>
-                <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
-                <div class="value"><span class="mask">1.95</span></div>
+                <div class="value"><span class="ceff">1.95</span></div>
             </a>
         </div>
         <div class="section-more">
