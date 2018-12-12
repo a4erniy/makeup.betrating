@@ -1,7 +1,7 @@
 <section class="stavkatv-section">
     <div class="container">
         <div class="element-two"><img src="assets/image/mask/pluses-red.png" alt="plus"></div>
-        <div class="element-one"><img src="assets/image/stavka-gusev.png" alt="gusev"></div>
+        <div class="element-one"><img src="assets/image/mask/stavka-gusev.png" alt="gusev"></div>
         <div class="section-header">
             <div class="logo">
                 <img src="assets/image/logo/stavkatv.png" alt="stavkatv">
