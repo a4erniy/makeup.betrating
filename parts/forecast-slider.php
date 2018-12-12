@@ -10,7 +10,7 @@
                 <div class="title">Барселона — Интер</div>
                 <div class="date">24 октября, 22:00</div>
             </div>
-            <div class="more">Читать прогноз <div class="circle"></div></div>
+            <div class="more">Читать прогноз <div class="circle"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div></div>
         </a>
     </div>
     <div class="item">
@@ -24,7 +24,7 @@
                 <div class="title">Рома — Валенсия</div>
                 <div class="date">28 октября, 21:00</div>
             </div>
-            <div class="more">Читать прогноз <div class="circle"></div></div>
+            <div class="more">Читать прогноз <div class="circle"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div></div>
         </a>
     </div>
     <div class="item">
@@ -38,7 +38,7 @@
                 <div class="title">Барселона — Интер</div>
                 <div class="date">24 октября, 22:00</div>
             </div>
-            <div class="more">Читать прогноз <div class="circle"></div></div>
+            <div class="more">Читать прогноз <div class="circle"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div></div>
         </a>
     </div>
     <div class="item">
@@ -52,7 +52,7 @@
                 <div class="title">Рома — Валенсия</div>
                 <div class="date">28 октября, 21:00</div>
             </div>
-            <div class="more">Читать прогноз <div class="circle"></div></div>
+            <div class="more">Читать прогноз <div class="circle"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div></div>
         </a>
     </div>
 </div>

@@ -35,7 +35,7 @@
                 </a>
             </div>
             <div class="login">
-                <div class="login-button button" id="login_button">Вход</div>
+                <div class="login-button button" id="login_button"><svg><use xlink:href="/assets/image/svg-symbols.svg#userpic"></use></svg>Вход</div>
                 <div class="logged" id="logged" style="display: none"><img src="" class="userpic"></div>
             </div>
         </div>
