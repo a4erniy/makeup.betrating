@@ -147,6 +147,8 @@ h1, h2, h3, h4 {
 .slick-disabled {
   cursor: default !important;
   background: #F5F6F7 !important; }
+  .slick-disabled svg {
+    fill: #BABFC9 !important; }
 
 .banner {
   height: 280px;
@@ -579,6 +581,7 @@ h1, h2, h3, h4 {
 .company-card {
   width: 184px;
   height: 224px;
+  overflow: hidden;
   border-radius: 6px;
   padding-top: 20px;
   position: relative;
@@ -590,21 +593,31 @@ h1, h2, h3, h4 {
   .company-card .branch {
     width: 56px;
     height: 56px;
-    margin: 0 auto 10px;
-    text-align: center;
     font-size: 24px;
-    color: #FFB90C;
     padding-top: 14px;
+    text-align: center;
+    margin: 0 auto 10px;
+    color: #727B88;
     font-family: 'Exo 2 Extra', sans-serif;
     font-weight: 800;
-    font-style: normal; }
+    font-style: normal;
+    position: relative; }
+    .company-card .branch .ico {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+      .company-card .branch .ico svg {
+        fill: #727B88; }
     .company-card .branch.gold {
-      background-image: url("../image/svg/56x56/wreath.svg");
-      background-repeat: no-repeat;
-      background-position: center center; }
+      color: #FFB90C; }
+      .company-card .branch.gold .ico svg {
+        fill: #FFB90C; }
   .company-card .logo {
     width: 80px;
     height: 40px;
+    display: block;
     margin: 0 auto 10px; }
   .company-card .links {
     left: 0;
@@ -620,6 +633,7 @@ h1, h2, h3, h4 {
       text-align: center;
       display: block;
       width: 50%;
+      transition: none;
       text-transform: uppercase;
       font-family: 'Exo 2 Semi', sans-serif;
       font-weight: 600;
@@ -648,6 +662,16 @@ h1, h2, h3, h4 {
           margin-left: -10px;
           border-bottom: 48px solid #F9FAFB;
           border-left: 10px solid transparent; }
+        .company-card .links a.site:hover {
+          color: #fff;
+          background: none;
+          background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+          background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+          background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+          background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+          background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
+          .company-card .links a.site:hover:before {
+            border-bottom-color: #2EC652; }
   .company-card:hover {
     box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
 
@@ -1138,6 +1162,10 @@ footer {
         fill: #45668e !important; }
       footer .footer .social-item:hover.tw svg {
         fill: #1da1f2 !important; }
+      footer .footer .social-item:hover.facebook svg {
+        fill: #3b5998 !important; }
+      footer .footer .social-item:hover.ok svg {
+        fill: #ed812b !important; }
   footer .footer .services {
     color: #515867;
     max-width: 50%;
@@ -1169,10 +1197,16 @@ footer {
     .company-slider .slider .slick-arrow {
       top: -30px;
       right: 0;
-      height: 32px;
       width: 34px;
+      height: 32px;
+      line-height: 44px;
       position: absolute;
+      cursor: pointer;
       border: 1px solid #E6E5EC; }
+      .company-slider .slider .slick-arrow svg {
+        width: 24px;
+        height: 24px;
+        fill: #727B88; }
       .company-slider .slider .slick-arrow.slick-prev {
         border-right: none;
         margin-right: 50px;

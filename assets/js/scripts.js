@@ -30,8 +30,8 @@ $(function () {
         infinite: false,
         slidesToShow: 4,
         slidesToScroll: 1,
-        nextArrow: '<div class="slick-next button-grey"></div>',
-        prevArrow: '<div class="slick-prev button-grey"></div>'
+        nextArrow: '<div class="slick-next button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg></div>',
+        prevArrow: '<div class="slick-prev button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_left"></use></svg></div>'
     });
 
 //    Preload remove
