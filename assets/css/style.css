@@ -1270,15 +1270,23 @@ footer {
       background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
       background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
       background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, #232228 100%); }
-      .forecast-slider .item .mask:after {
+      .forecast-slider .item .mask:after, .forecast-slider .item .mask:before {
         content: "";
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         display: block;
-        position: absolute;
+        position: absolute; }
+      .forecast-slider .item .mask:after {
         background-image: url("../image/mask/forecast.png"); }
+      .forecast-slider .item .mask:before {
+        opacity: 0;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        background-color: rgba(35, 34, 40, 0.3); }
     .forecast-slider .item .desc {
       left: 0;
       bottom: 0;
@@ -1335,6 +1343,7 @@ footer {
         margin-left: 13px;
         border-radius: 50%;
         position: relative;
+        box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
         background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
         background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
         background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
@@ -1349,6 +1358,41 @@ footer {
           left: 50%;
           margin-top: -8px;
           margin-left: -8px; }
+@keyframes move1 {
+  0% {
+    opacity: 0.3; }
+  25% {
+    opacity: 1; }
+  50%, 100% {
+    opacity: .3; } }
+@keyframes move2 {
+  0%, 25% {
+    opacity: 0.3; }
+  50% {
+    opacity: 1; }
+  75%, 100% {
+    opacity: .3; } }
+@keyframes move3 {
+  0%, 50% {
+    opacity: 0.3; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: .3; } }
+          .forecast-slider .item .more .circle svg:first-child {
+            animation: move1 1s linear infinite; }
+          .forecast-slider .item .more .circle svg:nth-child(2) {
+            animation: move2 1s linear infinite; }
+          .forecast-slider .item .more .circle svg:nth-child(3) {
+            animation: move3 1s linear infinite; }
+      .forecast-slider .item .more:hover .circle svg:first-child {
+        margin-left: -25px; }
+      .forecast-slider .item .more:hover .circle svg:nth-child(3) {
+        margin-left: 9px; }
+      .forecast-slider .item .more:hover .circle svg:last-child {
+        display: none; }
+    .forecast-slider .item:hover .mask:before {
+      opacity: 1; }
   .forecast-slider .slick-dots {
     margin: 0;
     padding: 0 0 24px 24px;
