@@ -1,3 +1,10 @@
+<?php
+
+$body_class = '';
+if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/forecast-premium.php')
+    $body_class = 'grey-lightest';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +15,8 @@
     <link rel="stylesheet" href="/assets/css/style.css?5">
     <title>Betrating.ru</title>
 </head>
-<body>
+<body class="<?php echo $body_class; ?>">
+
 <header>
     <div class="container">
         <div class="header">

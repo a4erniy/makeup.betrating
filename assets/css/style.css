@@ -32,6 +32,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #28292B; }
+  body.grey-lightest {
+    background-color: #F8F9FB; }
 
 a {
   -webkit-transition: all .2s ease-in-out;
@@ -1733,5 +1735,42 @@ footer {
       background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
       background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
       background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
+
+.content {
+  padding: 40px 92px; }
+  .content-box {
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08); }
+  .content-padding {
+    padding: 0 8px; }
+  .content .title {
+    text-align: center;
+    margin-bottom: 16px; }
+    .content .title h1 {
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.17px;
+      font-family: 'Exo 2 Extra', sans-serif;
+      font-weight: 800;
+      font-style: normal; }
+  .content .short, .content .text {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.24px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    font-style: normal; }
+  .content .short {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #807F86; }
+  .content .text p {
+    margin-bottom: 20px; }
+  .content .text img {
+    display: block;
+    margin: 40px auto;
+    max-height: 600px; }
 
 /*# sourceMappingURL=style.css.map */

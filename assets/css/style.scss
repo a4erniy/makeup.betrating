@@ -8,6 +8,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: $color-text;
+  &.grey-lightest {
+    background-color: $grey-lightest;
+  }
 }
 a {
   @include transition();
@@ -1699,6 +1702,49 @@ footer {
         color: $white-text;
         @include gradient-green();
       }
+    }
+  }
+}
+.content {
+  padding: 40px 92px ;
+  &-box {
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08);
+  }
+  &-padding {
+    padding: 0 8px;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 16px;
+    h1 {
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.17px;
+      @include fontExo2(ExtraBold)
+    }
+  }
+  .short, .text {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.24px;
+    @include fontExo2();
+  }
+  .short {
+    text-align: center;
+    margin-bottom: 24px;
+    color: $color-text-grey;
+  }
+  .text {
+    p {
+      margin-bottom: 20px;
+    }
+    img {
+      display: block;
+      margin: 40px auto;
+      max-height: 600px;
     }
   }
 }
