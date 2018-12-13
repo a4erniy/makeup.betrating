@@ -23,7 +23,7 @@
             </ul>
         </div>
         <div class="forecast-table">
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -44,7 +44,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card premium">
+            <a href="#" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -65,7 +65,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -86,7 +86,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -107,7 +107,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card premium">
+            <a href="#" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -128,7 +128,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -149,7 +149,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -170,7 +170,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card premium">
+            <a href="#" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -191,7 +191,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -212,7 +212,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -233,7 +233,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card premium">
+            <a href="#" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -254,7 +254,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -275,7 +275,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -296,7 +296,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -317,7 +317,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -338,7 +338,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card premium">
+            <a href="#" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -359,7 +359,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card">
+            <a href="#" class="forecast-card-table">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
@@ -380,7 +380,7 @@
                 <div class="company"><span class="logo"><img src="content/company/leon.png"></span></div>
                 <div class="value"><span class="ceff">1.95</span></div>
             </a>
-            <a href="#" class="forecast-card premium">
+            <a href="#" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
                     <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>

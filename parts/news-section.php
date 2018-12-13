@@ -42,7 +42,6 @@
                                 <img src="content/news/big2.jpg" alt="">
                             </div>
                             <div class="mask"></div>
-                            <div class="alpha"><div class="light"></div></div>
                         </div>
                         <div class="title">
                             <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>

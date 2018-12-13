@@ -435,8 +435,6 @@ h1, h2, h3, h4 {
         fill: #727B88; }
       .news-card .info .more:hover svg {
         fill: #25A96A; }
-  .news-card:hover .preview .alpha {
-    background-color: rgba(5, 22, 44, 0.5); }
   .news-card.size-custom {
     box-shadow: 0 0 0 1px #f1f2f4; }
     .news-card.size-custom .title {
@@ -746,194 +744,359 @@ h1, h2, h3, h4 {
     box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
 
 .forecast-card {
-  height: 64px;
-  padding: 0 17px 0 12px;
+  height: 320px;
   position: relative;
-  background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: -ms-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-  .forecast-card > div {
+  letter-spacing: 0.75px;
+  border-radius: 6px;
+  overflow: hidden; }
+  .forecast-card-table {
+    height: 64px;
+    padding: 0 17px 0 12px;
     position: relative;
-    z-index: 10; }
-  .forecast-card .bg {
-    opacity: 0;
-    z-index: 5;
-    background-color: #fff;
+    background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute; }
-  .forecast-card .league {
-    width: 14%; }
-    .forecast-card .league .ico {
-      width: 23px;
-      height: 23px;
-      text-align: center; }
-    .forecast-card .league .name {
-      color: #807F86;
-      letter-spacing: 0.25px;
-      font-family: 'Exo 2', sans-serif;
-      font-weight: normal;
-      font-style: normal; }
-  .forecast-card .team {
-    width: 33%; }
-    .forecast-card .team .logo {
-      width: 32px;
-      height: 32px;
-      display: inline-block;
-      margin-right: 14px; }
-    .forecast-card .team .name {
-      color: #28292B;
-      letter-spacing: 0.25px;
-      font-family: 'Exo 2 Semi', sans-serif;
-      font-weight: 600;
-      font-style: normal; }
-    .forecast-card .team-first {
-      text-align: right; }
-      .forecast-card .team-first .logo {
-        margin-right: 0;
-        margin-left: 14px; }
-  .forecast-card .match {
-    width: 6%;
-    text-align: center; }
-    .forecast-card .match .date {
-      font-size: 12px;
-      line-height: 16px;
-      color: #807F86;
-      letter-spacing: 0.4px;
-      font-family: 'Exo 2', sans-serif;
-      font-weight: 500;
-      font-style: normal; }
-    .forecast-card .match .time {
-      color: #28292B;
-      letter-spacing: 0.25px;
-      font-family: 'Exo 2 Semi', sans-serif;
-      font-weight: 600;
-      font-style: normal; }
-  .forecast-card .company {
-    width: 7%;
-    text-align: right;
-    padding-right: 6px; }
-    .forecast-card .company .logo {
-      width: 56px;
-      display: inline-block; }
-  .forecast-card .value {
-    width: 7%;
-    text-align: right; }
-    .forecast-card .value .ceff {
-      width: 71px;
-      height: 28px;
-      padding-left: 14px;
-      display: inline-block;
-      line-height: 28px;
-      text-align: center;
-      color: #28292B;
-      letter-spacing: 0.25px;
-      background-image: url("../image/ico/ceff.png");
-      background-size: 100% 100%;
-      font-family: 'Exo 2 Extra', sans-serif;
-      font-weight: 800;
-      font-style: italic;
-      -webkit-transition: all .2s ease-in-out;
-      -moz-transition: all .2s ease-in-out;
-      -o-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; }
-  .forecast-card.premium .value .ceff {
-    position: relative; }
-    .forecast-card.premium .value .ceff:after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .forecast-card-table > div {
+      position: relative;
+      z-index: 10; }
+    .forecast-card-table .bg {
+      opacity: 0;
+      z-index: 5;
+      background-color: #fff;
       -webkit-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
       -o-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute; }
+    .forecast-card-table .league {
+      width: 14%; }
+      .forecast-card-table .league .ico {
+        width: 23px;
+        height: 23px;
+        text-align: center; }
+      .forecast-card-table .league .name {
+        color: #807F86;
+        letter-spacing: 0.25px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: normal;
+        font-style: normal; }
+    .forecast-card-table .team {
+      width: 33%; }
+      .forecast-card-table .team .logo {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin-right: 14px; }
+      .forecast-card-table .team .name {
+        color: #28292B;
+        letter-spacing: 0.25px;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+      .forecast-card-table .team-first {
+        text-align: right; }
+        .forecast-card-table .team-first .logo {
+          margin-right: 0;
+          margin-left: 14px; }
+    .forecast-card-table .match {
+      width: 6%;
+      text-align: center; }
+      .forecast-card-table .match .date {
+        font-size: 12px;
+        line-height: 16px;
+        color: #807F86;
+        letter-spacing: 0.4px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+        font-style: normal; }
+      .forecast-card-table .match .time {
+        color: #28292B;
+        letter-spacing: 0.25px;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+    .forecast-card-table .company {
+      width: 7%;
+      text-align: right;
+      padding-right: 6px; }
+      .forecast-card-table .company .logo {
+        width: 56px;
+        display: inline-block; }
+    .forecast-card-table .value {
+      width: 7%;
+      text-align: right; }
+      .forecast-card-table .value .ceff {
+        width: 71px;
+        height: 28px;
+        padding-left: 14px;
+        display: inline-block;
+        line-height: 28px;
+        text-align: center;
+        color: #28292B;
+        letter-spacing: 0.25px;
+        background-image: url("../image/ico/ceff.png");
+        background-size: 100% 100%;
+        font-family: 'Exo 2 Extra', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+    .forecast-card-table.premium .value .ceff {
+      position: relative; }
+      .forecast-card-table.premium .value .ceff:after {
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        top: -13px;
+        right: -13px;
+        left: auto;
+        width: 30px;
+        height: 30px;
+        background-image: url("../image/ico/crown-ceff-white.png");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat; }
+    .forecast-card-table.premium .bg:after {
+      background: -webkit-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
+      background: -moz-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
+      background: -ms-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
+      background: -o-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
+      background: linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
       display: block;
       position: absolute;
       top: 0;
       left: 0;
       content: "";
       width: 100%;
-      top: -13px;
-      right: -13px;
-      left: auto;
-      width: 30px;
-      height: 30px;
-      background-image: url("../image/ico/crown-ceff-white.png");
-      background-size: 100% 100%;
-      background-position: center center;
-      background-repeat: no-repeat; }
-  .forecast-card.premium .bg:after {
-    background: -webkit-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
-    background: -moz-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
-    background: -ms-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
-    background: -o-linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
-    background: linear-gradient(90deg, rgba(255, 209, 0, 0) 0%, #FFC10E 49.72%, rgba(255, 179, 27, 0) 100%);
-    display: block;
+      height: 2px;
+      top: auto;
+      bottom: 0; }
+    .forecast-card-table.premium:before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      top: 2px;
+      width: 2px;
+      height: 60px;
+      background-color: #FFB90C; }
+    .forecast-card-table:after {
+      z-index: 1;
+      background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -moz-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -ms-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -o-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 2px;
+      top: auto;
+      bottom: 0; }
+    .forecast-card-table:hover {
+      z-index: 10;
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1); }
+      .forecast-card-table:hover .bg {
+        opacity: 1; }
+      .forecast-card-table:hover .value .ceff {
+        color: #ffffff;
+        background-image: url("../image/ico/ceff-green.png"); }
+      .forecast-card-table:hover.premium .value .ceff {
+        background-image: url("../image/ico/ceff-gold.png"); }
+        .forecast-card-table:hover.premium .value .ceff:after {
+          background-image: url("../image/ico/crown-ceff-gold.png"); }
+  .forecast-card .image {
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
     position: absolute;
+    width: 800px;
+    height: 100%; }
+  .forecast-card .mask {
     top: 0;
     left: 0;
-    content: "";
     width: 100%;
-    height: 2px;
-    top: auto;
-    bottom: 0; }
-  .forecast-card.premium:before {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 100%;
-    width: 2px;
     height: 100%;
-    background-color: #FFB90C; }
-  .forecast-card:after {
-    z-index: 1;
-    background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-    background: -moz-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-    background: -ms-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-    background: -o-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-    background: linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
     display: block;
     position: absolute;
-    top: 0;
+    background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
+    background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
+    background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, #232228 100%); }
+    .forecast-card .mask:after, .forecast-card .mask:before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute; }
+    .forecast-card .mask:after {
+      background-image: url("../image/mask/forecast.png"); }
+    .forecast-card .mask:before {
+      opacity: 0;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      background-color: rgba(35, 34, 40, 0.3); }
+  .forecast-card .desc {
     left: 0;
-    content: "";
-    width: 100%;
-    height: 2px;
-    top: auto;
-    bottom: 0; }
-  .forecast-card:hover {
-    z-index: 10;
-    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1); }
-    .forecast-card:hover .bg {
-      opacity: 1; }
-    .forecast-card:hover .value .ceff {
-      color: #ffffff;
-      background-image: url("../image/ico/ceff-green.png"); }
-    .forecast-card:hover.premium .value .ceff {
-      background-image: url("../image/ico/ceff-gold.png"); }
-      .forecast-card:hover.premium .value .ceff:after {
-        background-image: url("../image/ico/crown-ceff-gold.png"); }
+    bottom: 0;
+    z-index: 20;
+    font-size: 24px;
+    max-width: 500px;
+    position: absolute;
+    color: #ffffff;
+    padding-left: 24px;
+    padding-bottom: 41px;
+    text-transform: uppercase; }
+    .forecast-card .desc span {
+      color: #807F86;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal; }
+    .forecast-card .desc .title {
+      margin-top: 9px;
+      line-height: 30px;
+      font-family: 'Exo 2 Extra', sans-serif;
+      font-weight: 800;
+      font-style: normal; }
+    .forecast-card .desc .date {
+      line-height: 32px;
+      letter-spacing: initial;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 300;
+      font-style: normal; }
+  .forecast-card .more {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 26px;
+    margin-right: 26px;
+    position: absolute;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .forecast-card .more .circle {
+      width: 64px;
+      height: 64px;
+      margin-left: 13px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
+      background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
+      .forecast-card .more .circle svg {
+        width: 16px;
+        height: 16px;
+        fill: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -8px;
+        margin-left: -8px; }
+@keyframes move1 {
+  0% {
+    opacity: 0.3; }
+  25% {
+    opacity: 1; }
+  50%, 100% {
+    opacity: .3; } }
+@keyframes move2 {
+  0%, 25% {
+    opacity: 0.3; }
+  50% {
+    opacity: 1; }
+  75%, 100% {
+    opacity: .3; } }
+@keyframes move3 {
+  0%, 50% {
+    opacity: 0.3; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: .3; } }
+        .forecast-card .more .circle svg:first-child {
+          animation: move1 1s linear infinite; }
+        .forecast-card .more .circle svg:nth-child(2) {
+          animation: move2 1s linear infinite; }
+        .forecast-card .more .circle svg:nth-child(3) {
+          animation: move3 1s linear infinite; }
+    .forecast-card .more:hover .circle svg:first-child {
+      margin-left: -25px; }
+    .forecast-card .more:hover .circle svg:nth-child(3) {
+      margin-left: 9px; }
+    .forecast-card .more:hover .circle svg:last-child {
+      display: none; }
+  .forecast-card .crown {
+    top: 16px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-image: url("../image/ico/crown.png");
+    background-size: 100% 100%; }
+  .forecast-card:hover .mask:before {
+    opacity: 1; }
+  .forecast-card.premium .desc span {
+    color: #FFB90C; }
+  .forecast-card.premium .more .circle {
+    background: none;
+    background: -webkit-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+    background: -moz-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+    background: -ms-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+    background: -o-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+    background: linear-gradient(90deg, #FFD100 0%, #FFB31B 100%); }
 
 .stavkatv-item .video {
   height: 216px;
@@ -1301,6 +1464,26 @@ footer {
 .top-section .company-slider {
   padding-top: 24px; }
 
+.betting-center {
+  height: 710px;
+  position: relative;
+  padding: 0 16px;
+  border-top-right-radius: 6px;
+  background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
+  .betting-center .section-title {
+    top: 19px;
+    left: 16px;
+    position: absolute; }
+  .betting-center .tabs-list {
+    justify-content: flex-end;
+    border-bottom: 1px solid #E8EAED; }
+  .betting-center .tab-content .tab-pane {
+    padding-top: 15px; }
+
 .company-slider .section-title {
   margin-bottom: 2px; }
 .company-slider .slider {
@@ -1329,177 +1512,6 @@ footer {
       margin-right: 8px;
       border-top-right-radius: 16px;
       border-bottom-right-radius: 16px; }
-
-.betting-center {
-  height: 710px;
-  position: relative;
-  padding: 0 16px;
-  border-top-right-radius: 6px;
-  background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-  background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-  background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-  background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-  background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
-  .betting-center .section-title {
-    top: 19px;
-    left: 16px;
-    position: absolute; }
-  .betting-center .tabs-list {
-    justify-content: flex-end;
-    border-bottom: 1px solid #E8EAED; }
-  .betting-center .tab-content .tab-pane {
-    padding-top: 15px; }
-
-.forecast-slider {
-  overflow: hidden;
-  margin-right: -16px;
-  border-radius: 6px 0 0 6px; }
-  .forecast-slider .item {
-    width: 800px;
-    height: 320px;
-    position: relative;
-    letter-spacing: 0.75px; }
-    .forecast-slider .item .image {
-      width: 100%;
-      height: 100%; }
-    .forecast-slider .item .mask {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-      background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
-      background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
-      background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, #232228 100%); }
-      .forecast-slider .item .mask:after, .forecast-slider .item .mask:before {
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute; }
-      .forecast-slider .item .mask:after {
-        background-image: url("../image/mask/forecast.png"); }
-      .forecast-slider .item .mask:before {
-        opacity: 0;
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-        background-color: rgba(35, 34, 40, 0.3); }
-    .forecast-slider .item .desc {
-      left: 0;
-      bottom: 0;
-      font-size: 24px;
-      z-index: 20;
-      position: absolute;
-      color: #ffffff;
-      padding-left: 24px;
-      padding-bottom: 41px;
-      text-transform: uppercase; }
-      .forecast-slider .item .desc span {
-        color: #807F86;
-        font-size: 14px;
-        line-height: 20px;
-        font-family: 'Exo 2 Semi', sans-serif;
-        font-weight: 600;
-        font-style: normal; }
-      .forecast-slider .item .desc .title {
-        margin-top: 9px;
-        line-height: 30px;
-        font-family: 'Exo 2 Extra', sans-serif;
-        font-weight: 800;
-        font-style: normal; }
-      .forecast-slider .item .desc .date {
-        line-height: 32px;
-        letter-spacing: initial;
-        font-family: 'Exo 2', sans-serif;
-        font-weight: 300;
-        font-style: normal; }
-    .forecast-slider .item .more {
-      bottom: 0;
-      right: 0;
-      margin-bottom: 26px;
-      margin-right: 26px;
-      position: absolute;
-      color: #ffffff;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-family: 'Exo 2 Semi', sans-serif;
-      font-weight: 600;
-      font-style: normal;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .forecast-slider .item .more .circle {
-        width: 64px;
-        height: 64px;
-        margin-left: 13px;
-        border-radius: 50%;
-        position: relative;
-        box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
-        background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-        background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-        background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-        background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-        background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
-        .forecast-slider .item .more .circle svg {
-          width: 16px;
-          height: 16px;
-          fill: #ffffff;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-top: -8px;
-          margin-left: -8px; }
-@keyframes move1 {
-  0% {
-    opacity: 0.3; }
-  25% {
-    opacity: 1; }
-  50%, 100% {
-    opacity: .3; } }
-@keyframes move2 {
-  0%, 25% {
-    opacity: 0.3; }
-  50% {
-    opacity: 1; }
-  75%, 100% {
-    opacity: .3; } }
-@keyframes move3 {
-  0%, 50% {
-    opacity: 0.3; }
-  75% {
-    opacity: 1; }
-  100% {
-    opacity: .3; } }
-          .forecast-slider .item .more .circle svg:first-child {
-            animation: move1 1s linear infinite; }
-          .forecast-slider .item .more .circle svg:nth-child(2) {
-            animation: move2 1s linear infinite; }
-          .forecast-slider .item .more .circle svg:nth-child(3) {
-            animation: move3 1s linear infinite; }
-      .forecast-slider .item .more:hover .circle svg:first-child {
-        margin-left: -25px; }
-      .forecast-slider .item .more:hover .circle svg:nth-child(3) {
-        margin-left: 9px; }
-      .forecast-slider .item .more:hover .circle svg:last-child {
-        display: none; }
-    .forecast-slider .item:hover .mask:before {
-      opacity: 1; }
-  .forecast-slider .slick-dots {
-    width: auto;
-    padding: 0 0 24px 24px; }
-    .forecast-slider .slick-dots li:first-child {
-      margin-left: 0; }
 
 .forecast-section {
   padding-top: 20px;
@@ -1546,22 +1558,36 @@ footer {
       height: 2px;
       top: auto;
       bottom: 0; }
+  .forecast-section-slider .slick-dots li span.current {
+    background-color: #FFB90C; }
+.forecast-slider-front {
+  overflow: hidden;
+  margin-right: -16px;
+  border-radius: 6px 0 0 6px; }
+  .forecast-slider-front .forecast-card {
+    width: 800px;
+    border-radius: 0; }
+  .forecast-slider-front .slick-dots {
+    width: auto;
+    padding: 0 0 24px 24px; }
+    .forecast-slider-front .slick-dots li:first-child {
+      margin-left: 0; }
 
-.school-section .school-list {
+.school-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .news-section .section-more {
   padding-top: 7px; }
-.news-section-slider {
-  height: 348px; }
 .news-slider {
   margin: 0 -8px;
   padding-bottom: 20px; }
-  .news-slider .news-card {
-    width: 584px;
+  .news-slider .news-card, .news-slider .forecast-card {
+    height: 328px;
     margin: 0 8px; }
+  .news-slider .forecast-card .desc {
+    max-width: 350px; }
 
 .bonuses-section {
   background: -webkit-linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%);
@@ -1571,9 +1597,6 @@ footer {
   background: linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%); }
   .bonuses-section.without-bg {
     background: none; }
-  .bonuses-section-slider {
-    margin-top: -1px;
-    height: 491px; }
 .bonuses-slider .bonus-card {
   width: 50%;
   height: 432px;

@@ -30,18 +30,10 @@ $(function () {
     $('#forecast_slider').slick(configSlick(1));
 
 //    Bonuses slider
-    $('#bonuses_slider').on('init', function (event, slick) {
-        setTimeout(function () {
-            $('#bonuses_slider').removeClass('invisible');
-        }, 200)
-    }).slick(configSlick(2));
+    $('#bonuses_slider').slick(configSlick(2));
 
 //    News slider
-    $('#news_slider').on('init', function (event, slick) {
-        setTimeout(function () {
-            $('#news_slider').removeClass('invisible');
-        }, 200)
-    }).slick(configSlick(2));
+    $('#news_slider').slick(configSlick(2));
 
 //    Company slider
     let $company_slider = $('#company_slider'),

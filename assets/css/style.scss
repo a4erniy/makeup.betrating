@@ -408,13 +408,6 @@ h1, h2, h3, h4 {
       }
     }
   }
-  &:hover {
-    .preview {
-      .alpha {
-        background-color: rgba(5, 22, 44, .5);
-      }
-    }
-  }
   &.size {
     &-custom {
       box-shadow: 0 0 0 1px #f1f2f4;
@@ -744,155 +737,313 @@ h1, h2, h3, h4 {
   }
 }
 .forecast-card {
-  height: 64px;
-  padding: 0 17px 0 12px;
-  position: relative;
-  background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: -ms-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
-  @include transition();
-  @include flex(none, center);
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  & > div {
+  &-table {
+    height: 64px;
+    padding: 0 17px 0 12px;
     position: relative;
-    z-index: 10;
-  }
-  .bg {
-    opacity: 0;
-    z-index: 5;
-    background-color: #fff;
+    background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.88%, rgba(255, 255, 255, 0) 100%);
     @include transition();
-    @include mask();
-  }
-  .league {
-    width: 14%;
-    .ico {
-      width: 23px;
-      height: 23px;
-      text-align: center;
-    }
-    .name {
-      color: $color-text-grey;
-      letter-spacing: 0.25px;
-      @include fontExo2();
-    }
-  }
-  .team {
-    width: 33%;
-    .logo {
-      width: 32px;
-      height: 32px;
-      display: inline-block;
-      margin-right: 14px;
-    }
-    .name {
-      color: $color-text;
-      letter-spacing: 0.25px;
-      @include fontExo2(SemiBold);
-    }
-    &-first {
-      text-align: right;
-      .logo {
-        margin-right: 0;
-        margin-left: 14px;
-      }
-    }
-  }
-  .match {
-    width: 6%;
-    text-align: center;
-    .date {
-      font-size: 12px;
-      line-height: 16px;
-      color: $color-text-grey;
-      letter-spacing: 0.4px;
-      @include fontExo2(Medium);
-    }
-    .time {
-      color: $color-text;
-      letter-spacing: 0.25px;
-      @include fontExo2(SemiBold);
-    }
-  }
-  .company {
-    width: 7%;
-    text-align: right;
-    padding-right: 6px;
-    .logo {
-      width: 56px;
-      display: inline-block;
-    }
-  }
-  .value {
-    width: 7%;
-    text-align: right;
-    .ceff {
-      width: 71px;
-      height: 28px;
-      padding-left: 14px;
-      display: inline-block;
-      line-height: 28px;
-      text-align: center;
-      color: $color-text;
-      letter-spacing: 0.25px;
-      background-image: url("../image/ico/ceff.png");
-      background-size: 100% 100%;
-      @include fontExo2(ExtraBoldItalic);
-      @include transition();
-    }
-  }
-  &.premium {
-    .value .ceff {
+    @include flex(none, center);
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    & > div {
       position: relative;
-      &:after {
-        @include transition();
-        @include before-after();
-        top: -13px;
-        right: -13px;
-        left: auto;
-        width: 30px;
-        height: 30px;
-        background-image: url("../image/ico/crown-ceff-white.png");
-        background-size: 100% 100%;
-        background-position: center center;
-        background-repeat: no-repeat;
+      z-index: 10;
+    }
+    .bg {
+      opacity: 0;
+      z-index: 5;
+      background-color: #fff;
+      @include transition();
+      @include mask();
+    }
+    .league {
+      width: 14%;
+      .ico {
+        width: 23px;
+        height: 23px;
+        text-align: center;
+      }
+      .name {
+        color: $color-text-grey;
+        letter-spacing: 0.25px;
+        @include fontExo2();
       }
     }
-    .bg:after {
-      @include forecast-border(gold);
+    .team {
+      width: 33%;
+      .logo {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin-right: 14px;
+      }
+      .name {
+        color: $color-text;
+        letter-spacing: 0.25px;
+        @include fontExo2(SemiBold);
+      }
+      &-first {
+        text-align: right;
+        .logo {
+          margin-right: 0;
+          margin-left: 14px;
+        }
+      }
     }
-    &:before {
-      @include before-after();
-      width: 2px;
-      height: 100%;
-      background-color: $gold;
+    .match {
+      width: 6%;
+      text-align: center;
+      .date {
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-text-grey;
+        letter-spacing: 0.4px;
+        @include fontExo2(Medium);
+      }
+      .time {
+        color: $color-text;
+        letter-spacing: 0.25px;
+        @include fontExo2(SemiBold);
+      }
     }
-  }
-  &:after {
-    z-index: 1;
-    @include forecast-border();
-  }
-  &:hover {
-    z-index: 10;
-    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1);
-    .bg {
-      opacity: 1;
+    .company {
+      width: 7%;
+      text-align: right;
+      padding-right: 6px;
+      .logo {
+        width: 56px;
+        display: inline-block;
+      }
     }
-    .value .ceff {
-      color: $white-text;
-      background-image: url("../image/ico/ceff-green.png");
+    .value {
+      width: 7%;
+      text-align: right;
+      .ceff {
+        width: 71px;
+        height: 28px;
+        padding-left: 14px;
+        display: inline-block;
+        line-height: 28px;
+        text-align: center;
+        color: $color-text;
+        letter-spacing: 0.25px;
+        background-image: url("../image/ico/ceff.png");
+        background-size: 100% 100%;
+        @include fontExo2(ExtraBoldItalic);
+        @include transition();
+      }
     }
     &.premium {
       .value .ceff {
-        background-image: url("../image/ico/ceff-gold.png");
+        position: relative;
         &:after {
-          background-image: url("../image/ico/crown-ceff-gold.png");
+          @include transition();
+          @include before-after();
+          top: -13px;
+          right: -13px;
+          left: auto;
+          width: 30px;
+          height: 30px;
+          background-image: url("../image/ico/crown-ceff-white.png");
+          background-size: 100% 100%;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
       }
+      .bg:after {
+        @include forecast-border(gold);
+      }
+      &:before {
+        @include before-after();
+        top: 2px;
+        width: 2px;
+        height: 60px;
+        background-color: $gold;
+      }
+    }
+    &:after {
+      z-index: 1;
+      @include forecast-border();
+    }
+    &:hover {
+      z-index: 10;
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1);
+      .bg {
+        opacity: 1;
+      }
+      .value .ceff {
+        color: $white-text;
+        background-image: url("../image/ico/ceff-green.png");
+      }
+      &.premium {
+        .value .ceff {
+          background-image: url("../image/ico/ceff-gold.png");
+          &:after {
+            background-image: url("../image/ico/crown-ceff-gold.png");
+          }
+        }
+      }
+    }
+  }
+  height: 320px;
+  position: relative;
+  letter-spacing: 0.75px;
+  border-radius: 6px;
+  overflow: hidden;
+  .image {
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+    position: absolute;
+    width: 800px;
+    height: 100%;
+  }
+  .mask {
+    @include mask();
+    background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+    background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+    &:after, &:before {
+      content: "";
+      @include mask();
+    }
+    &:after {
+      background-image: url("../image/mask/forecast.png");
+    }
+    &:before {
+      opacity: 0;
+      @include transition();
+      background-color: rgba(35, 34, 40, 0.3);
+    }
+
+  }
+  .desc {
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    font-size: 24px;
+    max-width: 500px;
+    position: absolute;
+    color: $white-text;
+    padding-left: 24px;
+    padding-bottom: 41px;
+    text-transform: uppercase;
+    span {
+      color: $color-text-grey;
+      font-size: 14px;
+      line-height: 20px;
+      @include fontExo2('SemiBold');
+    }
+    .title {
+      margin-top: 9px;
+      line-height: 30px;
+      @include fontExo2('ExtraBold');
+    }
+    .date {
+      line-height: 32px;
+      letter-spacing: initial;
+      @include fontExo2('Light');
+    }
+  }
+  .more {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 26px;
+    margin-right: 26px;
+    position: absolute;
+    color: $white-text;
+    font-size: 14px;
+    text-transform: uppercase;
+    @include fontExo2('SemiBold');
+    @include flex(center, center);
+    .circle {
+      width: 64px;
+      height: 64px;
+      margin-left: 13px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
+      @include gradient-green();
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: $white-text;
+        position: absolute;
+        //opacity: 0.3;
+        top: 50%;
+        left: 50%;
+        margin-top: -8px;
+        margin-left: -8px;
+        @keyframes move1 {
+          0% {opacity: 0.3}
+          25% {opacity: 1}
+          50%, 100% {opacity: .3}
+        }
+        @keyframes move2 {
+          0%, 25% {opacity: 0.3}
+          50% {opacity: 1}
+          75%, 100% {opacity: .3}
+        }
+        @keyframes move3 {
+          0%, 50% {opacity: 0.3}
+          75% {opacity: 1}
+          100% {opacity: .3}
+        }
+        &:first-child {
+          animation: move1 1s linear infinite;
+        }
+        &:nth-child(2) {
+          animation: move2 1s linear infinite;
+        }
+        &:nth-child(3) {
+          animation: move3 1s linear infinite;
+        }
+      }
+    }
+    &:hover {
+      .circle {
+        svg {
+          &:first-child {
+            margin-left: -25px;
+          }
+          &:nth-child(2) {}
+          &:nth-child(3) {
+            margin-left: 9px;
+          }
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .crown {
+    top: 16px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-image: url("../image/ico/crown.png");
+    background-size: 100% 100%;
+  }
+  &:hover {
+    .mask:before {
+      opacity: 1;
+    }
+  }
+  &.premium {
+    .desc span {
+      color: $gold;
+    }
+    .more .circle {
+      background: none;
+      @include gradient-gold();
     }
   }
 }
@@ -1235,43 +1386,6 @@ footer {
     padding-top: 24px;
   }
 }
-.company-slider {
-  .section-title {
-    margin-bottom: 2px;
-  }
-  .slider {
-    margin: 0 -8px;
-    .item {
-      margin: 18px 8px 20px;
-    }
-    .slick-arrow {
-      top: -30px;
-      right: 0;
-      width: 34px;
-      height: 32px;
-      line-height: 44px;
-      position: absolute;
-      cursor: pointer;
-      border: $border;
-      svg {
-        width: 24px;
-        height: 24px;
-        fill: $black-lightest;
-      }
-      &.slick-prev {
-        border-right: none;
-        margin-right: 42px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-      }
-      &.slick-next {
-        margin-right: 8px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-      }
-    }
-  }
-}
 .betting-center {
   height: 710px;
   position: relative;
@@ -1294,186 +1408,105 @@ footer {
   }
 
 }
-.forecast-slider {
-  overflow: hidden;
-  margin-right: -16px;
-  border-radius: 6px 0 0 6px;
-  .item {
-    width: 800px;
-    height: 320px;
-    position: relative;
-    letter-spacing: 0.75px;
-    .image {
-      width: 100%;
-      height: 100%;
+.company {
+  &-slider {
+    .section-title {
+      margin-bottom: 2px;
     }
-    .mask {
-      @include mask();
-      background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
-      background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
-      background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
-      &:after, &:before {
-        content: "";
-        @include mask();
+    .slider {
+      margin: 0 -8px;
+      .item {
+        margin: 18px 8px 20px;
+      }
+      .slick-arrow {
+        top: -30px;
+        right: 0;
+        width: 34px;
+        height: 32px;
+        line-height: 44px;
+        position: absolute;
+        cursor: pointer;
+        border: $border;
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: $black-lightest;
+        }
+        &.slick-prev {
+          border-right: none;
+          margin-right: 42px;
+          border-top-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+        }
+        &.slick-next {
+          margin-right: 8px;
+          border-top-right-radius: 16px;
+          border-bottom-right-radius: 16px;
+        }
+      }
+    }
+  }
+}
+.forecast {
+  &-section {
+    padding-top: 20px;
+    background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
+    background: -moz-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
+    background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
+    background: -o-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
+    background: linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
+    .section-header {
+      position: relative;
+      @include flex(none, center);
+      .section-title {
+        margin-bottom: 0;
+      }
+      .tabs {
+        &-list {
+          z-index: 10;
+          margin-left: auto;
+          margin-right: 17px;
+        }
+        &-item {
+          margin-right: 21px;
+          a {
+            @include flex(none, center);
+          }
+        }
       }
       &:after {
-        background-image: url("../image/mask/forecast.png");
-      }
-      &:before {
-        opacity: 0;
-        @include transition();
-        background-color: rgba(35, 34, 40, 0.3);
-      }
-
-    }
-    .desc {
-      left: 0;
-      bottom: 0;
-      font-size: 24px;
-      z-index: 20;
-      position: absolute;
-      color: $white-text;
-      padding-left: 24px;
-      padding-bottom: 41px;
-      text-transform: uppercase;
-      span {
-        color: $color-text-grey;
-        font-size: 14px;
-        line-height: 20px;
-        @include fontExo2('SemiBold');
-      }
-      .title {
-        margin-top: 9px;
-        line-height: 30px;
-        @include fontExo2('ExtraBold');
-      }
-      .date {
-        line-height: 32px;
-        letter-spacing: initial;
-        @include fontExo2('Light');
+        @include forecast-border();
       }
     }
-    .more {
-      bottom: 0;
-      right: 0;
-      margin-bottom: 26px;
-      margin-right: 26px;
-      position: absolute;
-      color: $white-text;
-      font-size: 14px;
-      text-transform: uppercase;
-      @include fontExo2('SemiBold');
-      @include flex(center, center);
-      .circle {
-        width: 64px;
-        height: 64px;
-        margin-left: 13px;
-        border-radius: 50%;
-        position: relative;
-        box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
-        @include gradient-green();
-        svg {
-          width: 16px;
-          height: 16px;
-          fill: $white-text;
-          position: absolute;
-          //opacity: 0.3;
-          top: 50%;
-          left: 50%;
-          margin-top: -8px;
-          margin-left: -8px;
-          @keyframes move1 {
-            0% {opacity: 0.3}
-            25% {opacity: 1}
-            50%, 100% {opacity: .3}
-          }
-          @keyframes move2 {
-            0%, 25% {opacity: 0.3}
-            50% {opacity: 1}
-            75%, 100% {opacity: .3}
-          }
-          @keyframes move3 {
-            0%, 50% {opacity: 0.3}
-            75% {opacity: 1}
-            100% {opacity: .3}
-          }
+    &-slider {
+      .slick-dots li span.current {
+        background-color: $gold;
+      }
+    }
+  }
+  &-slider {
+    &-front {
+      overflow: hidden;
+      margin-right: -16px;
+      border-radius: 6px 0 0 6px;
+      .forecast-card {
+        width: 800px;
+        border-radius: 0;
+      }
+      .slick-dots {
+        width: auto;
+        padding: 0 0 24px 24px;
+        li {
           &:first-child {
-            animation: move1 1s linear infinite;
-          }
-          &:nth-child(2) {
-            animation: move2 1s linear infinite;
-          }
-          &:nth-child(3) {
-            animation: move3 1s linear infinite;
+            margin-left: 0;
           }
         }
-      }
-      &:hover {
-        .circle {
-          svg {
-            &:first-child {
-              margin-left: -25px;
-            }
-            &:nth-child(2) {}
-            &:nth-child(3) {
-              margin-left: 9px;
-            }
-            &:last-child {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-    &:hover {
-      .mask:before {
-        opacity: 1;
-      }
-    }
-  }
-  .slick-dots {
-    width: auto;
-    padding: 0 0 24px 24px;
-    li {
-      &:first-child {
-        margin-left: 0;
       }
     }
   }
 }
-.forecast-section {
-  padding-top: 20px;
-  background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-  background: -moz-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-  background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-  background: -o-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-  background: linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-  .section-header {
-    position: relative;
-    @include flex(none, center);
-    .section-title {
-      margin-bottom: 0;
-    }
-    .tabs {
-      &-list {
-        z-index: 10;
-        margin-left: auto;
-        margin-right: 17px;
-      }
-      &-item {
-        margin-right: 21px;
-        a {
-          @include flex(none, center);
-        }
-      }
-    }
-    &:after {
-      @include forecast-border();
-    }
-  }
-}
-.school-section {
-  .school-list {
+.school {
+  &-list {
     @include flex();
   }
 }
@@ -1482,17 +1515,18 @@ footer {
     .section-more {
       padding-top: 7px;
     }
-    &-slider {
-      //fix preload slider
-      height: 348px;
-    }
   }
   &-slider {
     margin: 0 -8px;
     padding-bottom: 20px;
-    .news-card {
-      width: 584px;
+    .news-card, .forecast-card {
+      height: 328px;
       margin: 0 8px;
+    }
+    .forecast-card {
+      .desc {
+        max-width: 350px;
+      }
     }
   }
 }
@@ -1505,11 +1539,6 @@ footer {
     background: linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%);
     &.without-bg {
       background: none;
-    }
-    &-slider {
-      margin-top: -1px;
-      //fix preload slider
-      height: 491px;
     }
   }
   &-slider {

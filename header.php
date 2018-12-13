@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/slick/slick.css">
-    <link rel="stylesheet" href="/assets/css/style.css?4">
+    <link rel="stylesheet" href="/assets/css/style.css?5">
     <title>Betrating.ru</title>
 </head>
 <body>
