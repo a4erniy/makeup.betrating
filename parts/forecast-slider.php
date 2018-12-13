@@ -1,6 +1,6 @@
 <div class="forecast-slider-front preload" id="forecast_slider">
     <div class="forecast-card">
-        <a href="#">
+        <a href="/forecast.php">
             <div class="image">
                 <img src="content/forecast/1.jpg" alt="">
             </div>
@@ -22,7 +22,7 @@
         </a>
     </div>
     <div class="forecast-card">
-        <a href="#">
+        <a href="/forecast.php">
             <div class="image">
                 <img src="content/forecast/2.jpg" alt="">
             </div>
@@ -44,7 +44,7 @@
         </a>
     </div>
     <div class="forecast-card">
-        <a href="#">
+        <a href="/forecast.php">
             <div class="image">
                 <img src="content/forecast/3.jpg" alt="">
             </div>
@@ -66,7 +66,7 @@
         </a>
     </div>
     <div class="forecast-card">
-        <a href="#">
+        <a href="/forecast.php">
             <div class="image">
                 <img src="content/forecast/4.jpg" alt="">
             </div>
