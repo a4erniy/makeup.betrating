@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 
-<section class="bonuses-section-slider no-padding">
+<section class="bonuses-section-slider pd-no">
     <div class="container">
         <div class="bonuses-slider preload invisible" id="bonuses_slider">
             <div class="bonus-card">

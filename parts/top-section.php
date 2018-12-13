@@ -1,4 +1,4 @@
-<section class="top-section no-padding">
+<section class="top-section pd-no">
     <div class="container">
         <div class="row">
             <div class="col-8">

@@ -12,7 +12,7 @@
                         <li class=""><a href="/forecasts.php">Прогнозы</a></li>
                         <li class=""><a href="#">Школа ставок</a></li>
                         <li class=""><a href="/bonuses.php">Бонусы</a></li>
-                        <li class="premium"><a href="#"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
+                        <li class="premium"><a href="forecasts-premium.php"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
                     </ul>
                     <div class="pages">
                         <a href="#">Прогнозы на РПЛ</a>

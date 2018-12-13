@@ -305,8 +305,20 @@ h1, h2, h3, h4 {
 .preload .slick-dots li span.current {
   width: 0 !important; }
 
-.no-padding {
+.pd-no {
   padding: 0 !important; }
+.pd-20 {
+  padding: 20px 0 !important; }
+.pd-40 {
+  padding: 40px 0 !important; }
+.pdt-20 {
+  padding-top: 20px !important; }
+.pdt-40 {
+  padding-top: 40px !important; }
+.pdb-20 {
+  padding-bottom: 20px !important; }
+.pdb-40 {
+  padding-bottom: 40px !important; }
 
 .news-card {
   height: 328px;
@@ -1490,7 +1502,7 @@ footer {
       margin-left: 0; }
 
 .forecast-section {
-  padding-top: 22px;
+  padding-top: 20px;
   background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -moz-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);

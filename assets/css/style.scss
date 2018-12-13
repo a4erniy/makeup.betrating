@@ -287,8 +287,18 @@ h1, h2, h3, h4 {
     width: 0 !important;
   }
 }
-.no-padding {
-    padding: 0!important;
+.pd {
+  &-no {padding: 0!important;}
+  &-20 {padding: 20px 0!important;}
+  &-40 {padding: 40px 0!important;}
+  &t {
+    &-20 {padding-top: 20px!important;}
+    &-40 {padding-top: 40px!important;}
+  }
+  &b {
+    &-20 {padding-bottom: 20px!important;}
+    &-40 {padding-bottom: 40px!important;}
+  }
 }
 
 // cards
@@ -1432,7 +1442,7 @@ footer {
   }
 }
 .forecast-section {
-  padding-top: 22px;
+  padding-top: 20px;
   background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -moz-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
