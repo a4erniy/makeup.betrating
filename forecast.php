@@ -13,7 +13,7 @@
                 <div class="sidebar"></div>
             </div>
             <div class="col-8">
-                <div class="content-padding">
+                <div class="container">
                     <div class="content-box">
                         <div class="content">
                             <div class="title">
@@ -50,11 +50,267 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="forecast-from-editor"></div>
+                        <div class="sharing"></div>
                     </div>
+                    <section class="banner-section">
+                        <a href="#" class="banner"></a>
+                    </section>
                 </div>
             </div>
             <div class="col-2">
-                <div class="sidebar"></div>
+                <div class="sidebar">
+                    <div class="widget">
+                        <div class="widget-title">Прогнозы на спорт</div>
+                        <div class="forecast-card-info">
+                            <a href="#">
+                                <div class="sport"></div>
+                                <div class="preview">
+                                    <div class="image">
+                                        <img src="content/forecast/messi.png" alt="">
+                                    </div>
+                                    <div class="tag">Прогнозы на футбол</div>
+                                </div>
+                                <div class="top">
+                                    <div class="logo">
+                                        <div class="team"><img src="content/team/logo-1.png"></div>
+                                        <div class="team"><img src="content/team/logo-2.png"></div>
+                                    </div>
+                                    <div class="datetime">
+                                        <div class="date">23 октября</div>
+                                        <div class="time">22:00</div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="league">Лига чемпионов</div>
+                                    <div class="name">
+                                        <div class="team">Вэст Хэм</div>
+                                        <div class="team">Тоттенхэм</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="forecast-card-info">
+                            <a href="#">
+                                <div class="sport"></div>
+                                <div class="preview">
+                                    <div class="image">
+                                        <img src="content/forecast/messi.png" alt="">
+                                    </div>
+                                    <div class="tag">Прогнозы на футбол</div>
+                                </div>
+                                <div class="top">
+                                    <div class="logo">
+                                        <div class="team"><img src="content/team/logo-1.png"></div>
+                                        <div class="team"><img src="content/team/logo-2.png"></div>
+                                    </div>
+                                    <div class="datetime">
+                                        <div class="date">23 октября</div>
+                                        <div class="time">22:00</div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="league">Лига чемпионов</div>
+                                    <div class="name">
+                                        <div class="team">Вэст Хэм</div>
+                                        <div class="team">Тоттенхэм</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="forecast-card-info">
+                            <a href="#">
+                                <div class="sport"></div>
+                                <div class="preview">
+                                    <div class="image">
+                                        <img src="content/forecast/messi.png" alt="">
+                                    </div>
+                                    <div class="tag">Прогнозы на футбол</div>
+                                </div>
+                                <div class="top">
+                                    <div class="logo">
+                                        <div class="team"><img src="content/team/logo-1.png"></div>
+                                        <div class="team"><img src="content/team/logo-2.png"></div>
+                                    </div>
+                                    <div class="datetime">
+                                        <div class="date">23 октября</div>
+                                        <div class="time">22:00</div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="league">Лига чемпионов</div>
+                                    <div class="name">
+                                        <div class="team">Вэст Хэм</div>
+                                        <div class="team">Тоттенхэм</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="forecast-card-info">
+                            <a href="#">
+                                <div class="sport"></div>
+                                <div class="preview">
+                                    <div class="image">
+                                        <img src="content/forecast/messi.png" alt="">
+                                    </div>
+                                    <div class="tag">Прогнозы на футбол</div>
+                                </div>
+                                <div class="top">
+                                    <div class="logo">
+                                        <div class="team"><img src="content/team/logo-1.png"></div>
+                                        <div class="team"><img src="content/team/logo-2.png"></div>
+                                    </div>
+                                    <div class="datetime">
+                                        <div class="date">23 октября</div>
+                                        <div class="time">22:00</div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="league">Лига чемпионов</div>
+                                    <div class="name">
+                                        <div class="team">Вэст Хэм</div>
+                                        <div class="team">Тоттенхэм</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="more">
+                            <a href="#" class="button button-grey">Все прогнозы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="forecast-section dark">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-title"><h2>Прогнозы на спорт</h2></div>
+        </div>
+        <div class="forecast-list">
+            <div class="row">
+                <div class="col-3">
+                    <div class="forecast-card-info">
+                        <a href="#">
+                            <div class="sport"></div>
+                            <div class="preview">
+                                <div class="image">
+                                    <img src="content/forecast/messi.png" alt="">
+                                </div>
+                                <div class="tag">Прогнозы на футбол</div>
+                            </div>
+                            <div class="top">
+                                <div class="logo">
+                                    <div class="team"><img src="content/team/logo-1.png"></div>
+                                    <div class="team"><img src="content/team/logo-2.png"></div>
+                                </div>
+                                <div class="datetime">
+                                    <div class="date">23 октября</div>
+                                    <div class="time">22:00</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="league">Лига чемпионов</div>
+                                <div class="name">
+                                    <div class="team">Вэст Хэм</div>
+                                    <div class="team">Тоттенхэм</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="forecast-card-info">
+                        <a href="#">
+                            <div class="sport"></div>
+                            <div class="preview">
+                                <div class="image">
+                                    <img src="content/forecast/messi.png" alt="">
+                                </div>
+                                <div class="tag">Прогнозы на футбол</div>
+                            </div>
+                            <div class="top">
+                                <div class="logo">
+                                    <div class="team"><img src="content/team/logo-1.png"></div>
+                                    <div class="team"><img src="content/team/logo-2.png"></div>
+                                </div>
+                                <div class="datetime">
+                                    <div class="date">23 октября</div>
+                                    <div class="time">22:00</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="league">Лига чемпионов</div>
+                                <div class="name">
+                                    <div class="team">Вэст Хэм</div>
+                                    <div class="team">Тоттенхэм</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="forecast-card-info">
+                        <a href="#">
+                            <div class="sport"></div>
+                            <div class="preview">
+                                <div class="image">
+                                    <img src="content/forecast/messi.png" alt="">
+                                </div>
+                                <div class="tag">Прогнозы на футбол</div>
+                            </div>
+                            <div class="top">
+                                <div class="logo">
+                                    <div class="team"><img src="content/team/logo-1.png"></div>
+                                    <div class="team"><img src="content/team/logo-2.png"></div>
+                                </div>
+                                <div class="datetime">
+                                    <div class="date">23 октября</div>
+                                    <div class="time">22:00</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="league">Лига чемпионов</div>
+                                <div class="name">
+                                    <div class="team">Вэст Хэм</div>
+                                    <div class="team">Тоттенхэм</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="forecast-card-info">
+                        <a href="#">
+                            <div class="sport"></div>
+                            <div class="preview">
+                                <div class="image">
+                                    <img src="content/forecast/messi.png" alt="">
+                                </div>
+                                <div class="tag">Прогнозы на футбол</div>
+                            </div>
+                            <div class="top">
+                                <div class="logo">
+                                    <div class="team"><img src="content/team/logo-1.png"></div>
+                                    <div class="team"><img src="content/team/logo-2.png"></div>
+                                </div>
+                                <div class="datetime">
+                                    <div class="date">23 октября</div>
+                                    <div class="time">22:00</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="league">Лига чемпионов</div>
+                                <div class="name">
+                                    <div class="team">Вэст Хэм</div>
+                                    <div class="team">Тоттенхэм</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

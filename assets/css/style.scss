@@ -5,9 +5,8 @@
 
 // elements
 body {
-  font-size: 14px;
-  line-height: 20px;
   color: $color-text;
+  @include fontSize(14);
   &.grey-lightest {
     background-color: $grey-lightest;
   }
@@ -272,11 +271,10 @@ h1, h2, h3, h4 {
   &-title {
     h1, h2 {
       margin: 0;
-      font-size: 18px;
-      line-height: 24px;
       color: $color-text;
       letter-spacing: 0.17px;
       text-transform: uppercase;
+      @include fontSize(18);
       @include fontExo2(ExtraBold);
     }
     margin-bottom: 24px;
@@ -451,8 +449,7 @@ h1, h2, h3, h4 {
       }
       .title {
         h3 {
-          font-size: 18px;
-          line-height: 24px;
+          @include fontSize(18);
           letter-spacing: 0.17px;
         }
       }
@@ -465,9 +462,8 @@ h1, h2, h3, h4 {
       .title {
         margin-top: 20px;
         h3 {
-          font-size: 14px;
-          line-height: 20px;
           letter-spacing: 0.25px;
+          @include fontSize(14);
           @include fontExo2(SemiBold)
         }
       }
@@ -508,9 +504,8 @@ h1, h2, h3, h4 {
     a {
       color: $color-text;
       h3 {
-        font-size: 18px;
-        line-height: 24px;
         letter-spacing: 0.17px;
+        @include fontSize(18);
         @include fontExo2(ExtraBold);
       }
       &:hover {
@@ -630,11 +625,10 @@ h1, h2, h3, h4 {
     padding-top: 19px;
     position: relative;
     h3 {
-      font-size: 14px;
-      line-height: 20px;
       text-align: center;
       color: $color-text;
       letter-spacing: 0.25px;
+      @include fontSize(14);
       @include fontExo2(SemiBold);
       @include transition();
     }
@@ -894,6 +888,117 @@ h1, h2, h3, h4 {
       }
     }
   }
+  &-info {
+    height: 360px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #f1f2f4;
+    @include transition();
+    .box {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      padding: 0 24px 28px;
+    }
+    .sport {}
+    .preview {
+      width: 284px;
+      height: 157px;
+      position: relative;
+      .image {
+        opacity: 0.6;
+      }
+      .tag {
+        left: 24px;
+        bottom: 13px;
+        position: absolute;
+        padding: 3px 13px;
+        border-radius: 100px;
+        background-color: rgba(210, 210, 210, 0.8);
+        text-transform: uppercase;
+        color: $white-text;
+        letter-spacing: 0.4px;
+        @include fontSize(12);
+        @include fontExo2(SemiBold)
+      }
+      &:before {
+        @include before-after();
+        height: 100%;
+        background-color: #05162c;
+        opacity: .9;
+      }
+    }
+    .top {
+      padding: 24px;
+      @include flex(none, center);
+      .logo {
+        @include flex();
+        .team {
+          z-index: 10;
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          position: relative;
+          background-color: #fff;
+          box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.08);
+          @include flex(center, center);
+          img {
+            width: 32px;
+            height: 32px;
+          }
+          &:last-child {
+            z-index: 5;
+            margin-left: -14px;
+          }
+        }
+      }
+      .datetime {
+        text-align: right;
+        margin-left: auto;
+        .date {
+          color: $color-text-grey;
+          letter-spacing: 0.25px;
+          @include fontExo2()
+        }
+        .time {
+          color: $color-text;
+          letter-spacing: 0.17px;
+          @include fontSize(18);
+          @include fontExo2(ExtraBold)
+        }
+      }
+    }
+    .league {
+      color: $color-text-grey;
+      letter-spacing: 0.25px;
+      @include fontExo2()
+    }
+    .name {
+      width: fit-content;
+      .team {
+        width: fit-content;
+        margin-top: 3px;
+        color: $color-text;
+        position: relative;
+        letter-spacing: 0.17px;
+        text-transform: uppercase;
+        @include fontSize(18);
+        @include fontExo2(ExtraBold);
+        @include transition();
+      }
+      &:hover {
+        .team {
+          color: $black-lightest;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
+    }
+  }
   height: 320px;
   position: relative;
   letter-spacing: 0.75px;
@@ -939,8 +1044,7 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
     span {
       color: $color-text-grey;
-      font-size: 14px;
-      line-height: 20px;
+      @include fontSize(14);
       @include fontExo2('SemiBold');
     }
     .title {
@@ -961,8 +1065,8 @@ h1, h2, h3, h4 {
     margin-right: 26px;
     position: absolute;
     color: $white-text;
-    font-size: 14px;
     text-transform: uppercase;
+    @include fontSize(14);
     @include fontExo2('SemiBold');
     @include flex(center, center);
     .circle {
@@ -1452,39 +1556,41 @@ footer {
 }
 .forecast {
   &-section {
-    padding-top: 20px;
-    background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-    background: -moz-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-    background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-    background: -o-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-    background: linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
-    .section-header {
-      position: relative;
-      @include flex(none, center);
-      .section-title {
-        margin-bottom: 0;
-      }
-      .tabs {
-        &-list {
-          z-index: 10;
-          margin-left: auto;
-          margin-right: 17px;
-        }
-        &-item {
-          margin-right: 21px;
-          a {
-            @include flex(none, center);
-          }
-        }
-      }
-      &:after {
-        @include forecast-border();
-      }
-    }
+    @include gradient-grey(6);
     &-slider {
       .slick-dots li span.current {
         background-color: $gold;
       }
+    }
+    &.with-tabs {
+      padding-top: 20px;
+      .section-header {
+        position: relative;
+        @include flex(none, center);
+        .section-title {
+          margin-bottom: 0;
+        }
+        .tabs {
+          &-list {
+            z-index: 10;
+            margin-left: auto;
+            margin-right: 17px;
+          }
+          &-item {
+            margin-right: 21px;
+            a {
+              @include flex(none, center);
+            }
+          }
+        }
+        &:after {
+          @include forecast-border();
+        }
+      }
+    }
+    &.dark {
+      background: none;
+      @include gradient-grey(5);
     }
   }
   &-slider {
@@ -1719,10 +1825,9 @@ footer {
     text-align: center;
     margin-bottom: 16px;
     h1 {
-      font-size: 18px;
-      line-height: 24px;
-      text-transform: uppercase;
       letter-spacing: 0.17px;
+      text-transform: uppercase;
+      @include fontSize(18);
       @include fontExo2(ExtraBold)
     }
   }
@@ -1745,6 +1850,68 @@ footer {
       display: block;
       margin: 40px auto;
       max-height: 600px;
+    }
+  }
+}
+.widget {
+  padding-top: 20px;
+  &-title {
+    padding: 25px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    @include fontExo2(SemiBold);
+  }
+  .forecast-card-info {
+    height: 184px;
+    margin-bottom: 16px;
+    .box {
+      padding: 0 16px 17px;
+    }
+    .preview {
+      display: none;
+      visibility: hidden;
+    }
+    .top {
+      padding: 16px;
+      .logo {
+        .team {
+          width: 32px;
+          height: 32px;
+          border-radius: 0;
+          box-shadow: none;
+          margin-right: 6px;
+          &:last-child {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+      }
+      .datetime {
+        .date {
+          letter-spacing: 0.4px;
+          @include fontSize(12);
+          @include fontExo2(Medium)
+        }
+        .time {
+          letter-spacing: 0.25px;
+          @include fontSize(14);
+          @include fontExo2(SemiBold)
+        }
+      }
+    }
+    .league {
+      letter-spacing: 0.4px;
+      @include fontSize(12);
+      @include fontExo2(Medium)
+    }
+    .name {
+      .team {
+        margin-top: 0;
+        text-transform: none;
+        letter-spacing: 0.25px;
+        @include fontSize(14);
+        @include fontExo2(SemiBold)
+      }
     }
   }
 }

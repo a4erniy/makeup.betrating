@@ -1,5 +1,20 @@
 // Fonts
 
+@mixin fontSize($size: 14) {
+  @if $size == 12 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  @if $size == 14 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @if $size == 18 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 @mixin fontExo2($type: Regular) {
   @if $type == Light {
     font-family: 'Exo 2', sans-serif;

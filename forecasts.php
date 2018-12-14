@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 
-<section class="forecast-section">
+<section class="forecast-section with-tabs">
     <div class="container">
         <div class="section-header">
             <div class="section-title"><h2>Прогнозы на спорт</h2></div>

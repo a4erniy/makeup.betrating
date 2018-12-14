@@ -29,9 +29,9 @@
   font-weight: 800;
   font-style: normal; }
 body {
+  color: #28292B;
   font-size: 14px;
-  line-height: 20px;
-  color: #28292B; }
+  line-height: 20px; }
   body.grey-lightest {
     background-color: #F8F9FB; }
 
@@ -293,11 +293,11 @@ h1, h2, h3, h4 {
   margin-bottom: 24px; }
   .section-title h1, .section-title h2 {
     margin: 0;
-    font-size: 18px;
-    line-height: 24px;
     color: #28292B;
     letter-spacing: 0.17px;
     text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
     font-family: 'Exo 2 Extra', sans-serif;
     font-weight: 800;
     font-style: normal; }
@@ -474,9 +474,9 @@ h1, h2, h3, h4 {
     .news-card.size-small .title {
       margin-top: 20px; }
       .news-card.size-small .title h3 {
+        letter-spacing: 0.25px;
         font-size: 14px;
         line-height: 20px;
-        letter-spacing: 0.25px;
         font-family: 'Exo 2 Semi', sans-serif;
         font-weight: 600;
         font-style: normal; }
@@ -512,9 +512,9 @@ h1, h2, h3, h4 {
     .bonus-card .title a {
       color: #28292B; }
       .bonus-card .title a h3 {
+        letter-spacing: 0.17px;
         font-size: 18px;
         line-height: 24px;
-        letter-spacing: 0.17px;
         font-family: 'Exo 2 Extra', sans-serif;
         font-weight: 800;
         font-style: normal; }
@@ -631,11 +631,11 @@ h1, h2, h3, h4 {
     padding-top: 19px;
     position: relative; }
     .school-card .title h3 {
-      font-size: 14px;
-      line-height: 20px;
       text-align: center;
       color: #28292B;
       letter-spacing: 0.25px;
+      font-size: 14px;
+      line-height: 20px;
       font-family: 'Exo 2 Semi', sans-serif;
       font-weight: 600;
       font-style: normal;
@@ -941,6 +941,134 @@ h1, h2, h3, h4 {
         background-image: url("../image/ico/ceff-gold.png"); }
         .forecast-card-table:hover.premium .value .ceff:after {
           background-image: url("../image/ico/crown-ceff-gold.png"); }
+  .forecast-card-info {
+    height: 360px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #f1f2f4;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .forecast-card-info .box {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      padding: 0 24px 28px; }
+    .forecast-card-info .preview {
+      width: 284px;
+      height: 157px;
+      position: relative; }
+      .forecast-card-info .preview .image {
+        opacity: 0.6; }
+      .forecast-card-info .preview .tag {
+        left: 24px;
+        bottom: 13px;
+        position: absolute;
+        padding: 3px 13px;
+        border-radius: 100px;
+        background-color: rgba(210, 210, 210, 0.8);
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 0.4px;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+      .forecast-card-info .preview:before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #05162c;
+        opacity: .9; }
+    .forecast-card-info .top {
+      padding: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .forecast-card-info .top .logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .forecast-card-info .top .logo .team {
+          z-index: 10;
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          position: relative;
+          background-color: #fff;
+          box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.08);
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .forecast-card-info .top .logo .team img {
+            width: 32px;
+            height: 32px; }
+          .forecast-card-info .top .logo .team:last-child {
+            z-index: 5;
+            margin-left: -14px; }
+      .forecast-card-info .top .datetime {
+        text-align: right;
+        margin-left: auto; }
+        .forecast-card-info .top .datetime .date {
+          color: #807F86;
+          letter-spacing: 0.25px;
+          font-family: 'Exo 2', sans-serif;
+          font-weight: normal;
+          font-style: normal; }
+        .forecast-card-info .top .datetime .time {
+          color: #28292B;
+          letter-spacing: 0.17px;
+          font-size: 18px;
+          line-height: 24px;
+          font-family: 'Exo 2 Extra', sans-serif;
+          font-weight: 800;
+          font-style: normal; }
+    .forecast-card-info .league {
+      color: #807F86;
+      letter-spacing: 0.25px;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: normal;
+      font-style: normal; }
+    .forecast-card-info .name {
+      width: fit-content; }
+      .forecast-card-info .name .team {
+        width: fit-content;
+        margin-top: 3px;
+        color: #28292B;
+        position: relative;
+        letter-spacing: 0.17px;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: 'Exo 2 Extra', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+      .forecast-card-info .name:hover .team {
+        color: #727B88; }
+    .forecast-card-info:hover {
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
   .forecast-card .image {
     top: 0;
     left: 50%;
@@ -1012,8 +1140,9 @@ h1, h2, h3, h4 {
     margin-right: 26px;
     position: absolute;
     color: #ffffff;
-    font-size: 14px;
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -1516,52 +1645,60 @@ footer {
       border-bottom-right-radius: 16px; }
 
 .forecast-section {
-  padding-top: 20px;
   background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -moz-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -o-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%); }
-  .forecast-section .section-header {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .forecast-section .section-header .section-title {
-      margin-bottom: 0; }
-    .forecast-section .section-header .tabs-list {
-      z-index: 10;
-      margin-left: auto;
-      margin-right: 17px; }
-    .forecast-section .section-header .tabs-item {
-      margin-right: 21px; }
-      .forecast-section .section-header .tabs-item a {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-    .forecast-section .section-header:after {
-      background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-      background: -moz-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-      background: -ms-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-      background: -o-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-      background: linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 2px;
-      top: auto;
-      bottom: 0; }
   .forecast-section-slider .slick-dots li span.current {
     background-color: #FFB90C; }
+  .forecast-section.with-tabs {
+    padding-top: 20px; }
+    .forecast-section.with-tabs .section-header {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .forecast-section.with-tabs .section-header .section-title {
+        margin-bottom: 0; }
+      .forecast-section.with-tabs .section-header .tabs-list {
+        z-index: 10;
+        margin-left: auto;
+        margin-right: 17px; }
+      .forecast-section.with-tabs .section-header .tabs-item {
+        margin-right: 21px; }
+        .forecast-section.with-tabs .section-header .tabs-item a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+      .forecast-section.with-tabs .section-header:after {
+        background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+        background: -moz-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+        background: -ms-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+        background: -o-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+        background: linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        top: auto;
+        bottom: 0; }
+  .forecast-section.dark {
+    background: none;
+    background: -webkit-linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%);
+    background: -moz-linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%);
+    background: -ms-linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%);
+    background: -o-linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%);
+    background: linear-gradient(to top, rgba(249, 250, 250, 0) 0%, #eaecf0 100%); }
 .forecast-slider-front {
   overflow: hidden;
   margin-right: -16px;
@@ -1748,10 +1885,10 @@ footer {
     text-align: center;
     margin-bottom: 16px; }
     .content .title h1 {
+      letter-spacing: 0.17px;
+      text-transform: uppercase;
       font-size: 18px;
       line-height: 24px;
-      text-transform: uppercase;
-      letter-spacing: 0.17px;
       font-family: 'Exo 2 Extra', sans-serif;
       font-weight: 800;
       font-style: normal; }
@@ -1772,5 +1909,64 @@ footer {
     display: block;
     margin: 40px auto;
     max-height: 600px; }
+
+.widget {
+  padding-top: 20px; }
+  .widget-title {
+    padding: 25px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+  .widget .forecast-card-info {
+    height: 184px;
+    margin-bottom: 16px; }
+    .widget .forecast-card-info .box {
+      padding: 0 16px 17px; }
+    .widget .forecast-card-info .preview {
+      display: none;
+      visibility: hidden; }
+    .widget .forecast-card-info .top {
+      padding: 16px; }
+      .widget .forecast-card-info .top .logo .team {
+        width: 32px;
+        height: 32px;
+        border-radius: 0;
+        box-shadow: none;
+        margin-right: 6px; }
+        .widget .forecast-card-info .top .logo .team:last-child {
+          margin-left: 0;
+          margin-right: 0; }
+      .widget .forecast-card-info .top .datetime .date {
+        letter-spacing: 0.4px;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+        font-style: normal; }
+      .widget .forecast-card-info .top .datetime .time {
+        letter-spacing: 0.25px;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+    .widget .forecast-card-info .league {
+      letter-spacing: 0.4px;
+      font-size: 12px;
+      line-height: 16px;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+    .widget .forecast-card-info .name .team {
+      margin-top: 0;
+      text-transform: none;
+      letter-spacing: 0.25px;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */
