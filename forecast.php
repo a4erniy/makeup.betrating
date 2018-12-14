@@ -2,7 +2,29 @@
 
 <section class="forecast-header">
     <div class="container">
-        <div class=""
+        <div class="image"></div>
+        <div class="forecast-data">
+            <div class="logo">
+                <div class="team"><img src="content/team/logo-1-big.png" alt=""></div>
+                <div class="team"><img src="content/team/logo-2-big.png" alt=""></div>
+            </div>
+            <div class="pre-title">Прогноз на матч:</div>
+            <div class="title">ЛЕЙПЦИГ — ХОФФЕНХАЙМ</div>
+            <div class="datetime">31 ОКТЯБРЯ, 22:45</div>
+            <div class="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg>
+                    </li>
+                    <li>
+                        <a href="#">Прогнозы на спорт</a><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg>
+                    </li>
+                    <li>
+                        <span>«Металлург» — «Йокерит»</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
