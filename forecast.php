@@ -2,7 +2,12 @@
 
 <section class="forecast-header">
     <div class="container">
-        <div class="image"></div>
+        <div class="image">
+            <div class="layer">
+                <img src="content/pike.jpg" alt="">
+            </div>
+            <div class="mask"></div>
+        </div>
         <div class="forecast-data">
             <div class="logo">
                 <div class="team"><img src="content/team/logo-1-big.png" alt=""></div>
@@ -11,32 +16,39 @@
             <div class="pre-title">Прогноз на матч:</div>
             <div class="title">ЛЕЙПЦИГ — ХОФФЕНХАЙМ</div>
             <div class="datetime">31 ОКТЯБРЯ, 22:45</div>
-            <div class="breadcrumbs">
-                <ul>
-                    <li>
-                        <a href="#">Главная</a><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg>
-                    </li>
-                    <li>
-                        <a href="#">Прогнозы на спорт</a><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg>
-                    </li>
-                    <li>
-                        <span>«Металлург» — «Йокерит»</span>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="forecast-content">
+<section class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-2">
-                <div class="sidebar"></div>
+                <div class="sidebar">
+                    <div class="widget">
+                        <div class="widget-title">Топ букмекеров</div>
+                        <div class="more">
+                            <a href="#" class="button button-grey">Весь рейтинг</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-8">
                 <div class="container">
                     <div class="content-box">
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li>
+                                    <a href="#">Главная</a><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg>
+                                </li>
+                                <li>
+                                    <a href="#">Прогнозы на спорт</a><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg>
+                                </li>
+                                <li>
+                                    <span>«Металлург» — «Йокерит»</span>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="content">
                             <div class="title">
                                 <h1>Прогноз на матч «Лейпциг» — «Хоффенхайм»</h1>

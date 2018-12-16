@@ -946,8 +946,8 @@ h1, h2, h3, h4 {
           box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.08);
           @include flex(center, center);
           img {
-            width: 32px;
-            height: 32px;
+            max-width: 32px;
+            max-height: 32px;
           }
           &:last-child {
             z-index: 5;
@@ -1279,6 +1279,8 @@ h1, h2, h3, h4 {
 
 // section
 header {
+  z-index: 10;
+  position: relative;
   .header {
     @include flex();
     & > div {
@@ -1613,8 +1615,101 @@ footer {
       }
     }
   }
-  &-header {}
-  &-data {}
+  &-header {
+    z-index: 5;
+    height: 660px;
+    position: relative;
+    margin-top: -88px;
+    padding: 0;
+    padding-top: 88px;
+    & + section {
+      position: relative;
+      z-index: 10;
+      margin-top: -298px;
+    }
+    .image {
+      height: 88px;
+      margin-top: -88px;
+      position: relative;
+      .mask, .layer {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 660px;
+        position: absolute;
+      }
+      .layer {
+        z-index: 1;
+        opacity: 0.9;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      .mask {
+        z-index: 2;
+        background: rgba(248,249,251,0.75);
+        background: -moz-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248,249,251,0.75)), color-stop(60%, rgba(248,249,251,1)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
+        background: radial-gradient(ellipse at center, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1 );
+      }
+    }
+  }
+  &-data {
+    min-height: 274px;
+    text-align: center;
+    padding-top: 16px;
+    position: relative;
+    z-index: 10;
+    .logo {
+      margin-bottom: 24px;
+      @include flex(center, center);
+      .team {
+        z-index: 10;
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.08);
+        @include flex(center, center);
+        img {
+          max-width: 48px;
+          max-height: 48px;
+        }
+        &:last-child {
+          z-index: 5;
+          margin-left: -24px;
+        }
+      }
+    }
+    .pre-title {
+      margin-bottom: 5px;
+      letter-spacing: 0.75px;
+      color: $color-text-grey;
+      text-transform: uppercase;
+      @include fontExo2(SemiBold);
+    }
+    .title {
+      margin-bottom: 7px;
+      font-size: 34px;
+      line-height: 44px;
+      letter-spacing: 0.25px;
+      text-transform: uppercase;
+      @include fontExo2(ExtraBold);
+    }
+    .datetime {
+      font-size: 24px;
+      line-height: 32px;
+      text-transform: uppercase;
+      @include fontExo2(Light);
+    }
+  }
 }
 .school {
   &-list {
@@ -1814,7 +1909,7 @@ footer {
   }
 }
 .content {
-  padding: 40px 92px ;
+  &-section {}
   &-box {
     border-radius: 6px;
     background-color: #fff;
@@ -1823,6 +1918,7 @@ footer {
   &-padding {
     padding: 0 8px;
   }
+  padding: 40px 92px ;
   .title {
     text-align: center;
     margin-bottom: 16px;
@@ -1913,6 +2009,29 @@ footer {
         letter-spacing: 0.25px;
         @include fontSize(14);
         @include fontExo2(SemiBold)
+      }
+    }
+  }
+}
+.breadcrumbs {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -58px;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      a, span {
+        color: $color-text-grey;
+        @include fontSize(12);
+        @include fontExo2(Medium)
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: $color-text-grey;
+        vertical-align: middle;
       }
     }
   }

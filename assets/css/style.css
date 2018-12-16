@@ -1019,8 +1019,8 @@ h1, h2, h3, h4 {
           -ms-flex-align: center;
           align-items: center; }
           .forecast-card-info .top .logo .team img {
-            width: 32px;
-            height: 32px; }
+            max-width: 32px;
+            max-height: 32px; }
           .forecast-card-info .top .logo .team:last-child {
             z-index: 5;
             margin-left: -14px; }
@@ -1370,117 +1370,120 @@ h1, h2, h3, h4 {
     position: relative;
     box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
 
-header .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  header .header > div {
+header {
+  z-index: 10;
+  position: relative; }
+  header .header {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 88px; }
-  header .header .logo {
-    width: 122px;
-    margin-right: 134px; }
-  header .header .menu li a {
-    color: #54535A;
-    line-height: 88px;
-    font-family: 'Exo 2 Semi', sans-serif;
-    font-weight: 600;
-    font-style: normal; }
-    header .header .menu li a svg {
-      fill: #BABFC9; }
-  header .header .menu li.active a {
-    color: #25A96A; }
-    header .header .menu li.active a:before {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 4px;
-      background-color: #25C277; }
-  header .header .search {
-    margin-left: auto;
-    margin-right: -32px; }
-    header .header .search-button {
-      position: relative;
-      border-radius: 50%;
-      height: 48px;
-      width: 48px;
-      overflow: hidden;
-      border: 1px solid #E6E5EC;
-      box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0); }
-      header .header .search-button span {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    display: flex; }
+    header .header > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 88px; }
+    header .header .logo {
+      width: 122px;
+      margin-right: 134px; }
+    header .header .menu li a {
+      color: #54535A;
+      line-height: 88px;
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal; }
+      header .header .menu li a svg {
+        fill: #BABFC9; }
+    header .header .menu li.active a {
+      color: #25A96A; }
+      header .header .menu li.active a:before {
         display: block;
         position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #25C277; }
+    header .header .search {
+      margin-left: auto;
+      margin-right: -32px; }
+      header .header .search-button {
+        position: relative;
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+        overflow: hidden;
+        border: 1px solid #E6E5EC;
+        box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0); }
+        header .header .search-button span {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
+          header .header .search-button span.loop {
+            background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+            background: -moz-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+            background: -ms-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+            background: -o-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+            background: linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%); }
+          header .header .search-button span.cross {
+            opacity: 0;
+            background: -webkit-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+            background: -moz-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+            background: -ms-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+            background: -o-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
+            background: linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%); }
+        header .header .search-button.open .loop {
+          opacity: 0; }
+        header .header .search-button.open .cross {
+          opacity: 1; }
+    header .header .login {
+      margin-left: auto; }
+      header .header .login-button {
+        width: 100px;
+        line-height: 48px;
+        padding-right: 9px;
+        color: #ffffff;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+        background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out; }
-        header .header .search-button span.loop {
-          background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
-          background: -moz-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
-          background: -ms-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
-          background: -o-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
-          background: linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%); }
-        header .header .search-button span.cross {
-          opacity: 0;
-          background: -webkit-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
-          background: -moz-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
-          background: -ms-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
-          background: -o-linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%);
-          background: linear-gradient(-180deg, #F9FAFB 0%, #F4F5F6 100%); }
-      header .header .search-button.open .loop {
-        opacity: 0; }
-      header .header .search-button.open .cross {
-        opacity: 1; }
-  header .header .login {
-    margin-left: auto; }
-    header .header .login-button {
-      width: 100px;
-      line-height: 48px;
-      padding-right: 9px;
-      color: #ffffff;
-      letter-spacing: 0.75px;
-      text-transform: uppercase;
-      box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
-      font-family: 'Exo 2 Semi', sans-serif;
-      font-weight: 600;
-      font-style: normal;
-      background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      header .header .login-button svg {
-        width: 24px;
-        height: 24px;
-        fill: #ffffff;
-        margin-right: 3px; }
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        header .header .login-button svg {
+          width: 24px;
+          height: 24px;
+          fill: #ffffff;
+          margin-right: 3px; }
 
 footer {
   padding: 30px 0 44px;
@@ -1711,6 +1714,109 @@ footer {
     padding: 0 0 24px 24px; }
     .forecast-slider-front .slick-dots li:first-child {
       margin-left: 0; }
+.forecast-header {
+  z-index: 5;
+  height: 660px;
+  position: relative;
+  margin-top: -88px;
+  padding: 0;
+  padding-top: 88px; }
+  .forecast-header + section {
+    position: relative;
+    z-index: 10;
+    margin-top: -298px; }
+  .forecast-header .image {
+    height: 88px;
+    margin-top: -88px;
+    position: relative; }
+    .forecast-header .image .mask, .forecast-header .image .layer {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 660px;
+      position: absolute; }
+    .forecast-header .image .layer {
+      z-index: 1;
+      opacity: 0.9;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%); }
+    .forecast-header .image .mask {
+      z-index: 2;
+      background: rgba(248, 249, 251, 0.75);
+      background: -moz-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248, 249, 251, 0.75)), color-stop(60%, #f8f9fb));
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
+      background: -o-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
+      background: -ms-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
+      background: radial-gradient(ellipse at center, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1 ); }
+.forecast-data {
+  min-height: 274px;
+  text-align: center;
+  padding-top: 16px;
+  position: relative;
+  z-index: 10; }
+  .forecast-data .logo {
+    margin-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .forecast-data .logo .team {
+      z-index: 10;
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      position: relative;
+      background-color: #fff;
+      box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.08);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .forecast-data .logo .team img {
+        max-width: 48px;
+        max-height: 48px; }
+      .forecast-data .logo .team:last-child {
+        z-index: 5;
+        margin-left: -24px; }
+  .forecast-data .pre-title {
+    margin-bottom: 5px;
+    letter-spacing: 0.75px;
+    color: #807F86;
+    text-transform: uppercase;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+  .forecast-data .title {
+    margin-bottom: 7px;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    font-family: 'Exo 2 Extra', sans-serif;
+    font-weight: 800;
+    font-style: normal; }
+  .forecast-data .datetime {
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-style: normal; }
 
 .school-list {
   display: -webkit-box;
@@ -1968,5 +2074,27 @@ footer {
       font-family: 'Exo 2 Semi', sans-serif;
       font-weight: 600;
       font-style: normal; }
+
+.breadcrumbs {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -58px; }
+  .breadcrumbs ul {
+    text-align: center; }
+    .breadcrumbs ul li {
+      display: inline-block; }
+      .breadcrumbs ul li a, .breadcrumbs ul li span {
+        color: #807F86;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+        font-style: normal; }
+      .breadcrumbs ul li svg {
+        width: 16px;
+        height: 16px;
+        fill: #807F86;
+        vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */
