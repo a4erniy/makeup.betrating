@@ -155,7 +155,7 @@ h1, h2, h3, h4 {
       @include flex();
       @include transition();
       span {
-        height: 2px!important;
+        height: 2px !important;
         width: 100%;
         display: block;
         position: absolute;
@@ -172,7 +172,7 @@ h1, h2, h3, h4 {
       }
       &:hover {
         span {
-          height: 8px!important;
+          height: 8px !important;
         }
       }
       &.slick-active {
@@ -289,16 +289,16 @@ h1, h2, h3, h4 {
   }
 }
 .pd {
-  &-no {padding: 0!important;}
-  &-20 {padding: 20px 0!important;}
-  &-40 {padding: 40px 0!important;}
+  &-no {padding: 0 !important;}
+  &-20 {padding: 20px 0 !important;}
+  &-40 {padding: 40px 0 !important;}
   &t {
-    &-20 {padding-top: 20px!important;}
-    &-40 {padding-top: 40px!important;}
+    &-20 {padding-top: 20px !important;}
+    &-40 {padding-top: 40px !important;}
   }
   &b {
-    &-20 {padding-bottom: 20px!important;}
-    &-40 {padding-bottom: 40px!important;}
+    &-20 {padding-bottom: 20px !important;}
+    &-40 {padding-bottom: 40px !important;}
   }
 }
 
@@ -641,6 +641,61 @@ h1, h2, h3, h4 {
   }
 }
 .company-card {
+  &-circle {
+    height: 60px;
+    margin-bottom: 14px;
+    background: -webkit-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: -moz-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: -ms-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: -o-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    border-radius: 100px 0 0 100px;
+    a {
+      background-color: rgba(248, 249, 251, 0);
+      border-radius: 100px 0 0 100px;
+      @include flex(none, center);
+    }
+    .rating {
+      &-1 {}
+      &-2 {}
+      &-3 {
+        background-image: url("../image/rating/stars3.png");
+      }
+      &-4 {
+        background-image: url("../image/rating/stars4.png");
+      }
+      &-5 {
+        background-image: url("../image/rating/stars5.png");
+      }
+      margin-top: -3px;
+      margin-left: -3px;
+      position: relative;
+      padding: 3px;
+      background-size: 100% 100%;
+      .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #fff;
+        @include flex(center, center);
+        img {
+          max-width: 48px;
+          height: 24px;
+        }
+      }
+    }
+    .name {
+      padding-left: 14px;
+      color: $color-text;
+      letter-spacing: 0.25px;
+      @include fontExo2(SemiBold);
+    }
+    &:hover {
+      a {
+        background-color: rgba(248, 249, 251, 1);
+      }
+    }
+  }
   width: 184px;
   height: 224px;
   overflow: hidden;
@@ -1649,14 +1704,14 @@ footer {
       }
       .mask {
         z-index: 2;
-        background: rgba(248,249,251,0.75);
-        background: -moz-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
-        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248,249,251,0.75)), color-stop(60%, rgba(248,249,251,1)));
-        background: -webkit-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
-        background: -o-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
-        background: -ms-radial-gradient(center, ellipse cover, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
-        background: radial-gradient(ellipse at center, rgba(248,249,251,0.75) 0%, rgba(248,249,251,1) 60%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1 );
+        background: rgba(248, 249, 251, 0.75);
+        background: -moz-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248, 249, 251, 0.75)), color-stop(60%, rgba(248, 249, 251, 1)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
+        background: radial-gradient(ellipse at center, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1);
       }
     }
   }
@@ -1918,7 +1973,7 @@ footer {
   &-padding {
     padding: 0 8px;
   }
-  padding: 40px 92px ;
+  padding: 40px 92px;
   .title {
     text-align: center;
     margin-bottom: 16px;
@@ -1958,6 +2013,9 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.75px;
     @include fontExo2(SemiBold);
+  }
+  .more {
+    padding-top: 14px;
   }
   .forecast-card-info {
     height: 184px;

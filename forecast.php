@@ -27,6 +27,106 @@
                 <div class="sidebar">
                     <div class="widget">
                         <div class="widget-title">Топ букмекеров</div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-5">
+                                    <div class="logo">
+                                        <img src="content/company/leon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">1. Леон</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-4">
+                                    <div class="logo">
+                                        <img src="content/company/liga.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">2. Лига Ставок</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-3">
+                                    <div class="logo">
+                                        <img src="content/company/bwin.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">3. Bwin</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-5">
+                                    <div class="logo">
+                                        <img src="content/company/leon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">4. Леон</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-4">
+                                    <div class="logo">
+                                        <img src="content/company/liga.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">5. Лига Ставок</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-3">
+                                    <div class="logo">
+                                        <img src="content/company/bwin.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">6. Bwin</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-5">
+                                    <div class="logo">
+                                        <img src="content/company/leon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">7. Леон</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-4">
+                                    <div class="logo">
+                                        <img src="content/company/liga.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">8. Лига Ставок</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-3">
+                                    <div class="logo">
+                                        <img src="content/company/bwin.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">9. Bwin</div>
+                            </a>
+                        </div>
+                        <div class="company-card-circle">
+                            <a href="#">
+                                <div class="rating rating-3">
+                                    <div class="logo">
+                                        <img src="content/company/bwin.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name">10. Bwin</div>
+                            </a>
+                        </div>
                         <div class="more">
                             <a href="#" class="button button-grey">Весь рейтинг</a>
                         </div>

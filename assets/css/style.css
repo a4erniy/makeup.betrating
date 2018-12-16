@@ -660,6 +660,62 @@ h1, h2, h3, h4 {
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
+  .company-card-circle {
+    height: 60px;
+    margin-bottom: 14px;
+    background: -webkit-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: -moz-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: -ms-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: -o-linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    background: linear-gradient(270deg, rgba(242, 244, 245, 0) 0%, #e0e4e8 100%);
+    border-radius: 100px 0 0 100px; }
+    .company-card-circle a {
+      background-color: rgba(248, 249, 251, 0);
+      border-radius: 100px 0 0 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .company-card-circle .rating {
+      margin-top: -3px;
+      margin-left: -3px;
+      position: relative;
+      padding: 3px;
+      background-size: 100% 100%; }
+      .company-card-circle .rating-3 {
+        background-image: url("../image/rating/stars3.png"); }
+      .company-card-circle .rating-4 {
+        background-image: url("../image/rating/stars4.png"); }
+      .company-card-circle .rating-5 {
+        background-image: url("../image/rating/stars5.png"); }
+      .company-card-circle .rating .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .company-card-circle .rating .logo img {
+          max-width: 48px;
+          height: 24px; }
+    .company-card-circle .name {
+      padding-left: 14px;
+      color: #28292B;
+      letter-spacing: 0.25px;
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal; }
+    .company-card-circle:hover a {
+      background-color: #f8f9fb; }
   .company-card .branch {
     width: 56px;
     height: 56px;
@@ -1752,7 +1808,7 @@ footer {
       background: -o-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
       background: -ms-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
       background: radial-gradient(ellipse at center, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1 ); }
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1); }
 .forecast-data {
   min-height: 274px;
   text-align: center;
@@ -2025,6 +2081,8 @@ footer {
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal; }
+  .widget .more {
+    padding-top: 14px; }
   .widget .forecast-card-info {
     height: 184px;
     margin-bottom: 16px; }
