@@ -1698,7 +1698,6 @@ footer {
         opacity: 0.9;
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
         -o-filter: grayscale(100%);
         filter: grayscale(100%);
       }
@@ -1749,6 +1748,22 @@ footer {
       color: $color-text-grey;
       text-transform: uppercase;
       @include fontExo2(SemiBold);
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: #fff;
+        vertical-align: bottom;
+        margin-right: 4px;
+      }
+      .premium {
+        padding: 3px 10px 4px;
+        color: $white-text;
+        display: inline-block;
+        border-radius: 100px;
+        letter-spacing: 0.4px;
+        @include fontSize(12);
+        @include gradient-gold();
+      }
     }
     .title {
       margin-bottom: 7px;
@@ -1974,6 +1989,38 @@ footer {
     border-radius: 6px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08);
+    .tabs {
+      box-shadow: 0 0 1px rgba(10, 31, 68, 0.08);
+      ul {
+        @include flex(center, center);
+        li {
+          margin: 0 12px;
+          a {
+            display: block;
+            line-height: 64px;
+            position: relative;
+            color: $color-text-grey;
+            letter-spacing: 0.25px;
+            @include fontExo2(SemiBold);
+          }
+          &.active {
+            a {
+              color: $green-dark;
+              &:after {
+                @include before-after();
+                top: auto;
+                bottom: 0;
+                height: 4px;
+                background-color: $green-dark;
+              }
+            }
+          }
+          &:hover a {
+            color: $green-dark;
+          }
+        }
+      }
+    }
     .forecast-from-editor {
       height: 320px;
       background-image: url("../image/mask/exodus.png");
@@ -2115,6 +2162,10 @@ footer {
       display: block;
       margin: 40px auto;
       max-height: 600px;
+    }
+    a {
+      color: $green-dark;
+      @include fontExo2(SemiBold)
     }
   }
 }

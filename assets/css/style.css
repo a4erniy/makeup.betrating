@@ -1796,7 +1796,6 @@ footer {
       opacity: 0.9;
       -webkit-filter: grayscale(100%);
       -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
       -o-filter: grayscale(100%);
       filter: grayscale(100%); }
     .forecast-header .image .mask {
@@ -1857,6 +1856,25 @@ footer {
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal; }
+    .forecast-data .pre-title svg {
+      width: 16px;
+      height: 16px;
+      fill: #fff;
+      vertical-align: bottom;
+      margin-right: 4px; }
+    .forecast-data .pre-title .premium {
+      padding: 3px 10px 4px;
+      color: #ffffff;
+      display: inline-block;
+      border-radius: 100px;
+      letter-spacing: 0.4px;
+      font-size: 12px;
+      line-height: 16px;
+      background: -webkit-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+      background: -moz-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+      background: -ms-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+      background: -o-linear-gradient(90deg, #FFD100 0%, #FFB31B 100%);
+      background: linear-gradient(90deg, #FFD100 0%, #FFB31B 100%); }
   .forecast-data .title {
     margin-bottom: 7px;
     font-size: 34px;
@@ -2046,6 +2064,44 @@ footer {
     border-radius: 6px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08); }
+    .content-box .tabs {
+      box-shadow: 0 0 1px rgba(10, 31, 68, 0.08); }
+      .content-box .tabs ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .content-box .tabs ul li {
+          margin: 0 12px; }
+          .content-box .tabs ul li a {
+            display: block;
+            line-height: 64px;
+            position: relative;
+            color: #807F86;
+            letter-spacing: 0.25px;
+            font-family: 'Exo 2 Semi', sans-serif;
+            font-weight: 600;
+            font-style: normal; }
+          .content-box .tabs ul li.active a {
+            color: #25A96A; }
+            .content-box .tabs ul li.active a:after {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              content: "";
+              width: 100%;
+              top: auto;
+              bottom: 0;
+              height: 4px;
+              background-color: #25A96A; }
+          .content-box .tabs ul li:hover a {
+            color: #25A96A; }
     .content-box .forecast-from-editor {
       height: 320px;
       background-image: url("../image/mask/exodus.png");
@@ -2196,6 +2252,11 @@ footer {
     display: block;
     margin: 40px auto;
     max-height: 600px; }
+  .content .text a {
+    color: #25A96A;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
 
 .widget {
   padding-top: 20px; }
