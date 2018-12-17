@@ -229,7 +229,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table-box table-last-matches" id="content_last_matches">
+                        <div class="table-box table-last-matches" id="table_last_matches">
                             <div class="content-padding">
                                 <div class="table-name">Последние встречи команд</div>
                                 <div class="table">
@@ -386,7 +386,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table-box table-players" id="content_players">
+                        <div class="table-box table-players" id="table_players">
                             <div class="content-padding">
                                 <div class="table-name">Предварительные составы команд</div>
                                 <div class="table">
@@ -433,7 +433,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table-box table-all-ceffs" id="content_all_ceffs">
+                        <div class="table-box table-all-ceffs" id="table_all_ceffs">
                             <div class="content-padding">
                                 <div class="table-name">Все коэффициенты на ТМ 5</div>
                                 <div class="table">
@@ -495,23 +495,225 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="table-box table-tournament" id="content_tournament">
+                        <div class="table-box table-tournament" id="table_tournament">
                             <div class="content-padding">
                                 <div class="table-name">Турнирная таблица</div>
-<!--                                <div class="table">-->
-<!--                                    <div class="th"></div>-->
-<!--                                    <div class="tr">-->
-<!--                                        <div class="td date">23 Окт</div>-->
-<!--                                        <div class="td team">Краснодар</div>-->
-<!--                                        <div class="td score">0:0</div>-->
-<!--                                        <div class="td team">Интер</div>-->
-<!--                                        <div class="td time">20:00</div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
+                                <div class="table">
+                                    <div class="th small">
+                                        <div class="td league">Премьер-лига</div>
+                                        <div class="td points">И</div>
+                                        <div class="td points">В</div>
+                                        <div class="td points">Н</div>
+                                        <div class="td points">П</div>
+                                        <div class="td points double">РМ</div>
+                                        <div class="td points">О</div>
+                                        <div class="td form-team">ФОРМА</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">1</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">2</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">3</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">4</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr current">
+                                        <div class="td index big">5</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">6</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">7</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">8</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">9</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index big">10</div>
+                                        <div class="td team">
+                                            <div class="logo"><img src="content/team/logo-1.png"></div>
+                                            <div class="name">Краснодар</div>
+                                        </div>
+                                        <div class="td points">24</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">23</div>
+                                        <div class="td points">8</div>
+                                        <div class="td points double">64-50</div>
+                                        <div class="td points">46</div>
+                                        <div class="td form-team">
+                                            <div class="grey"></div>
+                                            <div class="red"></div>
+                                            <div class="yellow"></div>
+                                            <div class="green"></div>
+                                            <div class="green"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="table-box table-other-ceffs" id="content_other_ceffs">
+
+                        <div class="table-box table-other-ceffs" id="table_other_ceffs">
                             <div class="content-padding">
                                 <div class="table-name">Коэффициенты на другие исходы от <a href="#">«БК ЛЕОН»</a></div>
 <!--                                <div class="table">-->

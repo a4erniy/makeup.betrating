@@ -334,6 +334,14 @@ h1, h2, h3, h4 {
     padding: 0 80px; }
   .table-last-matches .th, .table-last-matches .tr {
     padding: 0 12px; }
+  .table-last-matches .tr .td.date {
+    width: 10%; }
+  .table-last-matches .tr .td.time {
+    width: 10%; }
+  .table-last-matches .tr .td.team {
+    width: 35%; }
+  .table-last-matches .tr .td.score {
+    width: 10%; }
   .table-players .content-padding {
     padding: 0 80px; }
   .table-players .th, .table-players .tr {
@@ -348,6 +356,24 @@ h1, h2, h3, h4 {
       margin-left: auto; }
   .table-all-ceffs .tr:hover {
     box-shadow: none !important; }
+  .table-tournament .th.small .td.league {
+    text-transform: uppercase;
+    margin-right: auto;
+    color: #28292B;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+  .table-tournament .tr .td.points, .table-tournament .th .td.points {
+    width: 20px;
+    text-align: center;
+    margin-right: 24px; }
+    .table-tournament .tr .td.points.double, .table-tournament .th .td.points.double {
+      width: 48px; }
+  .table-tournament .tr .td.team, .table-tournament .th .td.team {
+    text-align: center;
+    margin-right: auto; }
+  .table-tournament .tr .td.form-team, .table-tournament .th .td.form-team {
+    width: 45px; }
   .table .th {
     height: 60px;
     position: relative;
@@ -438,19 +464,16 @@ h1, h2, h3, h4 {
     .table .tr .td {
       letter-spacing: 0.25px; }
       .table .tr .td.date {
-        width: 10%;
         color: #807F86;
         font-family: 'Exo 2', sans-serif;
         font-weight: normal;
         font-style: normal; }
       .table .tr .td.time {
-        width: 10%;
         text-align: right;
         font-family: 'Exo 2 Semi', sans-serif;
         font-weight: 600;
         font-style: normal; }
       .table .tr .td.score {
-        width: 10%;
         text-align: center;
         letter-spacing: 0.17px;
         font-size: 18px;
@@ -465,7 +488,6 @@ h1, h2, h3, h4 {
           margin: 0 4px;
           font-style: normal; }
       .table .tr .td.team {
-        width: 35%;
         padding-left: 5px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -489,12 +511,20 @@ h1, h2, h3, h4 {
             margin-right: 0;
             margin-left: 12px; }
       .table .tr .td.index {
+        min-width: 20px;
         color: #807F86;
         letter-spacing: 0.25px;
-        min-width: 20px;
         font-family: 'Exo 2', sans-serif;
         font-weight: normal;
         font-style: normal; }
+        .table .tr .td.index.big {
+          color: #28292B;
+          letter-spacing: 0.17px;
+          font-size: 18px;
+          line-height: 24px;
+          font-family: 'Exo 2 Extra', sans-serif;
+          font-weight: 800;
+          font-style: normal; }
       .table .tr .td.player {
         margin-left: auto;
         margin-right: 10px;
@@ -559,6 +589,31 @@ h1, h2, h3, h4 {
               opacity: 1; }
         .table .tr .td.bet:last-child {
           border-right: 1px solid #e6e5ec; }
+      .table .tr .td.points {
+        letter-spacing: 0.25px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: normal;
+        font-style: normal; }
+      .table .tr .td.form-team {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .table .tr .td.form-team div {
+          width: 8px;
+          height: 6px;
+          margin-left: 1px;
+          background-size: 100% 100%; }
+          .table .tr .td.form-team div.red {
+            background-image: url("../image/form-team/red.png"); }
+          .table .tr .td.form-team div.yellow {
+            background-image: url("../image/form-team/yellow.png"); }
+          .table .tr .td.form-team div.green {
+            background-image: url("../image/form-team/green.png"); }
+          .table .tr .td.form-team div.grey {
+            background-image: url("../image/form-team/grey.png"); }
       .table .tr .td.company-logo {
         margin-right: 16px; }
         .table .tr .td.company-logo .logo {

@@ -319,6 +319,22 @@ h1, h2, h3, h4 {
     .th, .tr {
       padding: 0 12px;
     }
+    .tr {
+      .td {
+        &.date {
+          width: 10%;
+        }
+        &.time {
+          width: 10%;
+        }
+        &.team {
+          width: 35%;
+        }
+        &.score {
+          width: 10%;
+        }
+      }
+    }
   }
   &-players {
     .content-padding {
@@ -345,6 +361,39 @@ h1, h2, h3, h4 {
     .tr {
       &:hover {
         box-shadow: none!important;
+      }
+    }
+  }
+  &-tournament {
+    .th {
+      &.small {
+        .td {
+          &.league {
+            text-transform: uppercase;
+            margin-right: auto;
+            color: $color-text;
+            @include fontExo2(SemiBold)
+          }
+        }
+      }
+    }
+    .tr, .th {
+      .td {
+        &.points {
+          width: 20px;
+          text-align: center;
+          margin-right: 24px;
+          &.double {
+            width: 48px;
+          }
+        }
+        &.team {
+          text-align: center;
+          margin-right: auto;
+        }
+        &.form-team {
+          width: 45px;
+        }
       }
     }
   }
@@ -411,17 +460,14 @@ h1, h2, h3, h4 {
     .td {
       letter-spacing: 0.25px;
       &.date {
-        width: 10%;
         color: $color-text-grey;
         @include fontExo2();
       }
       &.time {
-        width: 10%;
         text-align: right;
         @include fontExo2(SemiBold);
       }
       &.score {
-        width: 10%;
         text-align: center;
         letter-spacing: 0.17px;
         @include fontSize(18);
@@ -435,7 +481,6 @@ h1, h2, h3, h4 {
         }
       }
       &.team {
-        width: 35%;
         padding-left: 5px;
         @include flex(none, center);
         .name {
@@ -457,10 +502,16 @@ h1, h2, h3, h4 {
         }
       }
       &.index {
+        min-width: 20px;
         color: $color-text-grey;
         letter-spacing: 0.25px;
-        min-width: 20px;
         @include fontExo2();
+        &.big {
+          color: $color-text;
+          letter-spacing: 0.17px;
+          @include fontSize(18);
+          @include fontExo2(ExtraBold);
+        }
       }
       &.player {
         margin-left: auto;
@@ -505,6 +556,23 @@ h1, h2, h3, h4 {
         }
         &:last-child {
           border-right: 1px solid #e6e5ec;
+        }
+      }
+      &.points {
+        letter-spacing: 0.25px;
+        @include fontExo2();
+      }
+      &.form-team {
+        @include flex(none, center);
+        div {
+          width: 8px;
+          height: 6px;
+          margin-left: 1px;
+          background-size: 100% 100%;
+          &.red {background-image: url("../image/form-team/red.png");}
+          &.yellow {background-image: url("../image/form-team/yellow.png");}
+          &.green {background-image: url("../image/form-team/green.png");}
+          &.grey {background-image: url("../image/form-team/grey.png");}
         }
       }
       &.company-logo {
