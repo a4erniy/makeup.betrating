@@ -288,6 +288,144 @@ h1, h2, h3, h4 {
     width: 0 !important;
   }
 }
+.table {
+  margin: 0;
+  &-box {
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 40px 0 30px;
+    box-shadow: 0 1px 1px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08);
+  }
+  &-name {
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-text;
+    margin-bottom: 32px;
+    letter-spacing: 0.17px;
+    @include fontSize(18);
+    @include fontExo2(ExtraBold);
+    a {
+      color: $green-dark;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  &-last-matches {
+    .content-padding {
+      padding: 0 80px;
+    }
+    .th, .tr {
+      padding: 0 12px;
+    }
+  }
+  .th {
+    height: 60px;
+    position: relative;
+    background: -webkit-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -moz-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -ms-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -o-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    @include flex(none, center);
+    .td {
+      &.team {
+        @include flex(none, center);
+        .logo {
+          width: 32px;
+          height: 32px;
+          margin-right: 12px;
+        }
+        .name {
+          letter-spacing: 0.4px;
+          text-transform: uppercase;
+          @include fontSize(12);
+          @include fontExo2(SemiBold);
+        }
+      }
+      &.wins {
+        margin-left: auto;
+        color: $color-text-grey;
+        letter-spacing: 0.17px;
+        text-transform: uppercase;
+        @include fontSize(18);
+        @include fontExo2(ExtraBold);
+        span {
+          color: $color-text;
+        }
+      }
+    }
+    &:after {
+      z-index: 1;
+      @include forecast-border();
+      height: 1px;
+    }
+  }
+  .tr {
+    height: 60px;
+    position: relative;
+    @include flex(none, center);
+    @include transition();
+    .td {
+      letter-spacing: 0.25px;
+      &.date {
+        width: 10%;
+        color: $color-text-grey;
+        @include fontExo2();
+      }
+      &.time {
+        width: 10%;
+        text-align: right;
+        @include fontExo2(SemiBold);
+      }
+      &.score {
+        width: 10%;
+        text-align: center;
+        letter-spacing: 0.17px;
+        @include fontSize(18);
+        @include fontExo2(ExtraBold);
+        i {
+          color: #a4aebd;
+          font-size: 16px;
+          letter-spacing: 0.12px;
+          margin: 0 4px;
+          font-style: normal;
+        }
+      }
+      &.team {
+        width: 35%;
+        padding-left: 5px;
+        @include flex(none, center);
+        .name {
+          @include fontExo2(SemiBold);
+        }
+        .logo {
+          width: 32px;
+          height: 32px;
+          margin-right: 12px;
+        }
+        &.first {
+          padding-left: 0;
+          padding-right: 5px;
+          justify-content: flex-end;
+          .logo {
+            margin-right: 0;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+    &:after {
+      z-index: 1;
+      @include forecast-border();
+      height: 1px;
+    }
+    &:hover {
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1);
+    }
+  }
+}
 .pd {
   &-no {padding: 0 !important;}
   &-20 {padding: 20px 0 !important;}
@@ -1991,6 +2129,7 @@ footer {
   &-box {
     position: relative;
     border-radius: 6px;
+    margin-bottom: 16px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08);
     .tabs {
@@ -2116,6 +2255,7 @@ footer {
       }
       ul {
         li {
+          margin-left: 4px;
           display: inline-block;
           a {
             width: 32px;

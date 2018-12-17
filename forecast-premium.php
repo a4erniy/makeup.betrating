@@ -229,11 +229,223 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table-box table-last-matches" id="content_last_matches"></div>
-                        <div class="table-box table-tournament" id="content_tournament"></div>
-                        <div class="table-box table-players" id="content_players"></div>
-                        <div class="table-box table-other-ceffs" id="content_other_ceffs"></div>
-                        <div class="table-box table-all-ceffs" id="content_all_ceffs"></div>
+                        <div class="table-box table-last-matches" id="content_last_matches">
+                            <div class="content-padding">
+                                <div class="table-name">Последние встречи команд</div>
+                                <div class="table">
+                                    <div class="th">
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                            <span class="name">Краснодар</span>
+                                        </div>
+                                        <div class="td wins">
+                                            <span>4</span>/5
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <div class="th">
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td wins">
+                                            <span>2</span>/5
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td date">23 Окт</div>
+                                        <div class="td team first">
+                                            <span class="name">Краснодар</span>
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                        </div>
+                                        <div class="td score">0<i>:</i>0</div>
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                            <span class="name">Интер</span>
+                                        </div>
+                                        <div class="td time">20:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-box table-tournament" id="content_tournament">
+                            <div class="content-padding">
+                                <div class="table-name">Турнирная таблица</div>
+<!--                                <div class="table">-->
+<!--                                    <div class="th"></div>-->
+<!--                                    <div class="tr">-->
+<!--                                        <div class="td date">23 Окт</div>-->
+<!--                                        <div class="td team">Краснодар</div>-->
+<!--                                        <div class="td score">0:0</div>-->
+<!--                                        <div class="td team">Интер</div>-->
+<!--                                        <div class="td time">20:00</div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="table-box table-players" id="content_players">
+                            <div class="content-padding">
+                                <div class="table-name">Предварительные составы команд</div>
+<!--                                <div class="table">-->
+<!--                                    <div class="th"></div>-->
+<!--                                    <div class="tr">-->
+<!--                                        <div class="td date">23 Окт</div>-->
+<!--                                        <div class="td team">Краснодар</div>-->
+<!--                                        <div class="td score">0:0</div>-->
+<!--                                        <div class="td team">Интер</div>-->
+<!--                                        <div class="td time">20:00</div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="table-box table-other-ceffs" id="content_other_ceffs">
+                            <div class="content-padding">
+                                <div class="table-name">Коэффициенты на другие исходы от <a href="#">«БК ЛЕОН»</a></div>
+<!--                                <div class="table">-->
+<!--                                    <div class="th"></div>-->
+<!--                                    <div class="tr">-->
+<!--                                        <div class="td date">23 Окт</div>-->
+<!--                                        <div class="td team">Краснодар</div>-->
+<!--                                        <div class="td score">0:0</div>-->
+<!--                                        <div class="td team">Интер</div>-->
+<!--                                        <div class="td time">20:00</div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="table-box table-all-ceffs" id="content_all_ceffs">
+                            <div class="content-padding">
+                                <div class="table-name">Все коэффициенты на ТМ 5</div>
+<!--                                <div class="table">-->
+<!--                                    <div class="th"></div>-->
+<!--                                    <div class="tr">-->
+<!--                                        <div class="td date">23 Окт</div>-->
+<!--                                        <div class="td team">Краснодар</div>-->
+<!--                                        <div class="td score">0:0</div>-->
+<!--                                        <div class="td team">Шальке 04</div>-->
+<!--                                        <div class="td time">20:00</div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
                         <section class="banner-section">
                             <a href="#" class="banner"></a>
                         </section>

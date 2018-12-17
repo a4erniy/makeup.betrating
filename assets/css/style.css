@@ -307,6 +307,181 @@ h1, h2, h3, h4 {
 .preload .slick-dots li span.current {
   width: 0 !important; }
 
+.table {
+  margin: 0; }
+  .table-box {
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 40px 0 30px;
+    box-shadow: 0 1px 1px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08); }
+  .table-name {
+    text-align: center;
+    text-transform: uppercase;
+    color: #28292B;
+    margin-bottom: 32px;
+    letter-spacing: 0.17px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Exo 2 Extra', sans-serif;
+    font-weight: 800;
+    font-style: normal; }
+    .table-name a {
+      color: #25A96A; }
+      .table-name a:hover {
+        opacity: .7; }
+  .table-last-matches .content-padding {
+    padding: 0 80px; }
+  .table-last-matches .th, .table-last-matches .tr {
+    padding: 0 12px; }
+  .table .th {
+    height: 60px;
+    position: relative;
+    background: -webkit-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -moz-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -ms-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -o-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .table .th .td.team {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .table .th .td.team .logo {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px; }
+      .table .th .td.team .name {
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+    .table .th .td.wins {
+      margin-left: auto;
+      color: #807F86;
+      letter-spacing: 0.17px;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: 'Exo 2 Extra', sans-serif;
+      font-weight: 800;
+      font-style: normal; }
+      .table .th .td.wins span {
+        color: #28292B; }
+    .table .th:after {
+      z-index: 1;
+      background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -moz-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -ms-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -o-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 2px;
+      top: auto;
+      bottom: 0;
+      height: 1px; }
+  .table .tr {
+    height: 60px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .table .tr .td {
+      letter-spacing: 0.25px; }
+      .table .tr .td.date {
+        width: 10%;
+        color: #807F86;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: normal;
+        font-style: normal; }
+      .table .tr .td.time {
+        width: 10%;
+        text-align: right;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+      .table .tr .td.score {
+        width: 10%;
+        text-align: center;
+        letter-spacing: 0.17px;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: 'Exo 2 Extra', sans-serif;
+        font-weight: 800;
+        font-style: normal; }
+        .table .tr .td.score i {
+          color: #a4aebd;
+          font-size: 16px;
+          letter-spacing: 0.12px;
+          margin: 0 4px;
+          font-style: normal; }
+      .table .tr .td.team {
+        width: 35%;
+        padding-left: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .table .tr .td.team .name {
+          font-family: 'Exo 2 Semi', sans-serif;
+          font-weight: 600;
+          font-style: normal; }
+        .table .tr .td.team .logo {
+          width: 32px;
+          height: 32px;
+          margin-right: 12px; }
+        .table .tr .td.team.first {
+          padding-left: 0;
+          padding-right: 5px;
+          justify-content: flex-end; }
+          .table .tr .td.team.first .logo {
+            margin-right: 0;
+            margin-left: 12px; }
+    .table .tr:after {
+      z-index: 1;
+      background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -moz-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -ms-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: -o-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      background: linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 2px;
+      top: auto;
+      bottom: 0;
+      height: 1px; }
+    .table .tr:hover {
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1); }
+
 .pd-no {
   padding: 0 !important; }
 .pd-20 {
@@ -2066,6 +2241,7 @@ footer {
   .content-box {
     position: relative;
     border-radius: 6px;
+    margin-bottom: 16px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08); }
     .content-box .tabs {
@@ -2215,6 +2391,7 @@ footer {
         font-weight: 600;
         font-style: normal; }
       .content-box .sharing ul li {
+        margin-left: 4px;
         display: inline-block; }
         .content-box .sharing ul li a {
           width: 32px;
