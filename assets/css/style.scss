@@ -1489,9 +1489,9 @@ footer {
         @include fontExo2();
         font-weight: 700;
         .ico {
-          width: 24px;
-          height: 24px;
-          margin-top: 7px;
+          width: 20px;
+          height: 20px;
+          margin-top: 9px;
           svg {
             fill: $white-text;
           }
@@ -1964,16 +1964,128 @@ footer {
   }
 }
 .content {
+  &-padding {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
   &-section {}
   &-box {
+    position: relative;
     border-radius: 6px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08);
+    .forecast-from-editor {
+      height: 320px;
+      background-image: url("../image/mask/exodus.png");
+      background-size: 100% 100%;
+      padding-top: 45px;
+      .title {
+        color: #fff;
+        font-size: 24px;
+        line-height: 30px;
+        @include fontExo2(ExtraBold);
+      }
+      .forecast {
+        color: #fff;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 38px;
+        letter-spacing: 0.29px;
+        text-transform: uppercase;
+        @include fontExo2(ExtraBold);
+      }
+      .click {
+        height: 56px;
+        background-color: #fff;
+        a {
+          width: 100%;
+          height: 100%;
+          padding: 0 24px;
+          @include flex(none, center);
+          .desc {
+            color: $color-text;
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+            @include fontExo2(SemiBold)
+          }
+          .ceff {
+            @include fontSize(18);
+            width: 58px;
+            height: 32px;
+            margin-left: auto;
+            line-height: 32px;
+            color: $white-text;
+            border-radius: 16px;
+            letter-spacing: 0.17px;
+            @include fontExo2(ExtraBold);
+            @include gradient-green();
+          }
+          .logo {
+            width: 80px;
+            height: 40px;
+            margin-left: 42px;
+            position: relative;
+            &:before {
+              @include before-after();
+              top: 2px;
+              left: -26px;
+              width: 2px;
+              height: 32px;
+              border-radius: 4px;
+              background-color: #e8eaed;
+            }
+          }
+        }
+      }
+    }
+    .sharing {
+      height: 56px;
+      width: 100%;
+      border-radius: 0 0 6px 6px;
+      left: 0;
+      bottom: 0;
+      color: #fff;
+      position: absolute;
+      background: -webkit-linear-gradient(135deg, #2a9643 0%, #1c9277 100%);
+      background: -moz-linear-gradient(135deg, #2a9643 0%, #1c9277 100%);
+      background: -ms-linear-gradient(135deg, #2a9643 0%, #1c9277 100%);
+      background: -o-linear-gradient(135deg, #2a9643 0%, #1c9277 100%);
+      background: linear-gradient(135deg, #2a9643 0%, #1c9277 100%);
+      .content-padding {
+        width: 100%;
+        height: 100%;
+        @include flex(none, center);
+        justify-content: space-between;
+      }
+      span {
+        color: #fff;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        @include fontExo2(SemiBold)
+      }
+      ul {
+        li {
+          display: inline-block;
+          a {
+            width: 32px;
+            height: 32px;
+            display: block;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 6px;
+            background-color: rgba(255, 255, 255, 0.3);
+            svg {
+              width: 20px;
+              height: 20px;
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
   }
-  &-padding {
-    padding: 0 8px;
-  }
-  padding: 40px 92px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   .title {
     text-align: center;
     margin-bottom: 16px;

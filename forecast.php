@@ -149,7 +149,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="content">
+                        <div class="content content-padding">
                             <div class="title">
                                 <h1>Прогноз на матч «Лейпциг» — «Хоффенхайм»</h1>
                             </div>
@@ -184,8 +184,38 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="forecast-from-editor"></div>
-                        <div class="sharing"></div>
+                        <div class="forecast-from-editor">
+                            <div class="content-padding">
+                                <div class="title">Наш прогноз на матч:</div>
+                                <div class="forecast">Тотал больше 3</div>
+                                <div class="click button button-grey">
+                                    <a href="#">
+                                        <span class="desc">Сделать ставку с коэффициентом</span>
+                                        <span class="ceff">1.67</span>
+                                        <span class="logo"><img src="content/company/leon.png" alt=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sharing">
+                            <div class="content-padding">
+                                <span>Поделитесь прогнозом</span>
+                                <ul>
+                                    <li>
+                                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <section class="banner-section">
                         <a href="#" class="banner"></a>
