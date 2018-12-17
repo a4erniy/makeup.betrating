@@ -334,6 +334,10 @@ h1, h2, h3, h4 {
     padding: 0 80px; }
   .table-last-matches .th, .table-last-matches .tr {
     padding: 0 12px; }
+  .table-players .content-padding {
+    padding: 0 80px; }
+  .table-players .th, .table-players .tr {
+    padding: 0 12px; }
   .table .th {
     height: 60px;
     position: relative;
@@ -357,9 +361,9 @@ h1, h2, h3, h4 {
       align-items: center; }
       .table .th .td.team .logo {
         width: 32px;
-        height: 32px;
-        margin-right: 12px; }
+        height: 32px; }
       .table .th .td.team .name {
+        margin: 0 12px;
         letter-spacing: 0.4px;
         text-transform: uppercase;
         font-size: 12px;
@@ -367,6 +371,8 @@ h1, h2, h3, h4 {
         font-family: 'Exo 2 Semi', sans-serif;
         font-weight: 600;
         font-style: normal; }
+      .table .th .td.team:last-child {
+        margin-left: auto; }
     .table .th .td.wins {
       margin-left: auto;
       color: #807F86;
@@ -462,6 +468,22 @@ h1, h2, h3, h4 {
           .table .tr .td.team.first .logo {
             margin-right: 0;
             margin-left: 12px; }
+      .table .tr .td.index {
+        color: #807F86;
+        letter-spacing: 0.25px;
+        min-width: 20px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: normal;
+        font-style: normal; }
+      .table .tr .td.player {
+        margin-left: auto;
+        margin-right: 10px;
+        letter-spacing: 0.25px;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+        .table .tr .td.player.first {
+          margin-left: 10px; }
     .table .tr:after {
       z-index: 1;
       background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);

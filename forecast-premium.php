@@ -386,24 +386,56 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table-box table-tournament" id="content_tournament">
-                            <div class="content-padding">
-                                <div class="table-name">Турнирная таблица</div>
-<!--                                <div class="table">-->
-<!--                                    <div class="th"></div>-->
-<!--                                    <div class="tr">-->
-<!--                                        <div class="td date">23 Окт</div>-->
-<!--                                        <div class="td team">Краснодар</div>-->
-<!--                                        <div class="td score">0:0</div>-->
-<!--                                        <div class="td team">Интер</div>-->
-<!--                                        <div class="td time">20:00</div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-                            </div>
-                        </div>
                         <div class="table-box table-players" id="content_players">
                             <div class="content-padding">
                                 <div class="table-name">Предварительные составы команд</div>
+                                <div class="table">
+                                    <div class="th">
+                                        <div class="td team">
+                                            <span class="logo"><img src="content/team/logo-1.png" alt=""></span>
+                                            <span class="name">Краснодар</span>
+                                        </div>
+                                        <div class="td team">
+                                            <span class="name">Интер</span>
+                                            <span class="logo"><img src="content/team/logo-2.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index first">50</div>
+                                        <div class="td player first">А. Загидулин</div>
+                                        <div class="td player">М. Анттила</div>
+                                        <div class="td index">1</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index first">50</div>
+                                        <div class="td player first">А. Загидулин</div>
+                                        <div class="td player">М. Анттила</div>
+                                        <div class="td index">41</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index first">50</div>
+                                        <div class="td player first">А. Загидулин</div>
+                                        <div class="td player">М. Анттила</div>
+                                        <div class="td index">41</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index first">50</div>
+                                        <div class="td player first">А. Загидулин</div>
+                                        <div class="td player">М. Анттила</div>
+                                        <div class="td index">41</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td index first">50</div>
+                                        <div class="td player first">А. Загидулин</div>
+                                        <div class="td player">М. Анттила</div>
+                                        <div class="td index">41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-box table-tournament" id="content_tournament">
+                            <div class="content-padding">
+                                <div class="table-name">Турнирная таблица</div>
 <!--                                <div class="table">-->
 <!--                                    <div class="th"></div>-->
 <!--                                    <div class="tr">-->

@@ -320,6 +320,14 @@ h1, h2, h3, h4 {
       padding: 0 12px;
     }
   }
+  &-players {
+    .content-padding {
+      padding: 0 80px;
+    }
+    .th, .tr {
+      padding: 0 12px;
+    }
+  }
   .th {
     height: 60px;
     position: relative;
@@ -335,13 +343,16 @@ h1, h2, h3, h4 {
         .logo {
           width: 32px;
           height: 32px;
-          margin-right: 12px;
         }
         .name {
+          margin: 0 12px;
           letter-spacing: 0.4px;
           text-transform: uppercase;
           @include fontSize(12);
           @include fontExo2(SemiBold);
+        }
+        &:last-child {
+          margin-left: auto;
         }
       }
       &.wins {
@@ -413,6 +424,21 @@ h1, h2, h3, h4 {
             margin-right: 0;
             margin-left: 12px;
           }
+        }
+      }
+      &.index {
+        color: $color-text-grey;
+        letter-spacing: 0.25px;
+        min-width: 20px;
+        @include fontExo2();
+      }
+      &.player {
+        margin-left: auto;
+        margin-right: 10px;
+        letter-spacing: 0.25px;
+        @include fontExo2(SemiBold);
+        &.first {
+          margin-left: 10px;
         }
       }
     }
