@@ -656,8 +656,12 @@ h1, h2, h3, h4 {
       @include flex(none, center);
     }
     .rating {
-      &-1 {}
-      &-2 {}
+      &-1 {
+        background-image: url("../image/rating/stars1.png");
+      }
+      &-2 {
+        background-image: url("../image/rating/stars2.png");
+      }
       &-3 {
         background-image: url("../image/rating/stars3.png");
       }

@@ -684,6 +684,10 @@ h1, h2, h3, h4 {
       position: relative;
       padding: 3px;
       background-size: 100% 100%; }
+      .company-card-circle .rating-1 {
+        background-image: url("../image/rating/stars1.png"); }
+      .company-card-circle .rating-2 {
+        background-image: url("../image/rating/stars2.png"); }
       .company-card-circle .rating-3 {
         background-image: url("../image/rating/stars3.png"); }
       .company-card-circle .rating-4 {
