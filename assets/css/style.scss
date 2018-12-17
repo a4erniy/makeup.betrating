@@ -328,6 +328,26 @@ h1, h2, h3, h4 {
       padding: 0 12px;
     }
   }
+  &-all-ceffs {
+    .th {
+      .td {
+        width: 60px;
+        text-align: center;
+        &:first-child {
+          width: auto;
+          text-align: left;
+        }
+        &:nth-child(2) {
+          margin-left: auto;
+        }
+      }
+    }
+    .tr {
+      &:hover {
+        box-shadow: none!important;
+      }
+    }
+  }
   .th {
     height: 60px;
     position: relative;
@@ -337,6 +357,15 @@ h1, h2, h3, h4 {
     background: -o-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
     background: linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
     @include flex(none, center);
+    &.small {
+      background: none;
+      .td {
+        color: $color-text-grey;
+        letter-spacing: 0.4px;
+        @include fontSize(12);
+        @include fontExo2(Medium);
+      }
+    }
     .td {
       &.team {
         @include flex(none, center);
@@ -366,6 +395,7 @@ h1, h2, h3, h4 {
           color: $color-text;
         }
       }
+      &.bet {}
     }
     &:after {
       z-index: 1;
@@ -440,6 +470,53 @@ h1, h2, h3, h4 {
         &.first {
           margin-left: 10px;
         }
+      }
+      &.bet {
+        width: 60px;
+        height: 100%;
+        border: 1px solid #e6e5ec;
+        border-right: none;
+        @include gradient-grey();
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          color: $color-text;
+          position: relative;
+          @include flex(center, center);
+          @include fontExo2(SemiBold);
+          span {
+            z-index: 10;
+            position: relative;
+          }
+          &:before {
+            opacity: 0;
+            height: 100%;
+            @include transition();
+            @include before-after();
+            @include gradient-green();
+          }
+          &:hover {
+            color: #fff;
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+        &:last-child {
+          border-right: 1px solid #e6e5ec;
+        }
+      }
+      &.company-logo {
+        margin-right: 16px;
+        .logo {
+          width: 64px;
+          height: 32px;
+        }
+      }
+      &.company-name {
+        margin-right: auto;
+        @include fontExo2(SemiBold);
       }
     }
     &:after {

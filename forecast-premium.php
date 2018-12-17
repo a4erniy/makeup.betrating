@@ -433,6 +433,69 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="table-box table-all-ceffs" id="content_all_ceffs">
+                            <div class="content-padding">
+                                <div class="table-name">Все коэффициенты на ТМ 5</div>
+                                <div class="table">
+                                    <div class="th small">
+                                        <div class="td">Букмекерская контора</div>
+                                        <div class="td">1</div>
+                                        <div class="td">X</div>
+                                        <div class="td">2</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td company-logo"><div class="logo"><img src="content/company/liga.png" alt=""></div></div>
+                                        <div class="td company-name">Лига Ставок</div>
+                                        <div class="td bet"><a href="#"><span>1.15</span></a></div>
+                                        <div class="td bet"><a href="#"><span>2.49</span></a></div>
+                                        <div class="td bet"><a href="#"><span>3.85</span></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td company-logo"><div class="logo"><img src="content/company/leon.png" alt=""></div></div>
+                                        <div class="td company-name">Леон</div>
+                                        <div class="td bet"><a href="#"><span>1.15</span></a></div>
+                                        <div class="td bet"><a href="#"><span>2.49</span></a></div>
+                                        <div class="td bet"><a href="#"><span>3.85</span></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td company-logo"><div class="logo"><img src="content/company/bwin.png" alt=""></div></div>
+                                        <div class="td company-name">Bwin</div>
+                                        <div class="td bet"><a href="#"><span>1.15</span></a></div>
+                                        <div class="td bet"><a href="#"><span>2.49</span></a></div>
+                                        <div class="td bet"><a href="#"><span>3.85</span></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td company-logo"><div class="logo"><img src="content/company/winline.png" alt=""></div></div>
+                                        <div class="td company-name">Winline</div>
+                                        <div class="td bet"><a href="#"><span>1.15</span></a></div>
+                                        <div class="td bet"><a href="#"><span>2.49</span></a></div>
+                                        <div class="td bet"><a href="#"><span>3.85</span></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td company-logo"><div class="logo"><img src="content/company/liga.png" alt=""></div></div>
+                                        <div class="td company-name">Лига Ставок</div>
+                                        <div class="td bet"><a href="#"><span>1.15</span></a></div>
+                                        <div class="td bet"><a href="#"><span>2.49</span></a></div>
+                                        <div class="td bet"><a href="#"><span>3.85</span></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td company-logo"><div class="logo"><img src="content/company/leon.png" alt=""></div></div>
+                                        <div class="td company-name">Леон</div>
+                                        <div class="td bet"><a href="#"><span>1.15</span></a></div>
+                                        <div class="td bet"><a href="#"><span>2.49</span></a></div>
+                                        <div class="td bet"><a href="#"><span>3.85</span></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td company-logo"><div class="logo"><img src="content/company/bwin.png" alt=""></div></div>
+                                        <div class="td company-name">Bwin</div>
+                                        <div class="td bet"><a href="#"><span>1.15</span></a></div>
+                                        <div class="td bet"><a href="#"><span>2.49</span></a></div>
+                                        <div class="td bet"><a href="#"><span>3.85</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="table-box table-tournament" id="content_tournament">
                             <div class="content-padding">
                                 <div class="table-name">Турнирная таблица</div>
@@ -458,21 +521,6 @@
 <!--                                        <div class="td team">Краснодар</div>-->
 <!--                                        <div class="td score">0:0</div>-->
 <!--                                        <div class="td team">Интер</div>-->
-<!--                                        <div class="td time">20:00</div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-                            </div>
-                        </div>
-                        <div class="table-box table-all-ceffs" id="content_all_ceffs">
-                            <div class="content-padding">
-                                <div class="table-name">Все коэффициенты на ТМ 5</div>
-<!--                                <div class="table">-->
-<!--                                    <div class="th"></div>-->
-<!--                                    <div class="tr">-->
-<!--                                        <div class="td date">23 Окт</div>-->
-<!--                                        <div class="td team">Краснодар</div>-->
-<!--                                        <div class="td score">0:0</div>-->
-<!--                                        <div class="td team">Шальке 04</div>-->
 <!--                                        <div class="td time">20:00</div>-->
 <!--                                    </div>-->
 <!--                                </div>-->
