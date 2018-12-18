@@ -57,12 +57,13 @@ h1, h2, h3, h4 {
 }
 .menu {
   position: relative;
-  ul {
+  & > ul {
     @include flex();
-    li {
+    & > li {
       margin-right: 32px;
+      position: relative;
       @include flex(none, center);
-      a {
+      & > a {
         display: block;
         position: relative;
         letter-spacing: 0.75px;
@@ -72,10 +73,13 @@ h1, h2, h3, h4 {
           svg {
             fill: $green-dark !important;
           }
+          & + .sub-menu {
+            display: block;
+          }
         }
       }
       &.premium {
-        a {
+        & > a {
           color: $gold !important;
           svg {
             fill: $gold !important;
@@ -85,6 +89,38 @@ h1, h2, h3, h4 {
       &:last-child {
         margin-right: 0 !important;
       }
+    }
+  }
+  .sub-menu {
+    display: none;
+    left: 0;
+    top: 78px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 26px;
+    background-color: #fff;
+    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
+    li {
+      a {
+        display: block;
+        font-size: 16px;
+        line-height: 46px;
+        color: $color-text;
+        padding-left: 24px;
+        padding-right: 36px;
+        white-space: nowrap;
+        border-bottom: 1px solid $color-border;
+        @include fontExo2();
+        &:hover {
+          background-color: #f1f2f4;
+        }
+      }
+      &:last-child a {
+        border: none;
+      }
+    }
+    &:hover {
+      display: block;
     }
   }
 }
@@ -1810,22 +1846,24 @@ header {
       margin-right: 134px;
     }
     .menu {
-      li {
-        a {
-          color: $color-menu;
-          line-height: 88px;
-          @include fontExo2(SemiBold);
-          svg {
-            fill: $grey;
+      & > ul {
+        & > li {
+          & > a {
+            color: $color-menu;
+            line-height: 88px;
+            @include fontExo2(SemiBold);
+            svg {
+              fill: $grey;
+            }
           }
-        }
-        &.active {
-          a {
-            color: $green-dark;
-            &:before {
-              @include before-after();
-              height: 4px;
-              background-color: $green;
+          &.active {
+            & > a {
+              color: $green-dark;
+              &:before {
+                @include before-after();
+                height: 4px;
+                background-color: $green;
+              }
             }
           }
         }

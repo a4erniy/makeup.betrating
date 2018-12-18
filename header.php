@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/slick/slick.css">
-    <link rel="stylesheet" href="/assets/css/style.css?8">
+    <link rel="stylesheet" href="/assets/css/style.css?9">
     <title>Betrating.ru</title>
 </head>
 <body class="<?php echo $body_class; ?>">
@@ -28,8 +28,23 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
             <div class="menu">
                 <ul>
                     <li class="active"><a href="/news.php">Новости</a></li>
-                    <li class=""><a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></li>
-                    <li class=""><a href="/forecasts.php">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a></li>
+                    <li class="">
+                        <a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Легальные БК</a></li>
+                            <li><a href="#">БК с бонусами</a></li>
+                            <li><a href="#">БК на iOS</a></li>
+                            <li><a href="#">БК на Android</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="/forecasts.php">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Прогнозы на РПЛ</a></li>
+                            <li><a href="#">Прогнозы на Лигу чемпионов</a></li>
+                            <li><a href="#">Прогнозы на Лигу Европы</a></li>
+                        </ul>
+                    </li>
                     <li class=""><a href="#">Школа ставок</a></li>
                     <li class=""><a href="/bonuses.php">Бонусы</a></li>
                     <li class="premium"><a href="/forecasts-premium.php"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>

@@ -83,33 +83,63 @@ h1, h2, h3, h4 {
 
 .menu {
   position: relative; }
-  .menu ul {
+  .menu > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .menu ul li {
+    .menu > ul > li {
       margin-right: 32px;
+      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .menu ul li a {
+      .menu > ul > li > a {
         display: block;
         position: relative;
         letter-spacing: 0.75px;
         text-transform: uppercase; }
-        .menu ul li a:hover {
+        .menu > ul > li > a:hover {
           color: #25A96A !important; }
-          .menu ul li a:hover svg {
+          .menu > ul > li > a:hover svg {
             fill: #25A96A !important; }
-      .menu ul li.premium a {
+          .menu > ul > li > a:hover + .sub-menu {
+            display: block; }
+      .menu > ul > li.premium > a {
         color: #FFB90C !important; }
-        .menu ul li.premium a svg {
+        .menu > ul > li.premium > a svg {
           fill: #FFB90C !important; }
-      .menu ul li:last-child {
+      .menu > ul > li:last-child {
         margin-right: 0 !important; }
+  .menu .sub-menu {
+    display: none;
+    left: 0;
+    top: 78px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 26px;
+    background-color: #fff;
+    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
+    .menu .sub-menu li a {
+      display: block;
+      font-size: 16px;
+      line-height: 46px;
+      color: #28292B;
+      padding-left: 24px;
+      padding-right: 36px;
+      white-space: nowrap;
+      border-bottom: 1px solid #E6E5EC;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: normal;
+      font-style: normal; }
+      .menu .sub-menu li a:hover {
+        background-color: #f1f2f4; }
+    .menu .sub-menu li:last-child a {
+      border: none; }
+    .menu .sub-menu:hover {
+      display: block; }
 
 .tabs-list {
   margin: 0;
@@ -1933,17 +1963,17 @@ header {
     header .header .logo {
       width: 122px;
       margin-right: 134px; }
-    header .header .menu li a {
+    header .header .menu > ul > li > a {
       color: #54535A;
       line-height: 88px;
       font-family: 'Exo 2 Semi', sans-serif;
       font-weight: 600;
       font-style: normal; }
-      header .header .menu li a svg {
+      header .header .menu > ul > li > a svg {
         fill: #BABFC9; }
-    header .header .menu li.active a {
+    header .header .menu > ul > li.active > a {
       color: #25A96A; }
-      header .header .menu li.active a:before {
+      header .header .menu > ul > li.active > a:before {
         display: block;
         position: absolute;
         top: 0;
