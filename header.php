@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
                     <li class="active"><a href="/news.php">Новости</a></li>
                     <li class="">
                         <a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu bubble">
                             <li><a href="#">Легальные БК</a></li>
                             <li><a href="#">БК с бонусами</a></li>
                             <li><a href="#">БК на iOS</a></li>
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
                     </li>
                     <li class="">
                         <a href="/forecasts.php">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu bubble">
                             <li><a href="#">Прогнозы на РПЛ</a></li>
                             <li><a href="#">Прогнозы на Лигу чемпионов</a></li>
                             <li><a href="#">Прогнозы на Лигу Европы</a></li>
@@ -58,8 +58,26 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
                 </a>
             </div>
             <div class="login">
-                <div class="login-button button" id="login_button"><svg><use xlink:href="/assets/image/svg-symbols.svg#userpic"></use></svg>Вход</div>
-                <div class="logged" id="logged" style="display: none"><img src="" class="userpic"></div>
+                <div class="login-button button" id="login_button">
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#userpic"></use></svg>
+                    <span>Вход</span>
+                </div>
+                <div class="login-bubble bubble" id="login_button_bubble">
+                    <ul>
+                        <li><a href="#" class="in">Войти в аккаунт</a></li>
+                        <li><a href="#" class="reg">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+                <div style="display: none" class="login-profile" id="login_profile">
+                    <div class="image"><img src="content/userpic.jpg" alt=""></div>
+                    <svg class="down"><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></svg>
+                    <svg class="up"><use xlink:href="/assets/image/svg-symbols.svg#arrow_up"></use></svg>
+                </div>
+                <div class="login-bubble bubble" id="login_profile_bubble">
+                    <ul>
+                        <li><a href="#" class="out"><svg><use xlink:href="/assets/image/svg-symbols.svg#off"></use></svg>Выход</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

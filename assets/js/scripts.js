@@ -1,5 +1,8 @@
 $(function () {
 
+//    Vars
+
+
 //    Variables
     let speedSlider = 2000;
 
@@ -54,6 +57,32 @@ $(function () {
 //    Accordion
     $('.accordion').find('button').on('click', function () {
         $(this).parents('.accordion').toggleClass('view');
-    })
+    });
+
+//    Login function
+    let $login_button_bubble = $('#login_bubble'),
+        $login_button = $('#login_button');
+    let $login_profile_bubble = $('#login_profile_bubble'),
+        $login_profile = $('#login_profile');
+    $login_button.on('click', function (e) {
+        if (!$login_button_bubble.hasClass('view')) {
+            $login_button_bubble.addClass('view');
+        }
+    });
+    $login_profile.on('click', function (e) {
+        if (!$login_profile_bubble.hasClass('view')) {
+            $login_profile_bubble.addClass('view');
+        }
+    });
+
+//    Click out block
+    $(document).mouseup(function (e) {
+        if (!$login_button_bubble.is(e.target) && $login_button_bubble.has(e.target).length === 0) {
+            $login_button_bubble.removeClass('view');
+        }
+        if (!$login_profile_bubble.is(e.target) && $login_profile_bubble.has(e.target).length === 0) {
+            $login_profile_bubble.removeClass('view');
+        }
+    });
 
 });

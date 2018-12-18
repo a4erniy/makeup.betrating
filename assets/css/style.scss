@@ -93,34 +93,13 @@ h1, h2, h3, h4 {
   }
   .sub-menu {
     display: none;
-    left: 0;
-    top: 78px;
-    overflow: hidden;
-    position: absolute;
-    border-radius: 26px;
-    background-color: #fff;
-    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
     li {
       a {
-        display: block;
         font-size: 16px;
-        line-height: 46px;
-        color: $color-text;
         padding-left: 24px;
         padding-right: 36px;
-        white-space: nowrap;
-        border-bottom: 1px solid $color-border;
         @include fontExo2();
-        &:hover {
-          background-color: #f1f2f4;
-        }
       }
-      &:last-child a {
-        border: none;
-      }
-    }
-    &:hover {
-      display: block;
     }
   }
 }
@@ -162,9 +141,7 @@ h1, h2, h3, h4 {
     }
   }
 }
-.mask {
-  &-lines {}
-}
+.mask {}
 .slick {
   &-disabled {
     cursor: default !important;
@@ -664,6 +641,45 @@ h1, h2, h3, h4 {
     &:hover {
       box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1);
     }
+  }
+}
+.bubble {
+  left: 0;
+  top: 78px;
+  z-index: 100;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 26px;
+  background-color: #fff;
+  box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
+  li {
+    border-bottom: 1px solid $color-border;
+    a {
+      display: block;
+      line-height: 48px;
+      color: $color-text;
+      white-space: nowrap;
+      @include flex(none, center);
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        fill: $black-lightest;
+      }
+      &.out {
+        padding: 0 16px;
+        color: $black-lightest;
+      }
+      &:hover {
+        background-color: #f1f2f4;
+      }
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+  &:hover {
+    display: block;
   }
 }
 .accordion {
@@ -1833,7 +1849,7 @@ h1, h2, h3, h4 {
 
 // section
 header {
-  z-index: 10;
+  z-index: 100;
   position: relative;
   .header {
     @include flex();
@@ -1906,6 +1922,7 @@ header {
       }
     }
     .login {
+      position: relative;
       margin-left: auto;
       &-button {
         width: 100px;
@@ -1923,6 +1940,54 @@ header {
           height: 24px;
           fill: $white-text;
           margin-right: 3px;
+        }
+      }
+      &-bubble {
+        display: none;
+        left: auto;
+        right: 0;
+        a {
+          width: 240px;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 0.75px;
+          @include fontExo2(SemiBold);
+          &.reg {
+            color: $green-darker;
+          }
+        }
+        &.view {
+          display: block;
+        }
+      }
+      &-profile {
+        width: 100px;
+        height: 48px;
+        cursor: pointer;
+        border-radius: 28px;
+        border: 1px solid #e6e5ec;
+        @include gradient-grey();
+        .image {
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        svg {
+          position: absolute;
+          top: 50%;
+          right: 14px;
+          margin-top: -12px;
+          width: 24px;
+          height: 24px;
+          fill: $black-lighter;
+          &.up {
+            display: none;
+          }
+          &.down {}
+        }
+        &:hover {
+          @include gradient-grey(3);
         }
       }
     }
@@ -2399,6 +2464,9 @@ footer {
             color: $white-text;
             text-transform: uppercase;
             @include fontExo2(SemiBold);
+          }
+          &:hover {
+            opacity: .7;
           }
         }
       }
