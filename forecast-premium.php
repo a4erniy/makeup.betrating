@@ -712,20 +712,171 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="table-box table-other-ceffs" id="table_other_ceffs">
                             <div class="content-padding">
                                 <div class="table-name">Коэффициенты на другие исходы от <a href="#">«БК ЛЕОН»</a></div>
-<!--                                <div class="table">-->
-<!--                                    <div class="th"></div>-->
-<!--                                    <div class="tr">-->
-<!--                                        <div class="td date">23 Окт</div>-->
-<!--                                        <div class="td team">Краснодар</div>-->
-<!--                                        <div class="td score">0:0</div>-->
-<!--                                        <div class="td team">Интер</div>-->
-<!--                                        <div class="td time">20:00</div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
+                                <div class="accordion" id="accordion_1">
+                                    <div class="card">
+                                        <div class="card-header" id="heading_1">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                                                Двойной шанс
+                                                <svg class="down"><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></svg>
+                                                <svg class="up"><use xlink:href="/assets/image/svg-symbols.svg#arrow_up"></use></svg>
+                                            </button>
+                                        </div>
+                                        <div id="collapse_1" class="collapse" aria-labelledby="heading_1" data-parent="#accordion_1">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordion_2">
+                                    <div class="card">
+                                        <div class="card-header" id="heading_2">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" aria-controls="collapse_2">
+                                                Обе забьют
+                                                <svg class="down"><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></svg>
+                                                <svg class="up"><use xlink:href="/assets/image/svg-symbols.svg#arrow_up"></use></svg>
+                                            </button>
+                                        </div>
+                                        <div id="collapse_2" class="collapse" aria-labelledby="heading_2" data-parent="#accordion_2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordion_3">
+                                    <div class="card">
+                                        <div class="card-header" id="heading_3">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" aria-controls="collapse_3">
+                                                Тотал
+                                                <svg class="down"><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></svg>
+                                                <svg class="up"><use xlink:href="/assets/image/svg-symbols.svg#arrow_up"></use></svg>
+                                            </button>
+                                        </div>
+                                        <div id="collapse_3" class="collapse" aria-labelledby="heading_3" data-parent="#accordion_3">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <a href="#" class="bet">
+                                                            <span class="name">ТМ (1.5)</span>
+                                                            <span class="value">3.95</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more">
+                                    <a href="#" class="button button-grey">смотреть все исходы</a>
+                                </div>
                             </div>
                         </div>
                         <section class="banner-section">

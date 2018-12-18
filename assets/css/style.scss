@@ -223,18 +223,16 @@ h1, h2, h3, h4 {
   &-green {
     color: $white-text;
     @include gradient-green();
-
     &:hover {
 
     }
   }
   &-grey {
-    color: $color-text-grey;
-    font-size: 14px;
+    border: $border;
     line-height: 46px;
     text-align: center;
+    color: $color-text-grey;
     text-transform: uppercase;
-    border: $border;
     @include fontExo2(SemiBold);
     @include gradient-grey();
     &:hover {
@@ -316,22 +314,24 @@ h1, h2, h3, h4 {
     .content-padding {
       padding: 0 80px;
     }
-    .th, .tr {
-      padding: 0 12px;
-    }
-    .tr {
-      .td {
-        &.date {
-          width: 10%;
-        }
-        &.time {
-          width: 10%;
-        }
-        &.team {
-          width: 35%;
-        }
-        &.score {
-          width: 10%;
+    .table {
+      .th, .tr {
+        padding: 0 12px;
+      }
+      .tr {
+        .td {
+          &.date {
+            width: 10%;
+          }
+          &.time {
+            width: 10%;
+          }
+          &.team {
+            width: 35%;
+          }
+          &.score {
+            width: 10%;
+          }
         }
       }
     }
@@ -340,59 +340,98 @@ h1, h2, h3, h4 {
     .content-padding {
       padding: 0 80px;
     }
-    .th, .tr {
-      padding: 0 12px;
+    .table {
+      .th, .tr {
+        padding: 0 12px;
+      }
     }
   }
   &-all-ceffs {
-    .th {
-      .td {
-        width: 60px;
-        text-align: center;
-        &:first-child {
-          width: auto;
-          text-align: left;
-        }
-        &:nth-child(2) {
-          margin-left: auto;
+    .table {
+      .th {
+        .td {
+          width: 60px;
+          text-align: center;
+          &:first-child {
+            width: auto;
+            text-align: left;
+          }
+          &:nth-child(2) {
+            margin-left: auto;
+          }
         }
       }
-    }
-    .tr {
-      &:hover {
-        box-shadow: none!important;
+      .tr {
+        &:hover {
+          box-shadow: none;
+        }
       }
     }
   }
   &-tournament {
-    .th {
-      &.small {
+    .content-padding {
+      padding: 0 80px;
+    }
+    .table {
+      .th, .tr {
+        padding: 0 12px;
         .td {
-          &.league {
-            text-transform: uppercase;
+          &.points {
+            width: 20px;
+            text-align: center;
+            margin-right: 24px;
+            &.double {
+              width: 48px;
+            }
+          }
+          &.team {
+            text-align: center;
             margin-right: auto;
-            color: $color-text;
-            @include fontExo2(SemiBold)
+          }
+          &.form-team {
+            width: 45px;
           }
         }
       }
-    }
-    .tr, .th {
-      .td {
-        &.points {
-          width: 20px;
-          text-align: center;
-          margin-right: 24px;
-          &.double {
-            width: 48px;
+      .th {
+        &.small {
+          .td {
+            &.league {
+              text-transform: uppercase;
+              margin-right: auto;
+              color: $color-text;
+              @include fontExo2(SemiBold)
+            }
           }
         }
-        &.team {
-          text-align: center;
-          margin-right: auto;
+      }
+      .tr {
+        &.current {
+          background: -webkit-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+          background: -moz-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+          background: -ms-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+          background: -o-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+          background: linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+          &:after {
+            background: -webkit-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+            background: -moz-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+            background: -ms-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+            background: -o-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+            background: linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+          }
+          .td {
+            &.index {
+              @include fontExo2(ExtraBold);
+            }
+          }
         }
-        &.form-team {
-          width: 45px;
+        .td {
+          &.index {
+            min-width: 24px;
+            color: $color-text;
+            letter-spacing: 0.17px;
+            @include fontSize(18);
+          }
         }
       }
     }
@@ -506,12 +545,6 @@ h1, h2, h3, h4 {
         color: $color-text-grey;
         letter-spacing: 0.25px;
         @include fontExo2();
-        &.big {
-          color: $color-text;
-          letter-spacing: 0.17px;
-          @include fontSize(18);
-          @include fontExo2(ExtraBold);
-        }
       }
       &.player {
         margin-left: auto;
@@ -595,6 +628,123 @@ h1, h2, h3, h4 {
     &:hover {
       box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1);
     }
+  }
+}
+.accordion {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  @include transition();
+  @include gradient-grey(3);
+  .card {
+    border: none;
+    background-color: #fff;
+    border-radius: 6px!important;
+    box-shadow: 0 0 0 1px #f1f2f4;
+    @include transition();
+    &-header {
+      padding: 0;
+      border: none;
+      border-radius: 6px;
+      background-color: transparent;
+      button {
+        width: 100%;
+        color: $color-text;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        padding: 12px 16px 15px;
+        text-align: left;
+        position: relative;
+        @include fontExo2(SemiBold);
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: $black-lightest;
+          position: absolute;
+          margin-top: -12px;
+          right: 16px;
+          top: 50%;
+          @include transition();
+          &.up {
+            opacity: 0;
+          }
+        }
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+    &-body {
+      padding: 16px;
+      background-color: transparent;
+    }
+  }
+  .bet {
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding: 8px 16px 11px;
+    border-radius: 20px;
+    border: 1px solid #e6e5ec;
+    position: relative;
+    margin-bottom: 16px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    @include gradient-grey();
+    @include flex(none, center);
+    justify-content: space-between;
+    span {
+      position: relative;
+      @include transition();
+    }
+    .name {
+      color: $color-text-grey;
+      @include fontExo2();
+    }
+    .value {
+      color: $color-text;
+      @include fontExo2(SemiBold);
+    }
+    &:before {
+      @include transition();
+      @include before-after();
+      @include gradient-green();
+      height: 100%;
+      border-radius: 20px;
+      opacity: 0;
+    }
+    &:hover {
+      .name {
+        color: #fff;
+      }
+      .value {
+        color: #fff;
+      }
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  &.view {
+    .card {
+      background-color: transparent;
+      &-header {
+        button {
+          svg {
+            &.down {
+              opacity: 0;
+            }
+            &.up {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    z-index: 5;
+    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
   }
 }
 .pd {

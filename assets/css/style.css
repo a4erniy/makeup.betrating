@@ -238,12 +238,11 @@ h1, h2, h3, h4 {
     background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
     background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
   .button-grey {
-    color: #807F86;
-    font-size: 14px;
+    border: 1px solid #E6E5EC;
     line-height: 46px;
     text-align: center;
+    color: #807F86;
     text-transform: uppercase;
-    border: 1px solid #E6E5EC;
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -332,48 +331,74 @@ h1, h2, h3, h4 {
         opacity: .7; }
   .table-last-matches .content-padding {
     padding: 0 80px; }
-  .table-last-matches .th, .table-last-matches .tr {
+  .table-last-matches .table .th, .table-last-matches .table .tr {
     padding: 0 12px; }
-  .table-last-matches .tr .td.date {
+  .table-last-matches .table .tr .td.date {
     width: 10%; }
-  .table-last-matches .tr .td.time {
+  .table-last-matches .table .tr .td.time {
     width: 10%; }
-  .table-last-matches .tr .td.team {
+  .table-last-matches .table .tr .td.team {
     width: 35%; }
-  .table-last-matches .tr .td.score {
+  .table-last-matches .table .tr .td.score {
     width: 10%; }
   .table-players .content-padding {
     padding: 0 80px; }
-  .table-players .th, .table-players .tr {
+  .table-players .table .th, .table-players .table .tr {
     padding: 0 12px; }
-  .table-all-ceffs .th .td {
+  .table-all-ceffs .table .th .td {
     width: 60px;
     text-align: center; }
-    .table-all-ceffs .th .td:first-child {
+    .table-all-ceffs .table .th .td:first-child {
       width: auto;
       text-align: left; }
-    .table-all-ceffs .th .td:nth-child(2) {
+    .table-all-ceffs .table .th .td:nth-child(2) {
       margin-left: auto; }
-  .table-all-ceffs .tr:hover {
-    box-shadow: none !important; }
-  .table-tournament .th.small .td.league {
+  .table-all-ceffs .table .tr:hover {
+    box-shadow: none; }
+  .table-tournament .content-padding {
+    padding: 0 80px; }
+  .table-tournament .table .th, .table-tournament .table .tr {
+    padding: 0 12px; }
+    .table-tournament .table .th .td.points, .table-tournament .table .tr .td.points {
+      width: 20px;
+      text-align: center;
+      margin-right: 24px; }
+      .table-tournament .table .th .td.points.double, .table-tournament .table .tr .td.points.double {
+        width: 48px; }
+    .table-tournament .table .th .td.team, .table-tournament .table .tr .td.team {
+      text-align: center;
+      margin-right: auto; }
+    .table-tournament .table .th .td.form-team, .table-tournament .table .tr .td.form-team {
+      width: 45px; }
+  .table-tournament .table .th.small .td.league {
     text-transform: uppercase;
     margin-right: auto;
     color: #28292B;
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal; }
-  .table-tournament .tr .td.points, .table-tournament .th .td.points {
-    width: 20px;
-    text-align: center;
-    margin-right: 24px; }
-    .table-tournament .tr .td.points.double, .table-tournament .th .td.points.double {
-      width: 48px; }
-  .table-tournament .tr .td.team, .table-tournament .th .td.team {
-    text-align: center;
-    margin-right: auto; }
-  .table-tournament .tr .td.form-team, .table-tournament .th .td.form-team {
-    width: 45px; }
+  .table-tournament .table .tr.current {
+    background: -webkit-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+    background: -moz-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+    background: -ms-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+    background: -o-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
+    background: linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%); }
+    .table-tournament .table .tr.current:after {
+      background: -webkit-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+      background: -moz-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+      background: -ms-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+      background: -o-linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%);
+      background: linear-gradient(135deg, rgba(46, 198, 82, 0) 0%, #1dbe98 52%, rgba(29, 190, 152, 0) 100%); }
+    .table-tournament .table .tr.current .td.index {
+      font-family: 'Exo 2 Extra', sans-serif;
+      font-weight: 800;
+      font-style: normal; }
+  .table-tournament .table .tr .td.index {
+    min-width: 24px;
+    color: #28292B;
+    letter-spacing: 0.17px;
+    font-size: 18px;
+    line-height: 24px; }
   .table .th {
     height: 60px;
     position: relative;
@@ -517,14 +542,6 @@ h1, h2, h3, h4 {
         font-family: 'Exo 2', sans-serif;
         font-weight: normal;
         font-style: normal; }
-        .table .tr .td.index.big {
-          color: #28292B;
-          letter-spacing: 0.17px;
-          font-size: 18px;
-          line-height: 24px;
-          font-family: 'Exo 2 Extra', sans-serif;
-          font-weight: 800;
-          font-style: normal; }
       .table .tr .td.player {
         margin-left: auto;
         margin-right: 10px;
@@ -643,6 +660,137 @@ h1, h2, h3, h4 {
       height: 1px; }
     .table .tr:hover {
       box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1); }
+
+.accordion {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background: -webkit-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: -moz-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: -ms-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: -o-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+  background: linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%); }
+  .accordion .card {
+    border: none;
+    background-color: #fff;
+    border-radius: 6px !important;
+    box-shadow: 0 0 0 1px #f1f2f4;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .accordion .card-header {
+      padding: 0;
+      border: none;
+      border-radius: 6px;
+      background-color: transparent; }
+      .accordion .card-header button {
+        width: 100%;
+        color: #28292B;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        padding: 12px 16px 15px;
+        text-align: left;
+        position: relative;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
+        font-style: normal; }
+        .accordion .card-header button svg {
+          width: 24px;
+          height: 24px;
+          fill: #727B88;
+          position: absolute;
+          margin-top: -12px;
+          right: 16px;
+          top: 50%;
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
+          .accordion .card-header button svg.up {
+            opacity: 0; }
+        .accordion .card-header button:hover, .accordion .card-header button:focus {
+          text-decoration: none; }
+    .accordion .card-body {
+      padding: 16px;
+      background-color: transparent; }
+  .accordion .bet {
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding: 8px 16px 11px;
+    border-radius: 20px;
+    border: 1px solid #e6e5ec;
+    position: relative;
+    margin-bottom: 16px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+    background: -moz-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+    background: -ms-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+    background: -o-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+    background: linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between; }
+    .accordion .bet span {
+      position: relative;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+    .accordion .bet .name {
+      color: #807F86;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: normal;
+      font-style: normal; }
+    .accordion .bet .value {
+      color: #28292B;
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal; }
+    .accordion .bet:before {
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      height: 100%;
+      border-radius: 20px;
+      opacity: 0; }
+    .accordion .bet:hover .name {
+      color: #fff; }
+    .accordion .bet:hover .value {
+      color: #fff; }
+    .accordion .bet:hover:before {
+      opacity: 1; }
+  .accordion.view .card {
+    background-color: transparent; }
+    .accordion.view .card-header button svg.down {
+      opacity: 0; }
+    .accordion.view .card-header button svg.up {
+      opacity: 1; }
+  .accordion:hover {
+    z-index: 5;
+    box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
 
 .pd-no {
   padding: 0 !important; }

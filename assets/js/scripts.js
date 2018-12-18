@@ -51,5 +51,9 @@ $(function () {
 //    Preload remove
     $('.preload').removeClass('preload');
 
+//    Accordion
+    $('.accordion').find('button').on('click', function () {
+        $(this).parents('.accordion').toggleClass('view');
+    })
 
 });
