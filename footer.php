@@ -48,6 +48,35 @@
     </div>
 </footer>
 
+<div class="modal fade" id="resetModal" tabindex="-1" role="dialog" aria-labelledby="resetModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="mask"></div>
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Сброс пароля</h5>
+                <div class="close" data-dismiss="modal" aria-label="Close">
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#clear"></use></svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="attention text">
+                    Чтобы сбросить пароль укажите свой<br>
+                    логин или пароль
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="form-field">
+                            <input type="text" name="login" placeholder="Ваш E-mail или логин">
+                        </div>
+                        <div class="form-field">
+                            <input type="submit" name="submit" value="Сбросить пароль">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -66,6 +95,7 @@
                         </div>
                         <div class="form-field">
                             <input type="text" name="pass" placeholder="Пароль">
+                            <a href="javascript:void(0);" class="notif" data-dismiss="modal" data-toggle="modal" data-target="#resetModal">Забыли?</a>
                         </div>
                         <div class="form-field">
                             <input type="submit" name="submit" value="войти">
@@ -75,9 +105,13 @@
                 <div class="attention text">
                     Или войдите через социальные сети
                 </div>
+                <div class="modal-social">
+                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#facebook"></use></svg>facebook</a>
+                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg>vkontakte</a>
+                </div>
             </div>
             <div class="modal-footer text">
-                Еще нет аккаунта? <a href="#">Зарегистрироваться</a>
+                Еще нет аккаунта? <a href="javascript:void(0);" data-dismiss="modal" data-toggle="modal" data-target="#successModal">Зарегистрироваться <svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></a>
             </div>
         </div>
     </div>
@@ -118,7 +152,28 @@
                 </div>
             </div>
             <div class="modal-footer text">
-                Уже есть аккаунт? <a href="#">Войти</a>
+                Уже есть аккаунт? <a href="#">Войти <svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="mask"></div>
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Готово!</h5>
+                <div class="close" data-dismiss="modal" aria-label="Close">
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#clear"></use></svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="attention text black">
+                    Проверьте ваш почтовый ящик, чтобы получить доступ к новому паролю
+                </div>
+                <div class="">
+                    <a href="#" class="button button-green">Вернуться ко входу</a>
+                </div>
             </div>
         </div>
     </div>
