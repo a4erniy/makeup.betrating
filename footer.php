@@ -48,6 +48,82 @@
     </div>
 </footer>
 
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="mask"></div>
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Вход</h5>
+                <div class="close" data-dismiss="modal" aria-label="Close">
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#clear"></use></svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <form action="">
+                        <div class="form-field">
+                            <input type="text" name="login" placeholder="Ваш E-mail или логин">
+                        </div>
+                        <div class="form-field">
+                            <input type="text" name="pass" placeholder="Пароль">
+                        </div>
+                        <div class="form-field">
+                            <input type="submit" name="submit" value="войти">
+                        </div>
+                    </form>
+                </div>
+                <div class="attention text">
+                    Или войдите через социальные сети
+                </div>
+            </div>
+            <div class="modal-footer text">
+                Еще нет аккаунта? <a href="#">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="mask"></div>
+            <div class="modal-header">
+                <h5 class="modal-title" id="regModalLabel">Регистрация</h5>
+                <div class="close" data-dismiss="modal" aria-label="Close">
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#clear"></use></svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <form action="">
+                        <div class="form-field">
+                            <input type="text" name="login" placeholder="Логин">
+                        </div>
+                        <div class="form-field">
+                            <input type="text" name="name" placeholder="Имя">
+                        </div>
+                        <div class="form-field">
+                            <input type="text" name="fam" placeholder="Фамилия">
+                        </div>
+                        <div class="form-field">
+                            <input type="text" name="pass" placeholder="Пароль">
+                        </div>
+                        <div class="form-field">
+                            <input type="submit" name="submit" value="Зарегистрироваться">
+                        </div>
+                    </form>
+                </div>
+                <div class="attention text">
+                    Создавая аккакунт вы соглашаетесь с нашей<br>
+                    <a href="#" target="_blank">Политикой приватности</a>
+                </div>
+            </div>
+            <div class="modal-footer text">
+                Уже есть аккаунт? <a href="#">Войти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/js/popper.min.js"></script>
 <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>

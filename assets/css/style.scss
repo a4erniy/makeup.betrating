@@ -45,6 +45,11 @@ img {
   max-height: 100%;
   vertical-align: text-bottom;
 }
+input {
+  &:focus {
+    outline: none;
+  }
+}
 section {
   padding: 40px 0;
 }
@@ -141,7 +146,123 @@ h1, h2, h3, h4 {
     }
   }
 }
-.mask {}
+.modal {
+  &-dialog {}
+  &-content {
+    position: relative;
+    border-radius: 26px;
+    background-image: url("../image/mask/modal-grey.png");
+    background-size: 100% 100%;
+  }
+  &-header {
+    border: none;
+    padding: 48px 0 32px;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 30px;
+    position: relative;
+    text-transform: uppercase;
+    @include fontExo2(ExtraBold);
+    .close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      cursor: pointer;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  &-body {
+    padding: 0;
+  }
+  &-footer {
+    height: 48px;
+    padding: 0;
+    border: none;
+    border-radius: 0 0 26px 26px;
+    background: -webkit-linear-gradient(-45deg, #e6e6ea 0%, #ffffff 100%);
+    background: -moz-linear-gradient(-45deg, #e6e6ea 0%, #ffffff 100%);
+    background: -ms-linear-gradient(-45deg, #e6e6ea 0%, #ffffff 100%);
+    background: -o-linear-gradient(-45deg, #e6e6ea 0%, #ffffff 100%);
+    background: linear-gradient(-45deg, #e6e6ea 0%, #ffffff 100%);
+  }
+  .form {
+    width: 336px;
+    margin: 0 auto 32px;
+    overflow: hidden;
+    border-radius: 26px;
+    &-field {
+      border-bottom: 2px solid $color-border;
+      input {
+        @include fontSize(16);
+        @include fontExo2();
+        border: none;
+        width: 100%;
+        line-height: 48px;
+        padding-left: 20px;
+        background-color: #fff;
+        letter-spacing: 0.24px;
+        color: $color-text;
+        &[type="submit"] {
+          @include gradient-green();
+          text-align: center;
+          text-transform: uppercase;
+          color: #fff;
+        }
+        &::-webkit-input-placeholder {
+          color: $color-text-grey;
+        }
+        &::-moz-placeholder {
+          color: $color-text-grey;
+        }
+        &:-ms-input-placeholder {
+          color: $color-text-grey;
+        }
+        &:-moz-placeholder {
+          color: $color-text-grey;
+        }
+        &:hover {
+          &::-webkit-input-placeholder {
+            color: $grey;
+          }
+          &::-moz-placeholder {
+            color: $grey;
+          }
+          &:-ms-input-placeholder {
+            color: $grey;
+          }
+          &:-moz-placeholder {
+            color: $grey;
+          }
+        }
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+  .text {
+    @include fontExo2();
+    text-align: center;
+    color: $color-text-grey;
+    letter-spacing: 0.25px;
+    justify-content: center;
+    a {
+      margin-left: 5px;
+      display: inline-block;
+      color: $green-dark;
+      @include fontExo2(SemiBold);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .attention {
+    margin-bottom: 32px;
+  }
+}
 .slick {
   &-disabled {
     cursor: default !important;
@@ -647,11 +768,15 @@ h1, h2, h3, h4 {
   left: 0;
   top: 78px;
   z-index: 100;
+  font-size: 14px;
   overflow: hidden;
   position: absolute;
   border-radius: 26px;
   background-color: #fff;
   box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
+  &.dropdown-menu {
+    margin-top: 10px;
+  }
   li {
     border-bottom: 1px solid $color-border;
     a {
@@ -797,6 +922,15 @@ h1, h2, h3, h4 {
   &:hover {
     z-index: 5;
     box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
+  }
+}
+.dropdown {
+  &-toggle::after {
+    display: none;
+  }
+  &-menu {
+    padding: 0;
+    border: none;
   }
 }
 .pd {
@@ -1943,12 +2077,12 @@ header {
         }
       }
       &-bubble {
-        display: none;
-        left: auto;
-        right: 0;
+        //display: none;
+        //left: auto;
+        //right: 0;
         a {
           width: 240px;
-          text-align: center;
+          justify-content: center;
           text-transform: uppercase;
           letter-spacing: 0.75px;
           @include fontExo2(SemiBold);

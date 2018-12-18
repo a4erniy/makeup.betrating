@@ -58,22 +58,22 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
                 </a>
             </div>
             <div class="login">
-                <div class="login-button button" id="login_button">
+                <div class="login-button button dropdown-toggle" id="login_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <svg><use xlink:href="/assets/image/svg-symbols.svg#userpic"></use></svg>
                     <span>Вход</span>
                 </div>
-                <div class="login-bubble bubble" id="login_button_bubble">
+                <div class="login-bubble bubble dropdown-menu dropdown-menu-right" id="login_button_bubble" aria-labelledby="login_button">
                     <ul>
-                        <li><a href="#" class="in">Войти в аккаунт</a></li>
-                        <li><a href="#" class="reg">Зарегистрироваться</a></li>
+                        <li><a href="javascript:void(0);" class="in" data-toggle="modal" data-target="#loginModal">Войти в аккаунт</a></li>
+                        <li><a href="javascript:void(0);" class="reg" data-toggle="modal" data-target="#regModal">Зарегистрироваться</a></li>
                     </ul>
                 </div>
-                <div style="display: none" class="login-profile" id="login_profile">
+                <div style="display: none" class="login-profile" id="login_profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="image"><img src="content/userpic.jpg" alt=""></div>
                     <svg class="down"><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></svg>
                     <svg class="up"><use xlink:href="/assets/image/svg-symbols.svg#arrow_up"></use></svg>
                 </div>
-                <div class="login-bubble bubble" id="login_profile_bubble">
+                <div style="display: none" class="login-bubble bubble" id="login_profile_bubble" aria-labelledby="login_profile">
                     <ul>
                         <li><a href="#" class="out"><svg><use xlink:href="/assets/image/svg-symbols.svg#off"></use></svg>Выход</a></li>
                     </ul>
