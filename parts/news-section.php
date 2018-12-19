@@ -5,7 +5,7 @@
         </div>
         <div class="news-list">
             <div class="row">
-                <div class="col-6">
+                <div class="col-xl-6 col-xs-12">
                     <a href="#" class="news-card">
                         <div class="category">
                             <div class="tag">
@@ -15,7 +15,7 @@
                         </div>
                         <div class="preview">
                             <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
+                                <img src="content/news/big3.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>
@@ -29,7 +29,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 d-none">
                     <a href="#" class="news-card">
                         <div class="category">
                             <div class="tag">
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4 col-md-6">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="preview">
                             <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
+                                <img src="content/news/big3.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>
@@ -79,7 +79,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-md-6">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -103,7 +103,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 d-none">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -113,7 +113,7 @@
                         </div>
                         <div class="preview">
                             <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
+                                <img src="content/news/big3.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4 col-md-6">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
@@ -139,7 +139,7 @@
                         </div>
                         <div class="preview">
                             <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
+                                <img src="content/news/big3.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>
@@ -153,7 +153,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-md-6">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
@@ -163,7 +163,7 @@
                         </div>
                         <div class="preview">
                             <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
+                                <img src="content/news/big3.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>
@@ -177,7 +177,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 d-none">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
@@ -187,7 +187,7 @@
                         </div>
                         <div class="preview">
                             <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
+                                <img src="content/news/big3.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>

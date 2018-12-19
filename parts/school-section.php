@@ -3,7 +3,7 @@
         <div class="section-header">
             <div class="section-title"><h2>Школа ставок</h2></div>
         </div>
-        <div class="school-list">
+        <div class="school-list horizontal-scroll">
             <a href="#" class="school-card">
                 <div class="mask"></div>
                 <div class="image">

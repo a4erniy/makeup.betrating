@@ -40,6 +40,7 @@ $(function () {
     $('.horizontal-scroll').slick({
         dots: false,
         arrows: false,
+        infinite: false,
         slidesToShow: 1,
         variableWidth: true,
         mobileFirst: true,

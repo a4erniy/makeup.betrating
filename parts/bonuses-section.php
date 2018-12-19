@@ -3,7 +3,7 @@
         <div class="section-header">
             <div class="section-title"><h2>Бонусы и акции от букмекеров</h2></div>
         </div>
-        <div class="bonuses-list clearfix">
+        <div class="bonuses-list clearfix horizontal-scroll">
             <div class="bonus-card">
                 <div class="image">
                     <img src="content/bonuses/1.jpg" alt="">

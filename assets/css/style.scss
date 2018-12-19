@@ -1161,6 +1161,7 @@ h1, h2, h3, h4 {
         }
       }
       .preview {
+        height: 190px;
         .mask {
           background: none;
           &:before {
@@ -3063,7 +3064,64 @@ footer {
   }
   .forecast-card {
     &-table {
-
+      padding: 0;
+      .league {
+        width: 20%;
+        line-height: 14px;
+      }
+      .match {
+        width: 10%;
+      }
+      .team {
+        width: 23%;
+        .logo {
+          margin-right: 6px;
+        }
+        &-first {
+          .logo {
+            margin-right: 0;
+            margin-left: 6px;
+          }
+        }
+      }
+      .company {
+        width: 10%;
+        padding-right: 0;
+      }
+      .value {
+        width: 14%;
+      }
+      &.premium {
+        &:before {
+          left: -8px;
+        }
+      }
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+  .school-card {
+    width: 172px;
+    height: 172px;
+    padding: 20px;
+    box-shadow: none!important;
+    border: 1px solid #F1F2F4;
+    border-right: none;
+    .image {
+      width: 63px;
+      height: 63px;
+    }
+    &:last-child {
+      border-right: 1px solid #F1F2F4;
+    }
+  }
+  .news-card {
+    height: 386px;
+    &.size {
+      &-medium {
+        height: 420px;
+      }
     }
   }
 
@@ -3116,6 +3174,10 @@ footer {
       border-radius: 0;
     }
   }
+
+  .horizontal-scroll {
+    margin-right: -1px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -3128,8 +3190,4 @@ footer {
   .container {
     max-width: 320px;
   }
-}
-
-@media screen and (max-width: 767px) {
-
 }

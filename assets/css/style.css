@@ -1200,10 +1200,12 @@ h1, h2, h3, h4 {
         background-color: #e8eaed; }
         .news-card.size-medium .category .tag .name {
           color: #807F86; }
-    .news-card.size-medium .preview .mask {
-      background: none; }
-      .news-card.size-medium .preview .mask:before {
-        content: none; }
+    .news-card.size-medium .preview {
+      height: 190px; }
+      .news-card.size-medium .preview .mask {
+        background: none; }
+        .news-card.size-medium .preview .mask:before {
+          content: none; }
     .news-card.size-medium .title h3 {
       font-size: 18px;
       line-height: 24px;
@@ -3159,6 +3161,48 @@ footer {
     margin-bottom: 0;
     margin-right: 16px; }
 
+  .forecast-card-table {
+    padding: 0; }
+    .forecast-card-table .league {
+      width: 20%;
+      line-height: 14px; }
+    .forecast-card-table .match {
+      width: 10%; }
+    .forecast-card-table .team {
+      width: 23%; }
+      .forecast-card-table .team .logo {
+        margin-right: 6px; }
+      .forecast-card-table .team-first .logo {
+        margin-right: 0;
+        margin-left: 6px; }
+    .forecast-card-table .company {
+      width: 10%;
+      padding-right: 0; }
+    .forecast-card-table .value {
+      width: 14%; }
+    .forecast-card-table.premium:before {
+      left: -8px; }
+    .forecast-card-table:hover {
+      box-shadow: none; }
+
+  .school-card {
+    width: 172px;
+    height: 172px;
+    padding: 20px;
+    box-shadow: none !important;
+    border: 1px solid #F1F2F4;
+    border-right: none; }
+    .school-card .image {
+      width: 63px;
+      height: 63px; }
+    .school-card:last-child {
+      border-right: 1px solid #F1F2F4; }
+
+  .news-card {
+    height: 386px; }
+    .news-card.size-medium {
+      height: 420px; }
+
   header .header .menu {
     display: none; }
 
@@ -3187,7 +3231,10 @@ footer {
     margin-right: 0; }
   .forecast-slider-front {
     margin-right: 0;
-    border-radius: 0; } }
+    border-radius: 0; }
+
+  .horizontal-scroll {
+    margin-right: -1px; } }
 @media screen and (max-width: 991px) {
   .container {
     max-width: 704px; } }
