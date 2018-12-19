@@ -17,6 +17,8 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
 </head>
 <body class="<?php echo $body_class; ?>">
 
+<div class="fullwidth-bg fullwidth-bg-betting-center"></div>
+
 <header>
     <div class="container">
         <div class="header">
@@ -50,13 +52,13 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
                     <li class="premium"><a href="/forecasts-premium.php"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
                 </ul>
             </div>
-            <div class="search-bar"></div>
-            <div class="search">
-                <a href="javascript:void(0);" class="search-button" id="search_button">
-                    <span class="loop"><img src="assets/image/svg/action/search_24px.svg"></span>
-                    <span class="cross"><img src="assets/image/svg/content/clear_24px.svg"></span>
-                </a>
-            </div>
+<!--            <div class="search-bar"></div>-->
+<!--            <div class="search">-->
+<!--                <a href="javascript:void(0);" class="search-button" id="search_button">-->
+<!--                    <span class="loop"><img src="assets/image/svg/action/search_24px.svg"></span>-->
+<!--                    <span class="cross"><img src="assets/image/svg/content/clear_24px.svg"></span>-->
+<!--                </a>-->
+<!--            </div>-->
             <div class="login">
                 <div class="login-button button dropdown-toggle" id="login_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <svg><use xlink:href="/assets/image/svg-symbols.svg#userpic"></use></svg>

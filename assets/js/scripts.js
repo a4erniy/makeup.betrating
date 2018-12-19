@@ -1,7 +1,5 @@
 $(function () {
 
-//    Vars
-
 
 //    Variables
     let speedSlider = 2000;
@@ -37,6 +35,21 @@ $(function () {
 
 //    News slider
     $('#news_slider').slick(configSlick(2));
+
+//    Horizontal scroll with mobile
+    $('.horizontal-scroll').slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 1,
+        variableWidth: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 1220,
+                settings: "unslick"
+            }
+        ]
+    });
 
 //    Company slider
     let $company_slider = $('#company_slider'),
