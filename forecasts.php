@@ -416,7 +416,7 @@
                 <div class="item company-card">
                     <div class="branch gold">
                         <span>1</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/liga.png">
@@ -436,7 +436,7 @@
                 <div class="item company-card">
                     <div class="branch gold">
                         <span>2</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/bwin.png">
@@ -456,7 +456,7 @@
                 <div class="item company-card">
                     <div class="branch gold">
                         <span>3</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/parimatch.png">
@@ -476,7 +476,7 @@
                 <div class="item company-card">
                     <div class="branch">
                         <span>4</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/leon.png">
@@ -496,7 +496,7 @@
                 <div class="item company-card">
                     <div class="branch">
                         <span>5</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/winline.png">
@@ -516,7 +516,7 @@
                 <div class="item company-card">
                     <div class="branch">
                         <span>6</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/parimatch.png">
@@ -536,7 +536,7 @@
                 <div class="item company-card">
                     <div class="branch">
                         <span>7</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/1xbet.png">
@@ -556,7 +556,7 @@
                 <div class="item company-card">
                     <div class="branch">
                         <span>8</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/winline.png">
@@ -576,7 +576,7 @@
                 <div class="item company-card">
                     <div class="branch">
                         <span>9</span>
-                        <i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg></i>
+                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
                     </div>
                     <div class="logo">
                         <img src="/content/company/1xbet.png">

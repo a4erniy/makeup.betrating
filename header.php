@@ -14,6 +14,10 @@ switch ($_SERVER['REQUEST_URI']) {
         $body_class = 'page-single';
         $body_class .= ' grey-lightest';
         break;
+    case '/company.php':
+        $body_class = 'page-single-company';
+        $body_class .= ' grey-lightest';
+        break;
 }
 ?>
 

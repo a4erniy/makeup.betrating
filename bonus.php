@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 
-    <section class="content-section">
+    <section class="content-section pdt-no">
         <div class="container">
             <div class="row">
                 <div class="col-2">
