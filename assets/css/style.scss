@@ -1017,6 +1017,85 @@ h1, h2, h3, h4 {
   height: 0;
   position: absolute;
 }
+.green-box {
+  background-image: url("../image/mask/exodus.png");
+  background-size: 100% auto;
+  padding-top: 45px;
+  padding-bottom: 104px;
+  border-radius: 0 0 6px 6px;
+  .title {
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    @include fontExo2(ExtraBold);
+  }
+  .forecast {
+    color: #fff;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 38px;
+    letter-spacing: 0.29px;
+    text-transform: uppercase;
+    @include fontExo2(ExtraBold);
+  }
+  .click {
+    height: 56px;
+    background-color: #fff;
+    a {
+      width: 100%;
+      height: 100%;
+      padding: 0 24px;
+      @include flex(none, center);
+      .desc {
+        color: $color-text;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        @include fontExo2(SemiBold)
+      }
+      .ceff {
+        @include fontSize(18);
+        width: 58px;
+        height: 32px;
+        margin-left: auto;
+        line-height: 32px;
+        color: $white-text;
+        border-radius: 16px;
+        letter-spacing: 0.17px;
+        @include fontExo2(ExtraBold);
+        @include gradient-green();
+      }
+      .logo {
+        width: 80px;
+        height: 40px;
+        margin-left: 42px;
+        position: relative;
+        &:before {
+          @include before-after();
+          top: 2px;
+          left: -26px;
+          width: 2px;
+          height: 32px;
+          border-radius: 4px;
+          background-color: #e8eaed;
+        }
+      }
+    }
+  }
+  .goto {
+    margin-top: 24px;
+    a {
+      color: $color-text-grey;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      display: inline-block;
+      border-radius: 24px;
+      border: $border;
+      padding: 13px 16px 14px;
+      @include gradient-grey();
+      @include fontExo2(SemiBold);
+    }
+  }
+}
 
 // cards
 .news-card {
@@ -2802,84 +2881,6 @@ footer {
         }
       }
     }
-    .green-box {
-      background-image: url("../image/mask/exodus.png");
-      background-size: 100% auto;
-      padding-top: 45px;
-      padding-bottom: 104px;
-      .title {
-        color: #fff;
-        font-size: 24px;
-        line-height: 30px;
-        @include fontExo2(ExtraBold);
-      }
-      .forecast {
-        color: #fff;
-        font-size: 40px;
-        line-height: 48px;
-        margin-bottom: 38px;
-        letter-spacing: 0.29px;
-        text-transform: uppercase;
-        @include fontExo2(ExtraBold);
-      }
-      .click {
-        height: 56px;
-        background-color: #fff;
-        a {
-          width: 100%;
-          height: 100%;
-          padding: 0 24px;
-          @include flex(none, center);
-          .desc {
-            color: $color-text;
-            text-transform: uppercase;
-            letter-spacing: 0.75px;
-            @include fontExo2(SemiBold)
-          }
-          .ceff {
-            @include fontSize(18);
-            width: 58px;
-            height: 32px;
-            margin-left: auto;
-            line-height: 32px;
-            color: $white-text;
-            border-radius: 16px;
-            letter-spacing: 0.17px;
-            @include fontExo2(ExtraBold);
-            @include gradient-green();
-          }
-          .logo {
-            width: 80px;
-            height: 40px;
-            margin-left: 42px;
-            position: relative;
-            &:before {
-              @include before-after();
-              top: 2px;
-              left: -26px;
-              width: 2px;
-              height: 32px;
-              border-radius: 4px;
-              background-color: #e8eaed;
-            }
-          }
-        }
-      }
-      .goto {
-        margin-top: 24px;
-        a {
-          color: $color-text-grey;
-          text-transform: uppercase;
-          letter-spacing: 0.75px;
-          display: inline-block;
-          border-radius: 24px;
-          border: $border;
-          padding: 13px 16px 14px;
-          @include gradient-grey();
-          @include fontExo2(SemiBold);
-        }
-      }
-    }
     .sharing {
       height: 56px;
       width: 100%;
@@ -3116,13 +3117,6 @@ footer {
       &-section {
         padding-top: 0;
       }
-      &-box {
-        .green-box {
-          .title {
-            text-transform: uppercase;
-          }
-        }
-      }
       .title {
         margin-bottom: 20px;
         h1 {
@@ -3133,6 +3127,11 @@ footer {
       .short {
         font-size: 18px;
         text-align: left;
+      }
+    }
+    .green-box {
+      .title {
+        text-transform: uppercase;
       }
     }
   }
