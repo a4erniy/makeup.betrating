@@ -278,6 +278,8 @@ h1, h2, h3, h4 {
     position: relative;
     border-bottom: 2px solid #E6E5EC; }
     .modal .form-field input {
+      font-size: 16px;
+      line-height: 24px;
       font-family: 'Exo 2', sans-serif;
       font-weight: normal;
       font-style: normal;
@@ -2726,6 +2728,53 @@ footer {
       width: 24px;
       height: 24px;
       fill: #ffffff; }
+.company-box .options .item {
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .company-box .options .item .name {
+    letter-spacing: 0.24px;
+    color: #807F86;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    font-style: normal; }
+  .company-box .options .item .value {
+    margin-left: auto;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+.company-box .quality .item {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 24px;
+  letter-spacing: 0.24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+  .company-box .quality .item:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%; }
+  .company-box .quality .item.positive:before {
+    background-image: url("../image/ico/smile-green.png"); }
+  .company-box .quality .item.negative:before {
+    background-image: url("../image/ico/smile-red.png"); }
 
 .content {
   padding-top: 40px;
@@ -2790,6 +2839,15 @@ footer {
       font-style: normal; }
     .content .title + .preview {
       margin-top: 36px; }
+  .content .subtitle {
+    margin-bottom: 24px;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Exo 2 Extra', sans-serif;
+    font-weight: 800;
+    font-style: normal; }
   .content .preview {
     margin-bottom: 26px; }
   .content .short, .content .text {
@@ -3309,10 +3367,8 @@ footer {
   padding-top: 0; }
   .page-single-company .widget-title {
     padding-top: 0; }
-.page-single-company .content {
-  padding-top: 0; }
-  .page-single-company .content-box {
-    border-radius: 0; }
+.page-single-company .content-box {
+  border-radius: 0; }
 .page-single .breadcrumbs {
   top: 38px; }
 .page-single .content {

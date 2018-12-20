@@ -9,6 +9,10 @@
     font-size: 14px;
     line-height: 20px;
   }
+  @if $size == 16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
   @if $size == 18 {
     font-size: 18px;
     line-height: 24px;

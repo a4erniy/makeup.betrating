@@ -2594,6 +2594,50 @@ footer {
       }
     }
   }
+  &-box {
+    .options {
+      .item {
+        height: 46px;
+        @include flex(none, center);
+        .ico {}
+        .name {
+          letter-spacing: 0.24px;
+          color: $color-text-grey;
+          @include fontSize(16);
+          @include fontExo2();
+        }
+        .value {
+          margin-left: auto;
+          letter-spacing: 0.75px;
+          text-transform: uppercase;
+          @include fontExo2(SemiBold);
+        }
+      }
+    }
+    .quality {
+      .subtitle {}
+      .item {
+        position: relative;
+        padding-left: 48px;
+        margin-bottom: 24px;
+        letter-spacing: 0.24px;
+        @include fontSize(16);
+        @include fontExo2();
+        &:before {
+          @include before-after();
+          width: 24px;
+          height: 24px;
+          background-size: 100% 100%;
+        }
+        &.positive:before {
+          background-image: url("../image/ico/smile-green.png");
+        }
+        &.negative:before {
+          background-image: url("../image/ico/smile-red.png");
+        }
+      }
+    }
+  }
 }
 .content {
   &-padding {
@@ -2653,6 +2697,13 @@ footer {
     & + .preview {
       margin-top: 36px;
     }
+  }
+  .subtitle {
+    margin-bottom: 24px;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    @include fontSize(18);
+    @include fontExo2(ExtraBold);
   }
   .preview {
     margin-bottom: 26px;
@@ -3209,7 +3260,6 @@ footer {
         }
       }
       .content {
-        padding-top: 0;
         &-box {
           border-radius: 0;
         }

@@ -139,7 +139,7 @@
             <div class="col-8">
                 <div class="container">
                     <div class="content-box">
-                        <div class="content">
+                        <div class="content pdt-no">
                             <div class="company-header">
                                 <div class="branch gold">
                                     <span>1</span>
@@ -191,53 +191,91 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="green-box">
-                            <div class="content-padding">
-                                <div class="title">Создайте аккаунт в бк леон</div>
-                                <div class="goto">
-                                    <a href="#" target="_blank">Регистрация</a>
+                    </div>
+                    <div class="content-box company-box">
+                        <div class="content content-padding">
+                            <div class="subtitle">Основные характеристики</div>
+                            <div class="options">
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Языки интерфейса на сайте</span>
+                                    <span class="value">РУССКИЙ</span>
                                 </div>
-                            </div>
-                            <div class="sharing">
-                                <div class="content-padding">
-                                    <span>Поделитесь букмекерской конторой</span>
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <svg>
-                                                    <use xlink:href="/assets/image/svg-symbols.svg#vk"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <svg>
-                                                    <use xlink:href="/assets/image/svg-symbols.svg#twitter"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <svg>
-                                                    <use xlink:href="/assets/image/svg-symbols.svg#vk"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <svg>
-                                                    <use xlink:href="/assets/image/svg-symbols.svg#twitter"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Мобильная версия сайта</span>
+                                    <span class="value">Да</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Мобильное приложение</span>
+                                    <span class="value">IOS + ANDROID</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Языки интерфейса мобильного приложения</span>
+                                    <span class="value">РУССКИЙ</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Служба поддержки</span>
+                                    <span class="value">E-MAIL + ЧАТ</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Минимальный размер ставки</span>
+                                    <span class="value">10 РУБ.</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Минимальный депозит</span>
+                                    <span class="value">1 РУБ.</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Ставки на киберспорт</span>
+                                    <span class="value">Да</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Ставки на виртуальный спорт</span>
+                                    <span class="value">Нет</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Легальный букмекер</span>
+                                    <span class="value">Нет</span>
+                                </div>
+                                <div class="item">
+                                    <span class="ico"></span>
+                                    <span class="name">Для профессионалов</span>
+                                    <span class="value">Да</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <section class="banner-section">
-                        <a href="#" class="banner"></a>
-                    </section>
+                    <div class="content-box company-box">
+                        <div class="content content-padding">
+                            <div class="quality">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="subtitle">Преимущества</div>
+                                        <div class="item positive">Выплата выигрышей осуществляется точно в заявленные сроки.</div>
+                                        <div class="item positive">Удобство и оперативность мобильной версии/приложений.</div>
+                                        <div class="item positive">Расчёт ставок происходит моментально.</div>
+                                        <div class="item positive">Множество различных акций и бонусов.</div>
+                                        <div class="item positive">Высокие коэффициенты на главные события.</div>
+                                        <div class="item positive">Отличная служба поддержки.</div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="subtitle">Недостатки</div>
+                                        <div class="item negative">Отсутствие видеотрансляций.</div>
+                                        <div class="item negative">Приличная маржа на непопулярные события.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-2">
