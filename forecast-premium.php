@@ -196,7 +196,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="forecast-from-editor">
+                            <div class="green-box">
                                 <div class="content-padding">
                                     <div class="title">Наш прогноз на матч:</div>
                                     <div class="forecast">Тотал больше 3</div>

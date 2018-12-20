@@ -1,8 +1,20 @@
 <?php
 
 $body_class = '';
-if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/forecast-premium.php')
-    $body_class = 'grey-lightest';
+switch ($_SERVER['REQUEST_URI']) {
+    case '/forecast.php':
+        $body_class = 'page-single-forecast';
+        $body_class .= ' grey-lightest';
+        break;
+    case '/forecast-premium.php':
+        $body_class = 'page-single-forecast';
+        $body_class .= ' grey-lightest';
+        break;
+    case '/bonus.php':
+        $body_class = 'page-single';
+        $body_class .= ' grey-lightest';
+        break;
+}
 ?>
 
 <!doctype html>

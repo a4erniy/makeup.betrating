@@ -59,6 +59,19 @@ section {
 h1, h2, h3, h4 {
   margin: 0;
 }
+.pd {
+  &-no {padding: 0 !important;}
+  &-20 {padding: 20px 0 !important;}
+  &-40 {padding: 40px 0 !important;}
+  &t {
+    &-20 {padding-top: 20px !important;}
+    &-40 {padding-top: 40px !important;}
+  }
+  &b {
+    &-20 {padding-bottom: 20px !important;}
+    &-40 {padding-bottom: 40px !important;}
+  }
+}
 .ico, .logo {
   line-height: 0;
   display: inline-block;
@@ -995,19 +1008,6 @@ h1, h2, h3, h4 {
   &-menu {
     padding: 0;
     border: none;
-  }
-}
-.pd {
-  &-no {padding: 0 !important;}
-  &-20 {padding: 20px 0 !important;}
-  &-40 {padding: 40px 0 !important;}
-  &t {
-    &-20 {padding-top: 20px !important;}
-    &-40 {padding-top: 40px !important;}
-  }
-  &b {
-    &-20 {padding-bottom: 20px !important;}
-    &-40 {padding-bottom: 40px !important;}
   }
 }
 .fullwidth-bg {
@@ -2487,6 +2487,11 @@ footer {
       }
     }
   }
+  &-single-page {
+    .breadcrumbs {
+      top: -58px;
+    }
+  }
   &-data {
     min-height: 274px;
     text-align: center;
@@ -2759,7 +2764,6 @@ footer {
     padding-left: 92px;
     padding-right: 92px;
   }
-  &-section {}
   &-box {
     position: relative;
     border-radius: 6px;
@@ -2798,11 +2802,11 @@ footer {
         }
       }
     }
-    .forecast-from-editor {
-      height: 320px;
+    .green-box {
       background-image: url("../image/mask/exodus.png");
-      background-size: 100% 100%;
+      background-size: 100% auto;
       padding-top: 45px;
+      padding-bottom: 104px;
       .title {
         color: #fff;
         font-size: 24px;
@@ -2859,6 +2863,20 @@ footer {
               background-color: #e8eaed;
             }
           }
+        }
+      }
+      .goto {
+        margin-top: 24px;
+        a {
+          color: $color-text-grey;
+          text-transform: uppercase;
+          letter-spacing: 0.75px;
+          display: inline-block;
+          border-radius: 24px;
+          border: $border;
+          padding: 13px 16px 14px;
+          @include gradient-grey();
+          @include fontExo2(SemiBold);
         }
       }
     }
@@ -2920,6 +2938,14 @@ footer {
       @include fontSize(18);
       @include fontExo2(ExtraBold)
     }
+    & + .preview {
+      margin-top: 36px;
+    }
+  }
+  .preview {
+    margin-left: -92px;
+    margin-right: -92px;
+    margin-bottom: 26px;
   }
   .short, .text {
     font-size: 16px;
@@ -2936,15 +2962,57 @@ footer {
     p {
       margin-bottom: 20px;
     }
+    a {
+      color: $green-dark;
+      @include fontExo2(SemiBold)
+    }
+    ul {
+      padding-left: 18px;
+      margin-bottom: 24px;
+      li {
+        list-style: disc;
+      }
+    }
+    ol {
+      padding-left: 18px;
+      margin-bottom: 24px;
+    }
     img {
       display: block;
       margin: 40px auto;
       max-height: 600px;
     }
-    a {
-      color: $green-dark;
-      @include fontExo2(SemiBold)
+    h2, h3 {
+      margin-top: 40px;
+      margin-bottom: 24px;
+      text-align: center;
+      letter-spacing: 0.17px;
+      text-transform: uppercase;
+      @include fontExo2(ExtraBold);
+      @include fontSize(18);
     }
+  }
+  .tag {
+    text-align: center;
+    margin-bottom: 24px;
+    span {
+      color: #fff;
+      border-radius: 100px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      padding: 3px 12px 5px;
+      @include gradient-green();
+      @include fontExo2(SemiBold);
+      @include fontSize(12);
+    }
+  }
+  .date {
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 0.25px;
+    color: $color-text-grey;
+    @include fontExo2(SemiBold);
   }
 }
 .widget {
@@ -3016,7 +3084,7 @@ footer {
   position: absolute;
   width: 100%;
   left: 0;
-  top: -58px;
+  top: 0;
   ul {
     text-align: center;
     li {
@@ -3031,6 +3099,40 @@ footer {
         height: 16px;
         fill: $color-text-grey;
         vertical-align: middle;
+      }
+    }
+  }
+}
+
+// page
+.page {
+  &-single {
+    &-forecast {}
+    .breadcrumbs {
+      top: 38px;
+    }
+    .content {
+      padding-top: 82px;
+      &-section {
+        padding-top: 0;
+      }
+      &-box {
+        .green-box {
+          .title {
+            text-transform: uppercase;
+          }
+        }
+      }
+      .title {
+        margin-bottom: 20px;
+        h1 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+      .short {
+        font-size: 18px;
+        text-align: left;
       }
     }
   }

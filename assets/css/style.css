@@ -83,6 +83,21 @@ section {
 h1, h2, h3, h4 {
   margin: 0; }
 
+.pd-no {
+  padding: 0 !important; }
+.pd-20 {
+  padding: 20px 0 !important; }
+.pd-40 {
+  padding: 40px 0 !important; }
+.pdt-20 {
+  padding-top: 20px !important; }
+.pdt-40 {
+  padding-top: 40px !important; }
+.pdb-20 {
+  padding-bottom: 20px !important; }
+.pdb-40 {
+  padding-bottom: 40px !important; }
+
 .ico, .logo {
   line-height: 0;
   display: inline-block; }
@@ -1032,21 +1047,6 @@ h1, h2, h3, h4 {
 .dropdown-menu {
   padding: 0;
   border: none; }
-
-.pd-no {
-  padding: 0 !important; }
-.pd-20 {
-  padding: 20px 0 !important; }
-.pd-40 {
-  padding: 40px 0 !important; }
-.pdt-20 {
-  padding-top: 20px !important; }
-.pdt-40 {
-  padding-top: 40px !important; }
-.pdb-20 {
-  padding-bottom: 20px !important; }
-.pdb-40 {
-  padding-bottom: 40px !important; }
 
 .fullwidth-bg {
   top: 0;
@@ -2598,6 +2598,8 @@ footer {
       background: -ms-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
       background: radial-gradient(ellipse at center, rgba(248, 249, 251, 0.75) 0%, #f8f9fb 60%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1); }
+.forecast-single-page .breadcrumbs {
+  top: -58px; }
 .forecast-data {
   min-height: 274px;
   text-align: center;
@@ -2895,19 +2897,19 @@ footer {
               background-color: #25A96A; }
           .content-box .tabs ul li:hover a {
             color: #25A96A; }
-    .content-box .forecast-from-editor {
-      height: 320px;
+    .content-box .green-box {
       background-image: url("../image/mask/exodus.png");
-      background-size: 100% 100%;
-      padding-top: 45px; }
-      .content-box .forecast-from-editor .title {
+      background-size: 100% auto;
+      padding-top: 45px;
+      padding-bottom: 104px; }
+      .content-box .green-box .title {
         color: #fff;
         font-size: 24px;
         line-height: 30px;
         font-family: 'Exo 2 Extra', sans-serif;
         font-weight: 800;
         font-style: normal; }
-      .content-box .forecast-from-editor .forecast {
+      .content-box .green-box .forecast {
         color: #fff;
         font-size: 40px;
         line-height: 48px;
@@ -2917,10 +2919,10 @@ footer {
         font-family: 'Exo 2 Extra', sans-serif;
         font-weight: 800;
         font-style: normal; }
-      .content-box .forecast-from-editor .click {
+      .content-box .green-box .click {
         height: 56px;
         background-color: #fff; }
-        .content-box .forecast-from-editor .click a {
+        .content-box .green-box .click a {
           width: 100%;
           height: 100%;
           padding: 0 24px;
@@ -2930,14 +2932,14 @@ footer {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center; }
-          .content-box .forecast-from-editor .click a .desc {
+          .content-box .green-box .click a .desc {
             color: #28292B;
             text-transform: uppercase;
             letter-spacing: 0.75px;
             font-family: 'Exo 2 Semi', sans-serif;
             font-weight: 600;
             font-style: normal; }
-          .content-box .forecast-from-editor .click a .ceff {
+          .content-box .green-box .click a .ceff {
             font-size: 18px;
             line-height: 24px;
             width: 58px;
@@ -2955,12 +2957,12 @@ footer {
             background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
             background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
             background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
-          .content-box .forecast-from-editor .click a .logo {
+          .content-box .green-box .click a .logo {
             width: 80px;
             height: 40px;
             margin-left: 42px;
             position: relative; }
-            .content-box .forecast-from-editor .click a .logo:before {
+            .content-box .green-box .click a .logo:before {
               display: block;
               position: absolute;
               top: 0;
@@ -2973,6 +2975,24 @@ footer {
               height: 32px;
               border-radius: 4px;
               background-color: #e8eaed; }
+      .content-box .green-box .goto {
+        margin-top: 24px; }
+        .content-box .green-box .goto a {
+          color: #807F86;
+          text-transform: uppercase;
+          letter-spacing: 0.75px;
+          display: inline-block;
+          border-radius: 24px;
+          border: 1px solid #E6E5EC;
+          padding: 13px 16px 14px;
+          background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+          background: -moz-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+          background: -ms-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+          background: -o-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+          background: linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
+          font-family: 'Exo 2 Semi', sans-serif;
+          font-weight: 600;
+          font-style: normal; }
     .content-box .sharing {
       height: 56px;
       width: 100%;
@@ -3029,6 +3049,12 @@ footer {
       font-family: 'Exo 2 Extra', sans-serif;
       font-weight: 800;
       font-style: normal; }
+    .content .title + .preview {
+      margin-top: 36px; }
+  .content .preview {
+    margin-left: -92px;
+    margin-right: -92px;
+    margin-bottom: 26px; }
   .content .short, .content .text {
     font-size: 16px;
     line-height: 32px;
@@ -3042,12 +3068,59 @@ footer {
     color: #807F86; }
   .content .text p {
     margin-bottom: 20px; }
+  .content .text a {
+    color: #25A96A;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+  .content .text ul {
+    padding-left: 18px;
+    margin-bottom: 24px; }
+    .content .text ul li {
+      list-style: disc; }
+  .content .text ol {
+    padding-left: 18px;
+    margin-bottom: 24px; }
   .content .text img {
     display: block;
     margin: 40px auto;
     max-height: 600px; }
-  .content .text a {
-    color: #25A96A;
+  .content .text h2, .content .text h3 {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    font-family: 'Exo 2 Extra', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px; }
+  .content .tag {
+    text-align: center;
+    margin-bottom: 24px; }
+    .content .tag span {
+      color: #fff;
+      border-radius: 100px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      padding: 3px 12px 5px;
+      background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 16px; }
+  .content .date {
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 0.25px;
+    color: #807F86;
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal; }
@@ -3117,7 +3190,7 @@ footer {
   position: absolute;
   width: 100%;
   left: 0;
-  top: -58px; }
+  top: 0; }
   .breadcrumbs ul {
     text-align: center; }
     .breadcrumbs ul li {
@@ -3134,6 +3207,23 @@ footer {
         height: 16px;
         fill: #807F86;
         vertical-align: middle; }
+
+.page-single .breadcrumbs {
+  top: 38px; }
+.page-single .content {
+  padding-top: 82px; }
+  .page-single .content-section {
+    padding-top: 0; }
+  .page-single .content-box .green-box .title {
+    text-transform: uppercase; }
+  .page-single .content .title {
+    margin-bottom: 20px; }
+    .page-single .content .title h1 {
+      font-size: 24px;
+      line-height: 30px; }
+  .page-single .content .short {
+    font-size: 18px;
+    text-align: left; }
 
 @media screen and (max-width: 1219px) {
   .container {
