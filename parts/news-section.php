@@ -29,7 +29,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-6 d-none">
+                <div class="col-xl-6 d-xl-block d-none">
                     <a href="#" class="news-card">
                         <div class="category">
                             <div class="tag">
@@ -103,7 +103,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-4 d-none">
+                <div class="col-xl-4 d-xl-block d-none">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -177,7 +177,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-4 d-none">
+                <div class="col-xl-4 d-xl-block d-none">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">

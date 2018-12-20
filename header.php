@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_URI'] == '/forecast.php' or $_SERVER['REQUEST_URI'] == '/f
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/slick/slick.css">
-    <link rel="stylesheet" href="/assets/css/style.css?9">
+    <link rel="stylesheet" href="/assets/css/style.css?10">
     <title>Betrating.ru</title>
 </head>
 <body class="<?php echo $body_class; ?>">
