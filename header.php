@@ -76,10 +76,10 @@ switch ($_SERVER['REQUEST_URI']) {
 <!--                </a>-->
 <!--            </div>-->
             <div class="login">
-                <div class="login-button button dropdown-toggle" id="login_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="javascript:void(0);" class="login-button button button-green dropdown-toggle" id="login_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <svg><use xlink:href="/assets/image/svg-symbols.svg#userpic"></use></svg>
                     <span>Вход</span>
-                </div>
+                </a>
                 <div class="login-bubble bubble dropdown-menu dropdown-menu-right" id="login_button_bubble" aria-labelledby="login_button">
                     <ul>
                         <li><a href="javascript:void(0);" class="in" data-toggle="modal" data-target="#loginModal">Войти в аккаунт</a></li>
