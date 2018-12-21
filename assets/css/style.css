@@ -3443,13 +3443,13 @@ footer {
         height: 16px;
         fill: #807F86;
         vertical-align: middle; }
+  .breadcrumbs.base {
+    position: relative;
+    top: 0;
+    margin: 4px 0 24px; }
+    .breadcrumbs.base ul {
+      text-align: left; }
 
-.page-single-company .breadcrumbs {
-  position: relative;
-  top: 0;
-  margin: 4px 0 24px; }
-  .page-single-company .breadcrumbs ul {
-    text-align: left; }
 .page-single-company .widget {
   padding-top: 0; }
   .page-single-company .widget-title {

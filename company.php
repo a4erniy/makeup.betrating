@@ -1,8 +1,7 @@
 <?php include_once 'header.php'; ?>
 
-
 <div class="container">
-    <div class="breadcrumbs">
+    <div class="breadcrumbs base">
         <ul>
             <li>
                 <a href="#">Главная</a>

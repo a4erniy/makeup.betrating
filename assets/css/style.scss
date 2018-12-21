@@ -3321,6 +3321,14 @@ footer {
       }
     }
   }
+  &.base {
+    position: relative;
+    top: 0;
+    margin: 4px 0 24px;
+    ul {
+      text-align: left;
+    }
+  }
 }
 
 // page
@@ -3328,14 +3336,6 @@ footer {
   &-single {
     &-forecast {}
     &-company {
-      .breadcrumbs {
-        position: relative;
-        top: 0;
-        margin: 4px 0 24px;
-        ul {
-          text-align: left;
-        }
-      }
       .widget {
         padding-top: 0;
         &-title {

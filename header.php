@@ -18,6 +18,10 @@ switch ($_SERVER['REQUEST_URI']) {
         $body_class = 'page-single-company';
         $body_class .= ' grey-lightest';
         break;
+    case '/company-list.php':
+        $body_class = 'page-archive-company';
+        $body_class .= ' grey-lightest';
+        break;
 }
 ?>
 
