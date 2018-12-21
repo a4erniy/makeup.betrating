@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-9">
-                <div class="title"><h1>БУКМЕКЕРСКИЕ КОНТОРЫ</h1></div>
+                <div class="section-title"><h1>БУКМЕКЕРСКИЕ КОНТОРЫ</h1></div>
                 <div class="description">
                     Перед вами рейтинг букмекеров, принимающих онлайн ставки на спорт по всему миру.
                     Мы постоянно обновляем рейтинг букмекерских контор, ориентируясь на их надежность,
@@ -392,7 +392,41 @@
                 </div>
                 <?php include_once 'parts/banner-section.php'; ?>
             </div>
-            <div class="col-xl-3"></div>
+            <div class="col-xl-3">
+                <div class="company-filter">
+                    <div class="title">Фильтр</div>
+                    <form action="">
+                        <label>
+                            <span class="name">Легальные</span>
+                            <input type="checkbox" name="legal">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Для профессионалов</span>
+                            <input type="checkbox" name="profi">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Ставки Live</span>
+                            <input type="checkbox" name="live">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Биржи ставок</span>
+                            <input type="checkbox" name="bets">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Доступ с мобильного</span>
+                            <input type="checkbox" name="mobi">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                    </form>
+                    <div class="reset">
+                        <a href="javascript:void(0);" class="button button-grey">Сбросить фильтры</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

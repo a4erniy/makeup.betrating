@@ -2789,6 +2789,76 @@ footer {
       width: 24px;
       height: 24px;
       fill: #ffffff; }
+.company-filter {
+  padding: 24px;
+  border-radius: 6px 6px 0 0;
+  background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+  background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
+  .company-filter .title {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #E6E5EC;
+    text-transform: uppercase;
+    letter-spacing: 0.17px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Exo 2 Extra', sans-serif;
+    font-weight: 800;
+    font-style: normal; }
+  .company-filter form {
+    margin-bottom: 24px; }
+    .company-filter form label {
+      height: 46px;
+      margin-bottom: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .company-filter form label .name {
+        letter-spacing: 0.24px;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: normal;
+        font-style: normal; }
+      .company-filter form label .toggle {
+        width: 44px;
+        height: 24px;
+        display: block;
+        position: relative;
+        border-radius: 12px;
+        background-color: #BABFC9;
+        margin-left: auto;
+        cursor: pointer;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .company-filter form label .toggle .disk {
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          display: block;
+          position: absolute;
+          margin-top: 2px;
+          margin-left: 2px;
+          background-color: #fff;
+          border-radius: 50%;
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
+      .company-filter form label input {
+        display: none; }
+        .company-filter form label input:checked + .toggle {
+          background-color: #25C277; }
+          .company-filter form label input:checked + .toggle .disk {
+            margin-left: 22px; }
 .company-box .options .item {
   height: 46px;
   display: -webkit-box;
@@ -2916,16 +2986,12 @@ footer {
           background-color: #25C277; }
           .company-list .item .arrow a:hover svg {
             fill: #ffffff; }
-.company-section .title {
+.company-section .section-title {
   margin-bottom: 18px; }
-  .company-section .title h1 {
+  .company-section .section-title h1 {
     font-size: 34px;
     line-height: 44px;
-    letter-spacing: 0.25px;
-    text-transform: uppercase;
-    font-family: 'Exo 2 Extra', sans-serif;
-    font-weight: 800;
-    font-style: normal; }
+    letter-spacing: 0.25px; }
 .company-section .description {
   font-size: 16px;
   line-height: 32px;

@@ -2653,6 +2653,65 @@ footer {
       }
     }
   }
+  &-filter {
+    padding: 24px;
+    border-radius: 6px 6px 0 0;
+    @include gradient-grey(4);
+    .title {
+      padding-bottom: 18px;
+      border-bottom: $border;
+      text-transform: uppercase;
+      letter-spacing: 0.17px;
+      @include fontSize(18);
+      @include fontExo2(ExtraBold);
+    }
+    form {
+      margin-bottom: 24px;
+      label {
+        height: 46px;
+        margin-bottom: 0;
+        @include flex(none, center);
+        .name {
+          letter-spacing: 0.24px;
+          @include fontSize(16);
+          @include fontExo2();
+        }
+        .toggle {
+          width: 44px;
+          height: 24px;
+          display: block;
+          position: relative;
+          border-radius: 12px;
+          background-color: $grey;
+          margin-left: auto;
+          cursor: pointer;
+          @include transition();
+          .disk {
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            display: block;
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 2px;
+            background-color: #fff;
+            border-radius: 50%;
+            @include transition();
+          }
+        }
+        input {
+          display: none;
+          &:checked + .toggle {
+            background-color: $green;
+            .disk {
+              margin-left: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
   &-box {
     .options {
       .item {
@@ -2768,14 +2827,12 @@ footer {
     }
   }
   &-section {
-    .title {
+    .section-title {
       margin-bottom: 18px;
       h1 {
         font-size: 34px;
         line-height: 44px;
         letter-spacing: 0.25px;
-        text-transform: uppercase;
-        @include fontExo2(ExtraBold);
       }
     }
     .description {

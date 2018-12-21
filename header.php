@@ -14,6 +14,10 @@ switch ($_SERVER['REQUEST_URI']) {
         $body_class = 'page-single';
         $body_class .= ' grey-lightest';
         break;
+    case '/news-single.php':
+        $body_class = 'page-single';
+        $body_class .= ' grey-lightest';
+        break;
     case '/company.php':
         $body_class = 'page-single-company';
         $body_class .= ' grey-lightest';
@@ -32,7 +36,7 @@ switch ($_SERVER['REQUEST_URI']) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/slick/slick.css">
-    <link rel="stylesheet" href="/assets/css/style.css?10">
+    <link rel="stylesheet" href="/assets/css/style.css?2">
     <title>Betrating.ru</title>
 </head>
 <body class="<?php echo $body_class; ?>">
