@@ -51,7 +51,7 @@ switch ($_SERVER['REQUEST_URI']) {
                 <ul>
                     <li class="active"><a href="/news.php">Новости</a></li>
                     <li class="">
-                        <a href="#">Рейтинг БК<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a>
+                        <a href="#">Рейтинг БК<svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></svg></a>
                         <ul class="sub-menu bubble">
                             <li><a href="#">Легальные БК</a></li>
                             <li><a href="#">БК с бонусами</a></li>
@@ -60,7 +60,7 @@ switch ($_SERVER['REQUEST_URI']) {
                         </ul>
                     </li>
                     <li class="">
-                        <a href="/forecasts.php">Прогнозы<i class="ico"><svg width="12px" height="8px"><use xlink:href="/assets/image/svg-symbols.svg#expand_more"></use></svg></i></a>
+                        <a href="/forecasts.php">Прогнозы<svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></a>
                         <ul class="sub-menu bubble">
                             <li><a href="#">Прогнозы на РПЛ</a></li>
                             <li><a href="#">Прогнозы на Лигу чемпионов</a></li>
@@ -69,7 +69,7 @@ switch ($_SERVER['REQUEST_URI']) {
                     </li>
                     <li class=""><a href="#">Школа ставок</a></li>
                     <li class=""><a href="/bonuses.php">Бонусы</a></li>
-                    <li class="premium"><a href="/forecasts-premium.php"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
+                    <li class="premium"><a href="/forecasts-premium.php"><svg><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg>Премиум</a></li>
                 </ul>
             </div>
 <!--            <div class="search-bar"></div>-->
