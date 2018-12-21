@@ -61,9 +61,8 @@ ul {
     list-style: none; }
 
 svg {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
+  width: 24px;
+  height: 24px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
@@ -1277,13 +1276,13 @@ h1, h2, h3, h4 {
   .green-box .goto {
     margin-top: 24px; }
     .green-box .goto a {
+      height: 48px;
+      border: 1px solid #E6E5EC;
       color: #807F86;
       text-transform: uppercase;
       letter-spacing: 0.75px;
-      display: inline-block;
       border-radius: 24px;
-      border: 1px solid #E6E5EC;
-      padding: 13px 16px 14px;
+      padding: 0 16px;
       background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
       background: -moz-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
       background: -ms-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
@@ -1291,7 +1290,19 @@ h1, h2, h3, h4 {
       background: linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
       font-family: 'Exo 2 Semi', sans-serif;
       font-weight: 600;
-      font-style: normal; }
+      font-style: normal;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: inline-flex; }
+      .green-box .goto a svg {
+        fill: #727B88; }
 
 .news-card {
   height: 328px;

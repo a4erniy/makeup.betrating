@@ -452,6 +452,35 @@
                             </div>
                         </div>
                     </div>
+                    <div class="content-box">
+                        <div class="green-box">
+                            <div class="content-padding">
+                                <div class="title">СОЗДАЙТЕ АККАУНТ В БК ЛЕОН</div>
+                                <div class="goto">
+                                    <a href="#" target="_blank"><svg><use xlink:href="/assets/image/svg-symbols.svg#userpic"></use></svg> Регистрация</a>
+                                </div>
+                            </div>
+                            <div class="sharing">
+                                <div class="content-padding">
+                                    <span>Поделитесь букмекерской конторой</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-2">

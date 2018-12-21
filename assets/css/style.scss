@@ -38,9 +38,8 @@ ul {
   }
 }
 svg {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
+  width: 24px;
+  height: 24px;
   @include transition();
 }
 img {
@@ -1215,15 +1214,20 @@ h1, h2, h3, h4 {
   .goto {
     margin-top: 24px;
     a {
+      height: 48px;
+      border: $border;
       color: $color-text-grey;
       text-transform: uppercase;
       letter-spacing: 0.75px;
-      display: inline-block;
       border-radius: 24px;
-      border: $border;
-      padding: 13px 16px 14px;
+      padding: 0 16px;
       @include gradient-grey();
       @include fontExo2(SemiBold);
+      @include flex(center, center);
+      display: inline-flex;
+      svg {
+        fill: $black-lightest;
+      }
     }
   }
 }
