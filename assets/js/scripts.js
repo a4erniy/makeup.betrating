@@ -73,4 +73,18 @@ $(function () {
         $(this).parents('.accordion').toggleClass('view');
     });
 
+//    Accordion-jq
+    $('.accordion-jq').find('.subtitle').on('click', function () {
+        let parent = $(this).parent(),
+            wrap = parent.find('.wrapper');
+
+        if (parent.hasClass('hide')) {
+            wrap.slideDown(400);
+            parent.removeClass('hide');
+        } else  {
+            wrap.slideUp(400);
+            parent.addClass('hide');
+        }
+    })
+
 });

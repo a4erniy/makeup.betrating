@@ -1088,6 +1088,53 @@ h1, h2, h3, h4 {
   .accordion:hover {
     z-index: 5;
     box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
+  .accordion-jq {
+    position: relative;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .accordion-jq .content {
+      padding-top: 0; }
+      .accordion-jq .content .subtitle {
+        cursor: pointer;
+        position: relative;
+        margin-left: -92px;
+        margin-right: -92px;
+        padding-left: 92px;
+        padding-right: 92px;
+        padding-top: 40px;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .accordion-jq .content .subtitle svg {
+          width: 24px;
+          height: 24px;
+          fill: #25A96A;
+          position: absolute;
+          right: 92px;
+          top: 50%;
+          margin-top: -2px;
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
+          .accordion-jq .content .subtitle svg.up {
+            opacity: 1; }
+          .accordion-jq .content .subtitle svg.down {
+            opacity: 0; }
+      .accordion-jq .content.hide .subtitle {
+        color: #807F86; }
+        .accordion-jq .content.hide .subtitle svg {
+          fill: #807F86; }
+          .accordion-jq .content.hide .subtitle svg.up {
+            opacity: 0; }
+          .accordion-jq .content.hide .subtitle svg.down {
+            opacity: 1; }
+    .accordion-jq:hover {
+      z-index: 5;
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
 
 .dropdown-toggle::after {
   display: none; }
@@ -2777,6 +2824,7 @@ footer {
     background-image: url("../image/ico/smile-red.png"); }
 
 .content {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 20px; }
   .content-padding {
@@ -2826,6 +2874,8 @@ footer {
               background-color: #25A96A; }
           .content-box .tabs ul li:hover a {
             color: #25A96A; }
+  .content.hide .wrapper {
+    display: none; }
   .content .title {
     text-align: center;
     margin-bottom: 16px; }
@@ -2840,7 +2890,9 @@ footer {
     .content .title + .preview {
       margin-top: 36px; }
   .content .subtitle {
-    margin-bottom: 24px;
+    z-index: 5;
+    position: relative;
+    padding-bottom: 24px;
     letter-spacing: 0.17px;
     text-transform: uppercase;
     font-size: 18px;
@@ -2919,6 +2971,30 @@ footer {
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal; }
+  .content .bottom {
+    height: 92px;
+    padding-top: 15px;
+    margin-top: 40px;
+    margin-left: -92px;
+    margin-right: -92px;
+    border-top: 1px solid #E6E5EC; }
+    .content .bottom > div {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .content .bottom .question {
+      letter-spacing: 0.17px;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: 'Exo 2 Extra', sans-serif;
+      font-weight: 800;
+      font-style: normal; }
+    .content .bottom .link {
+      margin-left: auto; }
 
 .forecast-section {
   background: -webkit-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);

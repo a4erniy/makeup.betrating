@@ -1033,6 +1033,57 @@ h1, h2, h3, h4 {
     z-index: 5;
     box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
   }
+  &-jq {
+    position: relative;
+    @include transition();
+    .content {
+      padding-top: 0;
+      .subtitle {
+        cursor: pointer;
+        position: relative;
+        margin-left: -92px;
+        margin-right: -92px;
+        padding-left: 92px;
+        padding-right: 92px;
+        padding-top: 40px;
+        @include transition();
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: $green-dark;
+          position: absolute;
+          right: 92px;
+          top: 50%;
+          margin-top: -2px;
+          @include transition();
+          &.up {
+            opacity: 1;
+          }
+          &.down {
+            opacity: 0;
+          }
+        }
+      }
+      &.hide {
+        .subtitle {
+          color: $color-text-grey;
+          svg {
+            fill: $color-text-grey;
+            &.up {
+              opacity: 0;
+            }
+            &.down {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      z-index: 5;
+      box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
+    }
+  }
 }
 .dropdown {
   &-toggle::after {
@@ -2640,6 +2691,9 @@ footer {
   }
 }
 .content {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
   &-padding {
     padding-left: 92px;
     padding-right: 92px;
@@ -2683,8 +2737,11 @@ footer {
       }
     }
   }
-  padding-top: 40px;
-  padding-bottom: 20px;
+  &.hide {
+    .wrapper {
+      display: none;
+    }
+  }
   .title {
     text-align: center;
     margin-bottom: 16px;
@@ -2699,7 +2756,9 @@ footer {
     }
   }
   .subtitle {
-    margin-bottom: 24px;
+    z-index: 5;
+    position: relative;
+    padding-bottom: 24px;
     letter-spacing: 0.17px;
     text-transform: uppercase;
     @include fontSize(18);
@@ -2774,6 +2833,26 @@ footer {
     letter-spacing: 0.25px;
     color: $color-text-grey;
     @include fontExo2(SemiBold);
+  }
+  .bottom {
+    height: 92px;
+    padding-top: 15px;
+    margin-top: 40px;
+    margin-left: -92px;
+    margin-right: -92px;
+    border-top: $border;
+    & > div {
+      height: 100%;
+      @include flex(none, center);
+    }
+    .question {
+      letter-spacing: 0.17px;
+      @include fontSize(18);
+      @include fontExo2(ExtraBold)
+    }
+    .link {
+      margin-left: auto;
+    }
   }
 }
 .forecast {
