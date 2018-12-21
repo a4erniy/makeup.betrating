@@ -208,24 +208,24 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="sharing">
-                                <div class="content-padding">
-                                    <span>Поделитесь прогнозом</span>
-                                    <ul>
-                                        <li>
-                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
-                                        </li>
-                                    </ul>
+                                <div class="sharing">
+                                    <div class="content-padding">
+                                        <span>Поделитесь прогнозом</span>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
