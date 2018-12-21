@@ -18,7 +18,7 @@
         </div>
         <div class="stavkatv-list">
             <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4 col-sm-6">
                     <div class="stavkatv-item">
                         <div class="video">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/ywcj5u1DQl4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -29,7 +29,7 @@
                         <div class="date">25 октября, 2018</div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-sm-6">
                     <div class="stavkatv-item">
                         <div class="video">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/ywcj5u1DQl4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -40,7 +40,7 @@
                         <div class="date">25 октября, 2018</div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 d-xl-block d-none">
                     <div class="stavkatv-item">
                         <div class="video">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/ywcj5u1DQl4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

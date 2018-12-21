@@ -3707,6 +3707,22 @@ footer {
     .news-card.size-medium {
       height: 420px; }
 
+  .bonus-card {
+    width: 230px;
+    height: 336px; }
+    .bonus-card.banner-card {
+      width: 460px; }
+    .bonus-card .image {
+      width: 94px;
+      height: 94px; }
+    .bonus-card .company {
+      width: 62px;
+      height: 31px; }
+    .bonus-card .countdown {
+      display: none; }
+    .bonus-card:hover {
+      box-shadow: 0 0 0 1px #f1f2f4; }
+
   header .header .menu {
     display: none; }
 

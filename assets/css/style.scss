@@ -3614,6 +3614,27 @@ footer {
       }
     }
   }
+  .bonus-card {
+    width: 230px;
+    height: 336px;
+    &.banner-card {
+      width: 460px;
+    }
+    .image {
+      width: 94px;
+      height: 94px;
+    }
+    .company {
+      width: 62px;
+      height: 31px;
+    }
+    .countdown {
+      display: none;
+    }
+    &:hover {
+      box-shadow: 0 0 0 1px #f1f2f4;
+    }
+  }
 
   header {
     .header {

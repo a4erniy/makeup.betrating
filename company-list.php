@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<section class="company-section">
+<section class="company-section pdt-no">
     <div class="container">
         <div class="row">
             <div class="col-xl-9">
