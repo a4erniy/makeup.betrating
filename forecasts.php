@@ -6,7 +6,7 @@
             <div class="section-title"><h2>Прогнозы на спорт</h2></div>
             <ul class="forecast-sport tabs-list">
                 <li class="tabs-item">
-                    <a href="#" class="active"><span class="ico"><img src="assets/image/svg/action/view_headline_24px.svg"></span>Все прогнозы</a>
+                    <a href="#" class="active"><span class="ico"><img src="assets/image/svg/action/view_headline_24px.svg"></span>Все</a>
                 </li>
                 <li class="tabs-item">
                     <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>Футбол</a>

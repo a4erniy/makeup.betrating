@@ -479,6 +479,9 @@
                 </div>
             </div>
         </div>
+        <div class="section-more">
+            <a href="#" class="button button-grey">Все прогнозы на спорт</a>
+        </div>
     </div>
 </section>
 

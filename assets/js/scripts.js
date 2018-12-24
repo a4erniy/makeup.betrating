@@ -3,26 +3,24 @@ $(function () {
 
 //    Variables
     let speedSlider = 2000,
-        menu_header = $('#menu_header'),
-        backdrop = $('#backdrop'),
-        header = $('header');
+        $menu_header = $('#menu_header'),
+        $menu_mob = $('#menu_mob'),
+        $backdrop = $('#backdrop');
 
 //    Mobile menu
-    $('#menu_mob').on('click', function (e) {
+    $menu_mob.on('click', function (e) {
         e.preventDefault();
-        // if ($(this).hasClass('open')) {
-        //     menu_header.slideUp(200);
-        //     // backdrop.hide(200);
-        // } else {
-        //     menu_header.slideDown(200);
-        //     // backdrop.show(200);
-        // }
-        menu_header.slideToggle(200);
-        header.toggleClass('white');
+        $menu_header.slideToggle(200);
         $(this).toggleClass('open');
-        // $('body').toggleClass('backdrop-on');
+        $backdrop.toggleClass('on');
     });
-    menu_header.find('.arrow').on('click', function (e) {
+    $backdrop.on('click', function (e) {
+        e.preventDefault();
+        $menu_header.slideToggle(200);
+        $menu_mob.toggleClass('open');
+        $backdrop.toggleClass('on');
+    })
+    $menu_header.find('.arrow').on('click', function (e) {
         e.preventDefault();
         let parent = $(this).parent();
         if ($(window).width() < '1220') {
@@ -33,7 +31,13 @@ $(function () {
             }
             $(this).toggleClass('view')
         }
-    })
+    });
+
+//    Filter company
+    $('#open_filter').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().toggleClass('open').find('form').slideToggle(200);
+    });
 
 //    Config slider
     let configSlick = function (show) {
@@ -43,7 +47,7 @@ $(function () {
             infinite: true,
             slidesToShow: show,
             slidesToScroll: 1,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: speedSlider,
             dotsClass: 'slick-dots progress-dots',
             customPaging: function (slider, pageIndex) {

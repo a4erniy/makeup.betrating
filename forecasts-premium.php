@@ -102,7 +102,7 @@
 <section class="forecast-section with-tabs">
     <div class="container">
         <div class="section-header">
-            <div class="section-title"><h2>премиум прогнозы на спорт</h2></div>
+            <div class="section-title"><h2>прогнозы на спорт</h2></div>
             <ul class="forecast-sport tabs-list">
                 <li class="tabs-item">
                     <a href="#" class="active"><span class="ico"><img src="assets/image/svg/action/view_headline_24px.svg"></span>Все</a>

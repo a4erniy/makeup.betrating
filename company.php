@@ -484,7 +484,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-2 order-xl-3">
+            <div class="col-xl-2 order-xl-3 d-xl-block d-none">
                 <div class="sidebar">
                     <div class="widget">
                         <div class="company-nav" id="company_nav">

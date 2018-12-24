@@ -32,7 +32,43 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-9">
+            <div class="col-xl-3 order-xl-2">
+                <div class="company-filter">
+                    <div class="title" id="open_filter">Фильтр</div>
+                    <div class="arrow"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_down"></use></svg></div>
+                    <form action="">
+                        <label>
+                            <span class="name">Легальные</span>
+                            <input type="checkbox" name="legal">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Для профессионалов</span>
+                            <input type="checkbox" name="profi">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Ставки Live</span>
+                            <input type="checkbox" name="live">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Биржи ставок</span>
+                            <input type="checkbox" name="bets">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                        <label>
+                            <span class="name">Доступ с мобильного</span>
+                            <input type="checkbox" name="mobi">
+                            <span class="toggle"><span class="disk"></span></span>
+                        </label>
+                    </form>
+                    <div class="reset">
+                        <a href="javascript:void(0);" class="button button-grey">Сбросить фильтры</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 order-xl-1">
                 <div class="company-list">
                     <div class="item">
                         <div class="logo">
@@ -391,41 +427,6 @@
                     </div>
                 </div>
                 <?php include_once 'parts/banner-section.php'; ?>
-            </div>
-            <div class="col-xl-3">
-                <div class="company-filter">
-                    <div class="title">Фильтр</div>
-                    <form action="">
-                        <label>
-                            <span class="name">Легальные</span>
-                            <input type="checkbox" name="legal">
-                            <span class="toggle"><span class="disk"></span></span>
-                        </label>
-                        <label>
-                            <span class="name">Для профессионалов</span>
-                            <input type="checkbox" name="profi">
-                            <span class="toggle"><span class="disk"></span></span>
-                        </label>
-                        <label>
-                            <span class="name">Ставки Live</span>
-                            <input type="checkbox" name="live">
-                            <span class="toggle"><span class="disk"></span></span>
-                        </label>
-                        <label>
-                            <span class="name">Биржи ставок</span>
-                            <input type="checkbox" name="bets">
-                            <span class="toggle"><span class="disk"></span></span>
-                        </label>
-                        <label>
-                            <span class="name">Доступ с мобильного</span>
-                            <input type="checkbox" name="mobi">
-                            <span class="toggle"><span class="disk"></span></span>
-                        </label>
-                    </form>
-                    <div class="reset">
-                        <a href="javascript:void(0);" class="button button-grey">Сбросить фильтры</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

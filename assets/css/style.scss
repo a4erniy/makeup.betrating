@@ -1286,16 +1286,18 @@ h1, h2, h3, h4 {
   }
 }
 .backdrop {
-  display: none;
-  top: 0;
+  top: 80px;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 500;
+  z-index: -1;
+  opacity: 0;
   position: fixed;
   background-color: rgba(41, 39, 50, 0.9);
   @include transition();
-  &-on {
+  &.on {
+    z-index: 500;
+    opacity: 1;
     overflow: hidden;
   }
 }
@@ -1645,6 +1647,14 @@ h1, h2, h3, h4 {
   }
 }
 .company-card {
+  width: 184px;
+  height: 224px;
+  overflow: hidden;
+  border-radius: 6px;
+  padding-top: 20px;
+  position: relative;
+  box-shadow: 0 0 0 1px #F1F2F4;
+  @include transition();
   &-circle {
     height: 60px;
     margin-bottom: 14px;
@@ -1704,14 +1714,6 @@ h1, h2, h3, h4 {
       }
     }
   }
-  width: 184px;
-  height: 224px;
-  overflow: hidden;
-  border-radius: 6px;
-  padding-top: 20px;
-  position: relative;
-  box-shadow: 0 0 0 1px #F1F2F4;
-  @include transition();
   .branch {
     margin: 0 auto 10px;
   }
@@ -1771,6 +1773,11 @@ h1, h2, h3, h4 {
   }
 }
 .forecast-card {
+  height: 320px;
+  position: relative;
+  letter-spacing: 0.75px;
+  border-radius: 6px;
+  overflow: hidden;
   &-table {
     height: 64px;
     padding: 0 17px 0 12px;
@@ -1927,7 +1934,9 @@ h1, h2, h3, h4 {
     }
   }
   &-info {
+    width: 284px;
     height: 360px;
+    margin: 0 auto 16px;
     overflow: hidden;
     border-radius: 6px;
     position: relative;
@@ -2037,11 +2046,6 @@ h1, h2, h3, h4 {
       box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2);
     }
   }
-  height: 320px;
-  position: relative;
-  letter-spacing: 0.75px;
-  border-radius: 6px;
-  overflow: hidden;
   .preview {
     width: 100%;
     height: 100%;
@@ -2448,9 +2452,6 @@ header {
       }
     }
   }
-  &.white {
-    background-color: #fff;
-  }
 }
 footer {
   padding: 30px 0 44px;
@@ -2738,13 +2739,24 @@ footer {
     @include gradient-grey(4);
     .title {
       padding-bottom: 18px;
-      border-bottom: $border;
       text-transform: uppercase;
       letter-spacing: 0.17px;
       @include fontSize(18);
       @include fontExo2(ExtraBold);
     }
+    .arrow {
+      display: none;
+      top: 12px;
+      right: 16px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      svg {
+        fill: $grey;
+      }
+    }
     form {
+      border-top: $border;
       margin-bottom: 24px;
       label {
         height: 46px;
@@ -2872,6 +2884,8 @@ footer {
           @include flex(none, center);
           @include fontExo2(SemiBold);
           svg {
+            width: 18px;
+            height: 18px;
             margin-right: 8px;
             fill: $green-dark;
           }
@@ -3474,6 +3488,7 @@ footer {
     padding-top: 14px;
   }
   .forecast-card-info {
+    width: 100%;
     height: 184px;
     margin-bottom: 16px;
     .box {
@@ -3868,6 +3883,54 @@ footer {
       }
     }
   }
+  .company {
+    &-filter {
+      background: none;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 0 0 1px #f1f2f4;
+      position: relative;
+      margin-bottom: 24px;
+      padding: 0;
+      .title {
+        padding: 13px 16px 14px;
+        letter-spacing: 0.75px;
+        @include fontSize();
+        @include fontExo2(SemiBold);
+      }
+      .reset {
+        top: 13px;
+        right: 48px;
+        position: absolute;
+        a {
+          height: auto;
+          padding: 0;
+          background: transparent;
+          border-radius: 0;
+          border: none;
+        }
+      }
+      .arrow {
+        display: block;
+      }
+      form {
+        display: none;
+        padding: 10px 16px 14px;
+        margin-bottom: 0;
+      }
+      &.open {
+        .arrow {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+          svg {
+            fill: $green
+          }
+        }
+      }
+    }
+  }
   .forecast {
     &-section {
       &.with-tabs {
@@ -3992,6 +4055,6 @@ footer {
 
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 320px;
+    max-width: none;
   }
 }
