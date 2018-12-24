@@ -923,6 +923,7 @@ h1, h2, h3, h4 {
   }
 }
 .burger {
+  display: none;
   cursor: pointer;
   width: 30px;
   height: 21px;
@@ -3588,15 +3589,11 @@ footer {
 
 // Adaptive
 @media screen and (max-width: 1219px) {
+  .burger {
+    display: block;
+  }
   .container {
     max-width: 704px;
-  }
-  .fullwidth-bg {
-    &-betting-center {
-      top: 425px;
-      height: 199px;
-      @include gradient-grey(4);
-    }
   }
 
   .company-card {
@@ -3674,6 +3671,20 @@ footer {
     &.size {
       &-medium {
         height: 420px;
+        &-sm {
+          height: 108px;
+          .category, .preview {
+            display: none;
+          }
+          .title {
+            margin-top: 20px;
+            h3 {
+              letter-spacing: 0.25px;
+              @include fontSize(14);
+              @include fontExo2(SemiBold)
+            }
+          }
+        }
       }
     }
   }
@@ -3832,31 +3843,6 @@ footer {
       }
     }
   }
-  .top-section {
-    padding-bottom: 24px !important;
-  }
-  .betting-center {
-    height: auto;
-    margin-top: -534px;
-    background: none;
-    padding: 0 0 24px;
-    border-radius: 0;
-    .tab {
-      &-pane {
-        overflow: hidden;
-      }
-    }
-    &-list {
-      width: 100%;
-      overflow: auto;
-      @include flex()
-    }
-  }
-  .company {
-    &-slider {
-      margin-top: 220px;
-    }
-  }
   .forecast {
     &-section {
       &.with-tabs {
@@ -3877,6 +3863,42 @@ footer {
 
   .horizontal-scroll {
     margin-right: -1px;
+  }
+  .page {
+    &-main {
+      .top-section {
+        padding-bottom: 24px !important;
+      }
+      .fullwidth-bg {
+        &-betting-center {
+          top: 425px;
+          height: 199px;
+          @include gradient-grey(4);
+        }
+      }
+      .betting-center {
+        height: auto;
+        margin-top: -534px;
+        background: none;
+        padding: 0 0 24px;
+        border-radius: 0;
+        .tab {
+          &-pane {
+            overflow: hidden;
+          }
+        }
+        &-list {
+          width: 100%;
+          overflow: auto;
+          @include flex()
+        }
+      }
+      .company {
+        &-slider {
+          margin-top: 220px;
+        }
+      }
+    }
   }
 }
 

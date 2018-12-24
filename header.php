@@ -2,6 +2,9 @@
 
 $body_class = '';
 switch ($_SERVER['REQUEST_URI']) {
+    case '/':
+        $body_class = 'page-main';
+        break;
     case '/forecast.php':
         $body_class = 'page-single-forecast';
         $body_class .= ' grey-lightest';

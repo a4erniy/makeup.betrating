@@ -82,7 +82,10 @@ $(function () {
 
 //    Company slider
     let $company_slider = $('#company_slider'),
-        company_slider_show = parseInt($company_slider.attr('data-show'));
+        company_slider_show = parseInt($company_slider.attr('data-show')),
+        company_slider_show_sm = parseInt($company_slider.attr('data-show-sm'));
+    console.log(company_slider_show_sm);
+    console.log($company_slider.attr('data-show-sm').length);
     $company_slider.slick({
         dots: false,
         arrows: true,
@@ -90,7 +93,15 @@ $(function () {
         slidesToShow: company_slider_show,
         slidesToScroll: 1,
         nextArrow: '<div class="slick-next button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_right"></use></svg></div>',
-        prevArrow: '<div class="slick-prev button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_left"></use></svg></div>'
+        prevArrow: '<div class="slick-prev button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_left"></use></svg></div>',
+        responsive: [
+            {
+                breakpoint: 1220,
+                settings: {
+                    slidesToShow: company_slider_show_sm,
+                }
+            }
+        ]
     });
 
 //    Preload remove

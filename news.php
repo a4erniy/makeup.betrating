@@ -102,7 +102,7 @@
         </div>
         <div class="news-list">
             <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -126,171 +126,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
-                    <a href="#" class="news-card size-custom size-medium">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big2.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="#" class="news-card size-custom size-medium">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <a href="#" class="news-card size-custom size-small">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                    <a href="#" class="news-card size-custom size-small">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                    <a href="#" class="news-card size-custom size-small">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                    <a href="#" class="news-card size-custom size-small">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="#" class="news-card size-custom size-medium">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -301,6 +137,246 @@
                         <div class="preview">
                             <div class="image">
                                 <img src="content/news/big2.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-medium size-medium-sm">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>
@@ -323,7 +399,7 @@
     <div class="container">
         <div class="company-slider">
             <div class="section-title"><h2>Топ букмекеров</h2></div>
-            <div class="slider" id="company_slider" data-show="6">
+            <div class="slider" id="company_slider" data-show="6" data-show-sm="4">
                 <div class="item company-card">
                     <div class="branch gold">
                         <span>1</span>
@@ -516,57 +592,7 @@
     <div class="container">
         <div class="news-list">
             <div class="row">
-                <div class="col-6">
-                    <a href="#" class="news-card">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big1.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a href="#" class="news-card">
-                        <div class="category">
-                            <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
-                                <span class="name">Лига чемпионов</span>
-                            </div>
-                        </div>
-                        <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big2.jpg" alt="">
-                            </div>
-                            <div class="mask"></div>
-                        </div>
-                        <div class="title">
-                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
-                        </div>
-                        <div class="info">
-                            <div class="date">25 октября, 2018 </div>
-                            <div class="read">&bull; 10 минут чтения</div>
-                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -590,7 +616,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
@@ -614,8 +640,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
-                    <a href="#" class="news-card size-custom size-medium">
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-medium size-medium-sm">
                         <div class="category">
                             <div class="tag">
                                 <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
@@ -638,10 +664,8 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <a href="#" class="news-card size-custom size-medium">
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
                                 <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
@@ -664,8 +688,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
-                    <a href="#" class="news-card size-custom size-medium">
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
                                 <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
@@ -674,7 +698,7 @@
                         </div>
                         <div class="preview">
                             <div class="image">
-                                <img src="content/news/big2.jpg" alt="">
+                                <img src="content/news/big1.jpg" alt="">
                             </div>
                             <div class="mask"></div>
                         </div>
@@ -688,7 +712,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
@@ -711,6 +735,8 @@
                             <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
                         </div>
                     </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
@@ -733,6 +759,8 @@
                             <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
                         </div>
                     </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
@@ -755,6 +783,80 @@
                             <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
                         </div>
                     </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <a href="#" class="news-card size-custom size-small">
+                        <div class="category">
+                            <div class="tag">
+                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <span class="name">Лига чемпионов</span>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="image">
+                                <img src="content/news/big1.jpg" alt="">
+                            </div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="title">
+                            <h3>Российские БК: «Зенит» — фаворит домашнего матча ЛЕ с «Бордо»</h3>
+                        </div>
+                        <div class="info">
+                            <div class="date">25 октября, 2018 </div>
+                            <div class="read">&bull; 10 минут чтения</div>
+                            <div class="more"><svg width="12px" height="12px"><use xlink:href="/assets/image/svg-symbols.svg#arrow_forward"></use></svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-sm-6">
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">

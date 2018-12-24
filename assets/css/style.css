@@ -961,6 +961,7 @@ h1, h2, h3, h4 {
     display: block; }
 
 .burger {
+  display: none;
   cursor: pointer;
   width: 30px;
   height: 21px;
@@ -3694,17 +3695,11 @@ footer {
   text-transform: uppercase; }
 
 @media screen and (max-width: 1219px) {
+  .burger {
+    display: block; }
+
   .container {
     max-width: 704px; }
-
-  .fullwidth-bg-betting-center {
-    top: 425px;
-    height: 199px;
-    background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-    background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-    background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-    background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
-    background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
 
   .company-card {
     height: 195px;
@@ -3761,6 +3756,19 @@ footer {
     height: 386px; }
     .news-card.size-medium {
       height: 420px; }
+      .news-card.size-medium-sm {
+        height: 108px; }
+        .news-card.size-medium-sm .category, .news-card.size-medium-sm .preview {
+          display: none; }
+        .news-card.size-medium-sm .title {
+          margin-top: 20px; }
+          .news-card.size-medium-sm .title h3 {
+            letter-spacing: 0.25px;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Exo 2 Semi', sans-serif;
+            font-weight: 600;
+            font-style: normal; }
 
   .bonus-card {
     width: 230px;
@@ -3880,27 +3888,6 @@ footer {
     footer .menu > ul {
       justify-content: space-between; }
 
-  .top-section {
-    padding-bottom: 24px !important; }
-
-  .betting-center {
-    height: auto;
-    margin-top: -534px;
-    background: none;
-    padding: 0 0 24px;
-    border-radius: 0; }
-    .betting-center .tab-pane {
-      overflow: hidden; }
-    .betting-center-list {
-      width: 100%;
-      overflow: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-
-  .company-slider {
-    margin-top: 220px; }
-
   .forecast-section.with-tabs .section-header .tabs-list {
     margin-right: 0; }
   .forecast-slider-front {
@@ -3908,7 +3895,34 @@ footer {
     border-radius: 0; }
 
   .horizontal-scroll {
-    margin-right: -1px; } }
+    margin-right: -1px; }
+
+  .page-main .top-section {
+    padding-bottom: 24px !important; }
+  .page-main .fullwidth-bg-betting-center {
+    top: 425px;
+    height: 199px;
+    background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
+  .page-main .betting-center {
+    height: auto;
+    margin-top: -534px;
+    background: none;
+    padding: 0 0 24px;
+    border-radius: 0; }
+    .page-main .betting-center .tab-pane {
+      overflow: hidden; }
+    .page-main .betting-center-list {
+      width: 100%;
+      overflow: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .page-main .company-slider {
+    margin-top: 220px; } }
 @media screen and (max-width: 991px) {
   .container {
     max-width: 704px; } }
