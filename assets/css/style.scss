@@ -2324,6 +2324,7 @@ h1, h2, h3, h4 {
 header {
   z-index: 1000;
   position: relative;
+  @include transition();
   .header {
     height: 88px;
     @include flex(none, center);
@@ -2446,6 +2447,9 @@ header {
         }
       }
     }
+  }
+  &.white {
+    background-color: #fff;
   }
 }
 footer {
@@ -3173,17 +3177,12 @@ footer {
         -moz-filter: grayscale(100%);
         -o-filter: grayscale(100%);
         filter: grayscale(100%);
+        background-size: cover;
+        background-position: center center;
       }
       .mask {
         z-index: 2;
-        background: rgba(248, 249, 251, 0.75);
-        background: -moz-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
-        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248, 249, 251, 0.75)), color-stop(60%, rgba(248, 249, 251, 1)));
-        background: -webkit-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
-        background: -o-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
-        background: -ms-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
-        background: radial-gradient(ellipse at center, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) 60%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1);
+        @include radial(60%);
       }
     }
   }
@@ -3613,11 +3612,18 @@ footer {
   }
   .container {
     max-width: 704px;
+    .container {
+      padding: 0;
+    }
   }
 
   .company-card {
     height: 195px;
     padding-top: 13px;
+    &-circle {
+      width: 184px;
+      margin: 8px 8px 16px;
+    }
     .branch {
       margin: 0 auto 5px;
     }
@@ -3730,7 +3736,6 @@ footer {
   }
 
   header {
-    background-color: #fff;
     .header {
       height: 80px;
       .menu {
@@ -3738,7 +3743,7 @@ footer {
         top: 80px;
         left: 0;
         width: 100%;
-        height: auto;
+        //height: auto;
         background-color: #fff;
         position: absolute;
         overflow: hidden;
@@ -3875,6 +3880,14 @@ footer {
         }
       }
     }
+    &-header {
+      .image {
+        .mask {
+          background: none;
+          @include radial(70%);
+        }
+      }
+    }
     &-slider-front {
       margin-right: 0;
       border-radius: 0;
@@ -3913,6 +3926,13 @@ footer {
         margin-left: 8px;
         padding: 0 0 24px 24px;
       }
+    }
+  }
+  .widget {
+    .forecast-card-info {
+      height: 160px;
+      width: 160px;
+      margin: 8px 8px 16px;
     }
   }
 

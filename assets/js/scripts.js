@@ -4,20 +4,23 @@ $(function () {
 //    Variables
     let speedSlider = 2000,
         menu_header = $('#menu_header'),
-        backdrop = $('#backdrop');
+        backdrop = $('#backdrop'),
+        header = $('header');
 
 //    Mobile menu
     $('#menu_mob').on('click', function (e) {
         e.preventDefault();
-        if ($(this).hasClass('open')) {
-            menu_header.slideUp(200);
-            backdrop.hide(200);
-        } else {
-            menu_header.slideDown(200);
-            backdrop.show(200);
-        }
+        // if ($(this).hasClass('open')) {
+        //     menu_header.slideUp(200);
+        //     // backdrop.hide(200);
+        // } else {
+        //     menu_header.slideDown(200);
+        //     // backdrop.show(200);
+        // }
+        menu_header.slideToggle(200);
+        header.toggleClass('white');
         $(this).toggleClass('open');
-        $('body').toggleClass('backdrop-on');
+        // $('body').toggleClass('backdrop-on');
     });
     menu_header.find('.arrow').on('click', function (e) {
         e.preventDefault();

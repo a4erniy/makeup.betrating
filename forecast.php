@@ -3,9 +3,7 @@
 <section class="forecast-header">
     <div class="container">
         <div class="image">
-            <div class="layer">
-                <img src="content/pike.jpg" alt="">
-            </div>
+            <div class="layer" style="background-image: url('/content/pike.jpg')"></div>
             <div class="mask"></div>
         </div>
         <div class="forecast-data">
@@ -23,117 +21,7 @@
 <section class="content-section">
     <div class="container">
         <div class="row">
-            <div class="col-2">
-                <div class="sidebar">
-                    <div class="widget">
-                        <div class="widget-title">Топ букмекеров</div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-5">
-                                    <div class="logo">
-                                        <img src="content/company/leon.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">1. Леон</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-4">
-                                    <div class="logo">
-                                        <img src="content/company/liga.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">2. Лига Ставок</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-3">
-                                    <div class="logo">
-                                        <img src="content/company/bwin.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">3. Bwin</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-5">
-                                    <div class="logo">
-                                        <img src="content/company/leon.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">4. Леон</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-4">
-                                    <div class="logo">
-                                        <img src="content/company/liga.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">5. Лига Ставок</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-3">
-                                    <div class="logo">
-                                        <img src="content/company/bwin.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">6. Bwin</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-5">
-                                    <div class="logo">
-                                        <img src="content/company/leon.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">7. Леон</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-4">
-                                    <div class="logo">
-                                        <img src="content/company/liga.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">8. Лига Ставок</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-3">
-                                    <div class="logo">
-                                        <img src="content/company/bwin.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">9. Bwin</div>
-                            </a>
-                        </div>
-                        <div class="company-card-circle">
-                            <a href="#">
-                                <div class="rating rating-3">
-                                    <div class="logo">
-                                        <img src="content/company/bwin.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="name">10. Bwin</div>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#" class="button button-grey">Весь рейтинг</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8">
+            <div class="col-xl-8 order-xl-2">
                 <div class="container">
                     <div class="content-box">
                         <div class="breadcrumbs">
@@ -222,121 +110,235 @@
                     </section>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-xl-2 order-xl-1">
+                <div class="sidebar">
+                    <div class="widget">
+                        <div class="widget-title">Топ букмекеров</div>
+                        <div class="horizontal-scroll">
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-5">
+                                        <div class="logo">
+                                            <img src="content/company/leon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">1. Леон</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-4">
+                                        <div class="logo">
+                                            <img src="content/company/liga.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">2. Лига Ставок</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-3">
+                                        <div class="logo">
+                                            <img src="content/company/bwin.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">3. Bwin</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-5">
+                                        <div class="logo">
+                                            <img src="content/company/leon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">4. Леон</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-4">
+                                        <div class="logo">
+                                            <img src="content/company/liga.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">5. Лига Ставок</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-3">
+                                        <div class="logo">
+                                            <img src="content/company/bwin.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">6. Bwin</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-5">
+                                        <div class="logo">
+                                            <img src="content/company/leon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">7. Леон</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-4">
+                                        <div class="logo">
+                                            <img src="content/company/liga.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">8. Лига Ставок</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-3">
+                                        <div class="logo">
+                                            <img src="content/company/bwin.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">9. Bwin</div>
+                                </a>
+                            </div>
+                            <div class="company-card-circle">
+                                <a href="#">
+                                    <div class="rating rating-3">
+                                        <div class="logo">
+                                            <img src="content/company/bwin.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">10. Bwin</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more">
+                            <a href="#" class="button button-grey">Весь рейтинг</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 order-xl-3">
                 <div class="sidebar">
                     <div class="widget">
                         <div class="widget-title">Прогнозы на спорт</div>
-                        <div class="forecast-card-info">
-                            <a href="#">
-                                <div class="sport"></div>
-                                <div class="preview">
-                                    <div class="image">
-                                        <img src="content/forecast/messi.png" alt="">
+                        <div class="horizontal-scroll">
+                            <div class="forecast-card-info">
+                                <a href="#">
+                                    <div class="sport"></div>
+                                    <div class="preview">
+                                        <div class="image">
+                                            <img src="content/forecast/messi.png" alt="">
+                                        </div>
+                                        <div class="tag">Прогнозы на футбол</div>
                                     </div>
-                                    <div class="tag">Прогнозы на футбол</div>
-                                </div>
-                                <div class="top">
-                                    <div class="logo">
-                                        <div class="team"><img src="content/team/logo-1.png"></div>
-                                        <div class="team"><img src="content/team/logo-2.png"></div>
+                                    <div class="top">
+                                        <div class="logo">
+                                            <div class="team"><img src="content/team/logo-1.png"></div>
+                                            <div class="team"><img src="content/team/logo-2.png"></div>
+                                        </div>
+                                        <div class="datetime">
+                                            <div class="date">23 октября</div>
+                                            <div class="time">22:00</div>
+                                        </div>
                                     </div>
-                                    <div class="datetime">
-                                        <div class="date">23 октября</div>
-                                        <div class="time">22:00</div>
+                                    <div class="box">
+                                        <div class="league">Лига чемпионов</div>
+                                        <div class="name">
+                                            <div class="team">Вэст Хэм</div>
+                                            <div class="team">Тоттенхэм</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="league">Лига чемпионов</div>
-                                    <div class="name">
-                                        <div class="team">Вэст Хэм</div>
-                                        <div class="team">Тоттенхэм</div>
+                                </a>
+                            </div>
+                            <div class="forecast-card-info">
+                                <a href="#">
+                                    <div class="sport"></div>
+                                    <div class="preview">
+                                        <div class="image">
+                                            <img src="content/forecast/messi.png" alt="">
+                                        </div>
+                                        <div class="tag">Прогнозы на футбол</div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="forecast-card-info">
-                            <a href="#">
-                                <div class="sport"></div>
-                                <div class="preview">
-                                    <div class="image">
-                                        <img src="content/forecast/messi.png" alt="">
+                                    <div class="top">
+                                        <div class="logo">
+                                            <div class="team"><img src="content/team/logo-1.png"></div>
+                                            <div class="team"><img src="content/team/logo-2.png"></div>
+                                        </div>
+                                        <div class="datetime">
+                                            <div class="date">23 октября</div>
+                                            <div class="time">22:00</div>
+                                        </div>
                                     </div>
-                                    <div class="tag">Прогнозы на футбол</div>
-                                </div>
-                                <div class="top">
-                                    <div class="logo">
-                                        <div class="team"><img src="content/team/logo-1.png"></div>
-                                        <div class="team"><img src="content/team/logo-2.png"></div>
+                                    <div class="box">
+                                        <div class="league">Лига чемпионов</div>
+                                        <div class="name">
+                                            <div class="team">Вэст Хэм</div>
+                                            <div class="team">Тоттенхэм</div>
+                                        </div>
                                     </div>
-                                    <div class="datetime">
-                                        <div class="date">23 октября</div>
-                                        <div class="time">22:00</div>
+                                </a>
+                            </div>
+                            <div class="forecast-card-info">
+                                <a href="#">
+                                    <div class="sport"></div>
+                                    <div class="preview">
+                                        <div class="image">
+                                            <img src="content/forecast/messi.png" alt="">
+                                        </div>
+                                        <div class="tag">Прогнозы на футбол</div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="league">Лига чемпионов</div>
-                                    <div class="name">
-                                        <div class="team">Вэст Хэм</div>
-                                        <div class="team">Тоттенхэм</div>
+                                    <div class="top">
+                                        <div class="logo">
+                                            <div class="team"><img src="content/team/logo-1.png"></div>
+                                            <div class="team"><img src="content/team/logo-2.png"></div>
+                                        </div>
+                                        <div class="datetime">
+                                            <div class="date">23 октября</div>
+                                            <div class="time">22:00</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="forecast-card-info">
-                            <a href="#">
-                                <div class="sport"></div>
-                                <div class="preview">
-                                    <div class="image">
-                                        <img src="content/forecast/messi.png" alt="">
+                                    <div class="box">
+                                        <div class="league">Лига чемпионов</div>
+                                        <div class="name">
+                                            <div class="team">Вэст Хэм</div>
+                                            <div class="team">Тоттенхэм</div>
+                                        </div>
                                     </div>
-                                    <div class="tag">Прогнозы на футбол</div>
-                                </div>
-                                <div class="top">
-                                    <div class="logo">
-                                        <div class="team"><img src="content/team/logo-1.png"></div>
-                                        <div class="team"><img src="content/team/logo-2.png"></div>
+                                </a>
+                            </div>
+                            <div class="forecast-card-info">
+                                <a href="#">
+                                    <div class="sport"></div>
+                                    <div class="preview">
+                                        <div class="image">
+                                            <img src="content/forecast/messi.png" alt="">
+                                        </div>
+                                        <div class="tag">Прогнозы на футбол</div>
                                     </div>
-                                    <div class="datetime">
-                                        <div class="date">23 октября</div>
-                                        <div class="time">22:00</div>
+                                    <div class="top">
+                                        <div class="logo">
+                                            <div class="team"><img src="content/team/logo-1.png"></div>
+                                            <div class="team"><img src="content/team/logo-2.png"></div>
+                                        </div>
+                                        <div class="datetime">
+                                            <div class="date">23 октября</div>
+                                            <div class="time">22:00</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="league">Лига чемпионов</div>
-                                    <div class="name">
-                                        <div class="team">Вэст Хэм</div>
-                                        <div class="team">Тоттенхэм</div>
+                                    <div class="box">
+                                        <div class="league">Лига чемпионов</div>
+                                        <div class="name">
+                                            <div class="team">Вэст Хэм</div>
+                                            <div class="team">Тоттенхэм</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="forecast-card-info">
-                            <a href="#">
-                                <div class="sport"></div>
-                                <div class="preview">
-                                    <div class="image">
-                                        <img src="content/forecast/messi.png" alt="">
-                                    </div>
-                                    <div class="tag">Прогнозы на футбол</div>
-                                </div>
-                                <div class="top">
-                                    <div class="logo">
-                                        <div class="team"><img src="content/team/logo-1.png"></div>
-                                        <div class="team"><img src="content/team/logo-2.png"></div>
-                                    </div>
-                                    <div class="datetime">
-                                        <div class="date">23 октября</div>
-                                        <div class="time">22:00</div>
-                                    </div>
-                                </div>
-                                <div class="box">
-                                    <div class="league">Лига чемпионов</div>
-                                    <div class="name">
-                                        <div class="team">Вэст Хэм</div>
-                                        <div class="team">Тоттенхэм</div>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="more">
                             <a href="#" class="button button-grey">Все прогнозы</a>
@@ -355,7 +357,7 @@
         </div>
         <div class="forecast-list">
             <div class="row">
-                <div class="col-3">
+                <div class="col-xl-3 col-sm-6">
                     <div class="forecast-card-info">
                         <a href="#">
                             <div class="sport"></div>
@@ -385,7 +387,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-sm-6">
                     <div class="forecast-card-info">
                         <a href="#">
                             <div class="sport"></div>
@@ -415,7 +417,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-sm-6">
                     <div class="forecast-card-info">
                         <a href="#">
                             <div class="sport"></div>
@@ -445,7 +447,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-sm-6">
                     <div class="forecast-card-info">
                         <a href="#">
                             <div class="sport"></div>

@@ -145,3 +145,14 @@
   display: block;
   position: absolute;
 }
+
+@mixin radial($val) {
+  background: rgba(248, 249, 251, 0.75);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) $val);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248, 249, 251, 0.75)), color-stop($val, rgba(248, 249, 251, 1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) $val);
+  background: -o-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) $val);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) $val);
+  background: radial-gradient(ellipse at center, rgba(248, 249, 251, 0.75) 0%, rgba(248, 249, 251, 1) $val);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f9fb', endColorstr='#f8f9fb', GradientType=1);
+}
