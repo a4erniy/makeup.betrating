@@ -184,7 +184,7 @@
                                 <div class="content-padding">
                                     <div class="title">Узнайте подробнее об акции</div>
                                     <div class="goto">
-                                        <a href="#" target="_blank">На сайт БК Леон</a>
+                                        <a href="#" target="_blank"><svg><use xlink:href="/assets/image/svg-symbols.svg#link"></use></svg> На сайт БК Леон</a>
                                     </div>
                                 </div>
                                 <div class="sharing">

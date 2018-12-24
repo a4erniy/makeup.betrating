@@ -1285,6 +1285,7 @@ h1, h2, h3, h4 {
         line-height: 24px;
         width: 58px;
         height: 32px;
+        text-align: center;
         margin-left: auto;
         line-height: 32px;
         color: #ffffff;
@@ -1345,7 +1346,8 @@ h1, h2, h3, h4 {
       align-items: center;
       display: inline-flex; }
       .green-box .goto a svg {
-        fill: #727B88; }
+        fill: #727B88;
+        margin-right: 6px; }
 
 .backdrop {
   display: none;
@@ -2459,7 +2461,6 @@ h1, h2, h3, h4 {
 
 header {
   z-index: 1000;
-  background-color: #fff;
   position: relative; }
   header .header {
     height: 88px;
@@ -3448,7 +3449,9 @@ footer {
 .bonuses-slider .bonus-card {
   width: 50%;
   height: 432px;
-  margin: 1px 0 58px; }
+  margin: 1px 0 58px;
+  box-shadow: none;
+  border: 1px solid #f1f2f4; }
   .bonuses-slider .bonus-card .image {
     width: 144px;
     height: 144px;
@@ -3673,6 +3676,8 @@ footer {
     .breadcrumbs.base ul {
       text-align: left; }
 
+.page-single-forecast .breadcrumbs {
+  top: -58px; }
 .page-single-company .widget {
   padding-top: 0; }
   .page-single-company .widget-title {
@@ -3786,79 +3791,81 @@ footer {
     .bonus-card:hover {
       box-shadow: 0 0 0 1px #f1f2f4; }
 
-  header .header {
-    height: 80px; }
-    header .header .menu {
-      display: none;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      height: auto;
-      background-color: #fff;
-      position: absolute;
-      overflow: hidden;
-      border-top: 1px solid #E6E5EC;
-      border-width: 2px;
-      padding-top: 22px;
-      padding-bottom: 24px; }
-      header .header .menu > ul {
-        max-width: 704px;
+  header {
+    background-color: #fff; }
+    header .header {
+      height: 80px; }
+      header .header .menu {
+        display: none;
+        top: 80px;
+        left: 0;
         width: 100%;
-        padding-right: 8px;
-        padding-left: 8px;
-        margin-right: auto;
-        margin-left: auto;
-        display: block; }
-        header .header .menu > ul > li {
-          margin: 0;
+        height: auto;
+        background-color: #fff;
+        position: absolute;
+        overflow: hidden;
+        border-top: 1px solid #E6E5EC;
+        border-width: 2px;
+        padding-top: 22px;
+        padding-bottom: 24px; }
+        header .header .menu > ul {
+          max-width: 704px;
+          width: 100%;
+          padding-right: 8px;
+          padding-left: 8px;
+          margin-right: auto;
+          margin-left: auto;
           display: block; }
-          header .header .menu > ul > li > a {
-            width: 100%;
-            line-height: 56px;
-            padding-left: 40px;
-            font-size: 18px;
-            font-family: 'Exo 2 Extra', sans-serif;
-            font-weight: 800;
-            font-style: normal; }
-          header .header .menu > ul > li:hover .sub-menu {
-            display: none; }
-          header .header .menu > ul > li.active > a:before {
-            width: 4px;
-            height: 100%; }
-          header .header .menu > ul > li.premium svg {
-            position: absolute;
-            top: 50%;
-            margin-top: -12px;
-            left: 12px; }
-          header .header .menu > ul > li .arrow {
-            display: block;
-            width: 56px;
-            height: 56px;
-            text-align: center;
-            padding-top: 18px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 100;
-            -webkit-transition: all .2s ease-in-out;
-            -moz-transition: all .2s ease-in-out;
-            -o-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out; }
-            header .header .menu > ul > li .arrow.view {
-              transform: scale(1, -1); }
-              header .header .menu > ul > li .arrow.view svg {
-                fill: #25A96A; }
-      header .header .menu .sub-menu {
-        position: relative;
-        top: 0;
-        border-radius: 0;
-        box-shadow: none;
-        background-color: #F8F9FB; }
-        header .header .menu .sub-menu li {
-          border: none; }
-          header .header .menu .sub-menu li a {
-            padding-left: 40px;
-            padding-right: 0; }
+          header .header .menu > ul > li {
+            margin: 0;
+            display: block; }
+            header .header .menu > ul > li > a {
+              width: 100%;
+              line-height: 56px;
+              padding-left: 40px;
+              font-size: 18px;
+              font-family: 'Exo 2 Extra', sans-serif;
+              font-weight: 800;
+              font-style: normal; }
+            header .header .menu > ul > li:hover .sub-menu {
+              display: none; }
+            header .header .menu > ul > li.active > a:before {
+              width: 4px;
+              height: 100%; }
+            header .header .menu > ul > li.premium svg {
+              position: absolute;
+              top: 50%;
+              margin-top: -12px;
+              left: 12px; }
+            header .header .menu > ul > li .arrow {
+              display: block;
+              width: 56px;
+              height: 56px;
+              text-align: center;
+              padding-top: 18px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 100;
+              -webkit-transition: all .2s ease-in-out;
+              -moz-transition: all .2s ease-in-out;
+              -o-transition: all .2s ease-in-out;
+              transition: all .2s ease-in-out; }
+              header .header .menu > ul > li .arrow.view {
+                transform: scale(1, -1); }
+                header .header .menu > ul > li .arrow.view svg {
+                  fill: #25A96A; }
+        header .header .menu .sub-menu {
+          position: relative;
+          top: 0;
+          border-radius: 0;
+          box-shadow: none;
+          background-color: #F8F9FB; }
+          header .header .menu .sub-menu li {
+            border: none; }
+            header .header .menu .sub-menu li a {
+              padding-left: 40px;
+              padding-right: 0; }
 
   footer .footer-row-one {
     padding-bottom: 72px;

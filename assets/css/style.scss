@@ -1238,6 +1238,7 @@ h1, h2, h3, h4 {
         @include fontSize(18);
         width: 58px;
         height: 32px;
+        text-align: center;
         margin-left: auto;
         line-height: 32px;
         color: $white-text;
@@ -1279,6 +1280,7 @@ h1, h2, h3, h4 {
       display: inline-flex;
       svg {
         fill: $black-lightest;
+        margin-right: 6px;
       }
     }
   }
@@ -2311,7 +2313,6 @@ h1, h2, h3, h4 {
 // section
 header {
   z-index: 1000;
-  background-color: #fff;
   position: relative;
   .header {
     height: 88px;
@@ -3289,6 +3290,8 @@ footer {
       width: 50%;
       height: 432px;
       margin: 1px 0 58px;
+      box-shadow: none;
+      border: 1px solid #f1f2f4;
       .image {
         width: 144px;
         height: 144px;
@@ -3548,7 +3551,11 @@ footer {
 // page
 .page {
   &-single {
-    &-forecast {}
+    &-forecast {
+      .breadcrumbs {
+        top: -58px;
+      }
+    }
     &-company {
       .widget {
         padding-top: 0;
@@ -3711,6 +3718,7 @@ footer {
   }
 
   header {
+    background-color: #fff;
     .header {
       height: 80px;
       .menu {
