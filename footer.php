@@ -12,7 +12,10 @@
                         <li class=""><a href="/forecasts.php">Прогнозы</a></li>
                         <li class=""><a href="#">Школа ставок</a></li>
                         <li class=""><a href="/bonuses.php">Бонусы</a></li>
-                        <li class="premium"><a href="forecasts-premium.php"><i class="ico"><svg width="16px" height="11px"><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg></i>Премиум</a></li>
+                        <li class="premium">
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#crown"></use></svg>
+                            <a href="forecasts-premium.php">Премиум</a>
+                        </li>
                     </ul>
                     <div class="pages">
                         <a href="#">Прогнозы на РПЛ</a>
@@ -47,6 +50,8 @@
         </div>
     </div>
 </footer>
+
+<div class="backdrop" id="backdrop"></div>
 
 <div class="modal fade" id="resetModal" tabindex="-1" role="dialog" aria-labelledby="resetModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

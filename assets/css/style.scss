@@ -90,30 +90,32 @@ h1, h2, h3, h4 {
         position: relative;
         letter-spacing: 0.75px;
         text-transform: uppercase;
-        svg {
-          margin-top: -4px;
-          position: relative;
-        }
-        &:hover {
-          color: $green-dark !important;
-          svg {
-            fill: $green-dark !important;
-          }
-          & + .sub-menu {
-            display: block;
-          }
-        }
       }
-      &.premium {
+      svg {
+        margin-top: -4px;
+        position: relative;
+      }
+      &:hover {
         & > a {
-          color: $gold !important;
-          svg {
-            fill: $gold !important;
-          }
+          color: $green-dark !important;
+        }
+        svg {
+          fill: $green-dark !important;
+        }
+        .sub-menu {
+          display: block;
         }
       }
       &:last-child {
         margin-right: 0 !important;
+      }
+      &.premium {
+        & > a {
+          color: $gold !important;
+        }
+        svg {
+          fill: $gold !important;
+        }
       }
     }
   }
@@ -920,6 +922,60 @@ h1, h2, h3, h4 {
     display: block;
   }
 }
+.burger {
+  cursor: pointer;
+  width: 30px;
+  height: 21px;
+  position: relative;
+  margin-right: 16px;
+  span, span:after, span:before {
+    content: "";
+    height: 3px;
+    width: 32px;
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: $black-lightest;
+    @include transition();
+  }
+  span {
+    top: 9px;
+    &:after {
+      bottom: -9px;
+    }
+    &:before {
+      top: -9px;
+    }
+  }
+  &.open {
+    span {
+      background-color: transparent;
+      &:after {
+        bottom: 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      &:before {
+        top: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+.dropdown {
+  &-toggle::after {
+    display: none;
+  }
+  &-menu {
+    padding: 0;
+    border: none;
+  }
+}
 .accordion {
   position: relative;
   margin-bottom: 16px;
@@ -1088,15 +1144,6 @@ h1, h2, h3, h4 {
     }
   }
 }
-.dropdown {
-  &-toggle::after {
-    display: none;
-  }
-  &-menu {
-    padding: 0;
-    border: none;
-  }
-}
 .fullwidth-bg {
   top: 0;
   left: 0;
@@ -1233,6 +1280,20 @@ h1, h2, h3, h4 {
         fill: $black-lightest;
       }
     }
+  }
+}
+.backdrop {
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 500;
+  position: fixed;
+  background-color: rgba(41, 39, 50, 0.9);
+  @include transition();
+  &-on {
+    overflow: hidden;
   }
 }
 
@@ -2248,14 +2309,12 @@ h1, h2, h3, h4 {
 
 // section
 header {
-  z-index: 100;
+  z-index: 1000;
+  background-color: #fff;
   position: relative;
   .header {
-    @include flex();
-    & > div {
-      @include flex(none, center);
-      height: 88px;
-    }
+    height: 88px;
+    @include flex(none, center);
     .logo {
       width: 122px;
       margin-right: 134px;
@@ -2267,9 +2326,6 @@ header {
             color: $color-menu;
             line-height: 88px;
             @include fontExo2(SemiBold);
-            svg {
-              fill: $grey;
-            }
           }
           &.active {
             & > a {
@@ -2280,6 +2336,12 @@ header {
                 background-color: $green;
               }
             }
+            &.premium > a:before {
+              background-color: $gold;
+            }
+          }
+          svg {
+            fill: $grey;
           }
         }
       }
@@ -2534,10 +2596,11 @@ footer {
         right: 0;
         width: 34px;
         height: 32px;
-        line-height: 44px;
         position: absolute;
         cursor: pointer;
         border: $border;
+        padding-top: 3px;
+        text-align: center;
         svg {
           width: 24px;
           height: 24px;
@@ -3638,8 +3701,91 @@ footer {
 
   header {
     .header {
+      height: 80px;
       .menu {
         display: none;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        position: absolute;
+        overflow: hidden;
+        border-top: $border;
+        border-width: 2px;
+        padding-top: 22px;
+        padding-bottom: 24px;
+        & > ul {
+          max-width: 704px;
+          width: 100%;
+          padding-right: 8px;
+          padding-left: 8px;
+          margin-right: auto;
+          margin-left: auto;
+          display: block;
+          & > li {
+            margin: 0;
+            display: block;
+            & > a {
+              width: 100%;
+              line-height: 56px;
+              padding-left: 40px;
+              font-size: 18px;
+              @include fontExo2(ExtraBold);
+            }
+            &:hover {
+              .sub-menu {
+                display: none;
+              }
+            }
+            &.active {
+              & > a:before {
+                width: 4px;
+                height: 100%;
+              }
+            }
+            &.premium {
+              svg {
+                position: absolute;
+                top: 50%;
+                margin-top: -12px;
+                left: 12px;
+              }
+            }
+            .arrow {
+              display: block;
+              width: 56px;
+              height: 56px;
+              text-align: center;
+              padding-top: 18px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 100;
+              @include transition();
+              &.view {
+                transform: scale(1, -1);
+                svg {
+                  fill: $green-dark;
+                }
+              }
+            }
+          }
+        }
+        .sub-menu {
+          position: relative;
+          top: 0;
+          border-radius: 0;
+          box-shadow: none;
+          background-color: $grey-lightest;
+          li {
+            border: none;
+            a {
+              padding-left: 40px;
+              padding-right: 0;
+            }
+          }
+        }
       }
     }
   }

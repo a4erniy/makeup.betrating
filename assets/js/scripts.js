@@ -2,7 +2,35 @@ $(function () {
 
 
 //    Variables
-    let speedSlider = 2000;
+    let speedSlider = 2000,
+        menu_header = $('#menu_header'),
+        backdrop = $('#backdrop');
+
+//    Mobile menu
+    $('#menu_mob').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).hasClass('open')) {
+            menu_header.slideUp(200);
+            backdrop.hide(200);
+        } else {
+            menu_header.slideDown(200);
+            backdrop.show(200);
+        }
+        $(this).toggleClass('open');
+        $('body').toggleClass('backdrop-on');
+    });
+    menu_header.find('.arrow').on('click', function (e) {
+        e.preventDefault();
+        let parent = $(this).parent();
+        if ($(window).width() < '1220') {
+            if ($(this).hasClass('view')) {
+                parent.find('.sub-menu').slideUp(200);
+            } else {
+                parent.find('.sub-menu').slideDown(200);
+            }
+            $(this).toggleClass('view')
+        }
+    })
 
 //    Config slider
     let configSlick = function (show) {
