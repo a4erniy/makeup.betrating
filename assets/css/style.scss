@@ -3643,6 +3643,49 @@ footer {
       }
     }
   }
+  footer {
+    .footer {
+      &-row {
+        &-one {
+          padding-bottom: 72px;
+          position: relative;
+        }
+        &-two {
+          align-items: flex-start;
+        }
+        &-three {
+          display: block;
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+        }
+      }
+      .services {
+        margin: 0 0 10px!important;
+        width: 100%;
+        &:nth-child(3) {
+          float: left;
+        }
+        &:nth-child(3) {
+          float: left;
+        }
+        &:nth-child(4) {
+          float: right;
+        }
+      }
+    }
+    .menu {
+      bottom: 32px;
+      left: 0;
+      width: 100%;
+      position: absolute;
+      & > ul {
+        justify-content: space-between;
+      }
+    }
+  }
   .top-section {
     padding-bottom: 24px !important;
   }
