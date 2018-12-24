@@ -5,10 +5,10 @@
         <div class="news-slider preload" id="news_slider">
             <div class="forecast-card premium">
                 <a href="/forecast-premium.php">
-                    <div class="image">
-                        <img src="content/forecast/1.jpg" alt="">
+                    <div class="preview">
+                        <div class="image" style="background-image: url('/content/forecast/1.jpg')"></div>
+                        <div class="mask"></div>
                     </div>
-                    <div class="mask"></div>
                     <div class="desc">
                         <span>Премиум прогноз на матч:</span>
                         <div class="title">Барселона — Интер</div>
@@ -28,10 +28,10 @@
             </div>
             <div class="forecast-card premium">
                 <a href="/forecast-premium.php">
-                    <div class="image">
-                        <img src="content/forecast/2.jpg" alt="">
+                    <div class="preview">
+                        <div class="image" style="background-image: url('/content/forecast/1.jpg')"></div>
+                        <div class="mask"></div>
                     </div>
-                    <div class="mask"></div>
                     <div class="desc">
                         <span>Премиум прогноз на матч:</span>
                         <div class="title">Рома — Валенсия</div>
@@ -51,10 +51,10 @@
             </div>
             <div class="forecast-card premium">
                 <a href="/forecast-premium.php">
-                    <div class="image">
-                        <img src="content/forecast/3.jpg" alt="">
+                    <div class="preview">
+                        <div class="image" style="background-image: url('/content/forecast/1.jpg')"></div>
+                        <div class="mask"></div>
                     </div>
-                    <div class="mask"></div>
                     <div class="desc">
                         <span>Премиум прогноз на матч:</span>
                         <div class="title">Барселона — Интер</div>
@@ -74,10 +74,10 @@
             </div>
             <div class="forecast-card premium">
                 <a href="/forecast-premium.php">
-                    <div class="image">
-                        <img src="content/forecast/4.jpg" alt="">
+                    <div class="preview">
+                        <div class="image" style="background-image: url('/content/forecast/1.jpg')"></div>
+                        <div class="mask"></div>
                     </div>
-                    <div class="mask"></div>
                     <div class="desc">
                         <span>Премиум прогноз на матч:</span>
                         <div class="title">Рома — Валенсия</div>

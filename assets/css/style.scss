@@ -1335,10 +1335,15 @@ h1, h2, h3, h4 {
   }
   .preview {
     width: 100%;
+    height: 100%;
     position: relative;
     .image {
-      img {
-      }
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
     }
     .mask {
       @include mask();
@@ -2037,32 +2042,37 @@ h1, h2, h3, h4 {
   letter-spacing: 0.75px;
   border-radius: 6px;
   overflow: hidden;
-  .image {
-    top: 0;
-    left: 50%;
-    margin-left: -400px;
-    position: absolute;
-    width: 800px;
+  .preview {
+    width: 100%;
     height: 100%;
-  }
-  .mask {
-    @include mask();
-    background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
-    background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
-    &:after, &:before {
-      content: "";
+    position: relative;
+    .image {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+    .mask {
       @include mask();
-    }
-    &:after {
-      background-image: url("../image/mask/forecast.png");
-    }
-    &:before {
-      opacity: 0;
-      @include transition();
-      background-color: rgba(35, 34, 40, 0.3);
-    }
+      background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+      background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+      background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, rgba(35, 34, 40, 1) 100%);
+      &:after, &:before {
+        content: "";
+        @include mask();
+      }
+      &:after {
+        background-image: url("../image/mask/forecast.png");
+      }
+      &:before {
+        opacity: 0;
+        @include transition();
+        background-color: rgba(35, 34, 40, 0.3);
+      }
 
+    }
   }
   .desc {
     left: 0;
@@ -3317,8 +3327,10 @@ footer {
     }
   }
   &-list {
+    @include flex();
+    flex-wrap: wrap;
     .bonus-card {
-      float: left;
+
     }
   }
 }
@@ -3868,6 +3880,41 @@ footer {
       border-radius: 0;
     }
   }
+  .bonuses {
+    &-slider {
+      .bonus-card {
+        .countdown {
+          display: block;
+        }
+      }
+    }
+    &-list {
+      margin-left: -1px;
+      margin-right: -1px;
+    }
+  }
+  .news {
+    &-slider {
+      padding-bottom: 0;
+      .news-card, .forecast-card {
+        height: 320px;
+        border-radius: 0;
+      }
+      .news-card {
+        .title {
+          bottom: 74px;
+        }
+        .info {
+          bottom: 20px;
+        }
+      }
+      .slick-dots {
+        width: auto;
+        margin-left: 8px;
+        padding: 0 0 24px 24px;
+      }
+    }
+  }
 
   .horizontal-scroll {
     margin-right: -1px;
@@ -3904,6 +3951,13 @@ footer {
       .company {
         &-slider {
           margin-top: 220px;
+        }
+      }
+    }
+    &-archive {
+      &-bonuses {
+        .bonus-card.banner-card {
+          display: none;
         }
       }
     }

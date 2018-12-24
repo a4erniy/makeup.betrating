@@ -1399,7 +1399,15 @@ h1, h2, h3, h4 {
         font-style: normal; }
   .news-card .preview {
     width: 100%;
+    height: 100%;
     position: relative; }
+    .news-card .preview .image {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover; }
     .news-card .preview .mask {
       top: 0;
       left: 0;
@@ -2158,40 +2166,44 @@ h1, h2, h3, h4 {
         color: #727B88; }
     .forecast-card-info:hover {
       box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
-  .forecast-card .image {
-    top: 0;
-    left: 50%;
-    margin-left: -400px;
-    position: absolute;
-    width: 800px;
-    height: 100%; }
-  .forecast-card .mask {
-    top: 0;
-    left: 0;
+  .forecast-card .preview {
     width: 100%;
     height: 100%;
-    display: block;
-    position: absolute;
-    background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
-    background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
-    background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, #232228 100%); }
-    .forecast-card .mask:after, .forecast-card .mask:before {
-      content: "";
+    position: relative; }
+    .forecast-card .preview .image {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover; }
+    .forecast-card .preview .mask {
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       display: block;
-      position: absolute; }
-    .forecast-card .mask:after {
-      background-image: url("../image/mask/forecast.png"); }
-    .forecast-card .mask:before {
-      opacity: 0;
-      -webkit-transition: all .2s ease-in-out;
-      -moz-transition: all .2s ease-in-out;
-      -o-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out;
-      background-color: rgba(35, 34, 40, 0.3); }
+      position: absolute;
+      background: -moz-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
+      background: -webkit-linear-gradient(top, rgba(35, 34, 40, 0.2) 0%, #232228 100%);
+      background: linear-gradient(to bottom, rgba(35, 34, 40, 0.2) 0%, #232228 100%); }
+      .forecast-card .preview .mask:after, .forecast-card .preview .mask:before {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute; }
+      .forecast-card .preview .mask:after {
+        background-image: url("../image/mask/forecast.png"); }
+      .forecast-card .preview .mask:before {
+        opacity: 0;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        background-color: rgba(35, 34, 40, 0.3); }
   .forecast-card .desc {
     left: 0;
     bottom: 0;
@@ -3468,8 +3480,11 @@ footer {
     content: none; }
 .bonuses-slider .slick-dots {
   bottom: 40px; }
-.bonuses-list .bonus-card {
-  float: left; }
+.bonuses-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
 
 .stavkatv-section {
   min-height: 745px;
@@ -3901,6 +3916,26 @@ footer {
     margin-right: 0;
     border-radius: 0; }
 
+  .bonuses-slider .bonus-card .countdown {
+    display: block; }
+  .bonuses-list {
+    margin-left: -1px;
+    margin-right: -1px; }
+
+  .news-slider {
+    padding-bottom: 0; }
+    .news-slider .news-card, .news-slider .forecast-card {
+      height: 320px;
+      border-radius: 0; }
+    .news-slider .news-card .title {
+      bottom: 74px; }
+    .news-slider .news-card .info {
+      bottom: 20px; }
+    .news-slider .slick-dots {
+      width: auto;
+      margin-left: 8px;
+      padding: 0 0 24px 24px; }
+
   .horizontal-scroll {
     margin-right: -1px; }
 
@@ -3929,7 +3964,9 @@ footer {
       display: -ms-flexbox;
       display: flex; }
   .page-main .company-slider {
-    margin-top: 220px; } }
+    margin-top: 220px; }
+  .page-archive-bonuses .bonus-card.banner-card {
+    display: none; } }
 @media screen and (max-width: 991px) {
   .container {
     max-width: 704px; } }

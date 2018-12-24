@@ -1,10 +1,10 @@
 <div class="forecast-slider-front preload" id="forecast_slider">
     <div class="forecast-card">
         <a href="/forecast.php">
-            <div class="image">
-                <img src="content/forecast/1.jpg" alt="">
+            <div class="preview">
+                <div class="image" style="background-image: url('/content/forecast/1.jpg')"></div>
+                <div class="mask"></div>
             </div>
-            <div class="mask"></div>
             <div class="desc">
                 <span>Прогноз на матч:</span>
                 <div class="title">Барселона — Интер</div>
@@ -23,10 +23,10 @@
     </div>
     <div class="forecast-card">
         <a href="/forecast.php">
-            <div class="image">
-                <img src="content/forecast/2.jpg" alt="">
+            <div class="preview">
+                <div class="image" style="background-image: url('/content/forecast/2.jpg')"></div>
+                <div class="mask"></div>
             </div>
-            <div class="mask"></div>
             <div class="desc">
                 <span>Прогноз на матч:</span>
                 <div class="title">Рома — Валенсия</div>
@@ -45,10 +45,10 @@
     </div>
     <div class="forecast-card">
         <a href="/forecast.php">
-            <div class="image">
-                <img src="content/forecast/3.jpg" alt="">
+            <div class="preview">
+                <div class="image" style="background-image: url('/content/forecast/3.jpg')"></div>
+                <div class="mask"></div>
             </div>
-            <div class="mask"></div>
             <div class="desc">
                 <span>Прогноз на матч:</span>
                 <div class="title">Барселона — Интер</div>
@@ -67,10 +67,10 @@
     </div>
     <div class="forecast-card">
         <a href="/forecast.php">
-            <div class="image">
-                <img src="content/forecast/4.jpg" alt="">
+            <div class="preview">
+                <div class="image" style="background-image: url('/content/forecast/4.jpg')"></div>
+                <div class="mask"></div>
             </div>
-            <div class="mask"></div>
             <div class="desc">
                 <span>Прогноз на матч:</span>
                 <div class="title">Рома — Валенсия</div>

@@ -40,12 +40,20 @@ $(function () {
             infinite: true,
             slidesToShow: show,
             slidesToScroll: 1,
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: speedSlider,
             dotsClass: 'slick-dots progress-dots',
             customPaging: function (slider, pageIndex) {
                 return '<span class="current"></span><span class="item"></span>';
-            }
+            },
+            responsive: [
+                {
+                    breakpoint: 1220,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         };
     };
 

@@ -11,9 +11,7 @@
                     </div>
                 </div>
                 <div class="preview">
-                    <div class="image">
-                        <img src="content/news/big2.jpg" alt="">
-                    </div>
+                    <div class="image" style="background-image: url('/content/forecast/1.jpg')"></div>
                     <div class="mask"></div>
                 </div>
                 <div class="title">
@@ -33,9 +31,7 @@
                     </div>
                 </div>
                 <div class="preview">
-                    <div class="image">
-                        <img src="content/news/big1.jpg" alt="">
-                    </div>
+                    <div class="image" style="background-image: url('/content/forecast/2.jpg')"></div>
                     <div class="mask"></div>
                 </div>
                 <div class="title">
@@ -55,9 +51,7 @@
                     </div>
                 </div>
                 <div class="preview">
-                    <div class="image">
-                        <img src="content/news/big2.jpg" alt="">
-                    </div>
+                    <div class="image" style="background-image: url('/content/forecast/1.jpg')"></div>
                     <div class="mask"></div>
                 </div>
                 <div class="title">
@@ -77,9 +71,7 @@
                     </div>
                 </div>
                 <div class="preview">
-                    <div class="image">
-                        <img src="content/news/big1.jpg" alt="">
-                    </div>
+                    <div class="image" style="background-image: url('/content/forecast/2.jpg')"></div>
                     <div class="mask"></div>
                 </div>
                 <div class="title">
