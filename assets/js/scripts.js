@@ -13,12 +13,14 @@ $(function () {
         $menu_header.slideToggle(200);
         $(this).toggleClass('open');
         $backdrop.toggleClass('on');
+        $('header').toggleClass('white');
     });
     $backdrop.on('click', function (e) {
         e.preventDefault();
         $menu_header.slideUp(200);
         $menu_mob.removeClass('open');
         $backdrop.removeClass('on');
+        $('header').removeClass('white');
     });
     $menu_header.find('.arrow').on('click', function (e) {
         e.preventDefault();
@@ -47,7 +49,7 @@ $(function () {
             infinite: true,
             slidesToShow: show,
             slidesToScroll: 1,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: speedSlider,
             dotsClass: 'slick-dots progress-dots',
             customPaging: function (slider, pageIndex) {

@@ -784,7 +784,7 @@
                                                 <img src="content/company/leon.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">1. Леон</div>
+                                        <div class="name"><span>1.</span> Леон</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -794,7 +794,7 @@
                                                 <img src="content/company/liga.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">2. Лига Ставок</div>
+                                        <div class="name"><span>2.</span> Лига Ставок</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -804,7 +804,7 @@
                                                 <img src="content/company/bwin.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">3. Bwin</div>
+                                        <div class="name"><span>3.</span> Bwin</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -814,7 +814,7 @@
                                                 <img src="content/company/leon.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">4. Леон</div>
+                                        <div class="name"><span>4.</span> Леон</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -824,7 +824,7 @@
                                                 <img src="content/company/liga.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">5. Лига Ставок</div>
+                                        <div class="name"><span>5.</span> Лига Ставок</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -834,7 +834,7 @@
                                                 <img src="content/company/bwin.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">6. Bwin</div>
+                                        <div class="name"><span>6.</span> Bwin</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -844,7 +844,7 @@
                                                 <img src="content/company/leon.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">7. Леон</div>
+                                        <div class="name"><span>7.</span> Леон</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -854,7 +854,7 @@
                                                 <img src="content/company/liga.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">8. Лига Ставок</div>
+                                        <div class="name"><span>8.</span> Лига Ставок</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -864,7 +864,7 @@
                                                 <img src="content/company/bwin.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">9. Bwin</div>
+                                        <div class="name"><span>9.</span> Bwin</div>
                                     </a>
                                 </div>
                                 <div class="company-card-circle">
@@ -874,7 +874,7 @@
                                                 <img src="content/company/bwin.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="name">10. Bwin</div>
+                                        <div class="name"><span>10.</span> Bwin</div>
                                     </a>
                                 </div>
                             </div>

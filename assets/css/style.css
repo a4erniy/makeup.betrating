@@ -2207,7 +2207,8 @@ h1, h2, h3, h4 {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center center; }
     .forecast-card .preview .mask {
       top: 0;
       left: 0;
@@ -3736,8 +3737,6 @@ footer {
     .breadcrumbs.base ul {
       text-align: left; }
 
-.page-main .company-slider {
-  margin-top: 234px; }
 .page-single-forecast .breadcrumbs {
   top: -58px; }
 .page-single-company .widget {
@@ -3774,8 +3773,24 @@ footer {
     height: 195px;
     padding-top: 13px; }
     .company-card-circle {
-      width: 184px;
+      background: none;
+      height: auto;
+      width: auto;
       margin: 8px 8px 16px; }
+      .company-card-circle .rating {
+        width: 79px;
+        height: 79px;
+        margin: 0 auto 8px; }
+        .company-card-circle .rating .logo {
+          width: 73px;
+          height: 73px; }
+      .company-card-circle .name {
+        padding-left: 0;
+        text-align: center; }
+        .company-card-circle .name span {
+          display: none; }
+      .company-card-circle a {
+        display: block; }
     .company-card .branch {
       margin: 0 auto 5px; }
     .company-card .logo {
@@ -3932,6 +3947,8 @@ footer {
           header .header .menu .sub-menu li a {
             padding-left: 40px;
             padding-right: 0; }
+  header.white {
+    background-color: #fff; }
 
   footer .footer-row-one {
     padding-bottom: 72px;
@@ -4052,10 +4069,13 @@ footer {
       margin-left: 8px;
       padding: 0 0 24px 24px; }
 
-  .widget .forecast-card-info {
-    height: 160px;
-    width: 160px;
-    margin: 8px 8px 16px; }
+  .widget {
+    padding-top: 0;
+    padding-bottom: 24px; }
+    .widget .forecast-card-info {
+      height: 160px;
+      width: 160px;
+      margin: 8px 8px 16px; }
 
   .horizontal-scroll {
     margin-right: -1px; }
@@ -4078,6 +4098,9 @@ footer {
   .container {
     max-width: 704px; } }
 @media screen and (max-width: 767px) {
+  section {
+    padding: 24px 0; }
+
   .container {
     max-width: none; }
 
@@ -4218,7 +4241,38 @@ footer {
     .stavkatv-item .title {
       margin-bottom: 8px; }
 
+  .news-slider .news-card, .news-slider .forecast-card {
+    margin: 0; }
+
+  .content-box {
+    margin-left: -8px;
+    margin-right: -8px;
+    border-radius: 0; }
+  .content-padding {
+    padding-left: 18px;
+    padding-right: 18px; }
+
+  .pagination ul li a, .pagination ul li span {
+    width: 32px;
+    height: 32px;
+    margin: 0 3px;
+    padding-top: 6px; }
+
   .fullwidth-bg {
-    display: none !important; } }
+    display: none !important; }
+
+  .page-main .company-slider {
+    margin-top: 234px; }
+  .page-single .breadcrumbs {
+    top: 0;
+    position: relative;
+    padding-top: 16px; }
+  .page-single .content {
+    padding-top: 16px; }
+    .page-single .content .title {
+      margin-bottom: 16px; }
+      .page-single .content .title h1 {
+        font-size: 20px;
+        line-height: 26px; } }
 
 /*# sourceMappingURL=style.css.map */
