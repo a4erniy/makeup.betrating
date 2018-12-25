@@ -1170,7 +1170,8 @@ h1, h2, h3, h4 {
 }
 .green-box {
   background-image: url("../image/mask/exodus.png");
-  background-size: 100% auto;
+  background-position: center center;
+  background-size: cover;
   padding-top: 45px;
   padding-bottom: 104px;
   border-radius: 0 0 6px 6px;
@@ -1245,6 +1246,7 @@ h1, h2, h3, h4 {
       padding: 0 24px;
       @include flex(none, center);
       .desc {
+        display: block;
         color: $color-text;
         text-transform: uppercase;
         letter-spacing: 0.75px;
@@ -1254,6 +1256,7 @@ h1, h2, h3, h4 {
         @include fontSize(18);
         width: 58px;
         height: 32px;
+        display: block;
         text-align: center;
         margin-left: auto;
         line-height: 32px;
@@ -2690,7 +2693,13 @@ footer {
   &-header {
     height: 97px;
     padding: 0 24px;
-    @include flex(none, center);
+    @include flex();
+    .box {
+      @include flex(none, center);
+      &:last-child {
+        margin-left: auto;
+      }
+    }
     .branch {
       margin-right: 16px;
     }
@@ -2705,7 +2714,6 @@ footer {
     }
     .voices {
       @include flex(none, center);
-      margin-left: auto;
       cursor: pointer;
       span {
         width: 49px;
@@ -4057,8 +4065,8 @@ footer {
     }
   }
   .widget {
-    padding-top: 0;
-    padding-bottom: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     .forecast-card-info {
       height: 160px;
       width: 160px;
@@ -4097,6 +4105,10 @@ footer {
   }
 }
 
+@media screen and (max-width: 1219px) {
+
+}
+
 @media screen and (max-width: 991px) {
   .container {
     max-width: 704px;
@@ -4109,6 +4121,48 @@ footer {
   }
   .container {
     max-width: none;
+  }
+  .green-box {
+    border-radius: 0;
+    padding-bottom: 134px;
+    .title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .click {
+      padding: 0;
+      height: auto;
+      border-radius: 6px;
+      a {
+        padding: 18px;
+        display: block;
+        .desc {
+          margin-bottom: 24px;
+        }
+        .ceff {
+          float: left;
+          margin-left: 0;
+        }
+        .logo {
+          float: right;
+        }
+      }
+    }
+    .sharing {
+      height: auto;
+      padding: 12px 0;
+      span {
+        margin-bottom: 12px;
+        display: block;
+      }
+      .content-padding {
+        display: block;
+      }
+    }
+    .forecast {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   .forecast-card {
@@ -4273,6 +4327,22 @@ footer {
       padding-left: 8px;
     }
   }
+  .bonuses {
+    &-slider {
+      .bonus-card {
+        .image {
+          width: 94px;
+          height: 94px;
+          margin-top: 24px;
+        }
+        .company {
+          width: 62px;
+          height: 31px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
   .forecast {
     &-section {
       &.with-tabs {
@@ -4289,6 +4359,20 @@ footer {
     }
     &-table {
       padding-top: 16px;
+    }
+    &-data {
+      .logo {
+        .team {
+          width: 72px;
+          height: 72px;
+        }
+      }
+      .title {
+        @include fontSize(24);
+      }
+      .datetime {
+        @include fontSize(18);
+      }
     }
   }
   .stavkatv {
@@ -4308,10 +4392,58 @@ footer {
       }
     }
   }
-  .news {
-    &-slider {
-      .news-card, .forecast-card {
-        margin: 0;
+  .company {
+    &-filter {
+      .reset {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    &-section {
+      .section-title {
+        h1 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+      .description {
+        line-height: 24px;
+      }
+    }
+    &-header {
+      height: auto;
+      display: block;
+      padding: 0;
+      .box {
+        padding: 18px;
+        &:last-child {
+          border-top: $border;
+          justify-content: space-between;
+        }
+      }
+    }
+    &-list {
+      .item {
+        .bonus {
+          display: none;
+        }
+        .rating {
+          display: none;
+        }
+        .arrow {
+          margin-left: auto;
+        }
+      }
+    }
+    &-box {
+      .options {
+        .item {
+          .name {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
       }
     }
   }
@@ -4320,10 +4452,20 @@ footer {
       margin-left: -8px;
       margin-right: -8px;
       border-radius: 0;
+      .tabs {
+        display: none;
+      }
     }
     &-padding {
       padding-left: 18px;
       padding-right: 18px;
+    }
+  }
+  .news {
+    &-slider {
+      .news-card, .forecast-card {
+        margin: 0;
+      }
     }
   }
 

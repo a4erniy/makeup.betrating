@@ -1209,7 +1209,8 @@ h1, h2, h3, h4 {
 
 .green-box {
   background-image: url("../image/mask/exodus.png");
-  background-size: 100% auto;
+  background-position: center center;
+  background-size: cover;
   padding-top: 45px;
   padding-bottom: 104px;
   border-radius: 0 0 6px 6px;
@@ -1290,6 +1291,7 @@ h1, h2, h3, h4 {
       -ms-flex-align: center;
       align-items: center; }
       .green-box .click a .desc {
+        display: block;
         color: #28292B;
         text-transform: uppercase;
         letter-spacing: 0.75px;
@@ -1301,6 +1303,7 @@ h1, h2, h3, h4 {
         line-height: 24px;
         width: 58px;
         height: 32px;
+        display: block;
         text-align: center;
         margin-left: auto;
         line-height: 32px;
@@ -2827,10 +2830,16 @@ footer {
   padding: 0 24px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  display: flex; }
+  .company-header .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .company-header .box:last-child {
+      margin-left: auto; }
   .company-header .branch {
     margin-right: 16px; }
   .company-header .name {
@@ -2849,7 +2858,6 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: auto;
     cursor: pointer; }
     .company-header .voices span {
       width: 49px;
@@ -4070,8 +4078,8 @@ footer {
       padding: 0 0 24px 24px; }
 
   .widget {
-    padding-top: 0;
-    padding-bottom: 24px; }
+    padding-top: 12px;
+    padding-bottom: 12px; }
     .widget .forecast-card-info {
       height: 160px;
       width: 160px;
@@ -4103,6 +4111,38 @@ footer {
 
   .container {
     max-width: none; }
+
+  .green-box {
+    border-radius: 0;
+    padding-bottom: 134px; }
+    .green-box .title {
+      font-size: 18px;
+      line-height: 24px; }
+    .green-box .click {
+      padding: 0;
+      height: auto;
+      border-radius: 6px; }
+      .green-box .click a {
+        padding: 18px;
+        display: block; }
+        .green-box .click a .desc {
+          margin-bottom: 24px; }
+        .green-box .click a .ceff {
+          float: left;
+          margin-left: 0; }
+        .green-box .click a .logo {
+          float: right; }
+    .green-box .sharing {
+      height: auto;
+      padding: 12px 0; }
+      .green-box .sharing span {
+        margin-bottom: 12px;
+        display: block; }
+      .green-box .sharing .content-padding {
+        display: block; }
+    .green-box .forecast {
+      font-size: 32px;
+      line-height: 40px; }
 
   .forecast-card-table {
     height: 96px;
@@ -4223,6 +4263,15 @@ footer {
       justify-content: flex-start;
       padding-left: 8px; }
 
+  .bonuses-slider .bonus-card .image {
+    width: 94px;
+    height: 94px;
+    margin-top: 24px; }
+  .bonuses-slider .bonus-card .company {
+    width: 62px;
+    height: 31px;
+    margin-top: 12px; }
+
   .forecast-section.with-tabs .section-header {
     display: block; }
   .forecast-slider-front {
@@ -4230,6 +4279,15 @@ footer {
     margin-right: -8px; }
   .forecast-table {
     padding-top: 16px; }
+  .forecast-data .logo .team {
+    width: 72px;
+    height: 72px; }
+  .forecast-data .title {
+    font-size: 24px;
+    line-height: 30px; }
+  .forecast-data .datetime {
+    font-size: 18px;
+    line-height: 24px; }
 
   .stavkatv-section .element-one {
     display: none; }
@@ -4241,16 +4299,44 @@ footer {
     .stavkatv-item .title {
       margin-bottom: 8px; }
 
-  .news-slider .news-card, .news-slider .forecast-card {
-    margin: 0; }
+  .company-filter .reset a {
+    font-size: 12px; }
+  .company-section .section-title h1 {
+    font-size: 24px;
+    line-height: 30px; }
+  .company-section .description {
+    line-height: 24px; }
+  .company-header {
+    height: auto;
+    display: block;
+    padding: 0; }
+    .company-header .box {
+      padding: 18px; }
+      .company-header .box:last-child {
+        border-top: 1px solid #E6E5EC;
+        justify-content: space-between; }
+  .company-list .item .bonus {
+    display: none; }
+  .company-list .item .rating {
+    display: none; }
+  .company-list .item .arrow {
+    margin-left: auto; }
+  .company-box .options .item .name {
+    font-size: 14px;
+    line-height: 20px; }
 
   .content-box {
     margin-left: -8px;
     margin-right: -8px;
     border-radius: 0; }
+    .content-box .tabs {
+      display: none; }
   .content-padding {
     padding-left: 18px;
     padding-right: 18px; }
+
+  .news-slider .news-card, .news-slider .forecast-card {
+    margin: 0; }
 
   .pagination ul li a, .pagination ul li span {
     width: 32px;

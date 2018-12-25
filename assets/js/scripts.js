@@ -36,7 +36,12 @@ $(function () {
     });
 
 //    Filter company
-    $('#open_filter').on('click', function (e) {
+    let $open_filter = $('#open_filter');
+    $open_filter.on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().toggleClass('open').find('form').slideToggle(200);
+    });
+    $open_filter.parent().find('.arrow').on('click', function (e) {
         e.preventDefault();
         $(this).parent().toggleClass('open').find('form').slideToggle(200);
     });

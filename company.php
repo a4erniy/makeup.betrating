@@ -30,26 +30,30 @@
                     <div class="content-box">
                         <div class="content pdt-no">
                             <div class="company-header">
-                                <div class="branch gold">
-                                    <span>1</span>
-                                    <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
-                                </div>
-                                <div class="name-rating">
-                                    <div class="name">БК ЛЕОН</div>
-                                    <div class="rating">
-                                        <span class="star gold"></span>
-                                        <span class="star gold"></span>
-                                        <span class="star gold"></span>
-                                        <span class="star gold"></span>
-                                        <span class="star"></span>
+                                <div class="box">
+                                    <div class="branch gold">
+                                        <span>1</span>
+                                        <svg><use xlink:href="/assets/image/svg-symbols.svg#wreath"></use></svg>
+                                    </div>
+                                    <div class="name-rating">
+                                        <div class="name">БК ЛЕОН</div>
+                                        <div class="rating">
+                                            <span class="star gold"></span>
+                                            <span class="star gold"></span>
+                                            <span class="star gold"></span>
+                                            <span class="star gold"></span>
+                                            <span class="star"></span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="voices">
-                                    <span>236</span>
-                                    <svg><use xlink:href="/assets/image/svg-symbols.svg#like"></use></svg>
-                                </div>
-                                <div class="link">
-                                    <a href="#" target="_blank" class="button button-green"><svg><use xlink:href="/assets/image/svg-symbols.svg#link"></use></svg> На сайт</a>
+                                <div class="box">
+                                    <div class="voices">
+                                        <span>236</span>
+                                        <svg><use xlink:href="/assets/image/svg-symbols.svg#like"></use></svg>
+                                    </div>
+                                    <div class="link">
+                                        <a href="#" target="_blank" class="button button-green"><svg><use xlink:href="/assets/image/svg-symbols.svg#link"></use></svg> На сайт</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="preview">
