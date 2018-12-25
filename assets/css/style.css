@@ -161,6 +161,22 @@ h1, h2, h3, h4 {
   margin-right: 11px; }
   .tabs-item:last-child {
     margin-right: 0 !important; }
+  .tabs-item.active a {
+    color: #25A96A;
+    position: relative; }
+    .tabs-item.active a:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      top: auto;
+      bottom: 0;
+      height: 4px;
+      background-color: #25C277; }
+    .tabs-item.active a svg {
+      fill: #25A96A !important; }
   .tabs-item a {
     color: #807F86;
     display: block;
@@ -169,8 +185,6 @@ h1, h2, h3, h4 {
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal; }
-    .tabs-item a .ico {
-      margin-right: 7px; }
     .tabs-item a:hover {
       color: #25A96A; }
     .tabs-item a.active {
@@ -187,6 +201,8 @@ h1, h2, h3, h4 {
         bottom: 0;
         height: 4px;
         background-color: #25C277; }
+      .tabs-item a.active svg {
+        fill: #25A96A !important; }
 
 .modal-content {
   padding-bottom: 62px;
@@ -1398,6 +1414,8 @@ h1, h2, h3, h4 {
       border-radius: 100px;
       display: inline-block;
       background-color: rgba(255, 255, 255, 0.3); }
+      .news-card .category .tag svg {
+        fill: #ffffff; }
       .news-card .category .tag .name {
         font-size: 12px;
         line-height: 16px;
@@ -1417,7 +1435,8 @@ h1, h2, h3, h4 {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center center; }
     .news-card .preview .mask {
       top: 0;
       left: 0;
@@ -1518,6 +1537,8 @@ h1, h2, h3, h4 {
       position: relative; }
       .news-card.size-medium .category .tag {
         background-color: #e8eaed; }
+        .news-card.size-medium .category .tag svg {
+          fill: #807F86; }
         .news-card.size-medium .category .tag .name {
           color: #807F86; }
     .news-card.size-medium .preview {
@@ -1893,10 +1914,8 @@ h1, h2, h3, h4 {
       position: absolute; }
     .forecast-card-table .league {
       width: 14%; }
-      .forecast-card-table .league .ico {
-        width: 23px;
-        height: 23px;
-        text-align: center; }
+      .forecast-card-table .league svg {
+        fill: #807F86; }
       .forecast-card-table .league .name {
         color: #807F86;
         letter-spacing: 0.25px;
@@ -2393,10 +2412,8 @@ h1, h2, h3, h4 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .betting-center-card .head .league .logo {
-      width: 16px;
-      height: 16px;
-      margin-right: 8px; }
+    .betting-center-card .head .league svg {
+      fill: #807F86; }
     .betting-center-card .head .league .name {
       display: inline-block;
       color: #807F86;
@@ -2678,12 +2695,8 @@ footer {
       font-weight: normal;
       font-style: normal;
       font-weight: 700; }
-      footer .footer .social-item .ico {
-        width: 20px;
-        height: 20px;
-        margin-top: 9px; }
-        footer .footer .social-item .ico svg {
-          fill: #ffffff; }
+      footer .footer .social-item svg {
+        fill: #ffffff; }
       footer .footer .social-item.age {
         margin-left: 30px;
         position: relative; }
@@ -3303,6 +3316,8 @@ footer {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center; }
+          .forecast-section.with-tabs .section-header .tabs-item a svg {
+            fill: #807F86; }
       .forecast-section.with-tabs .section-header:after {
         background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
         background: -moz-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
@@ -3721,6 +3736,8 @@ footer {
     .breadcrumbs.base ul {
       text-align: left; }
 
+.page-main .company-slider {
+  margin-top: 234px; }
 .page-single-forecast .breadcrumbs {
   top: -58px; }
 .page-single-company .widget {
@@ -3843,6 +3860,8 @@ footer {
 
   header .header {
     height: 80px; }
+    header .header .logo {
+      margin-right: 0; }
     header .header .menu {
       display: none;
       top: 80px;
@@ -3942,6 +3961,21 @@ footer {
     footer .menu > ul {
       justify-content: space-between; }
 
+  .betting-center {
+    height: auto;
+    margin-top: -534px;
+    background: none;
+    padding: 0 0 24px;
+    border-radius: 0; }
+    .betting-center .tab-pane {
+      overflow: hidden; }
+    .betting-center-list {
+      width: 100%;
+      overflow: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+
   .company-filter {
     background: none;
     background-color: #fff;
@@ -4036,20 +4070,6 @@ footer {
     background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
     background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
     background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
-  .page-main .betting-center {
-    height: auto;
-    margin-top: -534px;
-    background: none;
-    padding: 0 0 24px;
-    border-radius: 0; }
-    .page-main .betting-center .tab-pane {
-      overflow: hidden; }
-    .page-main .betting-center-list {
-      width: 100%;
-      overflow: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
   .page-main .company-slider {
     margin-top: 220px; }
   .page-archive-bonuses .bonus-card.banner-card {
@@ -4059,6 +4079,146 @@ footer {
     max-width: 704px; } }
 @media screen and (max-width: 767px) {
   .container {
-    max-width: none; } }
+    max-width: none; }
+
+  .forecast-card-table {
+    height: 96px;
+    display: block; }
+    .forecast-card-table .league {
+      width: 100%;
+      line-height: 32px;
+      margin-bottom: 10px;
+      background: -webkit-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+      background: -moz-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+      background: -ms-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+      background: -o-linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%);
+      background: linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%); }
+    .forecast-card-table .team {
+      width: auto;
+      padding-left: 4px;
+      justify-content: flex-start !important; }
+      .forecast-card-table .team-first .logo {
+        margin-left: 0;
+        margin-right: 6px; }
+      .forecast-card-table .team-first .name {
+        order: 1; }
+      .forecast-card-table .team .logo {
+        width: 16px;
+        height: 16px; }
+    .forecast-card-table .match {
+      width: auto;
+      position: absolute;
+      top: 6px;
+      right: 8px; }
+      .forecast-card-table .match > div {
+        display: inline-block; }
+    .forecast-card-table .company {
+      display: none; }
+    .forecast-card-table .value {
+      width: auto;
+      top: 48px;
+      right: 16px;
+      position: absolute; }
+    .forecast-card-table:after {
+      content: none; }
+    .forecast-card-table.premium:before {
+      height: 92px; }
+  .forecast-card .desc {
+    font-size: 20px;
+    padding-bottom: 96px; }
+  .forecast-card .more {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 36px;
+    padding: 0 24px;
+    justify-content: space-between; }
+
+  header .header {
+    height: 72px; }
+    header .header .menu {
+      top: 72px;
+      padding-top: 16px;
+      padding-bottom: 16px; }
+      header .header .menu > ul {
+        padding: 0; }
+        header .header .menu > ul > li > a {
+          font-size: 16px;
+          padding-left: 28px;
+          line-height: 48px; }
+        header .header .menu > ul > li.premium svg {
+          left: 4px; }
+    header .header .login a {
+      padding: 0;
+      width: 48px;
+      border-radius: 50%; }
+      header .header .login a svg {
+        margin-right: 0; }
+      header .header .login a span {
+        display: none; }
+
+  footer .footer-row {
+    display: block;
+    padding: 0 !important;
+    margin-bottom: 24px; }
+  footer .footer .logo {
+    margin: 0 auto 24px;
+    display: block; }
+  footer .footer .menu {
+    position: relative;
+    bottom: auto;
+    margin-bottom: 24px; }
+    footer .footer .menu > ul {
+      display: block; }
+      footer .footer .menu > ul > li {
+        margin-right: 0;
+        margin-bottom: 8px;
+        justify-content: center; }
+  footer .footer .pages {
+    display: none; }
+  footer .footer .services {
+    max-width: 100%;
+    text-align: center !important; }
+  footer .footer .social {
+    justify-content: center; }
+
+  .betting-center {
+    margin-top: -565px;
+    margin-left: -8px;
+    margin-right: -8px;
+    background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: -o-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
+    background: linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%); }
+    .betting-center .section-title {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 24px 8px 0;
+      margin-bottom: 0; }
+    .betting-center .tabs-list {
+      justify-content: flex-start;
+      padding-left: 8px; }
+
+  .forecast-section.with-tabs .section-header {
+    display: block; }
+  .forecast-slider-front {
+    margin-left: -8px;
+    margin-right: -8px; }
+  .forecast-table {
+    padding-top: 16px; }
+
+  .stavkatv-section .element-one {
+    display: none; }
+  .stavkatv-item {
+    margin-bottom: 24px; }
+    .stavkatv-item .video {
+      height: 200px;
+      margin-bottom: 16px; }
+    .stavkatv-item .title {
+      margin-bottom: 8px; }
+
+  .fullwidth-bg {
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

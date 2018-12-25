@@ -16,10 +16,10 @@ $(function () {
     });
     $backdrop.on('click', function (e) {
         e.preventDefault();
-        $menu_header.slideToggle(200);
-        $menu_mob.toggleClass('open');
-        $backdrop.toggleClass('on');
-    })
+        $menu_header.slideUp(200);
+        $menu_mob.removeClass('open');
+        $backdrop.removeClass('on');
+    });
     $menu_header.find('.arrow').on('click', function (e) {
         e.preventDefault();
         let parent = $(this).parent();
@@ -47,7 +47,7 @@ $(function () {
             infinite: true,
             slidesToShow: show,
             slidesToScroll: 1,
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: speedSlider,
             dotsClass: 'slick-dots progress-dots',
             customPaging: function (slider, pageIndex) {
@@ -95,6 +95,22 @@ $(function () {
         ]
     });
 
+//    Forecast tabs
+    $('.forecast-sport').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        slidesToShow: 1,
+        variableWidth: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: "unslick"
+            }
+        ]
+    })
+
 //    Company slider
     let $company_slider = $('#company_slider');
     if ($company_slider.length > 0) {
@@ -109,9 +125,17 @@ $(function () {
             prevArrow: '<div class="slick-prev button-grey"><svg><use xlink:href="/assets/image/svg-symbols.svg#arrow_left"></use></svg></div>',
             responsive: [
                 {
-                    breakpoint: 1220,
+                    breakpoint: 1219,
                     settings: {
                         slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        variableWidth: true,
                     }
                 }
             ]

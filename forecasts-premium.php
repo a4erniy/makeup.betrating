@@ -104,20 +104,20 @@
         <div class="section-header">
             <div class="section-title"><h2>прогнозы на спорт</h2></div>
             <ul class="forecast-sport tabs-list">
-                <li class="tabs-item">
-                    <a href="#" class="active"><span class="ico"><img src="assets/image/svg/action/view_headline_24px.svg"></span>Все</a>
+                <li class="tabs-item active">
+                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_all"></use></svg>Все</a>
                 </li>
                 <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>Футбол</a>
+                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>Футбол</a>
                 </li>
                 <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/basketball.svg"></span>Баскетбол</a>
+                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_basketball"></use></svg>Баскетбол</a>
                 </li>
                 <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/tennis.svg"></span>Теннис</a>
+                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_tennis"></use></svg>Теннис</a>
                 </li>
                 <li class="tabs-item">
-                    <a href="#"><span class="ico"><img src="assets/image/svg/16x16/Sports/hockey.svg"></span>Хоккей</a>
+                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_hockey"></use></svg>Хоккей</a>
                 </li>
             </ul>
         </div>
@@ -125,7 +125,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -146,7 +146,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -167,7 +167,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -188,7 +188,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -209,7 +209,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -230,7 +230,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -251,7 +251,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -272,7 +272,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">
@@ -293,7 +293,7 @@
             <a href="/forecast-premium.php" class="forecast-card-table premium">
                 <div class="bg"></div>
                 <div class="league">
-                    <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg"></span>
+                    <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                     <span class="name">Лига чемпионов</span>
                 </div>
                 <div class="team team-first">

@@ -17,7 +17,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -52,7 +52,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -87,7 +87,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -126,7 +126,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -161,7 +161,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -196,7 +196,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -231,7 +231,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -266,7 +266,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -301,7 +301,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -340,7 +340,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -375,7 +375,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -410,7 +410,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -445,7 +445,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>
@@ -480,7 +480,7 @@
                 <div class="betting-center-card">
                     <div class="head">
                         <div class="league">
-                            <div class="logo"><img src="/assets/image/svg/16x16/Sports/football.svg"></div>
+                            <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                             <div class="name">Лига чемпионов УЕФА</div>
                         </div>
                         <div class="time">22:00</div>

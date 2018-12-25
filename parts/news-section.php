@@ -9,14 +9,12 @@
                     <a href="#" class="news-card">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big3.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big3.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">
@@ -33,14 +31,12 @@
                     <a href="#" class="news-card">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big2.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big2.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">
@@ -59,14 +55,12 @@
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big3.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big3.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">
@@ -83,14 +77,12 @@
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big2.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big2.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">
@@ -107,14 +99,12 @@
                     <a href="#" class="news-card size-custom size-medium">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big3.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big3.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">
@@ -133,14 +123,12 @@
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big3.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big3.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">
@@ -157,14 +145,12 @@
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big3.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big3.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">
@@ -181,14 +167,12 @@
                     <a href="#" class="news-card size-custom size-small">
                         <div class="category">
                             <div class="tag">
-                                <span class="ico"><img src="assets/image/svg/16x16/Sports/football.svg" alt=""></span>
+                                <svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>
                                 <span class="name">Лига чемпионов</span>
                             </div>
                         </div>
                         <div class="preview">
-                            <div class="image">
-                                <img src="content/news/big3.jpg" alt="">
-                            </div>
+                            <div class="image" style="background-image: url('/content/news/big3.jpg')"></div>
                             <div class="mask"></div>
                         </div>
                         <div class="title">

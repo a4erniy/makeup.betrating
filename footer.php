@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="#" class="social-item vk"><i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></i></a>
-                    <a href="#" class="social-item tw"><i class="ico"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></i></a>
+                    <a href="#" class="social-item vk"><svg><use xlink:href="/assets/image/svg-symbols.svg#vk"></use></svg></a>
+                    <a href="#" class="social-item tw"><svg><use xlink:href="/assets/image/svg-symbols.svg#twitter"></use></svg></a>
                     <span class="social-item age">18+</span>
                 </div>
             </div>
