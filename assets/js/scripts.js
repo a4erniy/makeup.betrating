@@ -46,6 +46,12 @@ $(function () {
         $(this).parent().toggleClass('open').find('form').slideToggle(200);
     });
 
+//    Search in header
+    $('#search_button').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('open');
+    });
+
 //    Config slider
     let configSlick = function (show) {
         return {
@@ -71,20 +77,35 @@ $(function () {
         };
     };
 
-//    Search in header
-    $('#search_button').on('click', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('open');
-    });
-
 //    Forecast slider
     $('#forecast_slider').slick(configSlick(1));
 
-//    Bonuses slider
-    $('#bonuses_slider').slick(configSlick(2));
-
 //    News slider
     $('#news_slider').slick(configSlick(2));
+
+//    Bonuses slider
+    $('#bonuses_slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: speedSlider,
+        dotsClass: 'slick-dots progress-dots',
+        customPaging: function (slider, pageIndex) {
+            return '<span class="current"></span><span class="item"></span>';
+        },
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                }
+            }
+        ]
+    });
 
 //    Horizontal scroll with mobile
     $('.horizontal-scroll').slick({
