@@ -122,6 +122,28 @@ $(function () {
             }
         ]
     });
+    $('.horizontal-scroll-sm').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        slidesToShow: 1,
+        variableWidth: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 767,
+                settings: "slick"
+            },
+            {
+                breakpoint: 319,
+                settings: "unslick"
+            }
+        ]
+    });
 
 //    Forecast tabs
     $('.forecast-sport').slick({

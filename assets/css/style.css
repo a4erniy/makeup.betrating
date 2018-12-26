@@ -4306,7 +4306,10 @@ footer {
     .bonuses-section .bonus-card .image {
       width: 72px;
       height: 72px;
-      position: absolute; }
+      position: absolute;
+      margin: 0;
+      top: 64px;
+      right: 18px; }
     .bonuses-section .bonus-card .company {
       width: 56px;
       height: 28px;
@@ -4314,10 +4317,24 @@ footer {
       position: absolute;
       top: 10px;
       right: 18px; }
-    .bonuses-section .bonus-card .title a h3 {
-      font-size: 14px;
-      line-height: 20px; }
+    .bonuses-section .bonus-card .title {
+      margin: 0;
+      height: 104px;
+      width: 100%;
+      text-align: left;
+      padding: 0 100px 0 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .bonuses-section .bonus-card .title a h3 {
+        font-size: 14px;
+        line-height: 20px; }
     .bonuses-section .bonus-card:after {
+      display: none; }
+    .bonuses-section .bonus-card.banner-card {
       display: none; }
   .bonuses-slider .bonus-card {
     width: 290px;
@@ -4353,6 +4370,9 @@ footer {
     font-size: 18px;
     line-height: 24px; }
 
+  .stavkatv-section .section-header .title h2 {
+    font-size: 24px;
+    line-height: 30px; }
   .stavkatv-section .element-one {
     display: none; }
   .stavkatv-item {

@@ -3,8 +3,9 @@
         <div class="section-header">
             <div class="section-title"><h2>Бонусы и акции от букмекеров</h2></div>
         </div>
-        <div class="bonuses-list clearfix horizontal-scroll">
+        <div class="bonuses-list clearfix horizontal-scroll-sm">
             <div class="bonus-card">
+                <div class="category"><span>Акция</span></div>
                 <div class="image">
                     <img src="content/bonuses/1.jpg" alt="">
                 </div>
@@ -40,6 +41,7 @@
                 </div>
             </div>
             <div class="bonus-card">
+                <div class="category"><span>Акция</span></div>
                 <div class="image">
                     <img src="content/bonuses/1.jpg" alt="">
                 </div>
@@ -75,6 +77,7 @@
                 </div>
             </div>
             <div class="bonus-card">
+                <div class="category"><span>Акция</span></div>
                 <div class="image">
                     <img src="content/bonuses/1.jpg" alt="">
                 </div>
@@ -110,6 +113,7 @@
                 </div>
             </div>
             <div class="bonus-card">
+                <div class="category"><span>Акция</span></div>
                 <div class="image">
                     <img src="content/bonuses/1.jpg" alt="">
                 </div>
@@ -150,6 +154,7 @@
                 </a>
             </div>
             <div class="bonus-card">
+                <div class="category"><span>Акция</span></div>
                 <div class="image">
                     <img src="content/bonuses/1.jpg" alt="">
                 </div>
@@ -185,6 +190,7 @@
                 </div>
             </div>
             <div class="bonus-card">
+                <div class="category"><span>Акция</span></div>
                 <div class="image">
                     <img src="content/bonuses/1.jpg" alt="">
                 </div>

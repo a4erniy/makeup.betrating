@@ -4369,6 +4369,9 @@ footer {
           width: 72px;
           height: 72px;
           position: absolute;
+          margin: 0;
+          top: 64px;
+          right: 18px;
         }
         .company {
           width: 56px;
@@ -4379,6 +4382,12 @@ footer {
           right: 18px;
         }
         .title {
+          margin: 0;
+          height: 104px;
+          width: 100%;
+          text-align: left;
+          padding: 0 100px 0 18px;
+          @include flex(none, center);
           a {
             h3 {
               @include fontSize();
@@ -4386,6 +4395,9 @@ footer {
           }
         }
         &:after {
+          display: none;
+        }
+        &.banner-card {
           display: none;
         }
       }
@@ -4448,6 +4460,13 @@ footer {
   }
   .stavkatv {
     &-section {
+      .section-header {
+        .title {
+          h2 {
+            @include fontSize(24);
+          }
+        }
+      }
       .element-one {
         display: none;
       }
