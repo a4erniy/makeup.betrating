@@ -1555,7 +1555,7 @@ h1, h2, h3, h4 {
       line-height: 24px;
       letter-spacing: 0.17px; }
   .news-card.size-small {
-    height: 108px; }
+    height: 124px; }
     .news-card.size-small .category, .news-card.size-small .preview {
       display: none; }
     .news-card.size-small .title {
@@ -1612,7 +1612,16 @@ h1, h2, h3, h4 {
   .bonus-card .company {
     width: 80px;
     height: 40px;
-    margin: 16px auto 0; }
+    margin: 16px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .bonus-card .company a:hover {
       opacity: .6; }
   .bonus-card .title {
@@ -1820,7 +1829,7 @@ h1, h2, h3, h4 {
         align-items: center; }
         .company-card-circle .rating .logo img {
           max-width: 48px;
-          height: 24px; }
+          max-height: 24px; }
     .company-card-circle .name {
       padding-left: 14px;
       color: #28292B;
@@ -1836,7 +1845,16 @@ h1, h2, h3, h4 {
     width: 80px;
     height: 40px;
     display: block;
-    margin: 0 auto 10px; }
+    margin: 0 auto 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .company-card .links {
     left: 0;
     bottom: 0;
@@ -2117,7 +2135,14 @@ h1, h2, h3, h4 {
       height: 157px;
       position: relative; }
       .forecast-card-info .preview .image {
-        opacity: 0.6; }
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center; }
       .forecast-card-info .preview .tag {
         left: 24px;
         bottom: 13px;
@@ -3079,7 +3104,16 @@ footer {
       .company-list .item .logo .image {
         width: 48px;
         height: 24px;
-        margin: 17px auto; }
+        margin: 17px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
     .company-list .item .index {
       margin-right: 8px;
       color: #807F86;
@@ -3282,6 +3316,8 @@ footer {
       font-style: normal;
       font-size: 12px;
       line-height: 16px; }
+    .content .tag.grey span {
+      background: #D1D5DB; }
   .content .date {
     text-align: center;
     margin-bottom: 24px;
@@ -4108,6 +4144,9 @@ footer {
       height: 160px;
       width: 160px;
       margin: 8px 8px 16px; }
+
+  .stavkatv-list .row > div:last-child {
+    display: none; }
 
   .horizontal-scroll {
     margin-right: -1px; }
