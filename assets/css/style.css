@@ -187,6 +187,8 @@ h1, h2, h3, h4 {
     font-style: normal; }
     .tabs-item a:hover {
       color: #25A96A; }
+      .tabs-item a:hover svg {
+        fill: #25A96A !important; }
     .tabs-item a.active {
       color: #25A96A;
       position: relative; }
@@ -2083,6 +2085,16 @@ h1, h2, h3, h4 {
       width: 2px;
       height: 60px;
       background-color: #FFB90C; }
+    .forecast-card-table.empty {
+      justify-content: center;
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #807F86; }
+      .forecast-card-table.empty:after {
+        display: none !important; }
     .forecast-card-table:after {
       z-index: 1;
       background: -webkit-linear-gradient(90deg, rgba(230, 233, 235, 0) 0%, #E6E9EB 50.26%, rgba(230, 233, 235, 0) 100%);
@@ -2111,6 +2123,8 @@ h1, h2, h3, h4 {
         background-image: url("../image/ico/ceff-gold.png"); }
         .forecast-card-table:hover.premium .value .ceff:after {
           background-image: url("../image/ico/crown-ceff-gold.png"); }
+      .forecast-card-table:hover.empty {
+        box-shadow: none; }
   .forecast-card-info {
     width: 284px;
     height: 360px;
@@ -3777,6 +3791,7 @@ footer {
       font-style: normal; }
 
 .breadcrumbs {
+  z-index: 10;
   position: absolute;
   width: 100%;
   left: 0;
@@ -3792,6 +3807,8 @@ footer {
         font-family: 'Exo 2', sans-serif;
         font-weight: 500;
         font-style: normal; }
+      .breadcrumbs ul li a:hover {
+        text-decoration: underline; }
       .breadcrumbs ul li svg {
         width: 16px;
         height: 16px;

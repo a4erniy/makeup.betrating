@@ -167,6 +167,9 @@ h1, h2, h3, h4 {
       @include fontExo2(SemiBold);
       &:hover {
         color: $green-dark;
+        svg {
+          fill: $green-dark!important;
+        }
       }
       &.active {
         color: $green-dark;
@@ -1956,6 +1959,15 @@ h1, h2, h3, h4 {
         background-color: $gold;
       }
     }
+    &.empty {
+      justify-content: center;
+      @include fontExo2(SemiBold);
+      @include fontSize(16);
+      color: $color-text-grey;
+      &:after {
+        display: none!important;
+      }
+    }
     &:after {
       z-index: 1;
       @include forecast-border();
@@ -1977,6 +1989,9 @@ h1, h2, h3, h4 {
             background-image: url("../image/ico/crown-ceff-gold.png");
           }
         }
+      }
+      &.empty {
+        box-shadow: none;
       }
     }
   }
@@ -3602,6 +3617,7 @@ footer {
   }
 }
 .breadcrumbs {
+  z-index: 10;
   position: absolute;
   width: 100%;
   left: 0;
@@ -3614,6 +3630,9 @@ footer {
         color: $color-text-grey;
         @include fontSize(12);
         @include fontExo2(Medium)
+      }
+      a:hover {
+        text-decoration: underline;
       }
       svg {
         width: 16px;
