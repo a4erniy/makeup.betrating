@@ -3677,56 +3677,51 @@ footer {
 .stavkatv-list {
   position: relative; }
 
-.pagination {
+.pagination-section {
+  padding-top: 0; }
+.pagination-arrow {
+  width: 24px;
+  height: 24px;
+  display: block; }
+  .pagination-arrow svg {
+    fill: #727B88; }
+  .pagination-arrow:hover svg {
+    fill: #25A96A; }
+  .pagination-arrow.disabled svg {
+    fill: #D1D5DB; }
+.pagination ul {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-content: space-between; }
-  .pagination-section {
-    padding-top: 0; }
-  .pagination-arrow {
-    width: 24px;
-    height: 24px;
-    display: block; }
-    .pagination-arrow svg {
-      fill: #727B88; }
-    .pagination-arrow:hover svg {
-      fill: #25A96A; }
-    .pagination-arrow.disabled svg {
-      fill: #D1D5DB; }
-  .pagination ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .pagination ul li a, .pagination ul li span {
-      width: 48px;
-      height: 48px;
-      display: block;
-      margin: 0 4px;
-      text-align: center;
-      border-radius: 50%;
-      padding-top: 13px;
-      background-color: #e8eaed;
-      letter-spacing: 0.25px;
-      color: #807F86;
-      font-family: 'Exo 2 Semi', sans-serif;
-      font-weight: 600;
-      font-style: normal; }
-    .pagination ul li a:hover {
-      opacity: .7; }
-    .pagination ul li.active span {
-      color: #ffffff;
-      background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
-      background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .pagination ul li a, .pagination ul li span {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 4px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 13px;
+    background-color: #e8eaed;
+    letter-spacing: 0.25px;
+    color: #807F86;
+    font-family: 'Exo 2 Semi', sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+  .pagination ul li a.next, .pagination ul li a.prev {
+    background-color: transparent; }
+  .pagination ul li a:hover {
+    opacity: .7; }
+  .pagination ul li span.current {
+    color: #ffffff;
+    background: -webkit-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+    background: -moz-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+    background: -ms-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+    background: -o-linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
+    background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
 
 .widget {
   padding-top: 20px; }

@@ -3522,9 +3522,8 @@ footer {
       }
     }
   }
-  @include flex(none, center);
-  justify-content: space-between;
   ul {
+    margin: 0 auto;
     @include flex(center);
     li {
       a, span {
@@ -3540,10 +3539,15 @@ footer {
         color: $color-text-grey;
         @include fontExo2(SemiBold);
       }
-      a:hover {
-        opacity: .7;
+      a {
+        &.next, &.prev {
+          background-color: transparent;
+        }
+        &:hover {
+          opacity: .7;
+        }
       }
-      &.active span {
+      span.current {
         color: $white-text;
         @include gradient-green();
       }
