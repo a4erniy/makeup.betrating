@@ -3101,11 +3101,21 @@ footer {
   .preview {
     margin-bottom: 26px;
     text-align: center;
-    @include flex(center, center);
+    overflow: hidden;
     img {
-      width: 240px;
+      width: 100%;
       height: auto;
-      max-height: 160px;
+      max-height: 512px;
+    }
+    &.preview-logo {
+      height: 240px;
+      background-color: #000;
+      @include flex(center, center);
+      img {
+        width: 240px;
+        height: auto;
+        max-height: 160px;
+      }
     }
   }
   .short, .text {

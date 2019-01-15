@@ -3300,19 +3300,27 @@ footer {
   .content .preview {
     margin-bottom: 26px;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    overflow: hidden; }
     .content .preview img {
-      width: 240px;
+      width: 100%;
       height: auto;
-      max-height: 160px; }
+      max-height: 512px; }
+    .content .preview.preview-logo {
+      height: 240px;
+      background-color: #000;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .content .preview.preview-logo img {
+        width: 240px;
+        height: auto;
+        max-height: 160px; }
   .content .short, .content .text {
     font-size: 16px;
     line-height: 32px;
