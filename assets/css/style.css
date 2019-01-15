@@ -95,7 +95,7 @@ h1, h2, h3, h4 {
 .pdt-40 {
   padding-top: 40px !important; }
 .pdb-no {
-  padding-top: 0 !important; }
+  padding-bottom: 0 !important; }
 .pdb-20 {
   padding-bottom: 20px !important; }
 .pdb-40 {
@@ -434,10 +434,10 @@ h1, h2, h3, h4 {
       width: 100%; }
   .slick-dots.progress-dots li span.current {
     width: 0;
-    -webkit-transition: width 2s steps(32, end);
-    -moz-transition: width 2s steps(32, end);
-    -o-transition: width 2s steps(32, end);
-    transition: width 2s steps(32, end); }
+    -webkit-transition: width 3s steps(64, end);
+    -moz-transition: width 3s steps(64, end);
+    -o-transition: width 3s steps(64, end);
+    transition: width 3s steps(64, end); }
   .slick-dots.progress-dots li.slick-active span.current {
     width: 100%; }
 
@@ -1324,7 +1324,16 @@ h1, h2, h3, h4 {
         width: 80px;
         height: 40px;
         margin-left: 42px;
-        position: relative; }
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
         .green-box .click a .logo:before {
           display: block;
           position: absolute;
@@ -1833,7 +1842,7 @@ h1, h2, h3, h4 {
           max-width: 48px;
           max-height: 24px; }
     .company-card-circle .name {
-      padding-left: 14px;
+      padding-left: 10px;
       color: #28292B;
       letter-spacing: 0.25px;
       font-family: 'Exo 2 Semi', sans-serif;
@@ -1861,6 +1870,7 @@ h1, h2, h3, h4 {
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 20;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1910,6 +1920,13 @@ h1, h2, h3, h4 {
           background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%); }
           .company-card .links a.site:hover:before {
             border-bottom-color: #2EC652; }
+  .company-card .link-invisible {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute; }
   .company-card:hover {
     box-shadow: 0 30px 40px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.2); }
 
@@ -2015,7 +2032,17 @@ h1, h2, h3, h4 {
       padding-right: 6px; }
       .forecast-card-table .company .logo {
         width: 56px;
-        display: inline-block; }
+        height: 28px;
+        display: inline-block;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
     .forecast-card-table .value {
       width: 7%;
       text-align: right; }
@@ -2984,26 +3011,29 @@ footer {
     position: absolute; }
     .company-filter .arrow svg {
       fill: #BABFC9; }
+  .company-filter .button {
+    width: 100%; }
   .company-filter form {
     border-top: 1px solid #E6E5EC;
     margin-bottom: 24px; }
-    .company-filter form label {
+    .company-filter form .form-item {
       height: 46px;
       margin-bottom: 0;
+      cursor: pointer;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .company-filter form label .name {
+      .company-filter form .form-item .name {
         letter-spacing: 0.24px;
         font-size: 16px;
         line-height: 24px;
         font-family: 'Exo 2', sans-serif;
         font-weight: normal;
         font-style: normal; }
-      .company-filter form label .toggle {
+      .company-filter form .form-item .toggle {
         width: 44px;
         height: 24px;
         display: block;
@@ -3016,7 +3046,7 @@ footer {
         -moz-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out; }
-        .company-filter form label .toggle .disk {
+        .company-filter form .form-item .toggle .disk {
           top: 0;
           left: 0;
           width: 20px;
@@ -3031,11 +3061,11 @@ footer {
           -moz-transition: all .2s ease-in-out;
           -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out; }
-      .company-filter form label input {
+      .company-filter form .form-item input {
         display: none; }
-        .company-filter form label input:checked + .toggle {
+        .company-filter form .form-item input:checked + .toggle {
           background-color: #25C277; }
-          .company-filter form label input:checked + .toggle .disk {
+          .company-filter form .form-item input:checked + .toggle .disk {
             margin-left: 22px; }
 .company-box .options .item {
   height: 46px;
@@ -3268,7 +3298,21 @@ footer {
     font-weight: 800;
     font-style: normal; }
   .content .preview {
-    margin-bottom: 26px; }
+    margin-bottom: 26px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .content .preview img {
+      width: 240px;
+      height: auto;
+      max-height: 160px; }
   .content .short, .content .text {
     font-size: 16px;
     line-height: 32px;
@@ -3298,7 +3342,9 @@ footer {
   .content .text img {
     display: block;
     margin: 40px auto;
-    max-height: 600px; }
+    width: 100%;
+    max-height: 600px;
+    height: auto; }
   .content .text h1, .content .text h2, .content .text h3 {
     margin-top: 40px;
     margin-bottom: 24px;
@@ -3310,6 +3356,12 @@ footer {
     font-style: normal;
     font-size: 18px;
     line-height: 24px; }
+  .content .text iframe {
+    width: 100%;
+    height: 320px; }
+  .content .text twitter-widget {
+    margin-left: auto;
+    margin-right: auto; }
   .content .tag {
     text-align: center;
     margin-bottom: 24px; }
@@ -3736,7 +3788,7 @@ footer {
     padding-top: 14px; }
   .widget .forecast-card-info {
     width: 100%;
-    height: 184px;
+    height: 160px;
     margin-bottom: 16px; }
     .widget .forecast-card-info .box {
       padding: 0 16px 17px; }
