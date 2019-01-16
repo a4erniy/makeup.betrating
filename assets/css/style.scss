@@ -2721,7 +2721,11 @@ footer {
           line-height: 40px;
           letter-spacing: 0.25px;
           color: $color-text-grey;
+          text-transform: lowercase;
           @include fontExo2();
+          &:first-letter {
+            text-transform: uppercase;
+          }
           &:hover {
             color: $green-dark;
           }

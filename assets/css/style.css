@@ -2890,9 +2890,12 @@ footer {
     line-height: 40px;
     letter-spacing: 0.25px;
     color: #807F86;
+    text-transform: lowercase;
     font-family: 'Exo 2', sans-serif;
     font-weight: normal;
     font-style: normal; }
+    .company-nav ul li a:first-letter {
+      text-transform: uppercase; }
     .company-nav ul li a:hover {
       color: #25A96A; }
   .company-nav ul li.current {
