@@ -1413,9 +1413,6 @@ h1, h2, h3, h4 {
       line-height: 30px;
       @include fontExo2(ExtraBold)
     }
-    &:hover {
-      opacity: .8;
-    }
   }
   .info {
     font-size: 12px;
@@ -1439,11 +1436,6 @@ h1, h2, h3, h4 {
       @include transition();
       svg {
         fill: $black-lightest;
-      }
-      &:hover {
-        svg {
-          fill: $green-dark;
-        }
       }
     }
   }
@@ -1514,6 +1506,12 @@ h1, h2, h3, h4 {
   &:hover {
     .preview .mask:before {
       opacity: 1;
+    }
+    .title {
+      opacity: .8;
+    }
+    .info .more svg {
+      fill: $green-dark;
     }
   }
 }

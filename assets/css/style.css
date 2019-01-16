@@ -1496,8 +1496,6 @@ h1, h2, h3, h4 {
       font-family: 'Exo 2 Extra', sans-serif;
       font-weight: 800;
       font-style: normal; }
-    .news-card .title:hover {
-      opacity: .8; }
   .news-card .info {
     font-size: 12px;
     line-height: 16px;
@@ -1529,8 +1527,6 @@ h1, h2, h3, h4 {
       transition: all .2s ease-in-out; }
       .news-card .info .more svg {
         fill: #727B88; }
-      .news-card .info .more:hover svg {
-        fill: #25A96A; }
   .news-card.size-custom {
     box-shadow: 0 0 0 1px #f1f2f4; }
     .news-card.size-custom .title {
@@ -1580,6 +1576,10 @@ h1, h2, h3, h4 {
         font-style: normal; }
   .news-card:hover .preview .mask:before {
     opacity: 1; }
+  .news-card:hover .title {
+    opacity: .8; }
+  .news-card:hover .info .more svg {
+    fill: #25A96A; }
 
 .bonus-card {
   width: 25%;
