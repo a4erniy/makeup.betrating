@@ -284,6 +284,10 @@ h1, h2, h3, h4 {
           text-align: center;
           text-transform: uppercase;
           color: #fff;
+          cursor: pointer;
+          &:hover {
+            opacity: .7;
+          }
         }
         &::-webkit-input-placeholder {
           color: $color-text-grey;

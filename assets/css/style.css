@@ -318,7 +318,10 @@ h1, h2, h3, h4 {
         background: linear-gradient(-225deg, #2EC652 0%, #1DBE98 100%);
         text-align: center;
         text-transform: uppercase;
-        color: #fff; }
+        color: #fff;
+        cursor: pointer; }
+        .modal .form-field input[type="submit"]:hover {
+          opacity: .7; }
       .modal .form-field input::-webkit-input-placeholder {
         color: #807F86; }
       .modal .form-field input::-moz-placeholder {
