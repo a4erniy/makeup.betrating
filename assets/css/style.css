@@ -384,6 +384,14 @@ h1, h2, h3, h4 {
       width: 24px;
       height: 24px;
       background-size: 100% 100%; }
+  .modal .form-alert {
+    display: none;
+    text-align: center;
+    padding: 12px;
+    color: #F53D5B;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-style: normal; }
 .modal .text {
   font-family: 'Exo 2', sans-serif;
   font-weight: normal;
@@ -410,7 +418,9 @@ h1, h2, h3, h4 {
   .modal .text.black {
     color: #28292B; }
 .modal .attention {
-  margin-bottom: 16px; }
+  margin-bottom: 36px;
+  font-size: 16px;
+  line-height: 24px; }
 .modal .button-green {
   line-height: 48px;
   letter-spacing: 0.75px;
@@ -1686,7 +1696,7 @@ h1, h2, h3, h4 {
         color: #727B88; }
   .bonus-card .countdown {
     left: 0;
-    bottom: 26px;
+    bottom: 12px;
     width: 100%;
     position: absolute; }
     .bonus-card .countdown .text {
@@ -1718,7 +1728,7 @@ h1, h2, h3, h4 {
           width: 18px;
           height: 28px;
           line-height: 28px;
-          margin-right: -1px;
+          margin-right: 1px;
           margin-bottom: 2px;
           border-radius: 2px;
           display: inline-block;
@@ -3077,6 +3087,32 @@ footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      .company-filter form .form-item-list {
+        position: relative; }
+        .company-filter form .form-item-list > .name {
+          display: block;
+          padding: 11px 0;
+          cursor: pointer;
+          margin-bottom: 0;
+          letter-spacing: 0.24px;
+          font-size: 16px;
+          line-height: 24px;
+          font-family: 'Exo 2', sans-serif;
+          font-weight: normal;
+          font-style: normal; }
+        .company-filter form .form-item-list.open .down {
+          transform: rotate(180deg); }
+        .company-filter form .form-item-list .list {
+          padding-left: 12px;
+          display: none; }
+        .company-filter form .form-item-list .down {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          right: 0;
+          top: 14px; }
+          .company-filter form .form-item-list .down svg {
+            fill: #BABFC9; }
       .company-filter form .form-item .name {
         letter-spacing: 0.24px;
         font-size: 16px;
@@ -3084,6 +3120,8 @@ footer {
         font-family: 'Exo 2', sans-serif;
         font-weight: normal;
         font-style: normal; }
+      .company-filter form .form-item .rating {
+        display: inline-flex; }
       .company-filter form .form-item .toggle {
         width: 44px;
         height: 24px;
@@ -3723,11 +3761,9 @@ footer {
   .bonuses-slider .bonus-card .company {
     width: 96px;
     height: 48px; }
-  .bonuses-slider .bonus-card .title {
-    padding: 0 80px; }
-    .bonuses-slider .bonus-card .title h3 {
-      font-size: 24px;
-      line-height: 30px; }
+  .bonuses-slider .bonus-card .title h3 {
+    font-size: 24px;
+    line-height: 30px; }
   .bonuses-slider .bonus-card:after {
     content: none; }
 .bonuses-slider .slick-dots {
