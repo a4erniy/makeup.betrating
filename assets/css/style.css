@@ -4088,13 +4088,13 @@ footer {
     height: 386px; }
     .news-card.size-medium {
       height: 420px; }
-      .news-card.size-medium-sm {
-        height: 108px; }
-        .news-card.size-medium-sm .category, .news-card.size-medium-sm .preview {
+      .news-card.size-medium.sm {
+        height: 124px; }
+        .news-card.size-medium.sm .category, .news-card.size-medium.sm .preview {
           display: none; }
-        .news-card.size-medium-sm .title {
+        .news-card.size-medium.sm .title {
           margin-top: 20px; }
-          .news-card.size-medium-sm .title h3 {
+          .news-card.size-medium.sm .title h3 {
             letter-spacing: 0.25px;
             font-size: 14px;
             line-height: 20px;

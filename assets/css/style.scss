@@ -3985,8 +3985,8 @@ footer {
     &.size {
       &-medium {
         height: 420px;
-        &-sm {
-          height: 108px;
+        &.sm {
+          height: 124px;
           .category, .preview {
             display: none;
           }
