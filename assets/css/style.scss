@@ -412,7 +412,10 @@ h1, h2, h3, h4 {
   }
   .attention {
     margin-bottom: 36px;
-    @include fontSize(16);
+    @include fontSize(14);
+    &.strong {
+      @include fontSize(18);
+    }
   }
   .button-green {
     line-height: 48px;
@@ -2752,7 +2755,7 @@ footer {
     .slider {
       margin: 0 -8px;
       .item {
-        margin: 18px 8px 20px;
+        margin: 18px 7px 20px 9px;
       }
       .slick-arrow {
         top: -30px;
@@ -3795,6 +3798,7 @@ footer {
   top: 0;
   ul {
     text-align: center;
+    padding: 0 12px;
     li {
       display: inline-block;
       a, span {
@@ -4192,9 +4196,8 @@ footer {
         @include fontExo2(SemiBold);
       }
       .reset {
-        top: 13px;
-        right: 48px;
-        position: absolute;
+        display: none;
+        padding: 0 16px 16px;
         a {
           height: auto;
           padding: 0;
@@ -4356,6 +4359,15 @@ footer {
   section {
     padding: 24px 0;
   }
+  .modal {
+    &-header {
+      padding: 32px 0;
+      .close {
+        top: 16px;
+        right: 16px;
+      }
+    }
+  }
   .container {
     max-width: none;
   }
@@ -4472,6 +4484,10 @@ footer {
       justify-content: space-between;
     }
   }
+  .betting-center-card {
+    border: 1px solid #E8EAED;
+    margin-bottom: 3px;
+  }
 
   header {
     .header {
@@ -4497,7 +4513,7 @@ footer {
         }
       }
       .login {
-        a {
+        & > a {
           padding: 0;
           width: 48px;
           border-radius: 50%;
@@ -4611,7 +4627,7 @@ footer {
     }
     &-slider {
       .bonus-card {
-        width: 290px;
+        width: 100%;
         height: 336px;
         .image {
           width: 94px;
@@ -4630,6 +4646,9 @@ footer {
           height: 31px;
           margin-top: 12px;
         }
+        .countdown {
+          display: none;
+        }
       }
     }
   }
@@ -4645,6 +4664,7 @@ footer {
       &-front {
         margin-left: -8px;
         margin-right: -8px;
+        margin-bottom: 234px;
       }
     }
     &-table {
@@ -4690,6 +4710,11 @@ footer {
     }
   }
   .company {
+    &-slider {
+      .slider {
+        margin-left: 0;
+      }
+    }
     &-filter {
       .reset {
         a {
@@ -4730,6 +4755,12 @@ footer {
         }
         .arrow {
           margin-left: auto;
+          a {
+            background-color: $green;
+            svg {
+              fill: $white-text;
+            }
+          }
         }
       }
     }
@@ -4778,6 +4809,9 @@ footer {
       }
     }
   }
+  .horizontal-scroll {
+    padding-left: 8px;
+  }
   .fullwidth-bg {
     display: none!important;
   }
@@ -4795,6 +4829,7 @@ footer {
       }
       .content {
         padding-top: 16px;
+        padding-bottom: 40px;
         .title {
           margin-bottom: 16px;
           h1 {
