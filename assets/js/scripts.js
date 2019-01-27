@@ -1,5 +1,15 @@
 $(function () {
 
+    if ($(window).width() < 1220) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('header').addClass("sticky");
+            } else {
+                $('header').removeClass("sticky");
+            }
+        });
+    }
+
 
 //    Variables
     let speedSlider = 2000,
@@ -208,7 +218,7 @@ $(function () {
         if (parent.hasClass('hide')) {
             wrap.slideDown(400);
             parent.removeClass('hide');
-        } else  {
+        } else {
             wrap.slideUp(400);
             parent.addClass('hide');
         }
