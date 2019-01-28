@@ -54,6 +54,11 @@ input {
 }
 section {
   padding: 40px 0;
+  section {
+    .container {
+      padding: 0;
+    }
+  }
 }
 h1, h2, h3, h4 {
   margin: 0;
@@ -135,7 +140,11 @@ h1, h2, h3, h4 {
   &-list {
     margin: 0;
     padding: 0;
+    position: relative;
     @include flex();
+    .slick-prev {
+      display: none!important;
+    }
   }
   &-item {
     list-style: none;
@@ -155,7 +164,7 @@ h1, h2, h3, h4 {
           background-color: $green;
         }
         svg {
-          fill: $green-dark!important;
+          fill: $green-dark !important;
         }
       }
     }
@@ -168,7 +177,7 @@ h1, h2, h3, h4 {
       &:hover {
         color: $green-dark;
         svg {
-          fill: $green-dark!important;
+          fill: $green-dark !important;
         }
       }
       &.active {
@@ -182,7 +191,7 @@ h1, h2, h3, h4 {
           background-color: $green;
         }
         svg {
-          fill: $green-dark!important;
+          fill: $green-dark !important;
         }
       }
     }
@@ -552,7 +561,7 @@ h1, h2, h3, h4 {
   @include fontExo2(SemiBold);
   @include flex(center, center);
   &-green {
-    color: $white-text!important;
+    color: $white-text !important;
     box-shadow: 0 1px 0 rgba(10, 66, 44, 0.16);
     @include gradient-green();
     svg {
@@ -958,7 +967,7 @@ h1, h2, h3, h4 {
       background-image: url("../image/ico/star-gold.png");
     }
     &.border {
-      border: none!important;
+      border: none !important;
       background-image: url("../image/ico/star-border.png");
     }
   }
@@ -1395,6 +1404,33 @@ h1, h2, h3, h4 {
     &:before {
       opacity: 1;
     }
+  }
+}
+.scroll-tabs {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  margin-top: -12px;
+  right: 0;
+  cursor: pointer;
+  width: 65px;
+  text-align: right;
+  background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(248,249,251,1) 65%);
+  background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(248,249,251,1) 65%);
+  background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(248,249,251,1) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f8f9fb',GradientType=1 );
+  &.white {
+    background: none;
+    background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(255,255,255,1) 65%);
+    background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(255,255,255,1) 65%);
+    background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(255,255,255,1) 65%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#ffffff',GradientType=1 );
+  }
+  &.slick-disabled {
+    display: none!important;
+  }
+  svg {
+    fill: $black-lightest;
   }
 }
 
@@ -2056,7 +2092,7 @@ h1, h2, h3, h4 {
       @include fontSize(16);
       color: $color-text-grey;
       &:after {
-        display: none!important;
+        display: none !important;
       }
     }
     &:after {
@@ -2394,7 +2430,7 @@ h1, h2, h3, h4 {
   background-color: #fff;
   border-radius: 6px;
   margin-bottom: 4px;
-  box-shadow:0 0 0 1px #F1F2F4;
+  box-shadow: 0 0 0 1px #F1F2F4;
   @include transition();
   .head {
     height: 32px;
@@ -2685,6 +2721,7 @@ footer {
         &.age {
           margin-left: 30px;
           position: relative;
+          background-color: $black-light !important;
           &:before {
             @include before-after();
             top: 50%;
@@ -2769,6 +2806,13 @@ footer {
       margin: 0 -8px;
       .item {
         margin: 18px 7px 20px 9px;
+        display: none;
+        &:first-child {
+          display: block;
+        }
+        &.slick-slide {
+          display: block;
+        }
       }
       .slick-arrow {
         top: -30px;
@@ -2906,7 +2950,7 @@ footer {
   }
   &-filter {
     padding: 24px;
-    border-radius: 6px 6px 0 0;
+    border-radius: 6px;
     @include gradient-grey(4);
     .title {
       padding-bottom: 18px;
@@ -2946,9 +2990,14 @@ footer {
           }
           &.open .down {
             transform: rotate(180deg);
+            svg {
+              fill: $green;
+            }
           }
           .list {
-            padding-left: 12px;
+            padding: 0 24px;
+            margin: 0 -24px;
+            background-color: $grey-lighter;
             display: none;
           }
           .down {
@@ -3072,7 +3121,7 @@ footer {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        border: $border;
+        box-shadow: 0 0 0 1px #E6E5EC;
         overflow: hidden;
         margin-right: 20px;
         @include gradient-grey();
@@ -3166,7 +3215,7 @@ footer {
   &-box {
     position: relative;
     border-radius: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08);
     .tabs {
@@ -3266,7 +3315,10 @@ footer {
     }
     a {
       color: $green-dark;
-      @include fontExo2(SemiBold)
+      @include fontExo2(SemiBold);
+      &:hover {
+        color: $green-darker;
+      }
     }
     ul {
       padding-left: 18px;
@@ -3287,7 +3339,7 @@ footer {
       max-height: 600px;
       height: auto;
     }
-    h1, h2, h3 ,h4 {
+    h1, h2, h3, h4 {
       margin-top: 40px;
       margin-bottom: 24px;
       text-align: center;
@@ -3361,6 +3413,9 @@ footer {
 .forecast {
   &-section {
     @include gradient-grey(6);
+    & + .forecast-section {
+      background: none;
+    }
     &-slider {
       .slick-dots li span.current {
         background-color: $gold;
@@ -3408,6 +3463,13 @@ footer {
       .forecast-card {
         width: 100%;
         border-radius: 0;
+        display: none;
+        &:first-child {
+          display: block;
+        }
+        &.slick-slide {
+          display: block;
+        }
       }
       .slick-dots {
         width: auto;
@@ -3827,7 +3889,7 @@ footer {
         @include fontExo2(Medium)
       }
       a:hover {
-        text-decoration: underline;
+        color: $green-dark;
       }
       svg {
         width: 16px;
@@ -3843,6 +3905,7 @@ footer {
     margin: 4px 0 24px;
     ul {
       text-align: left;
+      padding-left: 0;
     }
   }
 }
@@ -3989,7 +4052,7 @@ footer {
     width: 172px;
     height: 172px;
     padding: 20px;
-    box-shadow: none!important;
+    box-shadow: none !important;
     border: 1px solid #F1F2F4;
     border-right: none;
     .image {
@@ -4179,7 +4242,7 @@ footer {
         }
       }
       .services {
-        margin: 0 0 10px!important;
+        margin: 0 0 10px !important;
         width: 100%;
         &:nth-child(3) {
           text-align: left;
@@ -4220,16 +4283,13 @@ footer {
     &-slider {
       .slider {
         .slick-arrow {
-          display: none!important;
+          display: none !important;
         }
       }
     }
     &-filter {
-      background: none;
-      background-color: #fff;
       border-radius: 6px;
-      box-shadow: 0 0 0 1px #f1f2f4;
-      position: relative;
+      position: relative!important;
       margin-bottom: 24px;
       padding: 0;
       .title {
@@ -4239,14 +4299,17 @@ footer {
         @include fontExo2(SemiBold);
       }
       .reset {
-        display: none;
-        padding: 0 16px 16px;
-        a {
-          height: auto;
-          padding: 0;
-          background: transparent;
-          border-radius: 0;
+        padding: 0;
+        position: absolute;
+        top: 14px;
+        right: 50px;
+        input {
+          background: none;
           border: none;
+          padding: 0;
+          height: auto;
+          width: 75px;
+          justify-content: flex-start;
         }
       }
       .arrow {
@@ -4254,8 +4317,12 @@ footer {
       }
       form {
         display: none;
-        padding: 10px 16px 14px;
-        margin-bottom: 0;
+        margin: 0 16px;
+        padding: 10px 0 14px;
+        .form-item-list .list {
+          padding: 0 16px;
+          margin: 0 -16px;
+        }
       }
       &.open {
         .arrow {
@@ -4263,9 +4330,6 @@ footer {
           -moz-transform: rotate(180deg);
           -o-transform: rotate(180deg);
           transform: rotate(180deg);
-          svg {
-            fill: $green
-          }
         }
       }
     }
@@ -4414,6 +4478,38 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .forecast {
+    &-slider {
+      &-front {
+        margin-left: -40px;
+        margin-right: -40px;
+      }
+    }
+  }
+  .content {
+    &-section {
+      .container {
+        max-width: none;
+      }
+    }
+    &-box {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+  }
+  .banner {
+    margin-left: -8px;
+    margin-right: -8px;
+    border-radius: 0;
+    &:hover {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   section {
     padding: 24px 0;
@@ -4445,7 +4541,8 @@ footer {
         padding: 18px;
         display: block;
         .desc {
-          margin-bottom: 24px;
+          margin-bottom: 16px;
+          max-width: 70%;
         }
         .ceff {
           float: left;
@@ -4453,6 +4550,11 @@ footer {
         }
         .logo {
           float: right;
+          height: 32px;
+          margin-left: 0;
+          &:before {
+            content: none;
+          }
         }
       }
     }
@@ -4473,6 +4575,16 @@ footer {
     }
   }
 
+  .company-card {
+    height: 232px;
+    width: 136px;
+    .links {
+      display: block;
+      a {
+        width: 100%;
+      }
+    }
+  }
   .forecast-card {
     &-table {
       height: 96px;
@@ -4487,7 +4599,7 @@ footer {
       .team {
         width: auto;
         padding-left: 12px;
-        justify-content: flex-start!important;
+        justify-content: flex-start !important;
         &-first {
           .logo {
             margin-left: 0;
@@ -4595,7 +4707,7 @@ footer {
     .footer {
       &-row {
         display: block;
-        padding: 0!important;
+        padding: 0 !important;
         margin-bottom: 24px;
       }
       .logo {
@@ -4620,7 +4732,7 @@ footer {
       }
       .services {
         max-width: 100%;
-        text-align: center!important;
+        text-align: center !important;
       }
       .social {
         justify-content: center;
@@ -4628,7 +4740,7 @@ footer {
     }
   }
   .betting-center {
-    margin-top: -605px;
+    margin-top: -660px;
     margin-left: -8px;
     margin-right: -8px;
     @include gradient-grey(4);
@@ -4728,7 +4840,7 @@ footer {
       &-front {
         margin-left: -8px;
         margin-right: -8px;
-        margin-bottom: 234px;
+        margin-bottom: 268px;
       }
     }
     &-table {
@@ -4879,12 +4991,12 @@ footer {
     padding-left: 8px;
   }
   .fullwidth-bg {
-    display: none!important;
+    display: none !important;
   }
   .page {
     &-main {
       .company-slider {
-        margin-top: 250px;
+        margin-top: 268px;
       }
     }
     &-single {

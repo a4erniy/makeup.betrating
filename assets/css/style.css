@@ -78,6 +78,8 @@ input:focus {
 
 section {
   padding: 40px 0; }
+  section section .container {
+    padding: 0; }
 
 h1, h2, h3, h4 {
   margin: 0; }
@@ -153,9 +155,12 @@ h1, h2, h3, h4 {
 .tabs-list {
   margin: 0;
   padding: 0;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .tabs-list .slick-prev {
+    display: none !important; }
 .tabs-item {
   list-style: none;
   margin-right: 11px; }
@@ -1452,6 +1457,30 @@ h1, h2, h3, h4 {
     z-index: 500; }
     .backdrop.on:before {
       opacity: 1; }
+
+.scroll-tabs {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  margin-top: -12px;
+  right: 0;
+  cursor: pointer;
+  width: 65px;
+  text-align: right;
+  background: -moz-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #f8f9fb 65%);
+  background: -webkit-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #f8f9fb 65%);
+  background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, #f8f9fb 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f8f9fb',GradientType=1 ); }
+  .scroll-tabs.white {
+    background: none;
+    background: -moz-linear-gradient(left, rgba(30, 87, 153, 0) 0%, white 65%);
+    background: -webkit-linear-gradient(left, rgba(30, 87, 153, 0) 0%, white 65%);
+    background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, white 65%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#ffffff',GradientType=1 ); }
+  .scroll-tabs.slick-disabled {
+    display: none !important; }
+  .scroll-tabs svg {
+    fill: #727B88; }
 
 .news-card {
   height: 328px;
@@ -2864,7 +2893,8 @@ footer {
         height: 20px; }
       footer .footer .social-item.age {
         margin-left: 30px;
-        position: relative; }
+        position: relative;
+        background-color: #2D3239 !important; }
         footer .footer .social-item.age:before {
           display: block;
           position: absolute;
@@ -2934,7 +2964,12 @@ footer {
 .company-slider .slider {
   margin: 0 -8px; }
   .company-slider .slider .item {
-    margin: 18px 7px 20px 9px; }
+    margin: 18px 7px 20px 9px;
+    display: none; }
+    .company-slider .slider .item:first-child {
+      display: block; }
+    .company-slider .slider .item.slick-slide {
+      display: block; }
   .company-slider .slider .slick-arrow {
     top: -30px;
     right: 0;
@@ -3065,7 +3100,7 @@ footer {
       fill: #ffffff; }
 .company-filter {
   padding: 24px;
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
   background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
   background: -moz-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
   background: -ms-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
@@ -3119,8 +3154,12 @@ footer {
           font-style: normal; }
         .company-filter form .form-item-list.open .down {
           transform: rotate(180deg); }
+          .company-filter form .form-item-list.open .down svg {
+            fill: #25C277; }
         .company-filter form .form-item-list .list {
-          padding-left: 12px;
+          padding: 0 24px;
+          margin: 0 -24px;
+          background-color: #E8EAED;
           display: none; }
         .company-filter form .form-item-list .down {
           position: absolute;
@@ -3248,7 +3287,7 @@ footer {
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      border: 1px solid #E6E5EC;
+      box-shadow: 0 0 0 1px #E6E5EC;
       overflow: hidden;
       margin-right: 20px;
       background: -webkit-linear-gradient(-180deg, #FFFFFF 0%, #F9FAFB 100%);
@@ -3345,7 +3384,7 @@ footer {
   .content-box {
     position: relative;
     border-radius: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08); }
     .content-box .tabs {
@@ -3454,6 +3493,8 @@ footer {
     font-family: 'Exo 2 Semi', sans-serif;
     font-weight: 600;
     font-style: normal; }
+    .content .text a:hover {
+      color: #248B5A; }
   .content .text ul {
     padding-left: 18px;
     margin-bottom: 24px; }
@@ -3553,6 +3594,8 @@ footer {
   background: -ms-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: -o-linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%);
   background: linear-gradient(0deg, rgba(252, 253, 253, 0) 0%, #F8F9FB 100%); }
+  .forecast-section + .forecast-section {
+    background: none; }
   .forecast-section-slider .slick-dots li span.current {
     background-color: #FFB90C; }
   .forecast-section.with-tabs {
@@ -3610,7 +3653,12 @@ footer {
   border-radius: 6px 0 0 6px; }
   .forecast-slider-front .forecast-card {
     width: 100%;
-    border-radius: 0; }
+    border-radius: 0;
+    display: none; }
+    .forecast-slider-front .forecast-card:first-child {
+      display: block; }
+    .forecast-slider-front .forecast-card.slick-slide {
+      display: block; }
   .forecast-slider-front .slick-dots {
     width: auto;
     padding: 0 0 24px 24px; }
@@ -3989,7 +4037,7 @@ footer {
         font-weight: 500;
         font-style: normal; }
       .breadcrumbs ul li a:hover {
-        text-decoration: underline; }
+        color: #25A96A; }
       .breadcrumbs ul li svg {
         width: 16px;
         height: 16px;
@@ -4000,7 +4048,8 @@ footer {
     top: 0;
     margin: 4px 0 24px; }
     .breadcrumbs.base ul {
-      text-align: left; }
+      text-align: left;
+      padding-left: 0; }
 
 .page-single-forecast .breadcrumbs {
   top: -58px; }
@@ -4276,11 +4325,8 @@ footer {
   .company-slider .slider .slick-arrow {
     display: none !important; }
   .company-filter {
-    background: none;
-    background-color: #fff;
     border-radius: 6px;
-    box-shadow: 0 0 0 1px #f1f2f4;
-    position: relative;
+    position: relative !important;
     margin-bottom: 24px;
     padding: 0; }
     .company-filter .title {
@@ -4292,27 +4338,31 @@ footer {
       font-weight: 600;
       font-style: normal; }
     .company-filter .reset {
-      display: none;
-      padding: 0 16px 16px; }
-      .company-filter .reset a {
-        height: auto;
+      padding: 0;
+      position: absolute;
+      top: 14px;
+      right: 50px; }
+      .company-filter .reset input {
+        background: none;
+        border: none;
         padding: 0;
-        background: transparent;
-        border-radius: 0;
-        border: none; }
+        height: auto;
+        width: 75px;
+        justify-content: flex-start; }
     .company-filter .arrow {
       display: block; }
     .company-filter form {
       display: none;
-      padding: 10px 16px 14px;
-      margin-bottom: 0; }
+      margin: 0 16px;
+      padding: 10px 0 14px; }
+      .company-filter form .form-item-list .list {
+        padding: 0 16px;
+        margin: 0 -16px; }
     .company-filter.open .arrow {
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
       -o-transform: rotate(180deg);
       transform: rotate(180deg); }
-      .company-filter.open .arrow svg {
-        fill: #25C277; }
 
   .forecast-section.with-tabs .section-header .tabs-list {
     margin-right: 0; }
@@ -4401,6 +4451,25 @@ footer {
 
   footer .footer .menu li {
     margin-right: 0; } }
+@media screen and (max-width: 768px) {
+  .forecast-slider-front {
+    margin-left: -40px;
+    margin-right: -40px; }
+
+  .content-section .container {
+    max-width: none; }
+  .content-box {
+    margin-left: -8px;
+    margin-right: -8px; }
+
+  .banner {
+    margin-left: -8px;
+    margin-right: -8px;
+    border-radius: 0; }
+    .banner:hover {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1); } }
 @media screen and (max-width: 767px) {
   section {
     padding: 24px 0; }
@@ -4428,12 +4497,17 @@ footer {
         padding: 18px;
         display: block; }
         .green-box .click a .desc {
-          margin-bottom: 24px; }
+          margin-bottom: 16px;
+          max-width: 70%; }
         .green-box .click a .ceff {
           float: left;
           margin-left: 0; }
         .green-box .click a .logo {
-          float: right; }
+          float: right;
+          height: 32px;
+          margin-left: 0; }
+          .green-box .click a .logo:before {
+            content: none; }
     .green-box .sharing {
       height: auto;
       padding: 12px 0; }
@@ -4445,6 +4519,14 @@ footer {
     .green-box .forecast {
       font-size: 32px;
       line-height: 40px; }
+
+  .company-card {
+    height: 232px;
+    width: 136px; }
+    .company-card .links {
+      display: block; }
+      .company-card .links a {
+        width: 100%; }
 
   .forecast-card-table {
     height: 96px;
@@ -4557,7 +4639,7 @@ footer {
       justify-content: center; }
 
   .betting-center {
-    margin-top: -605px;
+    margin-top: -660px;
     margin-left: -8px;
     margin-right: -8px;
     background: -webkit-linear-gradient(0deg, #F9FAFA 0%, #F1F2F4 100%);
@@ -4637,7 +4719,7 @@ footer {
   .forecast-slider-front {
     margin-left: -8px;
     margin-right: -8px;
-    margin-bottom: 234px; }
+    margin-bottom: 268px; }
   .forecast-table {
     padding-top: 16px;
     margin-left: -8px;
@@ -4723,7 +4805,7 @@ footer {
     display: none !important; }
 
   .page-main .company-slider {
-    margin-top: 250px; }
+    margin-top: 268px; }
   .page-single .breadcrumbs {
     top: 0;
     position: relative;
