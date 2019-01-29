@@ -156,20 +156,26 @@ $(function () {
     });
 
 //    Forecast tabs
-    $('.forecast-sport').slick({
-        dots: false,
-        arrows: false,
-        infinite: false,
-        slidesToShow: 1,
-        variableWidth: true,
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: "unslick"
+    let fsBlock = $('.forecast-sport'),
+        fsBlockWidthParent = fsBlock.parent().width();
+
+    let fsBlockWidth = 0;
+    fsBlock.find('li').each(function () {
+        fsBlockWidth = fsBlockWidth + $(this).width() + parseInt($(this).css('margin-right'))
+    });
+
+    if (fsBlockWidth > fsBlockWidthParent) {
+        let scrollTabs;
+        let difference = Math.ceil(fsBlockWidth - fsBlockWidthParent);
+        let tabsImpetus = new Impetus({
+            source: '.forecast-sport',
+            boundX: [-difference, 0],
+            update: function (x, y) {
+                scrollTabs = parseInt(fsBlock.css('margin-left'));
+                fsBlock.css('margin-left', x);
             }
-        ]
-    })
+        });
+    }
 
 //    Company slider
     let $company_slider = $('#company_slider');

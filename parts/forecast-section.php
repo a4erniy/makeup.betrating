@@ -2,23 +2,25 @@
     <div class="container">
         <div class="section-header">
             <div class="section-title"><h2>Прогнозы на спорт</h2></div>
-            <ul class="forecast-sport tabs-list">
-                <li class="tabs-item active">
-                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_all"></use></svg>Все</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>Футбол</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_basketball"></use></svg>Баскетбол</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_tennis"></use></svg>Теннис</a>
-                </li>
-                <li class="tabs-item">
-                    <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_hockey"></use></svg>Хоккей</a>
-                </li>
-            </ul>
+            <div class="forecast-tabs">
+                <ul class="forecast-sport tabs-list">
+                    <li class="tabs-item active">
+                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_all"></use></svg>Все</a>
+                    </li>
+                    <li class="tabs-item">
+                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_football"></use></svg>Футбол</a>
+                    </li>
+                    <li class="tabs-item">
+                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_basketball"></use></svg>Баскетбол</a>
+                    </li>
+                    <li class="tabs-item">
+                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_tennis"></use></svg>Теннис</a>
+                    </li>
+                    <li class="tabs-item">
+                        <a href="#"><svg><use xlink:href="/assets/image/svg-symbols.svg#sport_hockey"></use></svg>Хоккей</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="forecast-table">
             <a href="/forecast.php" class="forecast-card-table">
