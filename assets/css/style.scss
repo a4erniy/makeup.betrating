@@ -2514,7 +2514,7 @@ h1, h2, h3, h4 {
       .team {
         height: 20px;
         padding-left: 11px;
-        padding-right: 17px;
+        padding-right: 11px;
         @include flex(none, center);
         .logo {
           width: 16px;
@@ -2524,6 +2524,7 @@ h1, h2, h3, h4 {
         .name {
           color: $color-text;
           letter-spacing: 0.25px;
+          white-space: nowrap;
           @include fontExo2(SemiBold);
         }
         .score {
@@ -3632,7 +3633,7 @@ footer {
     overflow-x: hidden;
     .tabs {
       &-item {
-        margin-right: 41px;
+        margin-right: 21px;
         a {
           @include flex(none, center);
           svg {
@@ -4059,6 +4060,9 @@ footer {
     width: 336px;
     margin-bottom: 0;
     margin-right: 16px;
+    &:hover {
+      box-shadow: none;
+    }
   }
   .forecast-card {
     &-table {
@@ -4317,8 +4321,6 @@ footer {
     padding: 0 0 24px;
     border-radius: 0;
     &-list {
-      width: 100%;
-      overflow: auto;
       @include flex()
     }
     .tab {

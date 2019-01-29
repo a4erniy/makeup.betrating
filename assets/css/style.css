@@ -2667,7 +2667,7 @@ h1, h2, h3, h4 {
       .betting-center-card .body .matches .team {
         height: 20px;
         padding-left: 11px;
-        padding-right: 17px;
+        padding-right: 11px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2681,6 +2681,7 @@ h1, h2, h3, h4 {
         .betting-center-card .body .matches .team .name {
           color: #28292B;
           letter-spacing: 0.25px;
+          white-space: nowrap;
           font-family: 'Exo 2 Semi', sans-serif;
           font-weight: 600;
           font-style: normal; }
@@ -3819,7 +3820,7 @@ footer {
   margin-right: 17px;
   overflow-x: hidden; }
   .forecast-tabs .tabs-item {
-    margin-right: 41px; }
+    margin-right: 21px; }
     .forecast-tabs .tabs-item a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4156,6 +4157,8 @@ footer {
     width: 336px;
     margin-bottom: 0;
     margin-right: 16px; }
+    .betting-center-card:hover {
+      box-shadow: none; }
 
   .forecast-card-table {
     padding: 0; }
@@ -4353,8 +4356,6 @@ footer {
     padding: 0 0 24px;
     border-radius: 0; }
     .betting-center-list {
-      width: 100%;
-      overflow: auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
