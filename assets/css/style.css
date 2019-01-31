@@ -2130,7 +2130,16 @@ h1, h2, h3, h4 {
         width: 32px;
         height: 32px;
         display: inline-block;
-        margin-right: 14px; }
+        margin-right: 14px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
       .forecast-card-table .team .name {
         color: #28292B;
         letter-spacing: 0.25px;
