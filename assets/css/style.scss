@@ -938,6 +938,7 @@ h1, h2, h3, h4 {
         .logo {
           width: 64px;
           height: 32px;
+          @include flex(center, center)
         }
       }
       &.company-name {
