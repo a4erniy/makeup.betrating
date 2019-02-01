@@ -1446,6 +1446,7 @@ h1, h2, h3, h4 {
   }
 }
 .go-top {
+  z-index: 50;
   display: none;
   position: fixed;
   right: 3%;
@@ -1543,12 +1544,6 @@ h1, h2, h3, h4 {
     z-index: 20;
     left: 0;
     @include transition();
-    a {
-      color: $white-text;
-      &:hover {
-        color: $grey-light;
-      }
-    }
     h3 {
       font-size: 24px;
       line-height: 30px;
@@ -1580,12 +1575,16 @@ h1, h2, h3, h4 {
         width: 20px;
         height: 20px;
       }
-      &:hover {
-        svg {
-          fill: $green-dark;
-        }
-      }
     }
+  }
+  .link-layer {
+    z-index: 20;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 64px;
   }
   &.size {
     &-custom {
@@ -1593,12 +1592,7 @@ h1, h2, h3, h4 {
       .title {
         bottom: 0;
         position: relative;
-        a {
-          color: $color-text;
-          &:hover {
-            color: $black-lightest;
-          }
-        }
+        color: $color-text;
       }
       .category .tag {
         &:hover {
@@ -1644,6 +1638,9 @@ h1, h2, h3, h4 {
           letter-spacing: 0.17px;
         }
       }
+      .link-layer {
+        margin-top: 48px;
+      }
     }
     &-small {
       height: 124px;
@@ -1658,11 +1655,23 @@ h1, h2, h3, h4 {
           @include fontExo2(SemiBold)
         }
       }
+      .link-layer {
+        margin-top: 0;
+      }
     }
   }
   &:hover {
+    .title {
+      color: $grey-light;
+    }
+    .info .more svg {
+      fill: $green-dark;
+    }
     .preview .mask:before {
       opacity: 1;
+    }
+    &.size-custom .title {
+      color: $black-lightest;
     }
   }
 }
@@ -2855,13 +2864,17 @@ footer {
     .slider {
       margin: 0 -8px;
       .item {
-        margin: 18px 7px 20px 9px;
+        margin: 18px 7px 60px 9px;
         display: none;
         &:first-child {
           display: block;
         }
         &.slick-slide {
           display: block;
+          opacity: 0;
+          &.slick-active {
+            opacity: 1;
+          }
         }
       }
       .slick-arrow {
@@ -2891,6 +2904,13 @@ footer {
           border-bottom-right-radius: 16px;
         }
       }
+    }
+    .slick-list {
+      margin: 0 -16px;
+      padding: 0 16px;
+    }
+    .more {
+      margin-top: -40px;
     }
   }
   &-nav {
@@ -3049,6 +3069,17 @@ footer {
             margin: 0 -24px;
             background-color: $grey-lighter;
             display: none;
+            position: relative;
+            &:before {
+              @include before-after();
+              margin-top: -8px;
+              margin-left: 24px;
+              width: 0;
+              height: 0;
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 8px solid $grey-lighter;
+            }
           }
           .down {
             position: absolute;
@@ -3269,6 +3300,9 @@ footer {
     margin-bottom: 24px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08);
+    &:last-child {
+      border-radius: 6px!important;
+    }
     .tabs {
       box-shadow: 0 0 1px rgba(10, 31, 68, 0.08);
       ul {
@@ -3405,6 +3439,19 @@ footer {
     iframe {
       width: 100%;
       height: 320px;
+    }
+    figure {
+      max-width: 100%;
+      margin: 40px auto;
+      img {
+        margin: 0 auto;
+      }
+      figcaption {
+        margin-top: 8px;
+        text-align: center;
+        color: $color-text-grey;
+        @include fontExo2(ExtraBoldItalic)
+      }
     }
     twitter-widget {
       margin-left: auto;
@@ -3838,7 +3885,7 @@ footer {
         margin: 0 4px;
         text-align: center;
         border-radius: 50%;
-        padding-top: 13px;
+        padding-top: 14px;
         background-color: #e8eaed;
         letter-spacing: 0.25px;
         color: $color-text-grey;
@@ -4137,6 +4184,9 @@ footer {
               @include fontSize(14);
               @include fontExo2(SemiBold)
             }
+          }
+          .link-layer {
+            margin-top: 0;
           }
         }
       }
@@ -4519,6 +4569,18 @@ footer {
 @media screen and (max-width: 991px) {
   .container {
     max-width: 704px;
+  }
+  .company-card:hover {
+    box-shadow: 0 0 0 1px #F1F2F4;
+  }
+  .company-slider {
+    .slider .item.slick-slide {
+      opacity: 1;
+    }
+    .slick-list {
+      margin: 0;
+      padding: 0;
+    }
   }
   footer .footer .menu li {
     margin-right: 0;
