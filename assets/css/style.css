@@ -672,19 +672,26 @@ h1, h2, h3, h4 {
       text-align: center;
       margin-right: 24px; }
       .table-tournament .table .th .td.points.double, .table-tournament .table .tr .td.points.double {
-        width: 48px; }
+        width: 48px;
+        letter-spacing: -1px; }
     .table-tournament .table .th .td.team, .table-tournament .table .tr .td.team {
       text-align: center;
       margin-right: auto; }
     .table-tournament .table .th .td.form-team, .table-tournament .table .tr .td.form-team {
       width: 45px; }
-  .table-tournament .table .th.small .td.league {
-    text-transform: uppercase;
-    margin-right: auto;
-    color: #28292B;
-    font-family: 'Exo 2 Semi', sans-serif;
-    font-weight: 600;
-    font-style: normal; }
+  .table-tournament .table .th.small {
+    background: -webkit-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -moz-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -ms-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: -o-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+    background: linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%); }
+    .table-tournament .table .th.small .td.league {
+      text-transform: uppercase;
+      margin-right: auto;
+      color: #28292B;
+      font-family: 'Exo 2 Semi', sans-serif;
+      font-weight: 600;
+      font-style: normal; }
   .table-tournament .table .tr.current {
     background: -webkit-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
     background: -moz-linear-gradient(to right, rgba(218, 249, 234, 0) 0%, rgba(218, 249, 234, 0.3) 53%, rgba(218, 249, 234, 0) 100%);
@@ -806,13 +813,18 @@ h1, h2, h3, h4 {
         font-family: 'Exo 2 Semi', sans-serif;
         font-weight: 600;
         font-style: normal; }
+        .table .tr .td.time.grey {
+          color: #807F86;
+          font-family: 'Exo 2', sans-serif;
+          font-weight: normal;
+          font-style: normal; }
       .table .tr .td.score {
         text-align: center;
         letter-spacing: 0.17px;
         font-size: 18px;
         line-height: 24px;
-        font-family: 'Exo 2 Extra', sans-serif;
-        font-weight: 800;
+        font-family: 'Exo 2 Semi', sans-serif;
+        font-weight: 600;
         font-style: normal; }
         .table .tr .td.score i {
           color: #a4aebd;
@@ -840,6 +852,8 @@ h1, h2, h3, h4 {
           padding-left: 0;
           padding-right: 5px;
           justify-content: flex-end; }
+          .table .tr .td.team.first .name {
+            text-align: right; }
           .table .tr .td.team.first .logo {
             margin-right: 0;
             margin-left: 12px; }
@@ -3940,6 +3954,17 @@ footer {
     content: none; }
 .bonuses-slider .slick-dots {
   bottom: 40px; }
+.bonuses-slider .slick-arrow {
+  top: 50%;
+  margin-top: -12px;
+  position: absolute;
+  cursor: pointer; }
+  .bonuses-slider .slick-arrow svg {
+    fill: #727B88; }
+  .bonuses-slider .slick-arrow.slick-prev {
+    left: -40px; }
+  .bonuses-slider .slick-arrow.slick-next {
+    right: -40px; }
 .bonuses-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4587,7 +4612,13 @@ footer {
     .banner:hover {
       -webkit-transform: scale(1);
       -moz-transform: scale(1);
-      -o-transform: scale(1); } }
+      -o-transform: scale(1); }
+
+  .bonuses-slider {
+    width: 592px;
+    margin: 0 auto; }
+    .bonuses-slider .bonus-card {
+      width: 100%; } }
 @media screen and (max-width: 767px) {
   section {
     padding: 24px 0; }
@@ -4838,24 +4869,26 @@ footer {
         display: none; }
       .bonuses-section .bonus-card.banner-card {
         display: none; }
-  .bonuses-slider .bonus-card {
-    width: 100%;
-    height: 336px; }
-    .bonuses-slider .bonus-card .image {
-      width: 94px;
-      height: 94px;
-      margin-top: 24px; }
-    .bonuses-slider .bonus-card .title {
-      padding: 0 18px; }
-      .bonuses-slider .bonus-card .title h3 {
-        font-size: 18px;
-        line-height: 24px; }
-    .bonuses-slider .bonus-card .company {
-      width: 62px;
-      height: 31px;
-      margin-top: 12px; }
-    .bonuses-slider .bonus-card .countdown {
-      display: none; }
+  .bonuses-slider {
+    width: 100%; }
+    .bonuses-slider .bonus-card {
+      width: 100%;
+      height: 336px; }
+      .bonuses-slider .bonus-card .image {
+        width: 94px;
+        height: 94px;
+        margin-top: 24px; }
+      .bonuses-slider .bonus-card .title {
+        padding: 0 18px; }
+        .bonuses-slider .bonus-card .title h3 {
+          font-size: 18px;
+          line-height: 24px; }
+      .bonuses-slider .bonus-card .company {
+        width: 62px;
+        height: 31px;
+        margin-top: 12px; }
+      .bonuses-slider .bonus-card .countdown {
+        display: none; }
 
   .forecast-section.with-tabs .section-header {
     display: block; }

@@ -707,6 +707,7 @@ h1, h2, h3, h4 {
             margin-right: 24px;
             &.double {
               width: 48px;
+              letter-spacing: -1px;
             }
           }
           &.team {
@@ -720,6 +721,11 @@ h1, h2, h3, h4 {
       }
       .th {
         &.small {
+          background: -webkit-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+          background: -moz-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+          background: -ms-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+          background: -o-linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
+          background: linear-gradient(to right, rgba(248, 247, 251, 0) 0%, #faf9fc 50%, rgba(248, 247, 251, 0) 100%);
           .td {
             &.league {
               text-transform: uppercase;
@@ -830,12 +836,16 @@ h1, h2, h3, h4 {
       &.time {
         text-align: right;
         @include fontExo2(SemiBold);
+        &.grey {
+          color: $color-text-grey;
+          @include fontExo2();
+        }
       }
       &.score {
         text-align: center;
         letter-spacing: 0.17px;
         @include fontSize(18);
-        @include fontExo2(ExtraBold);
+        @include fontExo2(SemiBold);
         i {
           color: #a4aebd;
           font-size: 16px;
@@ -859,6 +869,9 @@ h1, h2, h3, h4 {
           padding-left: 0;
           padding-right: 5px;
           justify-content: flex-end;
+          .name {
+            text-align: right;
+          }
           .logo {
             margin-right: 0;
             margin-left: 12px;
@@ -3758,6 +3771,21 @@ footer {
     .slick-dots {
       bottom: 40px;
     }
+    .slick-arrow {
+      top: 50%;
+      margin-top: -12px;
+      position: absolute;
+      cursor: pointer;
+      svg {
+        fill: $black-lightest;
+      }
+      &.slick-prev {
+        left: -40px;
+      }
+      &.slick-next {
+        right: -40px;
+      }
+    }
   }
   &-list {
     @include flex();
@@ -4617,6 +4645,13 @@ footer {
       -o-transform: scale(1);
     }
   }
+  .bonuses-slider {
+    width: 592px;
+    margin: 0 auto;
+    .bonus-card {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4943,6 +4978,7 @@ footer {
       }
     }
     &-slider {
+      width: 100%;
       .bonus-card {
         width: 100%;
         height: 336px;
