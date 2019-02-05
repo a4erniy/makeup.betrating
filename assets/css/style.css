@@ -4703,7 +4703,7 @@ footer {
     height: 96px;
     display: block; }
     .forecast-card-table .league {
-      padding: 0 8px;
+      padding: 0 16px;
       width: 100%;
       line-height: 32px;
       margin-bottom: 10px;
@@ -4714,7 +4714,7 @@ footer {
       background: linear-gradient(90deg, #F9FAFB 0%, #F1F2F4 100%); }
     .forecast-card-table .team {
       width: auto;
-      padding-left: 12px;
+      padding-left: 20px;
       justify-content: flex-start !important; }
       .forecast-card-table .team-first .logo {
         margin-left: 0;
@@ -4892,6 +4892,8 @@ footer {
 
   .forecast-section.with-tabs .section-header {
     display: block; }
+  .forecast-section .section-header {
+    padding: 0 8px; }
   .forecast-slider-front {
     margin-left: -8px;
     margin-right: -8px;

@@ -4764,7 +4764,7 @@ footer {
       height: 96px;
       display: block;
       .league {
-        padding: 0 8px;
+        padding: 0 16px;
         width: 100%;
         line-height: 32px;
         margin-bottom: 10px;
@@ -4772,7 +4772,7 @@ footer {
       }
       .team {
         width: auto;
-        padding-left: 12px;
+        padding-left: 20px;
         justify-content: flex-start !important;
         &-first {
           .logo {
@@ -5011,6 +5011,9 @@ footer {
         .section-header {
           display: block;
         }
+      }
+      .section-header {
+        padding: 0 8px;
       }
     }
     &-slider {
