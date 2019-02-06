@@ -704,9 +704,9 @@ h1, h2, h3, h4 {
           &.points {
             width: 20px;
             text-align: center;
-            margin-right: 24px;
+            margin-right: 20px;
             &.double {
-              width: 48px;
+              width: 60px;
               letter-spacing: -1px;
             }
           }
@@ -791,6 +791,7 @@ h1, h2, h3, h4 {
         .logo {
           width: 32px;
           height: 32px;
+          @include flex(center, center);
         }
         .name {
           margin: 0 12px;
@@ -859,11 +860,15 @@ h1, h2, h3, h4 {
         @include flex(none, center);
         .name {
           @include fontExo2(SemiBold);
+          &.lose {
+            color: $grey;
+          }
         }
         .logo {
           width: 32px;
           height: 32px;
           margin-right: 12px;
+          @include flex(center, center);
         }
         &.first {
           padding-left: 0;
@@ -3344,6 +3349,13 @@ footer {
           }
           &:hover a {
             color: $green-dark;
+            &:after {
+              @include before-after();
+              top: auto;
+              bottom: 0;
+              height: 4px;
+              background-color: $green-dark;
+            }
           }
         }
       }

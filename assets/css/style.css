@@ -670,9 +670,9 @@ h1, h2, h3, h4 {
     .table-tournament .table .th .td.points, .table-tournament .table .tr .td.points {
       width: 20px;
       text-align: center;
-      margin-right: 24px; }
+      margin-right: 20px; }
       .table-tournament .table .th .td.points.double, .table-tournament .table .tr .td.points.double {
-        width: 48px;
+        width: 60px;
         letter-spacing: -1px; }
     .table-tournament .table .th .td.team, .table-tournament .table .tr .td.team {
       text-align: center;
@@ -747,7 +747,16 @@ h1, h2, h3, h4 {
       align-items: center; }
       .table .th .td.team .logo {
         width: 32px;
-        height: 32px; }
+        height: 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
       .table .th .td.team .name {
         margin: 0 12px;
         letter-spacing: 0.4px;
@@ -844,10 +853,21 @@ h1, h2, h3, h4 {
           font-family: 'Exo 2 Semi', sans-serif;
           font-weight: 600;
           font-style: normal; }
+          .table .tr .td.team .name.lose {
+            color: #BABFC9; }
         .table .tr .td.team .logo {
           width: 32px;
           height: 32px;
-          margin-right: 12px; }
+          margin-right: 12px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
         .table .tr .td.team.first {
           padding-left: 0;
           padding-right: 5px;
@@ -3531,6 +3551,17 @@ footer {
               background-color: #25A96A; }
           .content-box .tabs ul li:hover a {
             color: #25A96A; }
+            .content-box .tabs ul li:hover a:after {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              content: "";
+              width: 100%;
+              top: auto;
+              bottom: 0;
+              height: 4px;
+              background-color: #25A96A; }
   .content.hide .wrapper {
     display: none; }
   .content .title {
