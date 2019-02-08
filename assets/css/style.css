@@ -3508,9 +3508,11 @@ footer {
   .content-box {
     position: relative;
     border-radius: 6px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(10, 31, 68, 0.08), 0 0 1px rgba(10, 31, 68, 0.08); }
+    .content-box:first-child {
+      border-radius: 6px 6px 0 0 !important; }
     .content-box:last-child {
       border-radius: 6px !important; }
     .content-box .tabs {
@@ -4991,7 +4993,7 @@ footer {
   .content-box {
     margin-left: -8px;
     margin-right: -8px;
-    border-radius: 0; }
+    border-radius: 0 !important; }
     .content-box .tabs {
       display: none; }
   .content-padding {
