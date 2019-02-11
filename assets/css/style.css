@@ -2754,6 +2754,8 @@ h1, h2, h3, h4 {
           font-family: 'Exo 2', sans-serif;
           font-weight: normal;
           font-style: normal; }
+        .betting-center-card .body .matches .team:hover {
+          opacity: .5; }
     .betting-center-card .body .bet {
       width: 48px;
       font-size: 12px;

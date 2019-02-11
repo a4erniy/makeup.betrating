@@ -2562,6 +2562,9 @@ h1, h2, h3, h4 {
           letter-spacing: 0.25px;
           @include fontExo2();
         }
+        &:hover {
+          opacity: .5;
+        }
       }
     }
     .bet {
